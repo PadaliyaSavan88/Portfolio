@@ -1,0 +1,23 @@
+.margin-auto{
+    margin: auto;
+}
+
+.card-1-margin{
+    margin-bottom: 5px;
+}
+
+.card-first-margin{
+    margin-bottom: 5px;
+}
+
+.card-1-margin:last-child{
+    margin-bottom: 0px;
+}
+
+.card-2-margin{
+    margin: 40px;
+}
+
+.footer-padding{
+    padding: 10vh 0vh 10vh 0vh;
+}
