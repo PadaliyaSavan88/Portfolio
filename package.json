@@ -1,5 +1,5 @@
 {
-  "name": "myportfolio",
+  "name": "theblockchaininsider",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.1",
-    "aos": "^2.3.4",
-    "babel-plugin-styled-components": "^2.0.7",
-    "body-parser": "^1.20.1",
-    "cors": "^2.8.5",
-    "eslint": "8.31.0",
-    "eslint-config-next": "13.1.1",
-    "express": "^4.18.2",
-    "fs": "^0.0.1-security",
-    "next": "13.1.1",
-    "nodemailer": "^6.9.1",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "gray-matter": "^4.0.3",
+    "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.7.1"
+    "react-markdown": "^8.0.7",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark": "^14.0.3",
+    "remark-html": "^15.0.2"
   }
 }

@@ -1,0 +1,127 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-for-nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.width-auto{
+  width: fit-content;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-card-2{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-for-footer-section-2{
+  display: flex;
+  flex-direction: column;
+}
+
+.box-shadow{
+  /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.1) */
+  box-shadow: 0px 1px 2px rgba(var(--theme-blue),0.5), 
+  0px 2px 4px rgba(var(--theme-blue),0.5), 
+  0px 4px 8px rgba(var(--theme-blue),0.5), 
+  0px 8px 16px rgba(var(--theme-blue),0.5);
+}
+
+.box-shadow-card-2{
+  /* width: 250px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0px 1px 2px rgba(var(--theme-blue),0.5), 
+  0px 2px 4px rgba(var(--theme-blue),0.5), 
+  0px 4px 8px rgba(var(--theme-blue),0.5), 
+  0px 8px 16px rgba(var(--theme-blue),0.5); */
+}
+
+.box-shadow-card-2:hover{
+  /* width: 250px; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* box-shadow: 0px 1px 2px rgba(var(--theme-blue),0.5), 
+  0px 2px 4px rgba(var(--theme-blue),0.5), 
+  0px 4px 8px rgba(var(--theme-blue),0.5), 
+  0px 8px 16px rgba(var(--theme-blue),0.5); */
+}
+
+.horizontal-center{
+  align-items: center;
+}
+
+.vertical-center{
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+      background-color: blue;
+    }
+
+    .navarbar-hide-logo{
+      display: flex;
+      float: right;
+      width: auto;
+    }
+
+    .navbar-section-2{
+      display: none;
+      width: 100%;
+    }
+
+    .card-1-text{
+      width: 100%;
+    }
+
+    .card-1-image{
+      /* width: 50%; */
+       /* border: 3px solid orange; */
+       display: none;
+  }
+
+  .navbar-section-1{
+    width: 100%;
+  }
+
+  .flex-for-nav{
+    flex-direction: column;
+  }
+
+  .footer-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+  .footer-section-1{
+    width: 100%;
+  }
+
+  .footer-section-2{
+    width: 100%;
+  }
+   
+  .flex-for-footer-section-2{
+    flex-direction: row;
+  }
+}
