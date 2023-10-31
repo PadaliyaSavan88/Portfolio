@@ -16,7 +16,7 @@ export default function StaticHeader() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item mx-4">
                                 <Link className="nav-link  active fs-4" aria-current="page" href="/#">Home</Link>
                             </li>
@@ -27,7 +27,7 @@ export default function StaticHeader() {
                                 <Link className="nav-link fs-4" href="/services">Services</Link>
                             </li>
                             <li className="nav-item mx-4">
-                                <Link className="nav-link fs-4" href="/allBlogs">All Blogs</Link>
+                                <Link className="nav-link fs-4" href="/aboutUs">About Us</Link>
                             </li>
                         </ul>
                     </div>

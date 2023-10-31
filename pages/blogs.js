@@ -12,7 +12,7 @@ export default function blogs() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="stylesheet" href="Assests/Css/bootstarp.css" />
 
-                <title>The Blockchain Insider</title>
+                <title>Blogs | The Blockchain Insider</title>
             </Head>
             <StaticHeader />
             <div className="container" id="conatiner">

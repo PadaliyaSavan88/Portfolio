@@ -5,10 +5,9 @@ image: 'images/ddeffi.jpg'
 author: 'Savan'
 description: 'In this article, we are going to find out what is DeFi? or what is decentralized finance. Before that, let’s find out why we need decentralized finance & what is the problem with centralized finance or the current world financial system.'
 ---
+In this article, we are going to find out what is DeFi? or what is decentralized finance. Before that, let’s find out why we need decentralized finance & what is the problem with centralized finance or the current world financial system.
 
 ![what is defi](ddeffi.jpg)
-
-In this article, we are going to find out what is DeFi? or what is decentralized finance. Before that, let’s find out why we need decentralized finance & what is the problem with centralized finance or the current world financial system.
 
 ## Why do we need decentralized finance(DeFi)?
 

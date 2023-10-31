@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
+    // const allPostsData = getSortedPostsData();
     return {
         props: {
             allPostsData,
@@ -30,7 +31,7 @@ export default function AllBlogs({ allPostsData }) {
             <StaticHeader />
             <div className="container-lg container-xxl container-xl container-md container-sm" id="conatiner">
                 <div className="container w-75">
-                    <div className="row vh-100 align-items-center justify-content-center d-flex">
+                    <div className="row min-vh-100 mt-2  d-flex">
                         <div>
                             <div className="h1 d-flex align-items-center justify-content-center ">
                                 All Blogs
@@ -41,28 +42,32 @@ export default function AllBlogs({ allPostsData }) {
                                         Title
                                     </div>
 
-                                    <div className=" p-3 col-2" >
-                                        <span onClick={() => { toggleMenu() }} >
+                                    <div className=" p-3 col-2 " >
+                                        <span className="cursor-pointer" onClick={() => { toggleMenu() }} >
                                             View All
                                         </span>
                                     </div>
 
                                 </div>
 
-                                <div className="row" >
+                                <div className="card-group" >
 
-                                    {allPostsData.map(({ id, date, title }) => (
-                                        <Link href={`/blog/${id}`} key={id}>
-                                            <div className="card card-hover-2 col-lg-4 ">
+                                    {allPostsData.map(({ id, title , data }) => (
 
-                                                <Image src="/Assests/Image/blog_graphics/slider_graphics.png" className="card-img" alt="..." width={100} height={220} />
-
-
-                                                <div className="card-body">
-                                                    <h5 className="card-title">{title}</h5>
-                                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+                                        
+                                        <div key={id} className=" col-lg-3 col-md-4 mt-5  card mx-4" >
+                                            <Link href={`/blog/${id}`} key={id} className="decoration-none " >
+                                                <div className=" card-hover-3 ">
+                                                    <Image src="/Assests/Image/blog_graphics/slider_graphics.png" className="card-img" alt="..." width={100} height={220} />
+                                                    <div className="card-body">
+                                                        <h5 className="card-title text-dark ">{title}</h5>
+                                                        <p className="card-text text-dark text-truncate-all-blog-page">{data}</p>
+                                                    </div>
+                                                  
                                                 </div>
-                                            </div></Link>
+                                            </Link>
+                                        </div>
+                                        
                                     ))}
                                 </div>
                             </div>
