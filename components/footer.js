@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <nav className="navbar navbar-dark bg-theme">
@@ -7,32 +9,32 @@ export default function Footer() {
                         <div className="col-lg-8 col-md-12">
                             <div className="row">
                                 <div className="col-lg-4 col-md-6  text-left mb-4">
-                                    <a className="navbar-brand" href="#">
-                                        <object data="Assests/Image/blog_graphics/fav_icon.png" className="brand"> </object>
-                                    </a>
+                                    <Link className="navbar-brand" href="/#">
+                                        <object data="images/210 x 210.png" className="brand"> </object>
+                                    </Link>
                                 </div>
                                 <div className="col-lg-8 col-md-6 d-flex justify-content-end mb-4 ">
                                     <div className="justify-content-end">
                                         <div>
                                             <div className="row">
-                                                <a className="nav-link nav-link-active" href="#">Home</a>
+                                                <Link className="nav-link nav-link-active" href="/#">Home</Link>
                                             </div>
 
                                             <div className="row">
-                                                <a className="nav-link" href="#">About us</a>
+                                                <Link className="nav-link" href="/allBlogs">Blogs</Link>
                                             </div>
                                             <div className="row">
-                                                <a className="nav-link" href="#">Contact us</a>
+                                                <Link className="nav-link" href="/services">Services</Link>
                                             </div>
                                             <div className="row">
-                                                <a className="nav-link" href="#">Home</a>
+                                                <Link className="nav-link" href="/aboutUs">About Us</Link>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-12 text-end text-left">
+                        {/* <div className="col-lg-4 col-md-12 text-end text-left">
                             <div>
                                 <div className="text-white">
                                     <address>
@@ -52,7 +54,7 @@ export default function Footer() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

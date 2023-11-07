@@ -71,10 +71,11 @@ export default function Post(props) {
   return (
     <div>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../Assests/Css/bootstarp.css" />
-        <title>The Blockchain Insider</title>
+        <title>{props.post.title} | The Blockchain Insider</title>
+        <meta name="description" content={props.post.description}></meta>
       </Head>
       <StaticHeader />
       <div className="container" id="conatiner">

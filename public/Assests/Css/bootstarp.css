@@ -11000,3 +11000,23 @@ textarea.form-control-lg {
   /* max-height: 0; */
   /* transform: translateY(10%); */
 }
+
+.card-service-hover:hover{
+  background-color: rgb(var(--theme-purple));
+}
+
+.card-service-hover:hover .card-title{
+  color : white !important;
+}
+
+.card-service-hover:hover hr{
+  color : white !important;
+}
+
+.card-service-hover:hover .card-text{
+  color : #ededed !important;
+}
+
+.text-justify{
+  text-align: justify !important;
+}

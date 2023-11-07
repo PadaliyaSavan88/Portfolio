@@ -1,16 +1,18 @@
 import Image from "next/image";
 import '../public/Assests/js/main'
+// import "../public/Assests/Css/bootstrap.css"
 import Head from "next/head";
 import StaticHeader from "@/components/staticHeader";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function blogs() {
     return (
         <>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="stylesheet" href="Assests/Css/bootstarp.css" />
+                <Link rel="stylesheet" href="Assests/Css/bootstarp.css" />
 
                 <title>Blogs | The Blockchain Insider</title>
             </Head>

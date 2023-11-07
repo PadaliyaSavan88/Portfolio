@@ -1,4 +1,6 @@
+import Footer from "@/components/footer";
 import StaticHeader from "@/components/staticHeader";
+// import "/Assests/Css/bootstarp"
 import { getSortedPostsData } from "@/lib/posts";
 import Head from "next/head";
 import Image from "next/image";
@@ -22,11 +24,12 @@ export default function AllBlogs({ allPostsData }) {
     return (
         <>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="stylesheet" href="Assests/Css/bootstarp.css" />
-
-                <title>The Blockchain Insider</title>
+                <title>TheBlockchainInsider Blog - Stay Informed with Our Insights</title>
+                <meta name="description" content="Read our latest blogs on blockchain, technology, and digital transformation. Stay updated with expert insights from our diverse team."></meta>
+                <meta name="keywords" content="blockchain insights, technology blogs, digital transformation, expert opinions"></meta>
             </Head>
             <StaticHeader />
             <div className="container-lg container-xxl container-xl container-md container-sm" id="conatiner">
@@ -56,15 +59,17 @@ export default function AllBlogs({ allPostsData }) {
 
                                         
                                         <div key={id} className=" col-lg-3 col-md-4 mt-5  card mx-4" >
-                                            <Link href={`/blog/${id}`} key={id} className="decoration-none " >
-                                                <div className=" card-hover-3 ">
-                                                    <Image src="/Assests/Image/blog_graphics/slider_graphics.png" className="card-img" alt="..." width={100} height={220} />
-                                                    <div className="card-body">
-                                                        <h5 className="card-title text-dark ">{title}</h5>
-                                                        <p className="card-text text-dark text-truncate-all-blog-page">{data}</p>
+                                            <Link href={`/blog/${id}`}  className="decoration-none " >
+                                                {/* <a> */}
+                                                    <div className=" card-hover-3 ">
+                                                        <Image src="/Assests/Image/blog_graphics/slider_graphics.png" className="card-img" alt="..." width={100} height={220} />
+                                                        <div className="card-body">
+                                                            <h5 className="card-title text-dark ">{title}</h5>
+                                                            <p className="card-text text-dark text-truncate-all-blog-page">{data}</p>
+                                                        </div>
+
                                                     </div>
-                                                  
-                                                </div>
+                                                {/* </a> */}
                                             </Link>
                                         </div>
                                         
@@ -75,6 +80,7 @@ export default function AllBlogs({ allPostsData }) {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

@@ -7,7 +7,7 @@ export default function Hero() {
                 <div className="col d-flex align-items-center justify-content-center">
 
                     <div className="fs-5 h-5 text-white">
-                        <h1>The Blockchain Insider. Let&apos;s Ride Rabbit Hole..</h1>
+                        <h1>The Blockchain Insider.</h1> <br /><h2>Pioneering Excellence Through Technology and Innovation</h2>
                     </div>
                 </div>
 

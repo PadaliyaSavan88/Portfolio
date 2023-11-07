@@ -8,34 +8,53 @@ import Link from "next/link";
 
 export default function Service() {
 
-    const allPostsData = [ 
+    const allPostsData = [
         {
-            id : 1,
-            title : 'Full Stack Web Development',
-            data : 'We provide Web development service to provide a solution to your business problem. Boost your revenue bu automating your business with on stop solution.'
-        } ,
+            id: 1,
+            title: 'Full Stack Web Development',
+            data: 'We provide Web development service to provide a solution to your business problem. Boost your revenue by automating your business with on stop solution.'
+        },
         {
-            id : 2,
-            title : 'Smart Contract Development',
-            data : 'Smart contracts plays a crucial role in developing decentralised applications. We servers services like Smart contract development, testing, audting services related to smart contracts on Ethereum L1 and L2 chains.'
+            id: 2,
+            title: 'Blockchain Application Development',
+            data: 'Blockhchain application enables true decentralisation. We servers services like Smart contract development, testing, audting services related to smart contracts on Ethereum L1 and L2 chains.'
 
-        } ,
+        },
         {
-            id : 3,
-            title : 'Smart Contract Development',
-            data : 'Smart contracts plays a crucial role in developing decentralised applications. We servers services like Smart contract development, testing, audting services related to smart contracts on Ethereum L1 and L2 chains.'
+            id: 3,
+            title: 'Software Development',
+            data: 'With software development unlock you business potential by automating you processes using tech. Give a innovative shift to your business with special purpose softwares.'
 
-        } 
-    ] 
+        },
+        {
+            id: 4,
+            title: 'Mobile Application Development',
+            data: 'Mobile Applications can add more values to the business. Add your business availability at customers fingure tips can make it easily accessible and user friendly.'
+
+        },
+        {
+            id: 5,
+            title: 'AI/ML Development',
+            data: 'Use AI/ML to unlock the new growth opportunity. With innovation and technology leverage automation to push your business to another level and meet your customer deliveries unbeatable.'
+
+        },
+        {
+            id: 6,
+            title: 'Data Engineering',
+            data: 'Leverage data to bring analytics and statastics to enhance your business. Delivery data driven experience and insights across platform with data engineering.'
+
+        }
+    ]
 
     return (
         <>
             <Head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="stylesheet" href="Assests/Css/bootstarp.css" />
-
-                <title>The Blockchain Insider</title>
+                <title>Our Services - Blockchain Solutions, Web Development, and More</title>
+                <meta name="description" content="Explore our comprehensive range of services, including blockchain solutions, web development, mobile app development, AI/ML, data services, and software development"></meta>
+                <meta name="keywords" content="blockchain services, web development, mobile app development, AI/ML solutions, data services, software development"></meta>
             </Head>
             <StaticHeader />
             <div className="container-lg container-xxl container-xl container-md container-sm container" id="conatiner">
@@ -51,8 +70,8 @@ export default function Service() {
                                     </div>
                                 </div>
 
-                                
-    
+
+
                                 <div className="row ">
 
                                     {/* <div className="col-6" >
@@ -90,27 +109,28 @@ export default function Service() {
 
                                     <div className="card-group mb-5  " >
 
-                                    {allPostsData.map(({ id, title , data }) => (
-                                        <div key={id} className=" col-lg-3 col-md-6 card col-sm-12 p-2 mt-5 mx-auto" >
-                                            {/* <Link href={`/blog/${id}`} key={id} className="decoration-none " > */}
+                                        {allPostsData.map(({ id, title, data }) => (
+                                            <div key={id} className=" col-lg-4 col-md-6 card card-service-hover col-sm-12 p-2 mt-5 mx-auto" >
+                                                {/* <Link href={`/blog/${id}`} key={id} className="decoration-none " > */}
                                                 <div className="  ">
                                                     {/* <Image src="/Assests/Image/blog_graphics/slider_graphics.png" className="card-img" alt="..." width={100} height={220} /> */}
                                                     <div className="card-body">
                                                         <h5 className="card-title text-dark ">{title}</h5>
-                                                        <p className="card-text px-2 text-muted text-truncate-all-blog-page">{data}</p>
+                                                        <hr />
+                                                        <p className="card-text px-2 text-muted text-justify text-truncate-all-blog-page">{data}</p>
                                                     </div>
-                                                
+
                                                 </div>
-                                            {/* </Link> */}
-                                        </div>
-                                    ))}
+                                                {/* </Link> */}
+                                            </div>
+                                        ))}
                                     </div>
 
-                                    
+
                                 </div>
 
                                 <div className="row">
-                                   
+
                                 </div>
                             </div>
                         </div>

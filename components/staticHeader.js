@@ -8,10 +8,10 @@ export default function StaticHeader() {
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-theme" id="navbar_">
                 <div className="container-fluid w-75 p-2">
-                    <a className="navbar-brand" href="#">
+                    <Link className="navbar-brand" href="/#">
                         <Image src="/Assests/Image/blog_graphics/fav_icon.png" id="logo" className="img-fluid" alt="..." height={60} width={60} />
 
-                    </a>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -21,7 +21,7 @@ export default function StaticHeader() {
                                 <Link className="nav-link  active fs-4" aria-current="page" href="/#">Home</Link>
                             </li>
                             <li className="nav-item mx-4">
-                                <Link className="nav-link fs-4" href="/blogs">Blogs</Link>
+                                <Link className="nav-link fs-4" href="/allBlogs">Blogs</Link>
                             </li>
                             <li className="nav-item mx-4">
                                 <Link className="nav-link fs-4" href="/services">Services</Link>
