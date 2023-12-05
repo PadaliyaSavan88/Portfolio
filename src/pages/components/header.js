@@ -10,7 +10,7 @@ export default function Headers() {
             </a>
             <div className="header-right">
                 <a href="#home">Home</a>
-                <a href="#contact">Contact</a>
+                <a href="#portfolio">Portfolio</a>
                 <a href="#about">About</a>
             </div>
             </div>

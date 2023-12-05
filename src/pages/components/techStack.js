@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function TechStack() {
     return (
-        <div className="tech-section">
+        <div className="light-section" id="skills">
             <div className="container">
                 <div className="section-title">
-                A Palette of Skills!!
+                    <h2>A Palette of Skills!!</h2>
                 </div>
                 <div className="row">
                     <div className="col-md-6 text-center">
@@ -29,7 +29,7 @@ export default function TechStack() {
                 <div className="row mt-4">
                     <div className="col-md-6 text-center">
                         <div className="sub-section-title">Cloud</div>
-                        <Image src='/icons/Amazonwebservices.svg' className="tech-icon" alt="AWS" title="AWS" width={120} height={120} />
+                        <Image src='/icons/amazonwebservices.svg' className="tech-icon" alt="AWS" title="AWS" width={120} height={120} />
                         <Image src='/icons/azure.svg' className="tech-icon" alt="Azure" title="Azure" width={120} height={120} />
                         <Image src='/icons/googlecloud.svg' className="tech-icon" alt="GoogleCloud" title="Google Cloud" width={120} height={120} />
                         <Image src='/icons/digitalocean.svg' className="tech-icon" alt="DigitalOcean" title="Digital Ocean" width={120} height={120} />
