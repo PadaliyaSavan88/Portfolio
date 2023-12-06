@@ -9,8 +9,8 @@ export default function AboutUs() {
                     <h2>About Me</h2>
                 </div>
                 <div className="row">
-                    <div className="col-lg-6">
-                        <Image src={AboutUsImage} alt="About ME" height={500} width={500} />
+                    <div className="col-lg-6 p-2">
+                        <Image src={AboutUsImage} alt="About ME" height={350} width={350} />
                     </div>
                     <div className="col-lg-6 about-text">
                         <p>
