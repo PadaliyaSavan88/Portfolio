@@ -86,8 +86,6 @@ html {
   }
 }
 
-
-
 /* Basic Card */
 .basic-card {
   background-color: #ffffff;
@@ -196,6 +194,10 @@ html {
   margin: 1%;
 }
 
+.blogs-section{
+  min-height: 80vh;
+}
+
 .contact {
   padding: 4%;
   min-height: 100vh;
@@ -292,8 +294,6 @@ html {
   line-height: 40px;
   display: inline-block;
   text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
   margin: 0 8px;
   color: inherit;
   opacity: 0.75;
