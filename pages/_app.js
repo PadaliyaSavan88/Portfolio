@@ -7,6 +7,16 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {/* <Script src="./Assests/js/script.js"/> */}
+      <Script async strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-N3GKFN94TH"></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments) }
+          gtag('js', new Date());
+          
+          gtag('config', 'G-N3GKFN94TH');
+        `}
+        </Script>
       <Component {...pageProps} />
     </>
   )
