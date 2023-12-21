@@ -12,36 +12,36 @@ export default function Service() {
         {
             id: 1,
             title: 'Full Stack Web Development',
-            data: 'We provide Web development service to provide a solution to your business problem. Boost your revenue by automating your business with on stop solution.'
+            data: 'We provide Web development service to provide a solution to your business problem. Boost your revenue by automating your business with one stop solution.'
         },
         {
             id: 2,
             title: 'Blockchain Application Development',
-            data: 'Blockhchain application enables true decentralisation. We servers services like Smart contract development, testing, audting services related to smart contracts on Ethereum L1 and L2 chains.'
+            data: 'Blockchain application enables true decentralization. We serve services like Smart contract development, testing, and auditing services related to smart contracts on Ethereum L1 and L2 chains.'
 
         },
         {
             id: 3,
             title: 'Software Development',
-            data: 'With software development unlock you business potential by automating you processes using tech. Give a innovative shift to your business with special purpose softwares.'
+            data: 'With software development, unlock your business potential by automating your processes using tech. Give an innovative shift to your business with tailored softwares.'
 
         },
         {
             id: 4,
             title: 'Mobile Application Development',
-            data: 'Mobile Applications can add more values to the business. Add your business availability at customers fingure tips can make it easily accessible and user friendly.'
+            data: 'Mobile applications can add more value to your business. Making your business available at customers\' fingertips can make it easily accessible and user-friendly.'
 
         },
         {
             id: 5,
             title: 'AI/ML Development',
-            data: 'Use AI/ML to unlock the new growth opportunity. With innovation and technology leverage automation to push your business to another level and meet your customer deliveries unbeatable.'
+            data: 'Using AI/ML for your business can unlock new growth opportunities. Tech innovation and leveraging automation with AI/ML can elevate your business and make customer deliveries unbeatable.'
 
         },
         {
             id: 6,
             title: 'Data Engineering',
-            data: 'Leverage data to bring analytics and statastics to enhance your business. Delivery data driven experience and insights across platform with data engineering.'
+            data: 'Leveraging data, analytics, and statistics to enhance your business. Deliver data-driven experiences and insights across platforms with data engineering.'
 
         }
     ]

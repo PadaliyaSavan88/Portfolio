@@ -59,7 +59,7 @@ export default function AllBlogs({ allPostsData }) {
 
                                         
                                         <div key={id} className=" col-lg-3 col-md-4 mt-5  card mx-4" >
-                                            <Link href={`/blog/${id}`}  className="decoration-none " >
+                                            <Link href={`/blog/${id}`} className="decoration-none " >
                                                 {/* <a> */}
                                                     <div className=" card-hover-3 ">
                                                         <Image src="/Assests/Image/blog_graphics/slider_graphics.png" className="card-img" alt="..." width={100} height={220} />
