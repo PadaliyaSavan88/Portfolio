@@ -16,7 +16,7 @@ export default function Footer() {
                 <ul className="list-inline">
                     <li className="list-inline-item"><Link href="/#home">Home</Link></li>
                     <li className="list-inline-item"><Link href="/#portfolio">Portfolio</Link></li>
-                    <li className="list-inline-item"><Link href="/#about">About</Link></li>
+                    <li className="list-inline-item"><Link href="/about">About</Link></li>
                     <li className="list-inline-item"><Link href="/blogs">Blogs</Link></li>
                     {/* <li className="list-inline-item"><Link href="#">Privacy Policy</Link></li> */}
                 </ul>

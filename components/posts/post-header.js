@@ -14,11 +14,11 @@ function PostHeader(props) {
           </div> */}
           <div id="blog-header my-2">
               <div className="h1">
-                {title}
+                <h1>{title}</h1>
               </div>
               <div className="fw-light lh-1 fs-6">
                 <blockquote className="text-muted">
-                  Created By {author} on {date}
+                  Written By <a href="https://www.linkedin.com/in/savanpadaliya/" target='_blank'>{author}</a> on {date}
                 </blockquote>
               </div>
             </div>

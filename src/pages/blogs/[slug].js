@@ -73,6 +73,21 @@ export default function Post(props) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>{`${props.post.title} | Savan Padaliya`}</title>
                 <meta name="description" content={props.post.description}></meta>
+                <meta name="keywords" content={props.post.keyword} />
+                <meta name="author" content={props.post.author} />
+
+                {/* <!-- Open Graph / Facebook --> */}
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content={`${props.post.title} | Savan Padaliya`} />
+                <meta property="og:description" content={props.post.description} />
+                <meta property="og:image" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`} />
+                <meta property="og:url" content="link-to-your-blog" />
+
+                {/* <!-- Twitter --> */}
+                <meta property="twitter:card" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`} />
+                <meta property="twitter:title" content={`${props.post.title} | Savan Padaliya`} />
+                <meta property="twitter:description" content={props.post.description} />
+                <meta property="twitter:image" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`}></meta>
             </Head>
             <Headers />
             <div className="container" id="conatiner">

@@ -198,6 +198,15 @@ html {
   min-height: 80vh;
 }
 
+.about-section{
+  min-height: 80vh;
+}
+
+.page-header{
+  vertical-align: middle;
+  min-height: 80vh;
+}
+
 .contact {
   padding: 4%;
   min-height: 100vh;

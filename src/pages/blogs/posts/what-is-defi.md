@@ -1,15 +1,15 @@
 ---
 title: 'What is DeFi? or What is decentralized finance?'
-date: '2020-01-02'
+date: '24-12-23'
 image: 'images/ddeffi.jpg'
-author: 'Savan'
+author: 'Savan Padaliya'
 description: 'In this article, we are going to find out what is DeFi? or what is decentralized finance. Before that, let’s find out why we need decentralized finance & what is the problem with centralized finance or the current world financial system.'
 ---
 In this article, we are going to find out what is DeFi? or what is decentralized finance. Before that, let’s find out why we need decentralized finance & what is the problem with centralized finance or the current world financial system.
 
 ![what is defi](ddeffi.jpg)
 
-## Why do we need decentralized finance(DeFi)?
+# Why do we need decentralized finance(DeFi)?
 
 In centralized finance, central authorities like banks and governments rule over our money. Let’s take a scenario when the government rolls out a rule to the user that the user can’t withdraw money from their respective banks. What will happen in this scenario? User is unable to access their own money. In some scenarios, the user pays hefty fees to make transactions.
 

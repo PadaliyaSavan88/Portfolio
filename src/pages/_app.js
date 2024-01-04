@@ -9,6 +9,8 @@ export default function App({ Component, pageProps }) {
   }, [])
   return (
     <>
+    <Head>
+        <meta name="robots" content="all" /></Head>
       <Component {...pageProps} />
     </>
   )

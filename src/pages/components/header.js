@@ -10,9 +10,9 @@ export default function Headers() {
                 <Image src={Logo} alt="logo" width={50} height={50} />
             </Link>
             <div className="header-right">
-                <Link href="/#home">Home</Link>
+                <Link href="/">Home</Link>
                 <Link href="/#portfolio">Portfolio</Link>
-                <Link href="/#about">About</Link>
+                <Link href="/about">About</Link>
                 <Link href="/blogs">Blogs</Link>
             </div>
             </div>
