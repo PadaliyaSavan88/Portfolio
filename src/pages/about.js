@@ -8,7 +8,7 @@ export default function About() {
             <div className="about-section d-table container">
                 <div className="page-header text-center d-table-cell">
                     <h1>JavaScript Expert And Blockchain Visionary, GDG Organiser, Igniting Minds By Knowledge Sharing</h1>
-                    <p className="m-4 p-4">Welcome to my digital abode! I'm Savan Padaliya, a seasoned Full Stack Developer deeply passionate about crafting innovative solutions. With a profound love for blockchain technology and a penchant for sharing knowledge, I embark on a journey that blends code, creativity, and community engagement.</p>
+                    <p className="m-4 p-4">Welcome to my digital abode! I&apos;m Savan Padaliya, a seasoned Full Stack Developer deeply passionate about crafting innovative solutions. With a profound love for blockchain technology and a penchant for sharing knowledge, I embark on a journey that blends code, creativity, and community engagement.</p>
                 </div>
             </div>
             <div className="what-i-do dark-section">
@@ -17,7 +17,7 @@ export default function About() {
                         <h2>Crafting Digital Excellence</h2>
                     </div>
                     <div>
-                        <p>As a Full Stack Developer, my expertise spans the realms of backend and frontend development, with a keen focus on creating seamless user experiences. I specialize in blockchain applications, bringing decentralized innovations to the forefront of my work. Every line of code I write is infused with a commitment to excellence and a dedication to pushing the boundaries of what's possible in the digital realm.</p>
+                        <p>As a Full Stack Developer, my expertise spans the realms of backend and frontend development, with a keen focus on creating seamless user experiences. I specialize in blockchain applications, bringing decentralized innovations to the forefront of my work. Every line of code I write is infused with a commitment to excellence and a dedication to pushing the boundaries of what&apos;s possible in the digital realm.</p>
                         {/* <p>As a Full Stack Developer, my expertise spans the realms of backend and frontend development, with a keen focus on creating seamless user experiences. I specialize in blockchain applications, bringing decentralized innovations to the forefront of my work. Every line of code I write is infused with a commitment to excellence and a dedication to pushing the boundaries of what's possible in the digital realm.</p> */}
                     </div>
                 </div>
