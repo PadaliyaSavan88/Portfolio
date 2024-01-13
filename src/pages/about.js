@@ -1,9 +1,27 @@
+import Head from "next/head";
 import Footer from "./components/footer";
 import Headers from "./components/header";
 
 export default function About() {
     return (
         <>
+            <Head>
+                <title>About Me - Savan Padaliya | JavaScript Expert | NodeJS, React, Angular | Blockchain Developer</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+
+                <meta name="title" content="About Me - Savan Padaliya | JavaScript Expert | NodeJS, React, Angular | Blockchain Developer" />
+                <meta name="description" content="Discover my journey as a passionate web developer, blockchain enthusiast, and JavaScript services provider. Learn about my interests, contributions to GDG Rajkot Chapter, and the services I offer in web development and blockchain projects." />
+                <meta name="keywords" content="JavaScript Developer, Web Developer, NodeJS, React, Angular, Blockchain, Backend Development, Frontend Development, Deployment, Cloud Services, DevOps, Docker, Kubernetes, GDG Rajkot Chapter." />
+                <meta name="language" content="English" />
+                <link rel="canonical" href="https://www.savanpadaliya.com/about" />
+
+                <meta property="og:title" content="Savan Padaliya | JavaScript Expert | NodeJS, React, Angular | Blockchain Developer" />
+                <meta property="og:site_name" content="Savan Padaliya | Full Stack Blockchain developer" />
+                <meta property="og:url" content="https://www.savanpadaliya.com/about" />
+                <meta property="og:description" content="Discover my journey as a passionate web developer, blockchain enthusiast, and JavaScript services provider. Learn about my interests, contributions to GDG Rajkot Chapter, and the services I offer in web development and blockchain projects." />
+                <meta property="og:image" content="/graphics/header_logo.png" />
+            </Head>
             <Headers />
             <div className="about-section d-table container">
                 <div className="page-header text-center d-table-cell">
