@@ -26,10 +26,18 @@ export default function AllBlogs({ allPostsData }) {
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="stylesheet" href="Assests/Css/bootstarp.css" />
+                {/* <link rel="stylesheet" href="Assests/Css/bootstarp.css" /> */}
                 <title>TheBlockchainInsider Blog - Stay Informed with Our Insights</title>
                 <meta name="description" content="Read our latest blogs on blockchain, technology, and digital transformation. Stay updated with expert insights from our diverse team."></meta>
                 <meta name="keywords" content="blockchain insights, technology blogs, digital transformation, expert opinions"></meta>
+                <meta name="language" content="English" />
+                <link rel="canonical" href="https://www.theblockchaininsider.com/allBlogs" />
+
+                <meta property="og:title" content="TheBlockchainInsider Blog - Stay Informed with Our Insights" />
+                <meta property="og:site_name" content="The Blockchain Insider" />
+                <meta property="og:url" content="https://www.theblockchaininsider.com/allBlogs" />
+                <meta property="og:description" content="Read our latest blogs on blockchain, technology, and digital transformation. Stay updated with expert insights from our diverse team." />
+                <meta property="og:image" content="/images/210 x 210.png" />
             </Head>
             <StaticHeader />
             <div className="container-lg container-xxl container-xl container-md container-sm" id="conatiner">

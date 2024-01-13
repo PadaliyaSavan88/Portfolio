@@ -19,11 +19,11 @@ export default function blogs() {
                 <meta name="description" content="Explore our innovative blockchain solutions, web and mobile app development, AI/ML, data services, and software development. We're your strategic partners in the digital era." />
                 <meta name="keywords" content="blockchain solutions, web development, mobile app development, AI/ML, data services, software development, digital transformation" />
                 <meta name="language" content="English" />
-                <link rel="canonical" href="https://www.theblockchaininsider.com/" />
+                <link rel="canonical" href="https://www.theblockchaininsider.com/allBlogs" />
 
                 <meta property="og:title" content="Blogs | The Blockchain Insider" />
                 <meta property="og:site_name" content="The Blockchain Insider" />
-                <meta property="og:url" content="https://www.theblockchaininsider.com/" />
+                <meta property="og:url" content="https://www.theblockchaininsider.com/allBlogs" />
                 <meta property="og:description" content="Explore our innovative blockchain solutions, web and mobile app development, AI/ML, data services, and software development. We're your strategic partners in the digital era." />
                 <meta property="og:image" content="/images/210 x 210.png" />
             </Head>

@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="stylesheet" href="/Assests/Css/bootstarp.css" />
+          <Script async src='/Assests/js/main.js' />
       </Head>
       <body>
         <Main />

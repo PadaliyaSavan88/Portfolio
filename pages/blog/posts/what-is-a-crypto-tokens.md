@@ -2,8 +2,10 @@
 title: 'What Is A Crypto Tokens?'
 date: '2023-18-12'
 image: 'images/What is Crypto Token'
+imageName: 'What-is-Crypto-Token.jpg'
 author: 'Savan Padaliya'
 description: 'Explore the world of crypto tokens - from their definition and types to their diverse use cases in decentralized finance, gaming, and supply chain management. Uncover the challenges and risks associated with crypto tokens and gain insights into their future impact.'
+keyword: 'Crypto Tokens, Blockchain, Utility Tokens, Security Tokens, NFTs, Decentralized Finance, DeFi, Gaming, Supply Chain Management, Tokenomics, Smart Contracts'
 ---
 
 Digital revolution and decentralization have given the finance industry many benefits. Cryptocurrencies and tokens have emerged as a dynamic and fascinating aspect of decentralized and blockchain space. As the world has increased pace in decentralization and digitalization, understanding these types of assets has become crucial. In this blog, we will explore its definition, use cases, and types of tokens.

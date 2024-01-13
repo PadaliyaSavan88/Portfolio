@@ -15,7 +15,7 @@ export default function Home() {
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="stylesheet" href="Assests/Css/bootstarp.css" />
+                {/* <link rel="stylesheet" href="Assests/Css/bootstarp.css" /> */}
                 <title>The Blockchain Insider - Pioneering Excellence Through Technology and Innovation</title>
 
                 <meta name="title" content="The Blockchain Insider - Pioneering Excellence Through Technology and Innovation" />

@@ -51,10 +51,18 @@ export default function Service() {
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="stylesheet" href="Assests/Css/bootstarp.css" />
+                {/* <link rel="stylesheet" href="Assests/Css/bootstarp.css" /> */}
                 <title>Our Services - Blockchain Solutions, Web Development, and More</title>
                 <meta name="description" content="Explore our comprehensive range of services, including blockchain solutions, web development, mobile app development, AI/ML, data services, and software development"></meta>
                 <meta name="keywords" content="blockchain services, web development, mobile app development, AI/ML solutions, data services, software development"></meta>
+                <meta name="language" content="English" />
+                <link rel="canonical" href="https://www.theblockchaininsider.com/services" />
+
+                <meta property="og:title" content="Our Services - Blockchain Solutions, Web Development, and More" />
+                <meta property="og:site_name" content="The Blockchain Insider" />
+                <meta property="og:url" content="https://www.theblockchaininsider.com/services" />
+                <meta property="og:description" content="Explore our comprehensive range of services, including blockchain solutions, web development, mobile app development, AI/ML, data services, and software development" />
+                <meta property="og:image" content="/images/210 x 210.png" />
             </Head>
             <StaticHeader />
             <div className="container-lg container-xxl container-xl container-md container-sm container" id="conatiner">

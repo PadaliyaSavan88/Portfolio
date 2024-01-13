@@ -13,8 +13,8 @@ function PostHeader(props) {
               </ol>
           </div>
           <div id="blog-header my-2">
-              <div className="h1">
-                {title}
+              <div className='h1'>
+                <h1>{title}</h1>
               </div>
               <div className="fw-light lh-1 fs-6">
                 <blockquote className="text-muted">
