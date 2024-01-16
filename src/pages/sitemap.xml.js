@@ -9,15 +9,15 @@ function generateSiteMap(posts) {
        <loc>https://www.savanpadaliya.com/</loc>
      </url>
      <url>
-       <loc>https://savanpadaliya.com/blogs</loc>
+       <loc>https://savanpadaliya.com/blogs/</loc>
      </url>
      <url>
-       <loc>https://savanpadaliya.com/about</loc>
+       <loc>https://savanpadaliya.com/about/</loc>
      </url>
      ${posts.map(({ id }) => {
          return `
        <url>
-           <loc>${`${EXTERNAL_DATA_URL}/${id}`}</loc>
+           <loc>${`${EXTERNAL_DATA_URL}/${id}/`}</loc>
        </url>
      `;
      }).join('')}

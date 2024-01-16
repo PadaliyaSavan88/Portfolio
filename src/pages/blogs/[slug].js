@@ -81,8 +81,8 @@ export default function Post(props) {
                 <meta property="og:title" content={`${props.post.title} | Savan Padaliya`} />
                 <meta property="og:description" content={props.post.description} />
                 <meta property="og:image" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`} />
-                <meta property="og:url" content={`https://www.savanpadaliya.com/blogs/${props.post.slug}`} />
-                <link rel="canonical" href={`https://www.savanpadaliya.com/blogs/${props.post.slug}`} />
+                <meta property="og:url" content={`https://www.savanpadaliya.com/blogs/${props.post.slug}/`} />
+                <link rel="canonical" href={`https://www.savanpadaliya.com/blogs/${props.post.slug}/`} />
 
                 {/* <!-- Twitter --> */}
                 <meta property="twitter:card" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`} />
