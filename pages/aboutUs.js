@@ -16,11 +16,11 @@ export default function aboutUs() {
                 <meta name="description" content="Discover our diverse team of professionals passionate about technology and innovation. Learn how we specialize in blockchain, content creation, web development, software engineering, and more."></meta>
                 <meta name="keywords" content="blockchain experts, content creators, web developers, software engineers, data engineers, technology and innovation"></meta>
                 <meta name="language" content="English" />
-                <link rel="canonical" href="https://www.theblockchaininsider.com/aboutUs" />
+                <link rel="canonical" href="https://www.theblockchaininsider.com/aboutUs/" />
 
                 <meta property="og:title" content="About TheBlockchainInsider - Our Mission and Expertise" />
                 <meta property="og:site_name" content="The Blockchain Insider" />
-                <meta property="og:url" content="https://www.theblockchaininsider.com/aboutUs" />
+                <meta property="og:url" content="https://www.theblockchaininsider.com/aboutUs/" />
                 <meta property="og:description" content="Discover our diverse team of professionals passionate about technology and innovation. Learn how we specialize in blockchain, content creation, web development, software engineering, and more." />
                 <meta property="og:image" content="/images/210 x 210.png" />
             </Head>

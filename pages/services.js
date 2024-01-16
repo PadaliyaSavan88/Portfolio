@@ -56,11 +56,11 @@ export default function Service() {
                 <meta name="description" content="Explore our comprehensive range of services, including blockchain solutions, web development, mobile app development, AI/ML, data services, and software development"></meta>
                 <meta name="keywords" content="blockchain services, web development, mobile app development, AI/ML solutions, data services, software development"></meta>
                 <meta name="language" content="English" />
-                <link rel="canonical" href="https://www.theblockchaininsider.com/services" />
+                <link rel="canonical" href="https://www.theblockchaininsider.com/services/" />
 
                 <meta property="og:title" content="Our Services - Blockchain Solutions, Web Development, and More" />
                 <meta property="og:site_name" content="The Blockchain Insider" />
-                <meta property="og:url" content="https://www.theblockchaininsider.com/services" />
+                <meta property="og:url" content="https://www.theblockchaininsider.com/services/" />
                 <meta property="og:description" content="Explore our comprehensive range of services, including blockchain solutions, web development, mobile app development, AI/ML, data services, and software development" />
                 <meta property="og:image" content="/images/210 x 210.png" />
             </Head>
