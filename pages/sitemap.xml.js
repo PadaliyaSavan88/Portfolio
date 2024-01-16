@@ -8,18 +8,18 @@ function generateSiteMap(posts) {
        <loc>https://www.theblockchaininsider.com/</loc>
      </url>
      <url>
-       <loc>https://www.theblockchaininsider.com/allBlogs</loc>
+       <loc>https://www.theblockchaininsider.com/allBlogs/</loc>
      </url>
      <url>
-       <loc>https://www.theblockchaininsider.com/services</loc>
+       <loc>https://www.theblockchaininsider.com/services/</loc>
      </url>
      <url>
-       <loc>https://www.theblockchaininsider.com/aboutUs</loc>
+       <loc>https://www.theblockchaininsider.com/aboutUs/</loc>
      </url>
      ${posts.map(({ id }) => {
          return `
        <url>
-           <loc>${`${EXTERNAL_DATA_URL}/${id}`}</loc>
+           <loc>${`${EXTERNAL_DATA_URL}/${id}/`}</loc>
        </url>
      `;
      }).join('')}
