@@ -18,6 +18,8 @@ export default function App({ Component, pageProps }) {
         `}
         </Script>
         <link rel="stylesheet" href="/Assests/Css/bootstarp.css" />
+        <Head>
+        <meta name="robots" content="all" /></Head>
       <Component {...pageProps} />
     </>
   )
