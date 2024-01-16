@@ -26,11 +26,11 @@ export default function AllBlogs({ allPostsData }) {
                 <meta name="description" content="Explore a collection of insightful tech blogs covering JavaScript, NodeJS, React, Angular, Blockchain, DevOps, and more. Stay informed and delve into the latest trends and expertise." />
                 <meta name="keywords" content="Tech Blogs, JavaScript, NodeJS, React, Angular, Blockchain, DevOps, Technology Trends, Expertise, Latest Insights." />
                 <meta name="language" content="English" />
-                <link rel="canonical" href="https://www.savanpadaliya.com/blogs" />
+                <link rel="canonical" href="https://www.savanpadaliya.com/blogs/" />
 
                 <meta property="og:title" content="Tech Blogs | JavaScript, NodeJS, React, Angular, Blockchain, DevOps" />
                 <meta property="og:site_name" content="Savan Padaliya | Full Stack Blockchain developer" />
-                <meta property="og:url" content="https://www.savanpadaliya.com/blogs" />
+                <meta property="og:url" content="https://www.savanpadaliya.com/blogs/" />
                 <meta property="og:description" content="Explore a collection of insightful tech blogs covering JavaScript, NodeJS, React, Angular, Blockchain, DevOps, and more. Stay informed and delve into the latest trends and expertise." />
                 <meta property="og:image" content="/graphics/header_logo.png" />
             </Head>
