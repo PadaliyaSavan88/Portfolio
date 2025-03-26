@@ -9,8 +9,8 @@ const nextConfig = {
     ];
   },
   reactStrictMode: true,
-  styledComponents: true,
-  webpack5: true,
+  //styledComponents: true,
+  //webpack5: true,
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
 
