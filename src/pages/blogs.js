@@ -66,7 +66,7 @@ export default function AllBlogs({ allPostsData }) {
           <div className="container-fluid">
             <div className="row">
               {allPostsData.map(({ id, title, description }) => (
-                <div key={id} className="col-6 d-flex">
+                <div key={id} className="col-md-6 d-flex">
                   <Link
                     href={`/blogs/${id}`}
                     className="text-decoration-none w-100 pb-4"
