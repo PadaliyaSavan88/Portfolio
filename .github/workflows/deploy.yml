@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master  # Change to your main branch
-  merge_request:
-    branches:
-      - master  # Change to your main branch
 
 jobs:
   deploy:
