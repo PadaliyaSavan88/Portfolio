@@ -7,6 +7,7 @@ import Head from 'next/head';
 import PostContent from '../../../components/posts/post-content';
 import Headers from '../components/header';
 import Footer from '../components/footer';
+import Link from 'next/link';
 
 SyntaxHighlighter.registerLanguage('js', js);
 SyntaxHighlighter.registerLanguage('css', css);
@@ -33,39 +34,6 @@ export function getStaticPaths() {
 }
 
 export default function Post(props) {
-    const customRenderers = {
-        p(paragraph) {
-            const { node } = paragraph;
-
-            if (node.children[0].tagName === 'img') {
-                const image = node.children[0];
-
-                return (
-                    <div className={classes.image}>
-                        <Image
-                            src={`/images/posts/${props.post.slug}/${image.properties.src}`}
-                            alt={image.alt}
-                            width={600}
-                            height={300}
-                        />
-                    </div>
-                );
-            }
-
-            return <p>{paragraph.children}</p>;
-        },
-
-        code(code) {
-            const { className, children } = code;
-            const language = className.split('-')[1]; // className is something like language-js => We need the "js" part here
-            return (
-                <SyntaxHighlighter
-                    style={atomDark}
-                    language={language}
-                >{children}</SyntaxHighlighter>
-            );
-        },
-    };
     return (
         <div>
             <Head>
@@ -83,20 +51,84 @@ export default function Post(props) {
                 <meta property="og:image" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`} />
                 <meta property="og:url" content={`https://www.savanpadaliya.com/blogs/${props.post.slug}/`} />
                 <link rel="canonical" href={`https://www.savanpadaliya.com/blogs/${props.post.slug}/`} />
+                <meta name="robots" content="index, follow" />
 
                 {/* <!-- Twitter --> */}
-                <meta property="twitter:card" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@padaliya_savan" />
+                <meta name="twitter:creator" content="@padaliya_savan" />
                 <meta property="twitter:title" content={`${props.post.title} | Savan Padaliya`} />
                 <meta property="twitter:description" content={props.post.description} />
                 <meta property="twitter:image" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`}></meta>
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@graph": [
+                        {
+                          "@type": "Article",
+                          "@id": `https://www.savanpadaliya.com/blogs/${props.post.slug}/#article`,
+                          "headline": props.post.title,
+                          "description": props.post.description,
+                          "author": {
+                            "@type": "Person",
+                            "name": "Savan Padaliya",
+                            "@id": "https://www.savanpadaliya.com/#person",
+                            "url": "https://www.savanpadaliya.com"
+                          },
+                          "publisher": {
+                            "@type": "Person",
+                            "name": "Savan Padaliya",
+                            "url": "https://www.savanpadaliya.com",
+                            "image": "https://www.savanpadaliya.com/graphics/header_logo.png"
+                          },
+                          "datePublished": props.post.date,
+                          "url": `https://www.savanpadaliya.com/blogs/${props.post.slug}/`,
+                          "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": `https://www.savanpadaliya.com/blogs/${props.post.slug}/`
+                          },
+                          "keywords": props.post.keyword || props.post.description
+                        },
+                        {
+                          "@type": "BreadcrumbList",
+                          "itemListElement": [
+                            {
+                              "@type": "ListItem",
+                              "position": 1,
+                              "name": "Home",
+                              "item": "https://www.savanpadaliya.com/"
+                            },
+                            {
+                              "@type": "ListItem",
+                              "position": 2,
+                              "name": "Blogs",
+                              "item": "https://www.savanpadaliya.com/blogs/"
+                            },
+                            {
+                              "@type": "ListItem",
+                              "position": 3,
+                              "name": props.post.title,
+                              "item": `https://www.savanpadaliya.com/blogs/${props.post.slug}/`
+                            }
+                          ]
+                        }
+                      ]
+                    })
+                  }}
+                />
             </Head>
             <Headers />
-            <div className="container" id="conatiner">
-                <div className="container w-75 mt-4">
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-12 text-wrap border-bottom mb-4  me-4" id="blog">
+            <div className="blog-post-container">
+                <div className="container">
+                    <div className="blog-post-back">
+                        <Link href="/blogs" className="back-link" aria-label="Back to all blogs">← Back to Blogs</Link>
+                    </div>
+                    <div className="blog-post-content">
                         <PostContent post={props.post} />
                     </div>
-                </ div >
+                </div>
             </div>
             <Footer />
         </div>

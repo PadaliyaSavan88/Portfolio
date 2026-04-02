@@ -1,19 +1,21 @@
+import Link from "next/link";
+
 export default function Hero() {
     return (
-        <div className="container" id="home">
-            {/* <div className="hero-image">
-                <div className="hero-text">
-                    <h1 style={{ fontSize: '50px' }}>I am Savan Padaliya</h1>
-                    <p>And I&apos;m a Full Stack Blockchain Developer</p>
-                    <button>Hire me</button>
-                </div>
-            </div> */}
-            <div className="row">
+        <div className="container hero-section" id="home">
+            <div className="row align-items-center">
                 <div className="col-md-6 d-flex align-items-center">
                     <div className="hero-text">
-                        <h1 style={{ fontSize: '50px' }}>I am Savan Padaliya</h1>
-                        <p>And I&apos;m a Full Stack Blockchain Developer</p>
-                        {/* <button>Hire me</button> */}
+                        <p className="hero-greeting">Hi, I&apos;m</p>
+                        <h1 className="hero-name">Savan Padaliya</h1>
+                        <p className="hero-subtitle">Full Stack AI Engineer</p>
+                        <p className="hero-desc">
+                            Building scalable backend systems in Node.js, intelligent web apps, and AI automation pipelines powered by OpenAI, Gemini, and LangChain.
+                        </p>
+                        <div className="hero-actions mt-4">
+                            <Link href="/#portfolio" className="btn-primary-custom me-3">View My Work</Link>
+                            <Link href="https://www.linkedin.com/in/savanpadaliya/" target="_blank" rel="noreferrer" className="btn-outline-custom">Get In Touch</Link>
+                        </div>
                     </div>
                 </div>
                 <div className="col-md-6">

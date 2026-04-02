@@ -17,7 +17,6 @@ export default function TechStack() {
                         <Image src='/icons/nextjs.svg' className="tech-icon" alt="NextJS" title="NextJS" width={80} height={80} />
                         <Image src='/icons/typescript.svg' className="tech-icon" alt="TypeScript" title="TypeScript" width={80} height={80} />
                         <Image src='/icons/express.svg' className="tech-icon" alt="Express" title="Express" width={80} height={80} />
-                        <Image src='/icons/solidity.svg' className="tech-icon" alt="Solidity" title="Solidity" width={80} height={80} />
                     </div>
                     <div className="col-md-6 text-center">
                         <div className="sub-section-title">Database</div>
@@ -29,18 +28,26 @@ export default function TechStack() {
                 <div className="row mt-4">
                     <div className="col-md-6 text-center">
                         <div className="sub-section-title">Cloud</div>
-                        <Image src='/icons/amazonwebservices.svg' className="tech-icon" alt="AWS" title="AWS" width={120} height={120} />
-                        <Image src='/icons/azure.svg' className="tech-icon" alt="Azure" title="Azure" width={120} height={120} />
-                        <Image src='/icons/googlecloud.svg' className="tech-icon" alt="GoogleCloud" title="Google Cloud" width={120} height={120} />
-                        <Image src='/icons/digitalocean.svg' className="tech-icon" alt="DigitalOcean" title="Digital Ocean" width={120} height={120} />
+                        <Image src='/icons/amazonwebservices.svg' className="tech-icon" alt="AWS" title="AWS" width={80} height={80} />
+                        <Image src='/icons/azure.svg' className="tech-icon" alt="Azure" title="Azure" width={80} height={80} />
+                        <Image src='/icons/googlecloud.svg' className="tech-icon" alt="GoogleCloud" title="Google Cloud" width={80} height={80} />
+                        <Image src='/icons/digitalocean.svg' className="tech-icon" alt="DigitalOcean" title="Digital Ocean" width={80} height={80} />
                     </div>
                     <div className="col-md-6 text-center">
                         <div className="sub-section-title">DevOps & Other</div>
-                        <Image src='/icons/docker.svg' className="tech-icon" alt="Docker" title="Docker" width={100} height={100} />
+                        <Image src='/icons/docker.svg' className="tech-icon" alt="Docker" title="Docker" width={80} height={80} />
                         <Image src='/icons/kubernetes.svg' className="tech-icon" alt="Kubernetes" title="Kubernetes" width={80} height={80} />
-                        <Image src='/icons/redis.svg' className="tech-icon" alt="Redis" title="Redis" width={90} height={90} />
-                        <Image src='/icons/apachekafka.svg' className="tech-icon" alt="ApacheKafka" title="Apache Kafka" width={120} height={120} />
-                        <Image src='/icons/nginx.svg' className="tech-icon" alt="Nginx" title="Nginx" width={120} height={120} />
+                        <Image src='/icons/redis.svg' className="tech-icon" alt="Redis" title="Redis" width={80} height={80} />
+                        <Image src='/icons/apachekafka.svg' className="tech-icon" alt="ApacheKafka" title="Apache Kafka" width={80} height={80} />
+                        <Image src='/icons/nginx.svg' className="tech-icon" alt="Nginx" title="Nginx" width={80} height={80} />
+                    </div>
+                </div>
+                <div className="row mt-4 pb-4">
+                    <div className="col-12 text-center">
+                        <div className="sub-section-title">AI &amp; Automation</div>
+                        {['OpenAI API', 'Gemini API', 'Vertex AI', 'LangChain', 'N8N', 'Google ADK', 'Google MCP'].map((tool) => (
+                            <span key={tool} className="ai-tool-pill">{tool}</span>
+                        ))}
                     </div>
                 </div>
             </div>

@@ -1,0 +1,44 @@
+# Savan Padaliya
+
+> Full Stack AI Engineer specializing in AI integrations, scalable Node.js backend systems, and SaaS development. Available for freelance, consulting, and full-time opportunities.
+
+Savan Padaliya is a Full Stack AI Engineer with 4+ years of experience building intelligent web applications, AI automation pipelines, and production-grade SaaS products. He integrates OpenAI, Gemini, Vertex AI, LangChain, and N8N into real-world products — from WhatsApp AI chatbots to SEO/AEO/GEO optimization bots.
+
+## About
+
+- Full name: Savan Padaliya
+- Role: Full Stack AI Engineer
+- Experience: 4+ years in JavaScript, Node.js, and AI integrations
+- Community: GDG (Google Developer Group) Organiser
+- Website: https://www.savanpadaliya.com
+- LinkedIn: https://www.linkedin.com/in/savanpadaliya/
+- Twitter: https://twitter.com/padaliya_savan
+
+## Services
+
+- [Web & Backend Development](https://www.savanpadaliya.com/): Scalable Node.js APIs, microservices, and full-stack web applications built for production
+- [AI Integrations](https://www.savanpadaliya.com/): Chatbots, automation pipelines, and LLM-powered features using OpenAI, Gemini, and LangChain
+- [SaaS Development](https://www.savanpadaliya.com/): End-to-end SaaS product development with AI capabilities baked in
+- [Technical Consulting](https://www.savanpadaliya.com/about/): Expert guidance on software architecture, AI adoption, and technology strategy
+
+## Tech Stack
+
+- Languages & Frameworks: JavaScript, TypeScript, Node.js, React, Angular, Next.js, Express.js
+- AI & Automation: OpenAI API, Gemini API, Vertex AI, LangChain, N8N, Google ADK, Google MCP
+- Databases: MongoDB, MySQL, PostgreSQL, Redis
+- Cloud: AWS, Google Cloud, Azure, DigitalOcean
+- DevOps: Docker, Kubernetes, Nginx, Apache Kafka
+
+## Blog Posts
+
+- [RAG Architecture for JavaScript Developers](https://www.savanpadaliya.com/blogs/rag-architecture-for-javascript-developers/): A practical guide to building Retrieval Augmented Generation pipelines using JavaScript, LangChain.js, and OpenAI — with working Node.js code examples.
+- [Vertex AI Setup for Node.js Apps](https://www.savanpadaliya.com/blogs/vertex-ai-setup-for-nodejs-apps/): Step-by-step guide to integrating Google Vertex AI into Node.js — from project setup and authentication to making your first generative AI call.
+- [OpenAI vs Vertex AI for Production SaaS](https://www.savanpadaliya.com/blogs/openai-vs-vertex-ai-for-production-saas/): Practical comparison of OpenAI and Vertex AI for teams building production SaaS — covering cost, reliability, model quality, latency, and vendor lock-in.
+- [How to Monitor AI Pipelines in Production](https://www.savanpadaliya.com/blogs/how-to-monitor-ai-pipelines-in-production/): How to monitor LLM-powered applications — tracking latency, token usage, error rates, and hallucinations using practical tools and strategies.
+- [Setting Up AI Workloads on Google Cloud](https://www.savanpadaliya.com/blogs/google-cloud-ai-setup-guide/): Beginner's guide to setting up AI workloads on Google Cloud — AutoML, Cloud Functions, Cloud Run, and Vertex AI.
+- [JavaScript vs TypeScript: The Dilemma](https://www.savanpadaliya.com/blogs/type-or-not-to-type-the-javascript-vs-typescript-dilemma/): Comprehensive comparison of JavaScript and TypeScript — advantages, disadvantages, and when to use each.
+
+## Optional
+
+- [Full content version](https://www.savanpadaliya.com/llms-full.txt)
+- [Sitemap](https://www.savanpadaliya.com/sitemap.xml)

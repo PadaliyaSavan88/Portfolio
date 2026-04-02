@@ -6,6 +6,9 @@ export default function Document() {
     <Html lang="en">
       <Head >
         <Script src='/js/script.js'></Script>
+        {/* LLM discovery links for GEO/AEO */}
+        <link rel="llms" href="https://www.savanpadaliya.com/llms.txt" />
+        <link rel="llms-full" href="https://www.savanpadaliya.com/llms-full.txt" />
         {/* <link ref='stylesheets' src='bootstrap/dist/css/bootstrap.css' /> */}
       </Head>
       <body>

@@ -1,9 +1,28 @@
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
+import { useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 import PostHeader from './post-header';
+
+function PostImage({ src, alt }) {
+  const [error, setError] = useState(false);
+  if (error) return null;
+  return (
+    <div>
+      <Image
+        src={src}
+        alt={alt}
+        width={950}
+        height={600}
+        style={{ width: '100%', height: 'auto' }}
+        onError={() => setError(true)}
+      />
+      <br />
+    </div>
+  );
+}
 
 function PostContent(props) {
     const {post} = props;
@@ -27,18 +46,11 @@ function PostContent(props) {
         
         if (node.children[0].tagName === 'img') {
           const image = node.children[0];
-  
           return (
-            <div>
-              <Image
-                src={`/images/posts/${image.properties.src}`}
-                alt={image.alt}
-                width={950}
-                height={600}
-                style={{ width: '100%', height: 'auto' }}
-              />
-              <br />
-            </div>
+            <PostImage
+              src={`/images/posts/${image.properties.src}`}
+              alt={image.properties.alt || ''}
+            />
           );
         }
   
@@ -47,7 +59,10 @@ function PostContent(props) {
   
       code(code) {
         const { className, children } = code;
-        const language = className.split('-')[1]; // className is something like language-js => We need the "js" part here
+        if (!className) {
+          return <code>{children}</code>;
+        }
+        const language = className.split('-')[1];
         return (
           <SyntaxHighlighter
             style={atomDark}
