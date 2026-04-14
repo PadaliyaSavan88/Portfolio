@@ -34,5 +34,6 @@ jobs:
             git fetch origin master &&
             git reset --hard origin/master &&
             npm install &&
-            npm run build
+            npm run build &&
+            pm2 restart my-next-app
           "
