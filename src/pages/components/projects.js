@@ -1,3 +1,26 @@
+const projects = [
+    {
+        title: "WhatsApp AI Chatbot",
+        text: "Built an AI-powered WhatsApp automation bot for customer support and lead qualification. Uses N8N for workflow orchestration with OpenAI for natural language understanding.",
+        tags: ["N8N", "OpenAI API", "Node.js", "WhatsApp API"]
+    },
+    {
+        title: "AI Website Optimizer",
+        text: "Developed an intelligent bot that audits websites and suggests actionable changes for SEO, AEO, and GEO compatibility, helping businesses rank better in AI-powered search engines.",
+        tags: ["LangChain", "OpenAI API", "Node.js", "Gemini API"]
+    },
+    {
+        title: "Video Streaming Platform",
+        text: "Streaming platform for full-length movies with actor, director, and genre-based search. Integrated Apache Kafka for real-time data streaming and smooth playback.",
+        tags: ["React", "Node.js", "Kafka", "Redis"]
+    },
+    {
+        title: "E-commerce Platform",
+        text: "Built a full-featured e-commerce website for stationery products with category-based browsing, multiple product images, and Stripe as the payment gateway.",
+        tags: ["React", "Node.js", "Stripe", "MongoDB"]
+    }
+];
+
 export default function Projects() {
     return (
         <div className="dark-section" id="portfolio">
@@ -5,39 +28,20 @@ export default function Projects() {
                 <div className="section-title">
                     <h2>The Projects I&apos;ve Shaped and Strengthened</h2>
                 </div>
-                <div className="cards-section row">
-                    <div className="basic-card basic-card-light col-md-3">
-                        <div className="card-content">
-                            <span className="card-title">E-commerce</span>
-                            <p className="card-text">
-                                Created an e-commerce website for a stationary products, where several produts where displayed catagory wise, along with multiple images. Used a Stripe as a payment gateway.
-                            </p>
+                <div className="row g-4 pb-4">
+                    {projects.map((p) => (
+                        <div key={p.title} className="col-md-6 d-flex">
+                            <div className="project-card w-100">
+                                <span className="card-title">{p.title}</span>
+                                <p className="card-text">{p.text}</p>
+                                <div className="project-tags">
+                                    {p.tags.map((tag) => (
+                                        <span key={tag} className="project-tag">{tag}</span>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div className="basic-card basic-card-light col-md-3">
-                        <div className="card-content">
-                            <span className="card-title">Story Writing</span>
-                            <p className="card-text">
-                                It was a SaaS product where author can write a story books that can chapterwise or a chapter less. User can see the books written by authours and buy whole book or can buy a specific chapter.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="basic-card basic-card-light col-md-3">
-                        <div className="card-content col-md-12">
-                            <span className="card-title">Video Streaming</span>
-                            <p className="card-text">
-                                Created a application to stream videos on the platform. Whole movies can be streamed there, user can search videos on the basis of actors, directors, genere. Integrated a Kafka data streaming to smooth video streaming
-                            </p>
-                        </div>
-                    </div>
-                    <div className="basic-card basic-card-light col-md-3">
-                        <div className="card-content">
-                            <span className="card-title">On-demand Services</span>
-                            <p className="card-text">
-                                Contributed to a on-demand services where user can book cabs, order food from registered stores, can book blue collar services, where GoogleMaps were integrated.
-                            </p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>

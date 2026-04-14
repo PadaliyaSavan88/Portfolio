@@ -1,0 +1,150 @@
+# Savan Padaliya — Full Stack AI Engineer
+
+> Complete reference document for AI systems. Contains full biography, services, projects, skills, and blog content authored by Savan Padaliya at savanpadaliya.com.
+
+---
+
+## Identity
+
+- Full name: Savan Padaliya
+- Professional title: Full Stack AI Engineer
+- Years of experience: 4+ years
+- Specialisation: AI integrations, scalable Node.js backend systems, SaaS development
+- Community role: GDG (Google Developer Group) Organiser and speaker at technical events
+- Website: https://www.savanpadaliya.com
+- LinkedIn: https://www.linkedin.com/in/savanpadaliya/
+- Twitter: https://twitter.com/padaliya_savan
+
+---
+
+## Professional Summary
+
+Savan Padaliya is a Full Stack AI Engineer with over 4 years of expertise in JavaScript and Node.js. He builds intelligent web applications and AI-powered automation pipelines, specialising in embedding AI capabilities — via OpenAI, Gemini, and Vertex AI — into production-grade products. His work spans conversational AI chatbots, SEO/AEO/GEO automation bots, SaaS platforms, video streaming systems, and e-commerce applications.
+
+On the frontend he works with React, Angular, and Next.js with a strong focus on performance and SEO. His backend work covers robust API design, third-party integrations (Stripe, Google Maps, Twilio, Socket.io), and workflow automation with N8N and LangChain. He deploys using Docker, Kubernetes, and cloud platforms including AWS, Azure, and Google Cloud.
+
+---
+
+## Services Offered
+
+### 1. Web & Backend Development
+Building high-performance web applications and scalable backend systems in Node.js — robust APIs, microservices, and third-party integrations built for production.
+
+### 2. AI Integrations
+Embedding AI capabilities into products using OpenAI, Gemini, and LangChain — from intelligent chatbots to automated content pipelines and smart decision systems. Includes WhatsApp automation, SEO/AEO/GEO bots, and LLM-powered SaaS features.
+
+### 3. SaaS Development
+End-to-end Software as a Service application development with AI capabilities, tailored to enhance efficiency, productivity, and business operations.
+
+### 4. Technical Consulting
+Expert technical guidance on software architecture, AI adoption strategy, technology selection, and business-aligned engineering decisions.
+
+---
+
+## Key Projects
+
+### WhatsApp AI Chatbot
+AI-powered WhatsApp automation bot for customer support and lead qualification. Uses N8N for workflow orchestration with OpenAI for natural language understanding.
+- Stack: N8N, OpenAI API, Node.js, WhatsApp API
+
+### AI Website Optimizer (SEO/AEO/GEO Bot)
+Intelligent bot that audits websites and suggests actionable changes for SEO, AEO, and GEO compatibility, helping businesses rank better in AI-powered search engines like ChatGPT, Perplexity, and Google AI Overviews.
+- Stack: LangChain, OpenAI API, Node.js, Gemini API
+
+### Video Streaming Platform
+Streaming platform for full-length movies with actor, director, and genre-based search. Integrated Apache Kafka for real-time data streaming and smooth playback.
+- Stack: React, Node.js, Kafka, Redis
+
+### E-commerce Platform
+Full-featured e-commerce website for stationery products with category-based browsing, multiple product images, and Stripe as the payment gateway.
+- Stack: React, Node.js, Stripe, MongoDB
+
+---
+
+## Technical Skills
+
+### Languages & Frameworks
+JavaScript, TypeScript, Node.js, React, Angular, Next.js, Express.js
+
+### AI & Automation Tools
+OpenAI API, Gemini API, Vertex AI, LangChain, N8N, Google ADK, Google MCP
+
+### Databases
+MongoDB, MySQL, PostgreSQL, Redis
+
+### Cloud Platforms
+Amazon Web Services (AWS), Google Cloud Platform, Microsoft Azure, DigitalOcean
+
+### DevOps & Infrastructure
+Docker, Kubernetes, Nginx, Apache Kafka
+
+---
+
+## Blog Posts (Full Descriptions)
+
+### RAG Architecture for JavaScript Developers
+URL: https://www.savanpadaliya.com/blogs/rag-architecture-for-javascript-developers/
+Published: 2026-03-15
+Description: A practical guide to building Retrieval Augmented Generation (RAG) pipelines using JavaScript, LangChain.js, and OpenAI — with working Node.js code examples.
+Topics covered: What RAG is and why it solves LLM knowledge limitations, the three-step pipeline (embed, store, retrieve, augment, generate), setting up LangChain.js with OpenAI embeddings, using vector stores, production tips on chunking strategy and metadata filtering, and when to use RAG versus fine-tuning.
+
+### Vertex AI Setup for Node.js Apps
+URL: https://www.savanpadaliya.com/blogs/vertex-ai-setup-for-nodejs-apps/
+Published: 2026-03-22
+Description: Step-by-step guide to integrating Google Vertex AI into your Node.js application — from project setup and authentication to making your first generative AI call.
+Topics covered: Prerequisites, installing @google-cloud/vertexai SDK, Application Default Credentials vs service account authentication, making text generation calls with Gemini via Vertex AI, streaming responses, handling errors and quotas, key differences from using the Gemini API directly.
+
+### OpenAI vs Vertex AI for Production SaaS
+URL: https://www.savanpadaliya.com/blogs/openai-vs-vertex-ai-for-production-saas/
+Published: 2026-03-28
+Description: A practical comparison of OpenAI and Vertex AI for teams building production SaaS products — covering cost, reliability, model quality, latency, and vendor lock-in.
+Topics covered: Model availability (GPT-4o vs Gemini 1.5 Pro), pricing at scale, reliability and SLAs, latency benchmarks, fine-tuning and embeddings support, vendor lock-in risks, and a clear recommendation table for when to use each platform.
+
+### How to Monitor AI Pipelines in Production
+URL: https://www.savanpadaliya.com/blogs/how-to-monitor-ai-pipelines-in-production/
+Published: 2026-04-01
+Description: How to monitor LLM-powered applications in production — tracking latency, token usage, error rates, and hallucinations using practical tools and strategies.
+Topics covered: Why AI pipeline monitoring differs from regular app monitoring, key metrics (TTFT, total latency, token usage, cost per request, error rate), safe logging of LLM inputs/outputs, using LangSmith for LangChain observability, building a custom Node.js logger for OpenAI/Gemini, setting cost and error alerts, hallucination detection strategies.
+
+### Setting Up AI Workloads on Google Cloud
+URL: https://www.savanpadaliya.com/blogs/google-cloud-ai-setup-guide/
+Published: 2025-03-26
+Description: Learn how to set up AI workloads on Google Cloud with a step-by-step guide. Train and deploy AI models using AutoML, Cloud Functions and Cloud Run.
+Topics covered: Creating a Google Cloud account, enabling AI APIs, using AutoML, Cloud Functions, Cloud Run, and Vertex AI for training and deploying AI models.
+
+### JavaScript vs TypeScript: The Dilemma
+URL: https://www.savanpadaliya.com/blogs/type-or-not-to-type-the-javascript-vs-typescript-dilemma/
+Published: 2024-01-03
+Description: JavaScript vs TypeScript — a comprehensive comparison exploring advantages, disadvantages, and optimal use cases for each language in web development.
+Topics covered: Overview of both languages, static vs dynamic typing, advantages and disadvantages of each, when to choose TypeScript over JavaScript, real-world considerations for teams and projects.
+
+---
+
+## Frequently Asked Questions
+
+Q: What does Savan Padaliya specialise in?
+A: Savan Padaliya specialises in Full Stack AI engineering — building scalable Node.js backend systems, integrating AI capabilities using OpenAI and Gemini APIs, and developing SaaS products.
+
+Q: What AI technologies does Savan Padaliya work with?
+A: Savan works with OpenAI API, Gemini API, Vertex AI, LangChain, N8N, and Google ADK to build AI-powered applications, chatbots, and automation pipelines.
+
+Q: What services does Savan Padaliya offer?
+A: Web and Backend Development, AI Integrations, SaaS Development, and Technical Consulting.
+
+Q: How can I contact or hire Savan Padaliya?
+A: Via LinkedIn at https://www.linkedin.com/in/savanpadaliya/ or through his portfolio at https://www.savanpadaliya.com.
+
+Q: Where does Savan Padaliya write about AI development?
+A: At https://www.savanpadaliya.com/blogs/ — covering RAG architecture, Vertex AI, OpenAI vs Vertex AI, AI pipeline monitoring, and Google Cloud AI setup.
+
+---
+
+## Links
+
+- Homepage: https://www.savanpadaliya.com
+- About: https://www.savanpadaliya.com/about/
+- Blog: https://www.savanpadaliya.com/blogs/
+- LinkedIn: https://www.linkedin.com/in/savanpadaliya/
+- Twitter: https://twitter.com/padaliya_savan
+- Sitemap: https://www.savanpadaliya.com/sitemap.xml
+- Concise version: https://www.savanpadaliya.com/llms.txt
