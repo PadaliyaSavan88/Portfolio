@@ -24,12 +24,15 @@ jobs:
           SERVER_IP: ${{ secrets.SERVER_IP }}
           APP_DIR: ${{ secrets.APP_DIR }}
         run: |
-          ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "bash -lc '
-          cd $APP_DIR &&
-          node -v &&
-          git remote set-url origin git@github.com:PadaliyaSavan88/Portfolio.git &&
-          git fetch origin master &&
-          git reset --hard origin/master &&
-          npm install &&
-          npm run build
-          '"
+          ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "
+            export NVM_DIR=\"\$HOME/.nvm\"
+            [ -s \"\$NVM_DIR/nvm.sh\" ] && . \"\$NVM_DIR/nvm.sh\"
+            cd $APP_DIR &&
+            node -v &&
+            npm -v &&
+            git remote set-url origin git@github.com:PadaliyaSavan88/Portfolio.git &&
+            git fetch origin master &&
+            git reset --hard origin/master &&
+            npm install &&
+            npm run build
+          "
