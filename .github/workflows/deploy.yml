@@ -28,7 +28,8 @@ jobs:
           cd $APP_DIR &&
           node -v &&
           git remote set-url origin git@github.com:PadaliyaSavan88/Portfolio.git &&
-          git pull origin master &&
+          git fetch origin master &&
+          git reset --hard origin/master &&
           npm install &&
           npm run build
           "
