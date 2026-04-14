@@ -24,7 +24,7 @@ jobs:
           SERVER_IP: ${{ secrets.SERVER_IP }}
           APP_DIR: ${{ secrets.APP_DIR }}
         run: |
-          ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "
+          ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_IP "bash -lc '
           cd $APP_DIR &&
           node -v &&
           git remote set-url origin git@github.com:PadaliyaSavan88/Portfolio.git &&
@@ -32,4 +32,4 @@ jobs:
           git reset --hard origin/master &&
           npm install &&
           npm run build
-          "
+          '"
