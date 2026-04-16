@@ -1,6 +1,6 @@
 ---
 title: 'Type or Not to Type: The JavaScript vs TypeScript Dilemma'
-date: '03-01-2024'
+date: '2024-01-03'
 image: 'images/JavaScriptvsTypeScript.jpg'
 imageName: 'JavaScriptvsTypeScript.jpg'
 author: 'Savan Padaliya'

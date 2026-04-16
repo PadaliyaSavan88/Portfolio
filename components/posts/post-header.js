@@ -1,28 +1,35 @@
-import Image from 'next/image';
+function formatDate(dateStr) {
+  const date = new Date(dateStr + 'T00:00:00');
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
 
-function PostHeader(props) {
-  const { title, image, author, date } = props.data;
+function getReadingTime(content) {
+  if (!content) return 1;
+  const words = content.trim().split(/\s+/).length;
+  return Math.max(1, Math.ceil(words / 200));
+}
+
+function PostHeader({ data }) {
+  const { title, author, date, content } = data;
+  const readingTime = getReadingTime(content);
 
   return (
-    <header>
-          {/* <div className="border-bottom border-3 my-3 align-items-center justify-content-center text-wrap">
-              <ol className="breadcrumb">
-                  <li className="breadcrumb-item"><a href="#">Home</a></li>
-                  <li className="breadcrumb-item"><a href="#">Library</a></li>
-                  <li className="breadcrumb-item active" aria-current="page">Data</li>
-              </ol>
-          </div> */}
-          <div id="blog-header my-2">
-              <div className="h1">
-                <h1>{title}</h1>
-              </div>
-              <div className="fw-light lh-1 fs-6">
-                <blockquote className="text-muted">
-                  Written By <a href="https://www.linkedin.com/in/savanpadaliya/" target='_blank'>{author}</a> on {date}
-                </blockquote>
-              </div>
-            </div>
-            <br />
+    <header className="post-header">
+      <h1 className="post-header-title">{title}</h1>
+      <div className="post-header-meta">
+        <a
+          href="https://www.linkedin.com/in/savanpadaliya/"
+          target="_blank"
+          rel="noreferrer"
+          className="post-header-author"
+        >
+          {author}
+        </a>
+        <span className="post-meta-dot" aria-hidden="true">·</span>
+        <span className="post-header-date">{formatDate(date)}</span>
+        <span className="post-meta-dot" aria-hidden="true">·</span>
+        <span className="post-header-reading-time">{readingTime} min read</span>
+      </div>
     </header>
   );
 }

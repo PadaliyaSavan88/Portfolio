@@ -1,9 +1,8 @@
-import Link from "next/link";
-import Image from "next/image";
-
 export default function Contact() {
+    const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "#";
+
     return (
-        <section className="contact-section" id="contact" aria-label="Contact Savan Padaliya">
+        <section className="contact-section" id="contact" aria-label="Book a call with Savan Padaliya">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -22,43 +21,32 @@ export default function Contact() {
                 }}
             />
             <div className="container">
-                <div className="section-title">
-                    <h2>Let&apos;s Connect</h2>
-                </div>
                 <div className="row justify-content-center">
                     <div className="col-lg-7 text-center">
+                        <p className="contact-eyebrow">Ready to work together?</p>
+                        <h2 className="contact-heading">Let&apos;s talk about your project.</h2>
                         <p className="contact-intro">
-                            Have a project in mind, want to discuss AI integrations, or just want to say hello?
-                            I&apos;m open to freelance work, consulting, and full-time opportunities.
+                            Book a free 30-minute call. We&apos;ll talk through what you&apos;re building,
+                            whether I&apos;m the right fit, and what a first week together could look like.
                         </p>
-                        <div className="contact-links mt-4">
-                            <a
-                                href="https://www.linkedin.com/in/savanpadaliya/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="btn-primary-custom me-3"
-                            >
-                                Connect on LinkedIn
-                            </a>
-                            <a
-                                href="https://twitter.com/padaliya_savan"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="btn-outline-custom"
-                            >
-                                Follow on Twitter
-                            </a>
-                        </div>
+                        <a
+                            href={calendlyUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="btn-primary-custom contact-cta-btn"
+                        >
+                            Book a Free Call
+                        </a>
                         <p className="contact-note mt-4">
-                            Prefer email? Drop a message via{" "}
+                            Prefer to message first?{" "}
                             <a
                                 href="https://www.linkedin.com/in/savanpadaliya/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                LinkedIn DM
+                                Send a LinkedIn DM
                             </a>{" "}
-                            and I&apos;ll get back to you within 24 hours.
+                            — I reply within 24 hours.
                         </p>
                     </div>
                 </div>

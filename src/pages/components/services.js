@@ -1,23 +1,27 @@
 const services = [
     {
         num: "01",
-        title: "Web & Backend Development",
-        text: "Crafting high-performance web applications and scalable backend systems in Node.js — robust APIs, microservices, and third-party integrations built for production."
+        title: "Full Stack Development",
+        for: "For startups & product teams",
+        text: "Need features shipped fast without cutting corners? I build production-grade web apps and APIs in Node.js and React — clean architecture, real test coverage, ready to scale."
     },
     {
         num: "02",
-        title: "AI Integrations",
-        text: "Embedding AI capabilities into your products using OpenAI, Gemini, and LangChain — from intelligent chatbots to automated content pipelines and smart decision systems."
+        title: "AI Integration",
+        for: "For teams adding intelligence",
+        text: "Add AI capabilities your users will actually notice — smart chatbots, document processing, automated workflows, and LLM pipelines using OpenAI, Gemini, and LangChain."
     },
     {
         num: "03",
-        title: "SaaS Development",
-        text: "Revolutionize your workflow with scalable Software as a Service applications, tailored to enhance efficiency, productivity, and business operations."
+        title: "Rapid Prototyping",
+        for: "For founders validating ideas",
+        text: "Don't spend months building before you know it works. I'll prototype your core idea in days — real working software you can test with users and pitch to investors."
     },
     {
         num: "04",
         title: "Technical Consulting",
-        text: "Adapting to your unique needs, I offer expert technical guidance ensuring each solution aligns perfectly with your vision, goals, and business requirements."
+        for: "For businesses that need clarity",
+        text: "Architecture review, tech stack decisions, AI adoption strategy — senior-level thinking without the senior hire. I'll tell you what to build, what to skip, and why."
     }
 ];
 
@@ -27,6 +31,7 @@ export default function Services() {
             <div className="container">
                 <div className="section-title">
                     <h2>What I Do</h2>
+                    <p className="section-subtitle">Pick the engagement that fits where you are right now.</p>
                 </div>
                 <div className="row g-4 pb-4">
                     {services.map((s) => (
@@ -34,6 +39,7 @@ export default function Services() {
                             <div className="service-card w-100">
                                 <div className="service-card-num">{s.num}</div>
                                 <span className="card-title">{s.title}</span>
+                                <span className="service-card-for">{s.for}</span>
                                 <p className="card-text">{s.text}</p>
                             </div>
                         </div>
@@ -41,5 +47,5 @@ export default function Services() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
