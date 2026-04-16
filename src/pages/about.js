@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "./components/footer";
 import Headers from "./components/header";
+import Link from "next/link";
 
 const chapters = [
     {
@@ -46,7 +47,7 @@ const principles = [
 ];
 
 export default function About() {
-    const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "#";
+    const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/padaliyasavan/30min";
 
     return (
         <>
@@ -265,20 +266,20 @@ export default function About() {
                                 Book a free 30-minute call. No pitch, no pressure —
                                 just a conversation about what you&apos;re building.
                             </p>
-                            <a
+                            <Link
                                 href={calendlyUrl}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="btn-primary-custom me-3"
                             >
                                 Book a Free Call
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="/#portfolio"
                                 className="btn-outline-custom"
                             >
                                 View My Work
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
