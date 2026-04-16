@@ -24,9 +24,14 @@ export function getSortedPostsData() {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
+    // Calculate reading time
+    const wordCount = matterResult.content.trim().split(/\s+/).length;
+    const readingTime = Math.max(1, Math.ceil(wordCount / 200));
+
     // Combine the data with the id
     return {
       id,
+      readingTime,
       ...matterResult.data,
     };
   });

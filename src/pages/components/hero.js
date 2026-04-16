@@ -1,20 +1,32 @@
 import Link from "next/link";
 
 export default function Hero() {
+    const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "#";
+
     return (
         <div className="container hero-section" id="home">
             <div className="row align-items-center">
                 <div className="col-md-6 d-flex align-items-center">
                     <div className="hero-text">
-                        <p className="hero-greeting">Hi, I&apos;m</p>
+                        <p className="hero-greeting">Senior Full Stack Developer</p>
                         <h1 className="hero-name">Savan Padaliya</h1>
-                        <p className="hero-subtitle">Full Stack AI Engineer</p>
+                        <p className="hero-subtitle">I ship faster with AI.</p>
                         <p className="hero-desc">
-                            Building scalable backend systems in Node.js, intelligent web apps, and AI automation pipelines powered by OpenAI, Gemini, and LangChain.
+                            Got an idea, a backlog, or a broken system? I turn it into
+                            working software — using AI to move at a speed your team will notice.
                         </p>
                         <div className="hero-actions mt-4">
-                            <Link href="/#portfolio" className="btn-primary-custom me-3">View My Work</Link>
-                            <Link href="https://www.linkedin.com/in/savanpadaliya/" target="_blank" rel="noreferrer" className="btn-outline-custom">Get In Touch</Link>
+                            <a
+                                href={calendlyUrl}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="btn-primary-custom me-3"
+                            >
+                                Book a Free Call
+                            </a>
+                            <Link href="/#portfolio" className="btn-outline-custom">
+                                View My Work
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -23,5 +35,5 @@ export default function Hero() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

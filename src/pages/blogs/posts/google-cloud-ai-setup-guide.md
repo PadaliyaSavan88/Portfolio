@@ -1,6 +1,6 @@
 ---
 title: 'Setting Up AI Workloads on Google Cloud – Beginner’s Guide'
-date: '26-03-2025'
+date: '2025-03-26'
 image: 'images/SettingupGoogleAI.jpg'
 imageName: 'SettingupGoogleAI.jpg'
 author: 'Savan Padaliya'
