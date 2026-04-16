@@ -1536,6 +1536,96 @@ html {
 }
 
 /* Contact section updates */
+/* Booking cards */
+.booking-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.booking-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+.booking-card-primary {
+  border-top: 3px solid #3081D0;
+}
+
+.booking-card-secondary {
+  border-top: 3px solid #508D69;
+}
+
+.booking-card-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #3081D0;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 20px;
+  padding: 0.2rem 0.65rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.booking-card-tag-green {
+  color: #508D69;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.booking-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+}
+
+.booking-card-desc {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.booking-card-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
+
+.booking-card-points li {
+  font-size: 0.875rem;
+  color: #374151;
+  padding: 0.3rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.booking-card-points li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #508D69;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.booking-card-btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
 .contact-eyebrow {
   font-size: 0.75rem;
   font-weight: 700;
