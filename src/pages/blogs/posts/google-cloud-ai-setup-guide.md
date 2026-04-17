@@ -32,7 +32,7 @@ To work with AI models, we need to enable **Google AI APIs**:
 
 1. Navigate to **APIs & Services > Library** in the Google Cloud Console.
 2. Search and enable the following APIs:
-    - Vertex AI API
+    - [Vertex AI API](/blogs/vertex-ai-setup-for-nodejs-apps) (see the Node.js integration guide once enabled)
     - AutoML API
     - Cloud Vision API (for image recognition)
     - Cloud Natural Language API (for text processing)
@@ -101,5 +101,7 @@ You’ve now successfully set up **AI workloads on Google Cloud**! 🚀
 #### **What’s Next?**
 
 - **Check out my [Medium article](https://padaliyasavan.medium.com/getting-started-with-ai-on-google-cloud-a-beginners-guide-eb8bb941ae8c) on AI in Google Cloud** for a beginner-friendly introduction.
+- **Integrate Vertex AI into your Node.js app** — follow the [Vertex AI Setup for Node.js Apps](/blogs/vertex-ai-setup-for-nodejs-apps) guide for a step-by-step walkthrough.
+- **Not sure whether to pick Vertex AI or OpenAI?** Read [OpenAI vs Vertex AI for Production SaaS](/blogs/openai-vs-vertex-ai-for-production-saas) before committing.
 - **Explore Google Cloud AI documentation** here.
 - **Start experimenting with AI models and integrations** in your SaaS applications.

@@ -1,6 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
@@ -75,14 +76,22 @@ function AuthorCTA() {
           Senior Full Stack Developer who ships faster with AI.
           Available for freelance, consulting, and project work.
         </p>
-        <a
-          href={calendlyUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="btn-primary-custom author-cta-btn"
-        >
-          Book a Free Call
-        </a>
+        <div className="author-cta-actions">
+          <a
+            href={calendlyUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-primary-custom author-cta-btn"
+          >
+            Book a Free Call
+          </a>
+          <Link
+            href="/#services"
+            className="author-cta-services-link"
+          >
+            View Services →
+          </Link>
+        </div>
       </div>
     </div>
   );

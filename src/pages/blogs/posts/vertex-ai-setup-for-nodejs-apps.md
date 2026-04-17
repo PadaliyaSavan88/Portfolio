@@ -9,11 +9,13 @@ keyword: 'Vertex AI, Node.js, Google Cloud, AI integration, generative AI, @goog
 ---
 
 
-Google Vertex AI gives you access to Gemini and other Google foundation models through a managed, enterprise-grade API — with better SLAs, regional data residency options, and tighter Google Cloud integration than the public Gemini API. If you're building a production SaaS product on GCP, Vertex AI is worth the extra setup effort. This guide walks you through the full process.
+Google Vertex AI gives you access to Gemini and other Google foundation models through a managed, enterprise-grade API — with better SLAs, regional data residency options, and tighter Google Cloud integration than the public Gemini API. If you're building a production SaaS product on GCP, Vertex AI is worth the extra setup effort — see [OpenAI vs Vertex AI](/blogs/openai-vs-vertex-ai-for-production-saas) for a full production comparison if you haven't chosen a provider yet. This guide walks you through the full setup.
 
 ## Prerequisites
 
 Before writing a single line of code, make sure you have:
+
+> New to Google Cloud entirely? Start with [Setting Up AI Workloads on Google Cloud](/blogs/google-cloud-ai-setup-guide) to create your project and enable the required APIs first.
 
 - A **Google Cloud Project** with billing enabled
 - The **Vertex AI API** enabled (search "Vertex AI API" in the GCP console and click Enable)
@@ -196,3 +198,5 @@ To increase quotas, go to IAM & Admin > Quotas in the GCP console and request an
 | Setup complexity | Higher | Low |
 
 For a hobby project or prototype, the direct Gemini API is faster to set up. For anything you're putting in front of real users or handling sensitive data, Vertex AI's enterprise controls make the extra setup worthwhile.
+
+Once your integration is live, the next step is observability — tracking latency, token costs, and error rates before they become incidents. See [How to Monitor AI Pipelines in Production](/blogs/how-to-monitor-ai-pipelines-in-production) for a Node.js-first guide to instrumenting your Vertex AI calls.

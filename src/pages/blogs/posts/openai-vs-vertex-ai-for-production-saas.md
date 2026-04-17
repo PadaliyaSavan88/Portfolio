@@ -72,7 +72,7 @@ If you're building a real-time chat interface, always stream. If you're running 
 
 **Vertex AI fine-tuning**: Supports supervised fine-tuning for Gemini models. Slightly more infrastructure to set up, but the fine-tuned models run on the same managed infrastructure with enterprise controls. Also supports RLHF and distillation for specialized use cases.
 
-**Embeddings**: Both offer high-quality embedding models. OpenAI's `text-embedding-3-large` outperforms Google's on some benchmarks, but for most production RAG pipelines the quality difference is not the bottleneck — your chunking strategy and retrieval logic matter more.
+**Embeddings**: Both offer high-quality embedding models. OpenAI's `text-embedding-3-large` outperforms Google's on some benchmarks, but for most [production RAG pipelines](/blogs/rag-architecture-for-javascript-developers) the quality difference is not the bottleneck — your chunking strategy and retrieval logic matter more.
 
 ## Vendor Lock-in Risks and Mitigation
 
@@ -99,14 +99,14 @@ class VertexAIClient extends LLMClient {
 }
 ```
 
-LangChain.js takes this further — it provides a unified interface over both providers, so switching backends is a one-line config change. For greenfield projects, building on LangChain from the start reduces future migration cost significantly.
+[LangChain.js](/blogs/rag-architecture-for-javascript-developers) takes this further — it provides a unified interface over both providers, so switching backends is a one-line config change. For greenfield projects, building on LangChain from the start reduces future migration cost significantly.
 
 ## When to Use Which: Decision Table
 
 | Situation | Recommendation |
 |---|---|
 | Prototype / MVP | OpenAI — faster DX, better ecosystem |
-| Already on GCP | Vertex AI — better integration, IAM, billing consolidation |
+| Already on GCP | [Vertex AI](/blogs/vertex-ai-setup-for-nodejs-apps) — better integration, IAM, billing consolidation |
 | EU data residency required | Vertex AI — supports europe-west4 |
 | Need formal SLA | Vertex AI |
 | 1M+ token context needed | Vertex AI (Gemini 1.5 Pro) |
@@ -119,3 +119,5 @@ LangChain.js takes this further — it provides a unified interface over both pr
 If you're building on AWS or Azure, or you're a small team that needs to move fast, OpenAI wins on developer experience and ecosystem. If you're on GCP, building for enterprise clients, or need compliance controls (SOC 2, HIPAA, data residency), Vertex AI is the better production platform.
 
 Many mature SaaS products end up using both: OpenAI for features where o1's reasoning is worth the premium, and Gemini Flash for high-volume, cost-sensitive tasks. The abstraction layer is worth building early.
+
+Whichever provider you choose, you'll need observability from day one — token costs, latency spikes, and hallucination rates all look fine until they don't. [How to Monitor AI Pipelines in Production](/blogs/how-to-monitor-ai-pipelines-in-production) covers exactly that, with Node.js examples for both OpenAI and Gemini.

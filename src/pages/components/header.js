@@ -32,6 +32,9 @@ export default function Headers() {
                                 <Link href="/#portfolio" className="nav-link">Work</Link>
                             </li>
                             <li className="nav-item">
+                                <Link href="/#services" className="nav-link">Services</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link href="/about" className="nav-link">About</Link>
                             </li>
                             <li className="nav-item">

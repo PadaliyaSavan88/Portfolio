@@ -9,7 +9,7 @@ keyword: 'RAG, Retrieval Augmented Generation, JavaScript, LangChain, OpenAI, No
 ---
 
 
-Large Language Models are impressive, but they have a fundamental problem: they only know what they were trained on. Ask GPT-4 about your internal product documentation, your company's support tickets, or a PDF uploaded last week, and it will either hallucinate or politely tell you it doesn't know. **Retrieval Augmented Generation (RAG)** solves this by grounding LLM responses in your own data — and as a JavaScript developer, you can build a production-ready RAG pipeline with LangChain.js and OpenAI.
+Large Language Models are impressive, but they have a fundamental problem: they only know what they were trained on. Ask GPT-4 about your internal product documentation, your company's support tickets, or a PDF uploaded last week, and it will either hallucinate or politely tell you it doesn't know. **Retrieval Augmented Generation (RAG)** solves this by grounding LLM responses in your own data — and as a JavaScript developer, you can build a production-ready RAG pipeline with LangChain.js and [OpenAI](/blogs/openai-vs-vertex-ai-for-production-saas).
 
 ## What Is RAG and Why Does It Matter?
 
@@ -141,7 +141,7 @@ Setting `temperature: 0` is critical for RAG — you want the model to stay clos
 | Domain-specific reasoning patterns | No | Yes |
 | Low latency, offline inference | No | Yes |
 
-The general rule: **use RAG for knowledge, use fine-tuning for behavior.** In most production SaaS applications, RAG is the right starting point.
+The general rule: **use RAG for knowledge, use fine-tuning for behavior.** In most production SaaS applications, RAG is the right starting point — and [choosing the right LLM provider](/blogs/openai-vs-vertex-ai-for-production-saas) matters more than most teams realise before they hit scale.
 
 ## Production Tips
 
@@ -185,3 +185,5 @@ This prevents a question about billing from retrieving chunks about unrelated to
 For production, consider combining vector search (semantic similarity) with keyword search (BM25). This handles edge cases where the user's query uses exact technical terms that semantic search might miss. Some vector databases like Weaviate and Elasticsearch support this natively.
 
 RAG is one of the most practical AI patterns available today. Once you have the pipeline running, you can power internal knowledge bases, customer support bots, document Q&A tools, and much more — all without retraining a single model.
+
+Once your RAG pipeline is live, the next challenge is knowing when it's working well — and when it isn't. Read [How to Monitor AI Pipelines in Production](/blogs/how-to-monitor-ai-pipelines-in-production) to instrument latency, token costs, and hallucination signals from day one.

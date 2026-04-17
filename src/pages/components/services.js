@@ -27,7 +27,7 @@ const services = [
 
 export default function Services() {
     return (
-        <div className="dark-section">
+        <div className="dark-section" id="services">
             <div className="container">
                 <div className="section-title">
                     <h2>What I Do</h2>
