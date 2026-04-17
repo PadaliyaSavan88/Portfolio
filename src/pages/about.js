@@ -275,10 +275,16 @@ export default function About() {
                                 Book a Free Call
                             </Link>
                             <Link
-                                href="/#portfolio"
+                                href="/#services"
+                                className="btn-outline-custom me-3"
+                            >
+                                View Services
+                            </Link>
+                            <Link
+                                href="/blogs"
                                 className="btn-outline-custom"
                             >
-                                View My Work
+                                Read the Blog
                             </Link>
                         </div>
                     </div>

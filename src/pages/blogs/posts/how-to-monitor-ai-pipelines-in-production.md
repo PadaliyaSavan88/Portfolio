@@ -61,7 +61,7 @@ This is harder to automate but essential:
 
 ## Building a Simple Logger for OpenAI and Gemini
 
-Here's a production-ready logger wrapper for Node.js that captures all the key metrics:
+Here's a production-ready logger wrapper for Node.js that captures all the key metrics (works for both [OpenAI and Vertex AI](/blogs/openai-vs-vertex-ai-for-production-saas)):
 
 ```js
 import OpenAI from 'openai';
@@ -169,7 +169,7 @@ Every call now produces a structured log event with full cost and latency data.
 
 ## LangSmith for LangChain Observability
 
-If you're using LangChain.js, **LangSmith** is the dedicated observability tool and it's worth enabling from day one. It captures every step in your chain — retrieval, prompt construction, LLM call, output parsing — with full inputs and outputs.
+If you're using [LangChain.js](/blogs/rag-architecture-for-javascript-developers), **LangSmith** is the dedicated observability tool and it's worth enabling from day one. It captures every step in your chain — retrieval, prompt construction, LLM call, output parsing — with full inputs and outputs.
 
 Setup takes two environment variables:
 
@@ -186,7 +186,7 @@ That's it. LangChain automatically sends traces to LangSmith. In the LangSmith d
 - Set up automated evaluations to catch regressions
 - Run "playgrounds" to test prompt changes against historical inputs before deploying
 
-For RAG pipelines specifically, LangSmith's trace view shows you exactly which chunks were retrieved and why — invaluable for debugging poor answers.
+For [RAG pipelines](/blogs/rag-architecture-for-javascript-developers) specifically, LangSmith's trace view shows you exactly which chunks were retrieved and why — invaluable for debugging poor answers.
 
 ## Setting Up Alerts
 

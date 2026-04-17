@@ -118,7 +118,7 @@ The best engineers I've worked with don't just know their stack. They understand
 
 That's not a "soft skill." That's senior engineering.
 
-The HOW will always matter. But in a world where AI can generate HOW faster than ever, the engineers who understand WHY and WHAT will be the ones who matter most.
+The HOW will always matter. But in a world where [AI can generate HOW faster than ever](/blogs/openai-vs-vertex-ai-for-production-saas), the engineers who understand WHY and WHAT will be the ones who matter most.
 
 ---
 
@@ -135,3 +135,6 @@ Participate in design sprints, shadow product and business team discussions, rea
 
 **Is product thinking a soft skill?**
 No. It's a core engineering skill at the senior level. It directly influences technical architecture, prioritization, and system design decisions.
+
+**Want to see product-level thinking applied to a real technical decision?**
+[OpenAI vs Vertex AI for Production SaaS](/blogs/openai-vs-vertex-ai-for-production-saas) walks through exactly that kind of WHY-first reasoning — not just comparing features, but thinking through what the right choice is for a specific business context. For a hands-on example of [building a RAG pipeline](/blogs/rag-architecture-for-javascript-developers), the architecture decisions there reflect the same upstream thinking this post describes.

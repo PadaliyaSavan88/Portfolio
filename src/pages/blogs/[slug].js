@@ -1,4 +1,4 @@
-import { getPostsFiles, getPostData } from '../../../components/post';
+import { getPostsFiles, getPostData, getSortedPostsData } from '../../../components/post';
 import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript';
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -16,9 +16,12 @@ export function getStaticProps(context) {
     const { params } = context;
     const { slug } = params;
     const postData = getPostData(slug);
+    const allPosts = getSortedPostsData();
+    const relatedPosts = allPosts.filter((p) => p.id !== slug).slice(0, 3);
     return {
         props: {
             post: postData,
+            relatedPosts,
         },
         revalidate: 600,
     };
@@ -33,33 +36,33 @@ export function getStaticPaths() {
     };
 }
 
-export default function Post(props) {
+export default function Post({ post, relatedPosts = [] }) {
     return (
         <div>
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <title>{`${props.post.title} | Savan Padaliya`}</title>
-                <meta name="description" content={props.post.description}></meta>
-                <meta name="keywords" content={props.post.keyword} />
-                <meta name="author" content={props.post.author} />
+                <title>{`${post.title} | Savan Padaliya`}</title>
+                <meta name="description" content={post.description}></meta>
+                <meta name="keywords" content={post.keyword} />
+                <meta name="author" content={post.author} />
 
                 {/* <!-- Open Graph / Facebook --> */}
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content={`${props.post.title} | Savan Padaliya`} />
-                <meta property="og:description" content={props.post.description} />
-                <meta property="og:image" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`} />
-                <meta property="og:url" content={`https://www.savanpadaliya.com/blogs/${props.post.slug}/`} />
-                <link rel="canonical" href={`https://www.savanpadaliya.com/blogs/${props.post.slug}/`} />
+                <meta property="og:title" content={`${post.title} | Savan Padaliya`} />
+                <meta property="og:description" content={post.description} />
+                <meta property="og:image" content={`https://savanpadaliya.com/images/posts/${post.imageName}`} />
+                <meta property="og:url" content={`https://www.savanpadaliya.com/blogs/${post.slug}/`} />
+                <link rel="canonical" href={`https://www.savanpadaliya.com/blogs/${post.slug}/`} />
                 <meta name="robots" content="index, follow" />
 
                 {/* <!-- Twitter --> */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@padaliya_savan" />
                 <meta name="twitter:creator" content="@padaliya_savan" />
-                <meta property="twitter:title" content={`${props.post.title} | Savan Padaliya`} />
-                <meta property="twitter:description" content={props.post.description} />
-                <meta property="twitter:image" content={`https://savanpadaliya.com/images/posts/${props.post.imageName}`}></meta>
+                <meta property="twitter:title" content={`${post.title} | Savan Padaliya`} />
+                <meta property="twitter:description" content={post.description} />
+                <meta property="twitter:image" content={`https://savanpadaliya.com/images/posts/${post.imageName}`}></meta>
                 <script
                   type="application/ld+json"
                   dangerouslySetInnerHTML={{
@@ -68,9 +71,9 @@ export default function Post(props) {
                       "@graph": [
                         {
                           "@type": "Article",
-                          "@id": `https://www.savanpadaliya.com/blogs/${props.post.slug}/#article`,
-                          "headline": props.post.title,
-                          "description": props.post.description,
+                          "@id": `https://www.savanpadaliya.com/blogs/${post.slug}/#article`,
+                          "headline": post.title,
+                          "description": post.description,
                           "author": {
                             "@type": "Person",
                             "name": "Savan Padaliya",
@@ -83,13 +86,13 @@ export default function Post(props) {
                             "url": "https://www.savanpadaliya.com",
                             "image": "https://www.savanpadaliya.com/graphics/header_logo.png"
                           },
-                          "datePublished": props.post.date,
-                          "url": `https://www.savanpadaliya.com/blogs/${props.post.slug}/`,
+                          "datePublished": post.date,
+                          "url": `https://www.savanpadaliya.com/blogs/${post.slug}/`,
                           "mainEntityOfPage": {
                             "@type": "WebPage",
-                            "@id": `https://www.savanpadaliya.com/blogs/${props.post.slug}/`
+                            "@id": `https://www.savanpadaliya.com/blogs/${post.slug}/`
                           },
-                          "keywords": props.post.keyword || props.post.description
+                          "keywords": post.keyword || post.description
                         },
                         {
                           "@type": "BreadcrumbList",
@@ -103,14 +106,14 @@ export default function Post(props) {
                             {
                               "@type": "ListItem",
                               "position": 2,
-                              "name": "Blogs",
+                              "name": "Blog",
                               "item": "https://www.savanpadaliya.com/blogs/"
                             },
                             {
                               "@type": "ListItem",
                               "position": 3,
-                              "name": props.post.title,
-                              "item": `https://www.savanpadaliya.com/blogs/${props.post.slug}/`
+                              "name": post.title,
+                              "item": `https://www.savanpadaliya.com/blogs/${post.slug}/`
                             }
                           ]
                         }
@@ -122,16 +125,37 @@ export default function Post(props) {
             <Headers />
             <div className="blog-post-container">
                 <div className="container">
-                    <div className="blog-post-back">
-                        <Link href="/blogs" className="back-link" aria-label="Back to all blogs">← Back to Blogs</Link>
-                    </div>
+                    <nav className="blog-breadcrumb" aria-label="Breadcrumb">
+                        <ol className="breadcrumb-list">
+                            <li className="breadcrumb-item"><Link href="/">Home</Link></li>
+                            <li className="breadcrumb-sep" aria-hidden="true">/</li>
+                            <li className="breadcrumb-item"><Link href="/blogs">Blog</Link></li>
+                            <li className="breadcrumb-sep" aria-hidden="true">/</li>
+                            <li className="breadcrumb-item breadcrumb-current" aria-current="page">{post.title}</li>
+                        </ol>
+                    </nav>
                     <div className="blog-post-content">
-                        <PostContent post={props.post} />
+                        <PostContent post={post} />
                     </div>
+                    {relatedPosts.length > 0 && (
+                        <div className="related-posts">
+                            <h2 className="related-posts-title">More posts</h2>
+                            <div className="row g-4">
+                                {relatedPosts.map((p) => (
+                                    <div key={p.id} className="col-md-4">
+                                        <Link href={`/blogs/${p.id}`} className="related-post-card text-decoration-none">
+                                            <h3 className="related-post-card-title">{p.title}</h3>
+                                            <p className="related-post-card-desc">{p.description}</p>
+                                            <span className="related-post-card-link">Read more →</span>
+                                        </Link>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
             <Footer />
         </div>
-
     );
 }
