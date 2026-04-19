@@ -5,6 +5,7 @@ import Script from 'next/script'
 import 'bootstrap/dist/css/bootstrap.css';
 
 const GA_ID = 'G-YBNML3W5EP';
+const AHREF_ID = 'cMK1bH9Zikc1Ac9mdz3uEg';
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps }) {
           gtag('config', '${GA_ID}');
         `}
       </Script>
+      <Script src="https://analytics.ahrefs.com/analytics.js" data-key={`${AHREF_ID}`} async></Script>
       <Component {...pageProps} />
     </>
   )
