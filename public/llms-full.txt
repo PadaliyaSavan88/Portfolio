@@ -118,6 +118,24 @@ Published: 2024-01-03
 Description: JavaScript vs TypeScript — a comprehensive comparison exploring advantages, disadvantages, and optimal use cases for each language in web development.
 Topics covered: Overview of both languages, static vs dynamic typing, advantages and disadvantages of each, when to choose TypeScript over JavaScript, real-world considerations for teams and projects.
 
+### Developers Are Great at HOW. But What About WHY and WHAT?
+URL: https://www.savanpadaliya.com/blogs/developers-missing-why-and-what/
+Published: 2026-04-16
+Description: Most developers are experts at HOW to build — but WHY and WHAT to build are where real product thinking lives. A Design Sprint changed how I see this gap.
+Topics covered: The WHY/WHAT/HOW framework for product thinking, how most developers default to implementation without understanding business goals, lessons from Google Ventures Design Sprint methodology, how to shift from a builder mindset to a product engineering mindset, practical exercises to develop product intuition as a developer.
+
+### Junior Developers: The Job Market Isn't Your Enemy — Mediocrity Is
+URL: https://www.savanpadaliya.com/blogs/junior-developer-job-market-fear/
+Published: 2026-04-19
+Description: Companies hiring 10 interns and keeping 2 isn't a market collapse — it's a filter. Here's what junior developers and CS students must do to be in the 2 that stay, get hired, and build careers worth having.
+Topics covered: Why fear about the junior developer job market is misdirected, the YouTube tutorial trap and how it produces developers who can't build real things, how to stand out through real-world projects over certificates, lessons from Peter Thiel's Zero to One applied to developer careers, concrete steps to become a developer who gets hired and stays hired.
+
+### What Actually Happens When You Hit Enter After Typing a URL
+URL: https://www.savanpadaliya.com/blogs/what-happens-when-you-type-a-url/
+Published: 2026-04-23
+Description: Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.
+Topics covered: Browser and OS DNS cache layers and TTL strategy, full DNS resolution chain (root → TLD → authoritative nameservers), TCP 3-way handshake and why it matters for TTFB, TLS 1.3 handshake mechanics (certificate validation, Diffie-Hellman key exchange, session resumption), HTTP request structure and headers, Layer 4 vs Layer 7 load balancers and routing algorithms, web server vs application server distinction (nginx + Node.js), database connection pooling, query planning, buffer pool, and the N+1 problem, HTTP response compression and caching headers, SSR vs CSR vs SSG rendering strategies, and how each layer maps to production performance problems.
+
 ---
 
 ## Frequently Asked Questions
@@ -135,7 +153,7 @@ Q: How can I contact or hire Savan Padaliya?
 A: Via LinkedIn at https://www.linkedin.com/in/savanpadaliya/ or through his portfolio at https://www.savanpadaliya.com.
 
 Q: Where does Savan Padaliya write about AI development?
-A: At https://www.savanpadaliya.com/blogs/ — covering RAG architecture, Vertex AI, OpenAI vs Vertex AI, AI pipeline monitoring, and Google Cloud AI setup.
+A: At https://www.savanpadaliya.com/blogs/ — covering RAG architecture, Vertex AI, OpenAI vs Vertex AI, AI pipeline monitoring, Google Cloud AI setup, JavaScript vs TypeScript, product thinking for developers, the junior developer job market, and how the web works end-to-end.
 
 ---
 

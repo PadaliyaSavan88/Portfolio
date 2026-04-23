@@ -37,6 +37,9 @@ Savan Padaliya is a Full Stack AI Engineer with 4+ years of experience building 
 - [How to Monitor AI Pipelines in Production](https://www.savanpadaliya.com/blogs/how-to-monitor-ai-pipelines-in-production/): How to monitor LLM-powered applications — tracking latency, token usage, error rates, and hallucinations using practical tools and strategies.
 - [Setting Up AI Workloads on Google Cloud](https://www.savanpadaliya.com/blogs/google-cloud-ai-setup-guide/): Beginner's guide to setting up AI workloads on Google Cloud — AutoML, Cloud Functions, Cloud Run, and Vertex AI.
 - [JavaScript vs TypeScript: The Dilemma](https://www.savanpadaliya.com/blogs/type-or-not-to-type-the-javascript-vs-typescript-dilemma/): Comprehensive comparison of JavaScript and TypeScript — advantages, disadvantages, and when to use each.
+- [Developers Are Great at HOW. But What About WHY and WHAT?](https://www.savanpadaliya.com/blogs/developers-missing-why-and-what/): Most developers are experts at HOW to build — but WHY and WHAT to build are where real product thinking lives. A Design Sprint changed how I see this gap.
+- [Junior Developers: The Job Market Isn't Your Enemy — Mediocrity Is](https://www.savanpadaliya.com/blogs/junior-developer-job-market-fear/): Companies hiring 10 interns and keeping 2 isn't a market collapse — it's a filter. Here's what junior developers must do to be in the 2 that stay and build careers worth having.
+- [What Actually Happens When You Hit Enter After Typing a URL](https://www.savanpadaliya.com/blogs/what-happens-when-you-type-a-url/): Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.
 
 ## Optional
 

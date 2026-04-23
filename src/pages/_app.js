@@ -29,6 +29,7 @@ export default function App({ Component, pageProps }) {
         `}
       </Script>
       <Script src="https://analytics.ahrefs.com/analytics.js" data-key={`${AHREF_ID}`} async></Script>
+      <Script async data-uid="17735a6ab3" src="https://savanpadaliya.kit.com/17735a6ab3/index.js"></Script>
       <Component {...pageProps} />
     </>
   )
