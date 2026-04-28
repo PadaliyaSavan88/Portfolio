@@ -38,6 +38,9 @@ export default function Headers() {
                                 <Link href="/about" className="nav-link">About</Link>
                             </li>
                             <li className="nav-item">
+                                <Link href="/tools" className="nav-link">Tools</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link href="/blogs" className="nav-link">Blog</Link>
                             </li>
                             <li className="nav-item ms-md-3">

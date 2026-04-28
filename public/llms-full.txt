@@ -138,6 +138,96 @@ Topics covered: Browser and OS DNS cache layers and TTL strategy, full DNS resol
 
 ---
 
+## Free Developer Tools
+
+14 free, client-side developer utilities hosted at https://www.savanpadaliya.com/tools/. All tools run entirely in the browser — no data is sent to any server, no sign-up required.
+
+### JSON Formatter & Validator
+URL: https://www.savanpadaliya.com/tools/json-formatter
+Description: Format, validate, or minify JSON with syntax highlighting using the atomDark theme.
+How it works: Paste JSON and click Format (pretty-print with 2-space indent), Minify (compact string), or Validate (syntax check only). Uses the browser's built-in JSON.parse().
+Features: Syntax-highlighted output via react-syntax-highlighter, one-click copy, line numbers for large payloads.
+
+### JSON ↔ CSV Converter
+URL: https://www.savanpadaliya.com/tools/json-csv-converter
+Description: Convert between JSON arrays and CSV format. Handles quoted fields, commas inside values, and nested objects.
+How it works: In JSON → CSV mode, paste a JSON array of flat objects — keys become headers, each object becomes a row. In CSV → JSON mode, paste CSV with a header row — each row becomes a JSON object. RFC 4180 quoting is applied automatically.
+Features: Mode toggle, Load sample button, copy output.
+
+### Markdown Previewer
+URL: https://www.savanpadaliya.com/tools/markdown-previewer
+Description: Live side-by-side Markdown editor and rendered preview. Supports GitHub Flavored Markdown (GFM).
+How it works: Type or paste Markdown in the left panel; the right panel renders a live preview using react-markdown with remark-gfm. Copy Markdown source or the rendered HTML output.
+Features: GFM support (tables, strikethrough, fenced code blocks), Copy Markdown / Copy HTML buttons, word and character count.
+
+### Diff Checker
+URL: https://www.savanpadaliya.com/tools/diff-checker
+Description: Paste two texts and see added, removed, and unchanged lines highlighted using Myers' diff algorithm.
+How it works: Paste original text in the left panel and modified text in the right panel, click Compare. Added lines are highlighted green with +, removed lines red with -, unchanged lines neutral.
+Features: Line counts (added / removed), Copy diff as unified patch format, Load sample code example.
+
+### Case Converter
+URL: https://www.savanpadaliya.com/tools/case-converter
+Description: Convert text between 8 case formats in real time with one-click copy per format.
+How it works: Type or paste input text; the tool splits on spaces, hyphens, and underscores as word delimiters and applies all transformations instantly.
+Formats: lowercase, UPPERCASE, Title Case, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE.
+
+### Base64 Encoder / Decoder
+URL: https://www.savanpadaliya.com/tools/base64
+Description: Encode plain text (including Unicode and emoji) to Base64, or decode Base64 back to text.
+How it works: Encode uses btoa(unescape(encodeURIComponent(str))) for full Unicode support. Decode uses decodeURIComponent(escape(atob(b64))). Mode toggle, sample button, error on invalid Base64 input.
+Features: Unicode and emoji support, Load sample, copy output.
+
+### Regex Tester
+URL: https://www.savanpadaliya.com/tools/regex-tester
+Description: Test regular expressions with live match highlighting, flag checkboxes, named capture group display, and a built-in cheat sheet.
+How it works: Enter a pattern and test string; matches are highlighted with yellow marks in the highlighted output panel and listed individually below with index and named groups. The g flag is applied by default.
+Features: Flag toggles (g, i, m, s), named capture group display, expandable regex cheat sheet covering anchors, quantifiers, character classes, and groups.
+
+### QR Code Generator
+URL: https://www.savanpadaliya.com/tools/qr-generator
+Description: Generate a QR code from any URL or text. Download as PNG.
+How it works: Enter any URL or text and click Generate. The QR code is rendered in a canvas element via the qrcode.react library. Click Download PNG to save the canvas as an image file.
+Features: Error correction level M, PNG download, Copy text button, Enter key shortcut.
+
+### Random String Generator
+URL: https://www.savanpadaliya.com/tools/random-string
+Description: Generate cryptographically random strings using crypto.getRandomValues(). Suitable for API keys, tokens, and secrets.
+How it works: Select length (8–128), choose character sets, click Generate. Uses crypto.getRandomValues() with a Uint32Array for cryptographic-quality randomness. Regenerates automatically on option change.
+Features: Length slider (8–128), uppercase, lowercase, numbers, symbols charsets, one-click Copy and Regenerate.
+
+### Password Generator
+URL: https://www.savanpadaliya.com/tools/password-generator
+Description: Generate strong, cryptographically random passwords with a real-time strength meter.
+How it works: Adjust length (8–64) and character sets, optionally exclude ambiguous characters (0, O, l, I, 1). Auto-generates via useEffect on every option change using crypto.getRandomValues().
+Strength meter: Scored on 6 criteria — length ≥ 10, length ≥ 14, has uppercase, has lowercase, has digits, has symbols. 6/6 = Very Strong.
+
+### UUID / GUID Generator
+URL: https://www.savanpadaliya.com/tools/uuid-generator
+Description: Generate one or many UUID v4 identifiers. Bulk generation up to 20. Uppercase and no-dashes variants.
+How it works: Set count (1–20), toggle Uppercase or No dashes, click Generate. Uses crypto.randomUUID() — the browser's native UUID v4 generator. Click individual UUID to copy just that one, or Copy All for the full list.
+Features: Bulk generation, per-UUID copy, Copy All as newline-separated list.
+
+### Lorem Ipsum Generator
+URL: https://www.savanpadaliya.com/tools/lorem-ipsum
+Description: Generate Lorem Ipsum placeholder text as paragraphs, sentences, or words.
+How it works: Select type (Paragraphs / Sentences / Words), set count, click Generate. The first paragraph always starts with the classic "Lorem ipsum dolor sit amet..." opener. Uses an 87-word classical lorem word bank.
+Features: 3 output modes, count control (1–20 paragraphs/sentences, 10–500 words), copy output.
+
+### Bcrypt Hash Generator
+URL: https://www.savanpadaliya.com/tools/bcrypt-generator
+Description: Hash passwords with bcrypt or verify a password against a bcrypt hash. Uses bcryptjs — runs entirely in the browser.
+How it works: In Hash mode, enter a password and select cost rounds (4–14; OWASP recommends 10–12), click Hash. In Verify mode, enter a password and existing bcrypt hash, click Verify to see Match / No Match. Cost ≥ 13 triggers a warning about slow processing.
+Features: Mode toggle (Hash / Verify), cost slider, loading state, copy hash.
+
+### Cron Job Builder
+URL: https://www.savanpadaliya.com/tools/cron-builder
+Description: Build cron job expressions visually with a live human-readable description.
+How it works: Choose a preset (10 common schedules) or edit individual fields (minute, hour, day of month, month, weekday). The expression and a plain-English description update live. Fields are validated — only digits, *, /, ,, and - are allowed.
+Features: 10 presets, 5-field inputs, live description (e.g. "At 9:00 AM, on Monday"), Copy Expression button.
+
+---
+
 ## Frequently Asked Questions
 
 Q: What does Savan Padaliya specialise in?
@@ -154,6 +244,9 @@ A: Via LinkedIn at https://www.linkedin.com/in/savanpadaliya/ or through his por
 
 Q: Where does Savan Padaliya write about AI development?
 A: At https://www.savanpadaliya.com/blogs/ — covering RAG architecture, Vertex AI, OpenAI vs Vertex AI, AI pipeline monitoring, Google Cloud AI setup, JavaScript vs TypeScript, product thinking for developers, the junior developer job market, and how the web works end-to-end.
+
+Q: Does Savan Padaliya offer any free tools?
+A: Yes — 14 free developer tools are available at https://www.savanpadaliya.com/tools/ including a JSON Formatter, Markdown Previewer, Diff Checker, Base64 Encoder, Regex Tester, QR Code Generator, Password Generator, UUID Generator, Bcrypt Hash Generator, Cron Job Builder, and more. All tools run entirely in the browser with no sign-up required.
 
 ---
 

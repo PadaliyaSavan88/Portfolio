@@ -52,8 +52,8 @@ export default function Post({ post, relatedPosts = [] }) {
                 <meta property="og:title" content={`${post.title} | Savan Padaliya`} />
                 <meta property="og:description" content={post.description} />
                 <meta property="og:image" content={`https://savanpadaliya.com/images/posts/${post.imageName}`} />
-                <meta property="og:url" content={`https://www.savanpadaliya.com/blogs/${post.slug}/`} />
-                <link rel="canonical" href={`https://www.savanpadaliya.com/blogs/${post.slug}/`} />
+                <meta property="og:url" content={`https://www.savanpadaliya.com/blogs/${post.slug}`} />
+                <link rel="canonical" href={`https://www.savanpadaliya.com/blogs/${post.slug}`} />
                 <meta name="robots" content="index, follow" />
 
                 {/* <!-- Twitter --> */}
@@ -87,10 +87,10 @@ export default function Post({ post, relatedPosts = [] }) {
                             "image": "https://www.savanpadaliya.com/graphics/header_logo.png"
                           },
                           "datePublished": post.date,
-                          "url": `https://www.savanpadaliya.com/blogs/${post.slug}/`,
+                          "url": `https://www.savanpadaliya.com/blogs/${post.slug}`,
                           "mainEntityOfPage": {
                             "@type": "WebPage",
-                            "@id": `https://www.savanpadaliya.com/blogs/${post.slug}/`
+                            "@id": `https://www.savanpadaliya.com/blogs/${post.slug}`
                           },
                           "keywords": post.keyword || post.description
                         },

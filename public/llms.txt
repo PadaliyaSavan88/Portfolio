@@ -41,6 +41,25 @@ Savan Padaliya is a Full Stack AI Engineer with 4+ years of experience building 
 - [Junior Developers: The Job Market Isn't Your Enemy — Mediocrity Is](https://www.savanpadaliya.com/blogs/junior-developer-job-market-fear/): Companies hiring 10 interns and keeping 2 isn't a market collapse — it's a filter. Here's what junior developers must do to be in the 2 that stay and build careers worth having.
 - [What Actually Happens When You Hit Enter After Typing a URL](https://www.savanpadaliya.com/blogs/what-happens-when-you-type-a-url/): Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.
 
+## Free Developer Tools
+
+14 free, client-side developer tools — no sign-up required, everything runs in the browser.
+
+- [JSON Formatter & Validator](https://www.savanpadaliya.com/tools/json-formatter): Format, validate, or minify JSON with syntax highlighting.
+- [JSON ↔ CSV Converter](https://www.savanpadaliya.com/tools/json-csv-converter): Convert between JSON arrays and CSV format instantly.
+- [Markdown Previewer](https://www.savanpadaliya.com/tools/markdown-previewer): Live side-by-side editor and rendered preview for GitHub Flavored Markdown.
+- [Diff Checker](https://www.savanpadaliya.com/tools/diff-checker): Paste two texts and see added, removed, and unchanged lines highlighted.
+- [Case Converter](https://www.savanpadaliya.com/tools/case-converter): Convert text to camelCase, snake_case, PascalCase, kebab-case, and more.
+- [Base64 Encoder / Decoder](https://www.savanpadaliya.com/tools/base64): Encode plain text to Base64 or decode Base64 back to text. Unicode supported.
+- [Regex Tester](https://www.savanpadaliya.com/tools/regex-tester): Test regular expressions with live match highlighting and a built-in cheat sheet.
+- [QR Code Generator](https://www.savanpadaliya.com/tools/qr-generator): Generate a QR code from any URL or text. Download as PNG.
+- [Random String Generator](https://www.savanpadaliya.com/tools/random-string): Cryptographically random strings for tokens, API keys, and secrets.
+- [Password Generator](https://www.savanpadaliya.com/tools/password-generator): Generate strong passwords with a built-in strength meter.
+- [UUID / GUID Generator](https://www.savanpadaliya.com/tools/uuid-generator): Generate one or many UUID v4 identifiers. Copy all in one click.
+- [Lorem Ipsum Generator](https://www.savanpadaliya.com/tools/lorem-ipsum): Generate placeholder paragraphs, sentences, or word lists.
+- [Bcrypt Hash Generator](https://www.savanpadaliya.com/tools/bcrypt-generator): Hash passwords with bcrypt or verify a password against a hash.
+- [Cron Job Builder](https://www.savanpadaliya.com/tools/cron-builder): Build cron expressions visually with a human-readable description.
+
 ## Optional
 
 - [Full content version](https://www.savanpadaliya.com/llms-full.txt)

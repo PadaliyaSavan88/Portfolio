@@ -61,7 +61,7 @@ This stores credentials at `~/.config/gcloud/application_default_credentials.jso
 export GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account-key.json
 ```
 
-In production (Cloud Run, GKE, etc.), assign the service account directly to the compute resource instead of using key files — this is more secure and avoids key rotation headaches.
+In production ([Cloud Run](/blogs/deploy-nodejs-ai-app-cloud-run), GKE, etc.), assign the service account directly to the compute resource instead of using key files — this is more secure and avoids key rotation headaches.
 
 ## Your First Generative AI Call
 

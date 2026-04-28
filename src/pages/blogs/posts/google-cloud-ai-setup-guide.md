@@ -59,7 +59,7 @@ Now that our setup is ready, let’s **train and deploy an AI model** using Auto
 #### **Step 2: Deploy the Model**
 
 1. Once training is complete, navigate to **Deploy & Test Model**.
-2. Select **Cloud Run** as the deployment option for a serverless AI-powered API.
+2. Select **[Cloud Run](/blogs/deploy-nodejs-ai-app-cloud-run)** as the deployment option for a serverless AI-powered API.
 3. Click **Deploy**, and Google Cloud will handle scaling automatically.
 
 #### **Step 3: Make Predictions Using API**
