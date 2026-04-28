@@ -44,7 +44,7 @@ Per request, track:
 Aggregate by endpoint, user tier, and feature to understand where costs come from.
 
 ### Cost Per Request
-Compute this in your logger using the token counts and the model's pricing. Alert when the rolling average cost per request increases by more than 20% — it usually means a prompt bug or an edge case hitting expensive code paths.
+Compute this in your logger using the token counts and the model's pricing. Alert when the rolling average cost per request increases by more than 20% — it usually means a prompt bug or an edge case hitting expensive code paths. Once you have this data, see [How to Reduce LLM API Costs in Production](/blogs/reduce-llm-api-costs-production) for targeted optimization strategies.
 
 ### Error Rate
 Beyond HTTP errors, track:
@@ -169,7 +169,7 @@ Every call now produces a structured log event with full cost and latency data.
 
 ## LangSmith for LangChain Observability
 
-If you're using [LangChain.js](/blogs/rag-architecture-for-javascript-developers), **LangSmith** is the dedicated observability tool and it's worth enabling from day one. It captures every step in your chain — retrieval, prompt construction, LLM call, output parsing — with full inputs and outputs.
+If you're using [LangChain.js](/blogs/langchainjs-agents-nodejs-tutorial), **LangSmith** is the dedicated observability tool and it's worth enabling from day one. It captures every step in your chain — retrieval, prompt construction, LLM call, output parsing — with full inputs and outputs.
 
 Setup takes two environment variables:
 
@@ -204,7 +204,7 @@ There's no perfect automated hallucination detector, but you can build layers of
 
 **Source attribution**: In RAG pipelines, always return the source documents alongside the answer. Show users where the information came from. This shifts quality verification partially to the user and helps you identify when retrieval is failing.
 
-**Confidence scoring**: Ask the model to rate its own confidence: `"On a scale of 1-10, how confident are you in this answer based on the provided context?"` Low scores (below 7) can trigger a fallback or human review queue.
+**Confidence scoring**: Ask the model to rate its own confidence: `"On a scale of 1-10, how confident are you in this answer based on the provided context?"` Low scores (below 7) can trigger a fallback or human review queue. This is a [prompt engineering](/blogs/prompt-engineering-production-llm-apps) technique — structuring the request so the model exposes its uncertainty as structured output.
 
 **Output validation**: For structured outputs (JSON, specific formats), validate programmatically. A model that returns malformed JSON or missing required fields is a proxy signal for degraded output quality.
 

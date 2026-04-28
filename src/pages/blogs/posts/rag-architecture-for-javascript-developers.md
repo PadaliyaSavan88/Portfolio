@@ -9,7 +9,7 @@ keyword: 'RAG, Retrieval Augmented Generation, JavaScript, LangChain, OpenAI, No
 ---
 
 
-Large Language Models are impressive, but they have a fundamental problem: they only know what they were trained on. Ask GPT-4 about your internal product documentation, your company's support tickets, or a PDF uploaded last week, and it will either hallucinate or politely tell you it doesn't know. **Retrieval Augmented Generation (RAG)** solves this by grounding LLM responses in your own data — and as a JavaScript developer, you can build a production-ready RAG pipeline with LangChain.js and [OpenAI](/blogs/openai-vs-vertex-ai-for-production-saas).
+Large Language Models are impressive, but they have a fundamental problem: they only know what they were trained on. Ask GPT-4 about your internal product documentation, your company's support tickets, or a PDF uploaded last week, and it will either hallucinate or politely tell you it doesn't know. **Retrieval Augmented Generation (RAG)** solves this by grounding LLM responses in your own data — and as a JavaScript developer, you can build a production-ready RAG pipeline with [LangChain.js](/blogs/langchainjs-agents-nodejs-tutorial) and [OpenAI](/blogs/openai-vs-vertex-ai-for-production-saas).
 
 ## What Is RAG and Why Does It Matter?
 
@@ -26,7 +26,7 @@ This approach gives you three key benefits:
 1. **Load** — ingest source documents (PDFs, markdown, web pages, databases)
 2. **Chunk** — split documents into smaller, semantically meaningful pieces
 3. **Embed** — convert each chunk into a vector using an embedding model
-4. **Store** — save vectors in a vector database (Chroma, Pinecone, pgvector, etc.)
+4. **Store** — save vectors in a [vector database (Chroma, Pinecone, pgvector)](/blogs/vector-database-comparison-chroma-pinecone-pgvector)
 5. **Retrieve & Generate** — at query time, embed the user's question, find the closest chunks, and pass them to the LLM
 
 ## Setting Up LangChain.js
@@ -128,7 +128,7 @@ async function answerQuestion(question) {
 await answerQuestion('What is the refund policy for annual subscriptions?');
 ```
 
-Setting `temperature: 0` is critical for RAG — you want the model to stay close to the retrieved facts, not get creative.
+Setting `temperature: 0` is critical for RAG — you want the model to stay close to the retrieved facts, not get creative. See [Prompt Engineering for Production LLM Apps](/blogs/prompt-engineering-production-llm-apps) for a full breakdown of temperature, context injection, and output formatting strategies.
 
 ## RAG vs Fine-Tuning: When to Use Which
 

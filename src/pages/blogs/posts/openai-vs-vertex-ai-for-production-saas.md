@@ -43,9 +43,9 @@ Pricing as of early 2026 (always verify current rates on provider websites):
 | Gemini 1.5 Pro | ~$1.25 | ~$5.00 |
 | Gemini 1.5 Flash | ~$0.075 | ~$0.30 |
 
-At low volume, the difference is negligible. At 10 million tokens per day, choosing Gemini 1.5 Flash over GPT-4o mini can save thousands of dollars per month. The real cost driver is almost always **output tokens** — verbose prompts that produce long responses are expensive on any platform.
+At low volume, the difference is negligible. At 10 million tokens per day, choosing Gemini 1.5 Flash over GPT-4o mini can save thousands of dollars per month. The real cost driver is almost always **output tokens** — [verbose prompts](/blogs/prompt-engineering-production-llm-apps) that produce long responses are expensive on any platform.
 
-**Practical advice**: run your actual prompts through both APIs, measure token counts, and project costs at your expected usage. Don't optimize prematurely, but don't ignore this either.
+**Practical advice**: run your actual prompts through both APIs, measure token counts, and project costs at your expected usage. Don't optimize prematurely, but don't ignore this either. When you're ready to reduce spend, [How to Reduce LLM API Costs in Production](/blogs/reduce-llm-api-costs-production) covers model downgrade, caching, and batching strategies.
 
 ## Reliability and SLA
 
@@ -99,7 +99,7 @@ class VertexAIClient extends LLMClient {
 }
 ```
 
-[LangChain.js](/blogs/rag-architecture-for-javascript-developers) takes this further — it provides a unified interface over both providers, so switching backends is a one-line config change. For greenfield projects, building on LangChain from the start reduces future migration cost significantly.
+[LangChain.js](/blogs/langchainjs-agents-nodejs-tutorial) takes this further — it provides a unified interface over both providers, so switching backends is a one-line config change. For greenfield projects, building on LangChain from the start reduces future migration cost significantly.
 
 ## When to Use Which: Decision Table
 
