@@ -8,12 +8,11 @@ export default function Hero() {
             <div className="row align-items-center">
                 <div className="col-md-6 d-flex align-items-center">
                     <div className="hero-text">
-                        <p className="hero-greeting">Senior Full Stack Developer</p>
+                        <p className="hero-greeting">Senior Full-Stack &amp; AI Engineer</p>
                         <h1 className="hero-name">Savan Padaliya</h1>
-                        <p className="hero-subtitle">I ship faster with AI.</p>
+                        <p className="hero-subtitle">I build AI-powered web products fast.</p>
                         <p className="hero-desc">
-                            Got an idea, a backlog, or a broken system? I turn it into
-                            working software — using AI to move at a speed your team will notice.
+                            For founders and product teams who need MVPs, automation, internal tools, and AI features shipped with senior-level execution.
                         </p>
                         <div className="hero-actions mt-4">
                             <a
@@ -22,12 +21,14 @@ export default function Hero() {
                                 rel="noreferrer"
                                 className="btn-primary-custom me-3"
                             >
-                                Book a Free Call
+                                Book a project call
                             </a>
                             <Link href="/#portfolio" className="btn-outline-custom">
-                                View My Work
+                                View case studies
                             </Link>
                         </div>
+                        <p className="hero-trust-cue">NDA available &middot; Your idea stays confidential</p>
+                        <p className="hero-stack-cue">Node.js &middot; React &middot; OpenAI &middot; Gemini &middot; LangChain &middot; N8N</p>
                     </div>
                 </div>
                 <div className="col-md-6">

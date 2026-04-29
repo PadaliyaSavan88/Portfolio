@@ -3,8 +3,10 @@ import Headers from './components/header'
 import Hero from './components/hero'
 import SocialProof from './components/socialproof'
 import Services from './components/services'
-import TechStack from './components/techStack'
 import Projects from './components/projects'
+import WhyHireMe from './components/whyHireMe'
+import TechStack from './components/techStack'
+import FAQ from './components/faq'
 import Newsletter from './components/newsletter'
 import Contact from './components/contact'
 import Footer from './components/footer'
@@ -13,29 +15,29 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Savan Padaliya | Senior Full Stack Developer | AI-Powered Development</title>
+        <title>Savan Padaliya | Senior Full-Stack &amp; AI Engineer for MVPs, Web Apps, and Automation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
-        <meta name="title" content="Savan Padaliya | Senior Full Stack Developer | AI-Powered Development" />
-        <meta name="description" content="Senior Full Stack Developer who ships faster with AI. I build production-grade web apps, AI integrations, and rapid prototypes for startups and businesses. Book a free call." />
-        <meta name="keywords" content="Senior Full Stack Developer, AI Developer, Node.js, React, OpenAI, Gemini, LangChain, Rapid Prototyping, SaaS Development, Hire Developer" />
+        <meta name="title" content="Savan Padaliya | Senior Full-Stack & AI Engineer for MVPs, Web Apps, and Automation" />
+        <meta name="description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
+        <meta name="keywords" content="Senior Full-Stack Developer, AI Engineer, Node.js, React, OpenAI, Gemini, LangChain, MVP Development, AI Integration, AI Chatbot Development, Workflow Automation, Technical Consulting, SaaS Development, Hire Developer" />
         <meta name="language" content="English" />
         <link rel="canonical" href="https://www.savanpadaliya.com/" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Savan Padaliya" />
 
-        <meta property="og:title" content="Savan Padaliya | Senior Full Stack Developer | AI-Powered Development" />
+        <meta property="og:title" content="Savan Padaliya | Senior Full-Stack & AI Engineer for MVPs, Web Apps, and Automation" />
         <meta property="og:site_name" content="Savan Padaliya" />
         <meta property="og:url" content="https://www.savanpadaliya.com/" />
-        <meta property="og:description" content="Senior Full Stack Developer who ships faster with AI. Production-grade apps, AI integrations, and rapid prototypes. Book a free call." />
+        <meta property="og:description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />
-        <meta name="twitter:title" content="Savan Padaliya | Senior Full Stack Developer | AI-Powered Development" />
-        <meta name="twitter:description" content="Senior Full Stack Developer who ships faster with AI. Book a free call." />
+        <meta name="twitter:title" content="Savan Padaliya | Senior Full-Stack & AI Engineer for MVPs, Web Apps, and Automation" />
+        <meta name="twitter:description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer." />
         <meta name="twitter:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
         <script
           type="application/ld+json"
@@ -47,7 +49,7 @@ export default function Home() {
                   "@type": "Person",
                   "@id": "https://www.savanpadaliya.com/#person",
                   "name": "Savan Padaliya",
-                  "jobTitle": "Senior Full Stack Developer",
+                  "jobTitle": "Senior Full-Stack & AI Engineer",
                   "url": "https://www.savanpadaliya.com",
                   "image": "https://www.savanpadaliya.com/graphics/header_logo.png",
                   "sameAs": [
@@ -57,10 +59,11 @@ export default function Home() {
                   "knowsAbout": [
                     "JavaScript", "Node.js", "React", "Angular", "Next.js",
                     "AI Integration", "OpenAI API", "Gemini API", "Vertex AI",
-                    "LangChain", "N8N", "Rapid Prototyping", "SaaS Development",
+                    "LangChain", "N8N", "MVP Development", "AI Chatbot Development",
+                    "Workflow Automation", "Technical Consulting",
                     "Docker", "Kubernetes", "AWS", "Google Cloud"
                   ],
-                  "description": "Senior Full Stack Developer with 4+ years of experience who uses AI to ship faster. Specializing in production web apps, AI integrations, and rapid prototyping.",
+                  "description": "Senior Full-Stack & AI Engineer with 4+ years of experience. Helps founders, startups, and product teams build MVPs, AI features, automation systems, and scalable web applications.",
                   "contactPoint": {
                     "@type": "ContactPoint",
                     "contactType": "professional inquiries",
@@ -68,24 +71,24 @@ export default function Home() {
                   },
                   "hasOccupation": {
                     "@type": "Occupation",
-                    "name": "Senior Full Stack Developer",
+                    "name": "Senior Full-Stack & AI Engineer",
                     "occupationLocation": { "@type": "Country", "name": "India" },
-                    "skills": "Node.js, React, Next.js, AI Integration, OpenAI, LangChain, TypeScript"
+                    "skills": "Node.js, React, Next.js, AI Integration, OpenAI, LangChain, TypeScript, MVP Development, Workflow Automation"
                   }
                 },
                 {
                   "@type": "WebSite",
                   "@id": "https://www.savanpadaliya.com/#website",
                   "url": "https://www.savanpadaliya.com",
-                  "name": "Savan Padaliya — Senior Full Stack Developer",
-                  "description": "Portfolio of Savan Padaliya — Senior Full Stack Developer who ships faster with AI.",
+                  "name": "Savan Padaliya — Senior Full-Stack & AI Engineer",
+                  "description": "Portfolio of Savan Padaliya — Senior Full-Stack & AI Engineer for MVPs, web apps, AI chatbots, and automation systems.",
                   "publisher": { "@id": "https://www.savanpadaliya.com/#person" }
                 },
                 {
                   "@type": "ProfilePage",
                   "@id": "https://www.savanpadaliya.com/#profilepage",
                   "url": "https://www.savanpadaliya.com",
-                  "name": "Savan Padaliya — Senior Full Stack Developer",
+                  "name": "Savan Padaliya — Senior Full-Stack & AI Engineer",
                   "about": { "@id": "https://www.savanpadaliya.com/#person" },
                   "mainEntity": { "@id": "https://www.savanpadaliya.com/#person" }
                 },
@@ -94,34 +97,42 @@ export default function Home() {
                   "mainEntity": [
                     {
                       "@type": "Question",
-                      "name": "What kind of developer is Savan Padaliya?",
+                      "name": "What kinds of AI projects do you work on?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Savan is a Senior Full Stack Developer who uses AI tools to ship production-ready software faster. He specializes in Node.js, React, Next.js, and AI integrations with OpenAI, Gemini, and LangChain."
+                        "text": "Chatbot development, document workflows, LLM-powered product features, and workflow automation — primarily using OpenAI, Gemini, LangChain, and N8N. Most projects involve wiring AI into an existing product or building a net-new AI-first feature from scratch."
                       }
                     },
                     {
                       "@type": "Question",
-                      "name": "Can Savan Padaliya build an MVP quickly?",
+                      "name": "Can you help build an MVP for a startup?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. Rapid prototyping is one of his core services — he has delivered working prototypes in as little as 5 days for clients who needed to validate ideas fast."
+                        "text": "Yes. Fast MVPs are one of the core services. The goal is a working, launchable product you can test with real users — not a prototype that needs a rewrite before it can go live."
                       }
                     },
                     {
                       "@type": "Question",
-                      "name": "How can I hire Savan Padaliya?",
+                      "name": "Do you work on existing products and backlogs?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "You can book a free 30-minute discovery call via Calendly, or send a message on LinkedIn. He's available for freelance, project-based, and consulting engagements."
+                        "text": "Yes. Whether you need a senior engineer to clear a backlog, add features, or improve an existing Node.js or React codebase, that's a standard engagement. I can slot in alongside your team or work independently."
                       }
                     },
                     {
                       "@type": "Question",
-                      "name": "What is Savan Padaliya's Upwork rating?",
+                      "name": "Can you add AI features to an existing Node.js or React app?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Savan holds a 5.0 star rating on Upwork with multiple completed engagements across full stack development, TypeScript, and AI integrations."
+                        "text": "Yes. Most AI integration work happens inside existing codebases — adding a chatbot, automating a workflow, or wiring an LLM into a feature you already have. No need to rebuild from scratch."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Do you offer consulting before development starts?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Architecture reviews, AI adoption strategy, and stack decisions are available as standalone consulting engagements before any code is written. If you're unsure what to build or how, that's exactly where to start."
                       }
                     }
                   ]
@@ -136,7 +147,9 @@ export default function Home() {
       <SocialProof />
       <Services />
       <Projects />
+      <WhyHireMe />
       <TechStack />
+      <FAQ />
       <Newsletter />
       <Contact />
       <Footer />
