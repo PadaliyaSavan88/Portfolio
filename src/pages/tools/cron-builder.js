@@ -94,9 +94,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Build cron job expressions visually with a live human-readable description. Choose from 10 presets or set individual minute, hour, day, month, and weekday fields. Free online cron builder.',
-      url: 'https://www.savanpadaliya.com/tools/cron-builder',
+      url: 'https://savanpadaliya.com/tools/cron-builder',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['10 preset schedules', '5 individual field inputs with validation', 'Live human-readable description', 'Copy expression with one click'],
     },
     {
@@ -151,14 +151,14 @@ export default function CronBuilder() {
         <meta name="description" content="Build cron job expressions visually with a human-readable description. Choose from presets or set individual fields. Free online cron builder." />
         <meta name="keywords" content="cron builder, cron expression, cron generator, cron job, online cron, crontab" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/cron-builder" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/cron-builder" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Cron Job Builder — Savan Padaliya" />
         <meta property="og:description" content="Build cron expressions visually with live human-readable descriptions. 10 presets included. Free, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/cron-builder" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/cron-builder" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

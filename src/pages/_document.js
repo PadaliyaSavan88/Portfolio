@@ -7,8 +7,8 @@ export default function Document() {
       <Head >
         <Script src='/js/script.js'></Script>
         {/* LLM discovery links for GEO/AEO */}
-        <link rel="llms" href="https://www.savanpadaliya.com/llms.txt" />
-        <link rel="llms-full" href="https://www.savanpadaliya.com/llms-full.txt" />
+        <link rel="llms" href="https://savanpadaliya.com/llms.txt" />
+        <link rel="llms-full" href="https://savanpadaliya.com/llms-full.txt" />
         {/* <link ref='stylesheets' src='bootstrap/dist/css/bootstrap.css' /> */}
       </Head>
       <body>

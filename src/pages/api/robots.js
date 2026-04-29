@@ -25,10 +25,10 @@ User-agent: cohere-ai
 Allow: /
 
 # LLM content files
-LLMs: https://www.savanpadaliya.com/llms.txt
-LLMs-full: https://www.savanpadaliya.com/llms-full.txt
+LLMs: https://savanpadaliya.com/llms.txt
+LLMs-full: https://savanpadaliya.com/llms-full.txt
 
-Sitemap: https://www.savanpadaliya.com/sitemap.xml`;
+Sitemap: https://savanpadaliya.com/sitemap.xml`;
 
   res.setHeader('Content-Type', 'text/plain');
   res.send(robots);

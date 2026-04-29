@@ -49,9 +49,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Generate strong, cryptographically random passwords with a built-in strength meter. Choose length (8–64) and character sets. Everything runs in your browser — nothing is stored.',
-      url: 'https://www.savanpadaliya.com/tools/password-generator',
+      url: 'https://savanpadaliya.com/tools/password-generator',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Cryptographically secure via crypto.getRandomValues', 'Length slider 8–64 characters', 'Uppercase, lowercase, numbers, symbols', 'Exclude ambiguous characters (0, O, l, I, 1)', 'Real-time strength meter'],
     },
     {
@@ -103,14 +103,14 @@ export default function PasswordGenerator() {
         <meta name="description" content="Generate strong, random passwords with a built-in strength meter. Choose length and character sets. Everything runs in your browser — nothing is stored." />
         <meta name="keywords" content="password generator, strong password, random password, secure password, online password generator" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/password-generator" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/password-generator" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Password Generator — Strong Random Passwords | Savan Padaliya" />
         <meta property="og:description" content="Cryptographically secure password generator with strength meter. Choose length and character sets. Free, runs in browser." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/password-generator" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/password-generator" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

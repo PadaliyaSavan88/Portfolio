@@ -17,9 +17,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Free online Base64 encoder and decoder. Encode plain text or Unicode to Base64, or decode Base64 strings back to readable text. Runs entirely in your browser.',
-      url: 'https://www.savanpadaliya.com/tools/base64',
+      url: 'https://savanpadaliya.com/tools/base64',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Encode plain text to Base64', 'Decode Base64 to plain text', 'Full Unicode support', 'Instant client-side processing'],
     },
     {
@@ -73,14 +73,14 @@ export default function Base64Tool() {
         <meta name="description" content="Free online Base64 encoder and decoder. Paste plain text to encode or Base64 to decode. Supports Unicode. No sign-up required." />
         <meta name="keywords" content="base64 encoder, base64 decoder, base64 online, encode base64, decode base64, btoa atob" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/base64" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/base64" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Base64 Encoder / Decoder — Savan Padaliya" />
         <meta property="og:description" content="Encode plain text to Base64 or decode Base64 back to text. Supports Unicode. Free, instant, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/base64" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/base64" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

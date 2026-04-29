@@ -21,9 +21,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Free online regex tester with live match highlighting, flag toggles (g, i, m, s), named group support, and a built-in regex cheat sheet. No sign-up required.',
-      url: 'https://www.savanpadaliya.com/tools/regex-tester',
+      url: 'https://savanpadaliya.com/tools/regex-tester',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Live match highlighting', 'Flag toggles: g, i, m, s', 'Named capture group support', 'Built-in regex cheat sheet'],
     },
     {
@@ -102,14 +102,14 @@ export default function RegexTester() {
         <meta name="description" content="Test regular expressions online with live match highlighting, flag toggles, and a built-in regex cheat sheet. Free, no sign-up required." />
         <meta name="keywords" content="regex tester, regular expression tester, regex checker, regex cheat sheet, online regex" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/regex-tester" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/regex-tester" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Regex Tester & Cheat Sheet — Savan Padaliya" />
         <meta property="og:description" content="Test regular expressions with live match highlighting and flag toggles. Includes a built-in regex cheat sheet. Free, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/regex-tester" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/regex-tester" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

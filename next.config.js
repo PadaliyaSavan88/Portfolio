@@ -1,14 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
+  reactStrictMode: true,
+  trailingSlash: false,
+  async redirects() {
     return [
       {
-        source: "/robots.txt",
-        destination: "/api/robots",
-      }
+        source: "/:path*",
+        has: [{ type: "host", value: "www.savanpadaliya.com" }],
+        destination: "https://savanpadaliya.com/:path*",
+        permanent: true,
+      },
     ];
   },
-  reactStrictMode: true,
-}
+  async rewrites() {
+    return [
+      { source: "/robots.txt", destination: "/api/robots" },
+    ];
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

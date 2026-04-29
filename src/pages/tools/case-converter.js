@@ -46,9 +46,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Free online case converter. Convert text between camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, Title Case, uppercase, and lowercase. Instant, client-side.',
-      url: 'https://www.savanpadaliya.com/tools/case-converter',
+      url: 'https://savanpadaliya.com/tools/case-converter',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['8 case formats: camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, Title Case, UPPER, lower', 'Auto-converts on keystroke', 'One-click copy per format', 'Handles spaces, hyphens, and underscores as word delimiters'],
     },
     {
@@ -88,14 +88,14 @@ export default function CaseConverter() {
         <meta name="description" content="Convert text between camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, Title Case, uppercase, and lowercase. Free online tool." />
         <meta name="keywords" content="case converter, camelCase, snake_case, PascalCase, kebab-case, text converter, online tool" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/case-converter" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/case-converter" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Case Converter — camelCase, snake_case & More | Savan Padaliya" />
         <meta property="og:description" content="Convert text to camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, and more. Free, instant, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/case-converter" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/case-converter" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

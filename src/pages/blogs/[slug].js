@@ -52,8 +52,8 @@ export default function Post({ post, relatedPosts = [] }) {
                 <meta property="og:title" content={`${post.title} | Savan Padaliya`} />
                 <meta property="og:description" content={post.description} />
                 <meta property="og:image" content={`https://savanpadaliya.com/images/posts/${post.imageName}`} />
-                <meta property="og:url" content={`https://www.savanpadaliya.com/blogs/${post.slug}`} />
-                <link rel="canonical" href={`https://www.savanpadaliya.com/blogs/${post.slug}`} />
+                <meta property="og:url" content={`https://savanpadaliya.com/blogs/${post.slug}`} />
+                <link rel="canonical" href={`https://savanpadaliya.com/blogs/${post.slug}`} />
                 <meta name="robots" content="index, follow" />
 
                 {/* <!-- Twitter --> */}
@@ -71,26 +71,26 @@ export default function Post({ post, relatedPosts = [] }) {
                       "@graph": [
                         {
                           "@type": "Article",
-                          "@id": `https://www.savanpadaliya.com/blogs/${post.slug}/#article`,
+                          "@id": `https://savanpadaliya.com/blogs/${post.slug}/#article`,
                           "headline": post.title,
                           "description": post.description,
                           "author": {
                             "@type": "Person",
                             "name": "Savan Padaliya",
-                            "@id": "https://www.savanpadaliya.com/#person",
-                            "url": "https://www.savanpadaliya.com"
+                            "@id": "https://savanpadaliya.com/#person",
+                            "url": "https://savanpadaliya.com"
                           },
                           "publisher": {
                             "@type": "Person",
                             "name": "Savan Padaliya",
-                            "url": "https://www.savanpadaliya.com",
-                            "image": "https://www.savanpadaliya.com/graphics/header_logo.png"
+                            "url": "https://savanpadaliya.com",
+                            "image": "https://savanpadaliya.com/graphics/header_logo.png"
                           },
                           "datePublished": post.date,
-                          "url": `https://www.savanpadaliya.com/blogs/${post.slug}`,
+                          "url": `https://savanpadaliya.com/blogs/${post.slug}`,
                           "mainEntityOfPage": {
                             "@type": "WebPage",
-                            "@id": `https://www.savanpadaliya.com/blogs/${post.slug}`
+                            "@id": `https://savanpadaliya.com/blogs/${post.slug}`
                           },
                           "keywords": post.keyword || post.description
                         },
@@ -101,19 +101,19 @@ export default function Post({ post, relatedPosts = [] }) {
                               "@type": "ListItem",
                               "position": 1,
                               "name": "Home",
-                              "item": "https://www.savanpadaliya.com/"
+                              "item": "https://savanpadaliya.com/"
                             },
                             {
                               "@type": "ListItem",
                               "position": 2,
                               "name": "Blog",
-                              "item": "https://www.savanpadaliya.com/blogs/"
+                              "item": "https://savanpadaliya.com/blogs/"
                             },
                             {
                               "@type": "ListItem",
                               "position": 3,
                               "name": post.title,
-                              "item": `https://www.savanpadaliya.com/blogs/${post.slug}/`
+                              "item": `https://savanpadaliya.com/blogs/${post.slug}`
                             }
                           ]
                         }

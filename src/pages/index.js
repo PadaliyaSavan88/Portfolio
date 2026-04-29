@@ -23,22 +23,22 @@ export default function Home() {
         <meta name="description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
         <meta name="keywords" content="Senior Full-Stack Developer, AI Engineer, Node.js, React, OpenAI, Gemini, LangChain, MVP Development, AI Integration, AI Chatbot Development, Workflow Automation, Technical Consulting, SaaS Development, Hire Developer" />
         <meta name="language" content="English" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/" />
+        <link rel="canonical" href="https://savanpadaliya.com/" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Savan Padaliya" />
 
         <meta property="og:title" content="Savan Padaliya | Senior Full-Stack & AI Engineer for MVPs, Web Apps, and Automation" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:url" content="https://www.savanpadaliya.com/" />
+        <meta property="og:url" content="https://savanpadaliya.com/" />
         <meta property="og:description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />
         <meta name="twitter:title" content="Savan Padaliya | Senior Full-Stack & AI Engineer for MVPs, Web Apps, and Automation" />
         <meta name="twitter:description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer." />
-        <meta name="twitter:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta name="twitter:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -47,11 +47,11 @@ export default function Home() {
               "@graph": [
                 {
                   "@type": "Person",
-                  "@id": "https://www.savanpadaliya.com/#person",
+                  "@id": "https://savanpadaliya.com/#person",
                   "name": "Savan Padaliya",
                   "jobTitle": "Senior Full-Stack & AI Engineer",
-                  "url": "https://www.savanpadaliya.com",
-                  "image": "https://www.savanpadaliya.com/graphics/header_logo.png",
+                  "url": "https://savanpadaliya.com",
+                  "image": "https://savanpadaliya.com/graphics/header_logo.png",
                   "sameAs": [
                     "https://www.linkedin.com/in/savanpadaliya/",
                     "https://twitter.com/padaliya_savan"
@@ -78,19 +78,19 @@ export default function Home() {
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://www.savanpadaliya.com/#website",
-                  "url": "https://www.savanpadaliya.com",
+                  "@id": "https://savanpadaliya.com/#website",
+                  "url": "https://savanpadaliya.com",
                   "name": "Savan Padaliya — Senior Full-Stack & AI Engineer",
                   "description": "Portfolio of Savan Padaliya — Senior Full-Stack & AI Engineer for MVPs, web apps, AI chatbots, and automation systems.",
-                  "publisher": { "@id": "https://www.savanpadaliya.com/#person" }
+                  "publisher": { "@id": "https://savanpadaliya.com/#person" }
                 },
                 {
                   "@type": "ProfilePage",
-                  "@id": "https://www.savanpadaliya.com/#profilepage",
-                  "url": "https://www.savanpadaliya.com",
+                  "@id": "https://savanpadaliya.com/#profilepage",
+                  "url": "https://savanpadaliya.com",
                   "name": "Savan Padaliya — Senior Full-Stack & AI Engineer",
-                  "about": { "@id": "https://www.savanpadaliya.com/#person" },
-                  "mainEntity": { "@id": "https://www.savanpadaliya.com/#person" }
+                  "about": { "@id": "https://savanpadaliya.com/#person" },
+                  "mainEntity": { "@id": "https://savanpadaliya.com/#person" }
                 },
                 {
                   "@type": "FAQPage",

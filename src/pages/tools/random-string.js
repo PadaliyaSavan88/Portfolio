@@ -27,9 +27,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Generate cryptographically random strings using crypto.getRandomValues. Choose length and character sets for passwords, API keys, session tokens, and CSRF tokens.',
-      url: 'https://www.savanpadaliya.com/tools/random-string',
+      url: 'https://savanpadaliya.com/tools/random-string',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Cryptographically secure via crypto.getRandomValues', 'Configurable length 8–128 characters', 'Uppercase, lowercase, numbers, symbols', 'One-click copy and regenerate'],
     },
     {
@@ -86,14 +86,14 @@ export default function RandomString() {
         <meta name="description" content="Generate cryptographically random strings for passwords, API keys, and tokens. Choose length and character sets. Free, client-side, no sign-up." />
         <meta name="keywords" content="random string generator, cryptographic random, API key generator, secure token, crypto.getRandomValues" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/random-string" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/random-string" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Random String Generator — Savan Padaliya" />
         <meta property="og:description" content="Generate cryptographically random strings. Choose length and character sets for passwords, API keys, or tokens." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/random-string" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/random-string" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />
