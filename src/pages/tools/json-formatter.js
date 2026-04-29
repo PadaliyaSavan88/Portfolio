@@ -19,9 +19,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Free online JSON formatter, validator, and minifier. Format JSON with syntax highlighting, validate for errors, or minify for production. Runs entirely in your browser.',
-      url: 'https://www.savanpadaliya.com/tools/json-formatter',
+      url: 'https://savanpadaliya.com/tools/json-formatter',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Format JSON with syntax highlighting', 'Validate JSON and show parse errors', 'Minify JSON to compact string', 'One-click copy to clipboard'],
     },
     {
@@ -84,14 +84,14 @@ export default function JsonFormatter() {
         <meta name="description" content="Free online JSON formatter, validator, and minifier. Paste JSON to format with syntax highlighting, validate, or minify. Instant, client-side, no sign-up." />
         <meta name="keywords" content="JSON formatter, JSON validator, JSON beautifier, JSON minifier, format JSON online, pretty print JSON" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/json-formatter" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/json-formatter" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Free JSON Formatter & Validator — Savan Padaliya" />
         <meta property="og:description" content="Format, validate, and minify JSON instantly. Syntax highlighted output, one-click copy. No sign-up required." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/json-formatter" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/json-formatter" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

@@ -20,9 +20,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Free online QR code generator. Convert any URL or text to a QR code and download as PNG instantly. No sign-up required.',
-      url: 'https://www.savanpadaliya.com/tools/qr-generator',
+      url: 'https://savanpadaliya.com/tools/qr-generator',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Generate QR code from any URL or text', 'Download as PNG', 'Copy encoded text to clipboard', 'No sign-up required'],
     },
     {
@@ -84,14 +84,14 @@ export default function QrGenerator() {
         <meta name="description" content="Free QR code generator. Convert any URL or text to a QR code and download as PNG instantly. No sign-up required." />
         <meta name="keywords" content="QR code generator, free QR code, URL to QR code, online QR generator, QR PNG download" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/qr-generator" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/qr-generator" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Free QR Code Generator — Savan Padaliya" />
         <meta property="og:description" content="Convert any URL or text to a QR code. Download as PNG. Free and instant." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/qr-generator" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/qr-generator" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

@@ -15,9 +15,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Hash passwords with bcrypt or verify a password against a bcrypt hash. Free online tool — everything runs in your browser using bcryptjs, nothing is stored or transmitted.',
-      url: 'https://www.savanpadaliya.com/tools/bcrypt-generator',
+      url: 'https://savanpadaliya.com/tools/bcrypt-generator',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Hash passwords with bcrypt (bcryptjs)', 'Verify password against existing hash', 'Cost rounds slider 4–14', 'Runs entirely in the browser — no data transmitted'],
     },
     {
@@ -101,14 +101,14 @@ export default function BcryptGenerator() {
         <meta name="description" content="Hash passwords with bcrypt or verify a password against a bcrypt hash. Free online tool — everything runs in your browser, nothing is stored." />
         <meta name="keywords" content="bcrypt generator, bcrypt hash, bcrypt verifier, password hash, bcrypt online" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/bcrypt-generator" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/bcrypt-generator" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Bcrypt Hash Generator / Verifier — Savan Padaliya" />
         <meta property="og:description" content="Hash passwords with bcrypt or verify a password against a bcrypt hash. Runs in your browser — nothing stored. Free, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/bcrypt-generator" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/bcrypt-generator" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

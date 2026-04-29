@@ -62,21 +62,21 @@ export default function AllBlogs({ allPostsData }) {
         <meta name="description" content="Practical writing on AI development, Node.js, React, system design, and shipping software faster. By Savan Padaliya — Senior Full Stack Developer." />
         <meta name="keywords" content="Tech Blogs, JavaScript, NodeJS, AI, LLMs, RAG, OpenAI, Vertex AI, LangChain, DevOps, Production Engineering" />
         <meta name="language" content="English" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/blogs/" />
+        <link rel="canonical" href="https://savanpadaliya.com/blogs" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Savan Padaliya" />
 
         <meta property="og:title" content="Blog | AI, Full Stack Development & Building in Public — Savan Padaliya" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:url" content="https://www.savanpadaliya.com/blogs/" />
+        <meta property="og:url" content="https://savanpadaliya.com/blogs" />
         <meta property="og:description" content="Practical writing on AI development, Node.js, React, system design, and shipping software faster." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:title" content="Blog — Savan Padaliya" />
         <meta name="twitter:description" content="Practical writing on AI development, Node.js, and shipping software faster." />
-        <meta name="twitter:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta name="twitter:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -85,11 +85,11 @@ export default function AllBlogs({ allPostsData }) {
               "@type": "ItemList",
               "name": "Blog by Savan Padaliya",
               "description": "Articles on AI development, Node.js, React, and shipping software faster.",
-              "url": "https://www.savanpadaliya.com/blogs/",
+              "url": "https://savanpadaliya.com/blogs",
               "itemListElement": allPostsData.map((post, index) => ({
                 "@type": "ListItem",
                 "position": index + 1,
-                "url": `https://www.savanpadaliya.com/blogs/${post.id}/`,
+                "url": `https://savanpadaliya.com/blogs/${post.id}`,
                 "name": post.title
               }))
             })

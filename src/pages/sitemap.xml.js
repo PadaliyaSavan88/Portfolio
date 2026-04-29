@@ -5,116 +5,116 @@ function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.savanpadaliya.com/</loc>
+    <loc>https://savanpadaliya.com/</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/about/</loc>
+    <loc>https://savanpadaliya.com/about</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/blogs/</loc>
+    <loc>https://savanpadaliya.com/blogs</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/</loc>
+    <loc>https://savanpadaliya.com/tools</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/qr-generator</loc>
+    <loc>https://savanpadaliya.com/tools/qr-generator</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/random-string</loc>
+    <loc>https://savanpadaliya.com/tools/random-string</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/json-formatter</loc>
+    <loc>https://savanpadaliya.com/tools/json-formatter</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/json-csv-converter</loc>
+    <loc>https://savanpadaliya.com/tools/json-csv-converter</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/markdown-previewer</loc>
+    <loc>https://savanpadaliya.com/tools/markdown-previewer</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/regex-tester</loc>
+    <loc>https://savanpadaliya.com/tools/regex-tester</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/case-converter</loc>
+    <loc>https://savanpadaliya.com/tools/case-converter</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/base64</loc>
+    <loc>https://savanpadaliya.com/tools/base64</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/diff-checker</loc>
+    <loc>https://savanpadaliya.com/tools/diff-checker</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/password-generator</loc>
+    <loc>https://savanpadaliya.com/tools/password-generator</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/uuid-generator</loc>
+    <loc>https://savanpadaliya.com/tools/uuid-generator</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/lorem-ipsum</loc>
+    <loc>https://savanpadaliya.com/tools/lorem-ipsum</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/bcrypt-generator</loc>
+    <loc>https://savanpadaliya.com/tools/bcrypt-generator</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.savanpadaliya.com/tools/cron-builder</loc>
+    <loc>https://savanpadaliya.com/tools/cron-builder</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   ${posts.map(({ id }) => `
   <url>
-    <loc>https://www.savanpadaliya.com/blogs/${id}/</loc>
+    <loc>https://savanpadaliya.com/blogs/${id}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

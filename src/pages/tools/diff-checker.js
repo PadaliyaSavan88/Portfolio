@@ -37,9 +37,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Free online diff checker. Paste two texts side by side and see added, removed, and unchanged lines highlighted in green and red. No sign-up required.',
-      url: 'https://www.savanpadaliya.com/tools/diff-checker',
+      url: 'https://savanpadaliya.com/tools/diff-checker',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Line-by-line diff with color coding', 'Added/removed line counts', 'Copy diff as unified patch', 'Load sample to explore the UI'],
     },
     {
@@ -100,14 +100,14 @@ export default function DiffChecker() {
         <meta name="description" content="Free online diff checker. Paste two texts side by side and see added, removed, and unchanged lines highlighted. No sign-up required." />
         <meta name="keywords" content="diff checker, text comparison, compare text, diff tool, line diff, online diff" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/diff-checker" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/diff-checker" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Diff Checker — Compare Text Online | Savan Padaliya" />
         <meta property="og:description" content="Paste two texts and see added, removed, and unchanged lines highlighted in green and red. Free, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/diff-checker" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/diff-checker" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

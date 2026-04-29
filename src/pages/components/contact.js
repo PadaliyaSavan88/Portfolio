@@ -10,7 +10,7 @@ export default function Contact() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "Person",
-                        "@id": "https://www.savanpadaliya.com/#person",
+                        "@id": "https://savanpadaliya.com/#person",
                         "name": "Savan Padaliya",
                         "contactPoint": {
                             "@type": "ContactPoint",

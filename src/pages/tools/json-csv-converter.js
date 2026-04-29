@@ -56,9 +56,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Free online JSON to CSV and CSV to JSON converter. Convert between JSON arrays and CSV format instantly in your browser. No sign-up required.',
-      url: 'https://www.savanpadaliya.com/tools/json-csv-converter',
+      url: 'https://savanpadaliya.com/tools/json-csv-converter',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Convert JSON array to CSV', 'Convert CSV to JSON array', 'Handles quoted fields and commas', 'One-click copy output'],
     },
     {
@@ -120,14 +120,14 @@ export default function JsonCsvConverter() {
         <meta name="description" content="Free online JSON to CSV and CSV to JSON converter. Paste your data, convert instantly, and copy the result. No sign-up required." />
         <meta name="keywords" content="JSON to CSV, CSV to JSON, JSON converter, CSV converter, free online converter" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/json-csv-converter" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/json-csv-converter" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="JSON ↔ CSV Converter — Savan Padaliya" />
         <meta property="og:description" content="Convert between JSON arrays and CSV format instantly. Handles commas, quotes, and nested values. Free, client-side, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/json-csv-converter" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/json-csv-converter" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

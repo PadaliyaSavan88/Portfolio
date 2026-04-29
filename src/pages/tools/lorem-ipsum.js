@@ -52,9 +52,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Generate Lorem Ipsum placeholder text as paragraphs, sentences, or individual words. The first paragraph always starts with the classic "Lorem ipsum dolor sit amet..." opening. Free, no sign-up required.',
-      url: 'https://www.savanpadaliya.com/tools/lorem-ipsum',
+      url: 'https://savanpadaliya.com/tools/lorem-ipsum',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Paragraphs, sentences, or word list output', 'First paragraph starts with classic Lorem ipsum opener', 'Count control: 1–20 paragraphs/sentences, 10–500 words', 'One-click copy output'],
     },
     {
@@ -112,14 +112,14 @@ export default function LoremIpsum() {
         <meta name="description" content="Generate Lorem Ipsum placeholder text — paragraphs, sentences, or words. Free online tool, no sign-up required." />
         <meta name="keywords" content="lorem ipsum generator, placeholder text, dummy text, lorem ipsum online, filler text" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/lorem-ipsum" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/lorem-ipsum" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Lorem Ipsum Generator — Savan Padaliya" />
         <meta property="og:description" content="Generate Lorem Ipsum placeholder text as paragraphs, sentences, or words. Free, instant, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/lorem-ipsum" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/lorem-ipsum" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

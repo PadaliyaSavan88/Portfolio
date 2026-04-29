@@ -21,9 +21,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Generate one or many UUID v4 identifiers instantly. Options for uppercase, no dashes, and bulk generation up to 20 at once. No sign-up required.',
-      url: 'https://www.savanpadaliya.com/tools/uuid-generator',
+      url: 'https://savanpadaliya.com/tools/uuid-generator',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['UUID v4 generation via crypto.randomUUID()', 'Bulk generation up to 20 UUIDs', 'Uppercase and no-dashes variants', 'Click individual UUID or Copy All'],
     },
     {
@@ -75,14 +75,14 @@ export default function UuidGenerator() {
         <meta name="description" content="Generate one or many UUID v4 identifiers instantly. Options for uppercase, no dashes, and bulk generation up to 20. No sign-up required." />
         <meta name="keywords" content="UUID generator, GUID generator, UUID v4, random UUID, online UUID, bulk UUID" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/uuid-generator" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/uuid-generator" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="UUID / GUID Generator — Savan Padaliya" />
         <meta property="og:description" content="Generate UUID v4 identifiers in bulk. Uppercase and no-dashes options. Free, instant, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/uuid-generator" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/uuid-generator" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

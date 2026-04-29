@@ -43,9 +43,9 @@ const SCHEMA = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Web Browser',
       description: 'Free online Markdown previewer with live side-by-side rendering. Supports GitHub Flavored Markdown including tables, strikethrough, and fenced code blocks. No sign-up required.',
-      url: 'https://www.savanpadaliya.com/tools/markdown-previewer',
+      url: 'https://savanpadaliya.com/tools/markdown-previewer',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://www.savanpadaliya.com' },
+      author: { '@type': 'Person', name: 'Savan Padaliya', url: 'https://savanpadaliya.com' },
       featureList: ['Live side-by-side preview', 'GitHub Flavored Markdown (GFM)', 'Tables, strikethrough, fenced code blocks', 'Copy Markdown or rendered HTML'],
     },
     {
@@ -92,14 +92,14 @@ export default function MarkdownPreviewer() {
         <meta name="description" content="Free online Markdown previewer with live side-by-side rendering. Supports GFM tables, code blocks, and strikethrough. No sign-up required." />
         <meta name="keywords" content="markdown previewer, markdown editor, live markdown, markdown to html, online markdown" />
         <meta name="author" content="Savan Padaliya" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/markdown-previewer" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools/markdown-previewer" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Markdown Previewer — Savan Padaliya" />
         <meta property="og:description" content="Live side-by-side Markdown editor and preview. Supports GFM tables, code blocks, strikethrough. Free, no sign-up." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/markdown-previewer" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools/markdown-previewer" />
         <meta property="og:site_name" content="Savan Padaliya" />
-        <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+        <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />

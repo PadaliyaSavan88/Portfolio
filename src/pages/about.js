@@ -60,22 +60,22 @@ export default function About() {
                 <meta name="description" content="The story of Savan Padaliya — Senior Full Stack Developer who went from building restaurant systems in college to shipping software that serves 69.9 million citizens. Now helping businesses ship faster with AI." />
                 <meta name="keywords" content="Savan Padaliya, Senior Full Stack Developer, AI Developer, Node.js, React, Product Owner, SaaS, Blockchain, Enterprise Software" />
                 <meta name="language" content="English" />
-                <link rel="canonical" href="https://www.savanpadaliya.com/about/" />
+                <link rel="canonical" href="https://savanpadaliya.com/about" />
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Savan Padaliya" />
 
                 <meta property="og:title" content="About Savan Padaliya | Senior Full Stack Developer" />
                 <meta property="og:site_name" content="Savan Padaliya" />
-                <meta property="og:url" content="https://www.savanpadaliya.com/about/" />
+                <meta property="og:url" content="https://savanpadaliya.com/about" />
                 <meta property="og:description" content="From restaurant management systems in college to software serving 69.9 million citizens. The story of Savan Padaliya." />
                 <meta property="og:type" content="profile" />
-                <meta property="og:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+                <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@padaliya_savan" />
                 <meta name="twitter:creator" content="@padaliya_savan" />
                 <meta name="twitter:title" content="About Savan Padaliya | Senior Full Stack Developer" />
                 <meta name="twitter:description" content="From restaurant management systems in college to software serving 69.9 million citizens." />
-                <meta name="twitter:image" content="https://www.savanpadaliya.com/graphics/header_logo.png" />
+                <meta name="twitter:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
@@ -84,11 +84,11 @@ export default function About() {
                             "@graph": [
                                 {
                                     "@type": "Person",
-                                    "@id": "https://www.savanpadaliya.com/#person",
+                                    "@id": "https://savanpadaliya.com/#person",
                                     "name": "Savan Padaliya",
                                     "jobTitle": "Senior Full Stack Developer",
-                                    "url": "https://www.savanpadaliya.com",
-                                    "image": "https://www.savanpadaliya.com/graphics/header_logo.png",
+                                    "url": "https://savanpadaliya.com",
+                                    "image": "https://savanpadaliya.com/graphics/header_logo.png",
                                     "sameAs": [
                                         "https://www.linkedin.com/in/savanpadaliya/",
                                         "https://twitter.com/padaliya_savan"

@@ -43,11 +43,11 @@ export default function ToolsIndex() {
           content="14 free online developer tools — JSON formatter, Base64 encoder, regex tester, diff checker, password generator, UUID generator and more. No sign-up, no ads."
         />
         <meta name="keywords" content="free developer tools, JSON formatter, Base64 encoder, regex tester, diff checker, password generator, UUID generator, cron builder, lorem ipsum" />
-        <link rel="canonical" href="https://www.savanpadaliya.com/tools/" />
+        <link rel="canonical" href="https://savanpadaliya.com/tools" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Free Developer Tools — Savan Padaliya" />
         <meta property="og:description" content="14 free online developer tools — JSON, Base64, regex, diff, passwords, UUIDs and more. No sign-up required." />
-        <meta property="og:url" content="https://www.savanpadaliya.com/tools/" />
+        <meta property="og:url" content="https://savanpadaliya.com/tools" />
         <meta property="og:type" content="website" />
         <script
           type="application/ld+json"
@@ -56,12 +56,12 @@ export default function ToolsIndex() {
               '@context': 'https://schema.org',
               '@type': 'ItemList',
               name: 'Free Developer Tools by Savan Padaliya',
-              url: 'https://www.savanpadaliya.com/tools/',
+              url: 'https://savanpadaliya.com/tools',
               itemListElement: allTools.map((t, i) => ({
                 '@type': 'ListItem',
                 position: i + 1,
                 name: t.name,
-                url: `https://www.savanpadaliya.com/tools/${t.slug}`,
+                url: `https://savanpadaliya.com/tools${t.slug}`,
               })),
             }),
           }}
