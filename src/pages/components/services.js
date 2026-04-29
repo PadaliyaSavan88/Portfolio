@@ -1,27 +1,27 @@
 const services = [
     {
         num: "01",
-        title: "Full Stack Development",
+        title: "Build production-ready web apps",
         for: "For startups & product teams",
-        text: "Need features shipped fast without cutting corners? I build production-grade web apps and APIs in Node.js and React — clean architecture, real test coverage, ready to scale."
+        text: "Build reliable web apps and APIs in Node.js and React with scalable architecture, clean code, and maintainable foundations."
     },
     {
         num: "02",
-        title: "AI Integration",
+        title: "Add AI where it creates leverage",
         for: "For teams adding intelligence",
-        text: "Add AI capabilities your users will actually notice — smart chatbots, document processing, automated workflows, and LLM pipelines using OpenAI, Gemini, and LangChain."
+        text: "Implement AI chatbots, document workflows, internal copilots, and LLM-powered product features that solve specific business problems."
     },
     {
         num: "03",
-        title: "Rapid Prototyping",
+        title: "Validate ideas with working MVPs",
         for: "For founders validating ideas",
-        text: "Don't spend months building before you know it works. I'll prototype your core idea in days — real working software you can test with users and pitch to investors."
+        text: "Turn product ideas into launchable MVPs and prototypes quickly so they can be tested, demoed, or shipped without long cycles."
     },
     {
         num: "04",
-        title: "Technical Consulting",
+        title: "Get senior technical clarity",
         for: "For businesses that need clarity",
-        text: "Architecture review, tech stack decisions, AI adoption strategy — senior-level thinking without the senior hire. I'll tell you what to build, what to skip, and why."
+        text: "Support teams with architecture reviews, AI strategy, stack decisions, roadmap planning, and delivery guidance."
     }
 ];
 

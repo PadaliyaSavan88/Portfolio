@@ -4,7 +4,7 @@ const caseStudies = [
     {
         slug: "whatsapp-ai-chatbot",
         label: "AI Automation",
-        title: "WhatsApp AI Chatbot",
+        title: "WhatsApp AI Chatbot for Lead Qualification",
         problem: "A business was losing leads after hours — no one available to qualify or respond.",
         solution: "Built a 24/7 AI-powered WhatsApp bot that qualifies leads, answers FAQs, and routes conversations using N8N + OpenAI.",
         outcome: "Response time dropped to instant. Lead qualification automated end-to-end.",
@@ -13,7 +13,7 @@ const caseStudies = [
     {
         slug: "ai-website-optimizer",
         label: "AI Product",
-        title: "AI Website Optimizer",
+        title: "AI Website Optimizer for SEO, AEO, and GEO Audits",
         problem: "Businesses couldn't tell why they weren't ranking in AI-driven search — no tooling existed for AEO/GEO audits.",
         solution: "Built an intelligent audit bot that crawls sites and returns specific, actionable fixes for SEO, AEO, and GEO compatibility.",
         outcome: "Clients got a clear action list instead of guesswork. Built on LangChain for extensibility.",
@@ -22,7 +22,7 @@ const caseStudies = [
     {
         slug: "video-streaming-platform",
         label: "Scalable Platform",
-        title: "Video Streaming Platform",
+        title: "Scalable Video Streaming Platform with Real-Time Search",
         problem: "A streaming product needed real-time data handling, fast search, and smooth playback at scale.",
         solution: "Full-stack platform with Apache Kafka for real-time event streaming, Redis caching, and actor/genre/director-based search.",
         outcome: "Production-ready platform handling concurrent streams with no buffering issues.",
@@ -31,7 +31,7 @@ const caseStudies = [
     {
         slug: "ecommerce-platform",
         label: "E-commerce",
-        title: "E-commerce Platform",
+        title: "E-commerce Storefront with Stripe Integration",
         problem: "A stationery brand needed an online store — fast — with multiple product images and reliable checkout.",
         solution: "Built a complete storefront with category browsing, multi-image products, and Stripe payment integration.",
         outcome: "Shipped to production and processing real orders within weeks of kickoff.",
