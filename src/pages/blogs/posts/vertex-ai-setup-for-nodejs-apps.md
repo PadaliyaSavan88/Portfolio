@@ -6,6 +6,17 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'Step-by-step guide to integrating Google Vertex AI into your Node.js application — from project setup and authentication to making your first generative AI call.'
 keyword: 'Vertex AI, Node.js, Google Cloud, AI integration, generative AI, @google-cloud/vertexai, authentication, production AI'
+faq:
+  - question: "What is the difference between Vertex AI and the direct Gemini API?"
+    answer: "The direct Gemini API is simpler to start — just an API key. Vertex AI is Google Cloud's enterprise platform with formal SLAs, regional data residency, IAM-based access control, and VPC support. For production SaaS on GCP, Vertex AI is the right choice; for prototyping, the direct API is simpler."
+  - question: "How do I authenticate with Vertex AI in a Node.js production app?"
+    answer: "Use a service account with the Vertex AI User role and set the GOOGLE_APPLICATION_CREDENTIALS environment variable to your service account JSON key file path. In Cloud Run and other GCP environments, use Workload Identity with the default service account — no key files needed."
+  - question: "What Node.js version is required for the Vertex AI SDK?"
+    answer: "The @google-cloud/vertexai SDK requires Node.js 18 or later. Node.js 18 introduced the native Fetch API which the SDK depends on. Verify your runtime version with node --version before setting up the SDK."
+  - question: "What is Application Default Credentials (ADC) in Google Cloud?"
+    answer: "ADC is a credential resolution strategy in Google Cloud SDKs. When your code calls an API, the SDK searches for credentials in order: GOOGLE_APPLICATION_CREDENTIALS env var, gcloud user credentials, then the compute environment default service account. Run gcloud auth application-default login to set ADC for local development."
+  - question: "Does Vertex AI support streaming responses in Node.js?"
+    answer: "Yes. The @google-cloud/vertexai SDK supports streaming via generateContentStream(). It returns an AsyncIterable of response chunks you can process in real time — suitable for server-sent events in Express or streaming to a Next.js API route."
 ---
 
 
@@ -20,7 +31,7 @@ Before writing a single line of code, make sure you have:
 - A **Google Cloud Project** with billing enabled
 - The **Vertex AI API** enabled (search "Vertex AI API" in the GCP console and click Enable)
 - The **gcloud CLI** installed locally (`brew install google-cloud-sdk` on macOS, or download from cloud.google.com)
-- Node.js 18+ installed
+- Node.js 18+ installed (using TypeScript? See [TypeScript for AI Applications](/blogs/typescript-for-ai-applications-nodejs) for typed SDK patterns once this guide is complete)
 
 Enable the API via CLI if you prefer:
 
@@ -200,3 +211,20 @@ To increase quotas, go to IAM & Admin > Quotas in the GCP console and request an
 For a hobby project or prototype, the direct Gemini API is faster to set up. For anything you're putting in front of real users or handling sensitive data, Vertex AI's enterprise controls make the extra setup worthwhile.
 
 Once your integration is live, the next step is observability — tracking latency, token costs, and error rates before they become incidents. See [How to Monitor AI Pipelines in Production](/blogs/how-to-monitor-ai-pipelines-in-production) for a Node.js-first guide to instrumenting your Vertex AI calls.
+
+## Frequently Asked Questions
+
+**What is the difference between Vertex AI and the direct Gemini API?**  
+The direct Gemini API is simpler to start — just an API key. Vertex AI is Google Cloud's enterprise platform with formal SLAs, regional data residency options, IAM-based access control, and VPC support. For production SaaS on GCP, Vertex AI is the right choice; for prototyping and personal projects, the direct API is simpler.
+
+**How do I authenticate with Vertex AI in a Node.js production app?**  
+Use a service account with the Vertex AI User role and set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable to your service account JSON key file path. In Cloud Run and other GCP environments, use Workload Identity with the default service account — no key files needed in containers.
+
+**What Node.js version is required for the Vertex AI SDK?**  
+The `@google-cloud/vertexai` SDK requires Node.js 18 or later. Node.js 18 introduced the native Fetch API which the SDK depends on. Verify your runtime version with `node --version` before setting up the SDK.
+
+**What is Application Default Credentials (ADC) in Google Cloud?**  
+ADC is a credential resolution strategy in Google Cloud SDKs. When your code calls an API, the SDK searches for credentials in order: `GOOGLE_APPLICATION_CREDENTIALS` env var, gcloud user credentials, then the compute environment default service account. Run `gcloud auth application-default login` once to set up ADC for local development.
+
+**Does Vertex AI support streaming responses in Node.js?**  
+Yes. The `@google-cloud/vertexai` SDK supports streaming via `generateContentStream()`. It returns an `AsyncIterable` of response chunks you can process in real time — suitable for server-sent events (SSE) in Express or streaming to a Next.js API route.

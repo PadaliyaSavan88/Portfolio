@@ -6,6 +6,17 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'A practical guide to prompt engineering for production LLM applications — system prompts, temperature, context injection, few-shot examples, and output validation.'
 keyword: 'prompt engineering, system prompt design, LLM prompt production, temperature LLM, few-shot examples, context injection RAG, structured output LLM, chain of thought, prompt versioning Node.js'
+faq:
+  - question: "What is prompt engineering for production LLM applications?"
+    answer: "Prompt engineering is the practice of designing LLM inputs to reliably produce useful outputs at scale. In production this includes system prompt design, context injection strategies, output format specification, few-shot example selection, temperature tuning, and building version control for prompts the same way you version code."
+  - question: "What temperature should I use for production LLM calls?"
+    answer: "Use temperature 0 for structured outputs, classification, and tasks where consistency matters. Use 0.3–0.7 for content generation where some variation is acceptable. Use 0.8–1.0 only for creative tasks where diversity is desired. Higher temperature increases creativity but also increases hallucinations and format violations."
+  - question: "How do I inject context into LLM prompts for RAG applications?"
+    answer: "Place retrieved context in the system prompt or at the start of the user message, clearly delimited with XML tags or markdown headers. Instruct the model to answer only from the provided context and to say it does not know when the answer is not in the context. This reduces hallucinations significantly."
+  - question: "What is few-shot prompting and when should I use it?"
+    answer: "Few-shot prompting includes 2–5 examples of input/output pairs in the prompt to show the model the expected format and quality. Use it when zero-shot prompts produce inconsistent formats, when the task requires a specific style, or when the model does not follow instructions reliably."
+  - question: "How do I version control prompts in a production LLM application?"
+    answer: "Store prompts as versioned strings in a configuration file, environment variable, or database — not hardcoded in application logic. Include the prompt version in your logs so you can correlate output quality changes with prompt changes. LangSmith and Langfuse both provide prompt management with version history."
 ---
 
 Production LLM apps live and die on prompt quality. Temperature, context injection, and output format are mentioned everywhere as afterthoughts — this post teaches them properly, with code you can copy into a real system.
@@ -228,3 +239,20 @@ const messages = [
 ```
 
 Prompt engineering is not a one-time task. It is an ongoing process of measuring output quality, identifying failure modes, and incrementally tightening your prompts. The [monitoring infrastructure](/blogs/how-to-monitor-ai-pipelines-in-production) you build alongside it is what makes that iteration fast.
+
+## Frequently Asked Questions
+
+**What is prompt engineering for production LLM applications?**  
+Prompt engineering is the practice of designing LLM inputs to reliably produce useful outputs at scale. In production this includes: system prompt design, context injection strategies, output format specification, few-shot example selection, temperature tuning, and version-controlling prompts the same way you version application code.
+
+**What temperature should I use for production LLM API calls?**  
+Use temperature 0 for structured outputs, classification, and tasks where consistency matters. Use 0.3–0.7 for content generation where some variation is acceptable. Use 0.8–1.0 only for creative tasks where diversity is desired. Higher temperature increases creativity but also increases hallucinations and format violations.
+
+**How do I inject context into LLM prompts for RAG applications?**  
+Place retrieved context in the system prompt or at the start of the user message, clearly delimited with XML tags or markdown headers. Instruct the model to answer only from the provided context and to say it does not know when the answer is not present. This significantly reduces hallucinations compared to open-ended generation.
+
+**What is few-shot prompting and when should I use it?**  
+Few-shot prompting includes 2–5 examples of input/output pairs in the prompt to show the model the expected format and quality. Use it when zero-shot prompts produce inconsistent formats, when the task requires a specific style, or when the model doesn't follow output format instructions reliably. Three high-quality examples often outperform ten mediocre ones.
+
+**How do I version control prompts in a production LLM application?**  
+Store prompts as versioned strings in a configuration file, environment variable, or database — not hardcoded in application logic. Include the prompt version in your logs so you can correlate output quality changes with prompt changes. Tools like LangSmith and Langfuse provide prompt management with version history for production LLM apps.

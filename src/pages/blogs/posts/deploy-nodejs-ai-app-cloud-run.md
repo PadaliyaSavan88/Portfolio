@@ -6,6 +6,17 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'Step-by-step guide to deploying a Node.js + Vertex AI application to Google Cloud Run — Dockerfile, authentication, Artifact Registry, and continuous deployment.'
 keyword: 'Cloud Run Node.js, deploy AI app Google Cloud, Vertex AI Cloud Run, serverless AI deployment, Cloud Run Dockerfile, GCP Node.js deployment, Artifact Registry'
+faq:
+  - question: "Why should I use Cloud Run for a Node.js AI application?"
+    answer: "Cloud Run is serverless and scales to zero — you pay only for actual requests, which is ideal for AI apps with spiky traffic. It handles load balancing, SSL, and autoscaling automatically. It also integrates natively with Vertex AI authentication via the default service account, eliminating the need to manage key files."
+  - question: "How do I authenticate with Vertex AI from a Cloud Run container?"
+    answer: "Cloud Run containers automatically have access to the default service account credentials. Grant the Cloud Run service account the Vertex AI User role in IAM. The @google-cloud/vertexai SDK picks up these credentials automatically via Application Default Credentials — no key files or GOOGLE_APPLICATION_CREDENTIALS env var needed."
+  - question: "What base Docker image should I use for a Node.js AI app on Cloud Run?"
+    answer: "Use node:20-slim as the base image. The slim variant excludes unnecessary packages, reducing container size and attack surface. Multi-stage builds further reduce image size by separating the build environment with devDependencies from the production image with only production dependencies."
+  - question: "How do I set environment variables securely in Cloud Run?"
+    answer: "Use Secret Manager for sensitive values like API keys. Reference secrets in Cloud Run as environment variables via the --set-secrets flag in gcloud or the Secrets section in the Cloud Run console. Avoid passing secrets as plain env vars in the Dockerfile or deploy commands — they appear in build logs."
+  - question: "How long can a Cloud Run request take for AI applications?"
+    answer: "Cloud Run supports a maximum request timeout of 3600 seconds (1 hour). For typical LLM calls, set a timeout of 60–120 seconds. For long-running batch operations, use Cloud Tasks or Cloud Run Jobs instead of HTTP requests, which are better suited for fire-and-forget workloads."
 ---
 
 You have built a Node.js app that calls [Vertex AI](/blogs/vertex-ai-setup-for-nodejs-apps), tested it locally, and now you need it running in production. Cloud Run is the right first choice — serverless, fully managed, and scales to zero when idle.
@@ -242,3 +253,20 @@ curl -X POST https://YOUR_SERVICE_URL/generate \
 ```
 
 Once deployed, [instrument your Vertex AI calls](/blogs/how-to-monitor-ai-pipelines-in-production) to track latency, token usage, and errors from day one — Cloud Run metrics alone won't show you what's happening inside your AI calls.
+
+## Frequently Asked Questions
+
+**Why should I use Cloud Run for a Node.js AI application?**  
+Cloud Run is serverless and scales to zero — you pay only for actual requests, which is ideal for AI apps with spiky or unpredictable traffic. It handles load balancing, SSL, and autoscaling automatically. It also integrates natively with Vertex AI authentication via the default service account, eliminating key file management.
+
+**How do I authenticate with Vertex AI from a Cloud Run container?**  
+Cloud Run containers automatically have access to the default service account credentials. Grant the Cloud Run service account the Vertex AI User role in IAM. The `@google-cloud/vertexai` SDK picks up these credentials automatically via Application Default Credentials — no key files or `GOOGLE_APPLICATION_CREDENTIALS` env var needed.
+
+**What base Docker image should I use for a Node.js AI app on Cloud Run?**  
+Use `node:20-slim` as the base image. The slim variant excludes unnecessary packages, reducing container size and attack surface. Multi-stage builds further reduce image size by separating the build environment (with devDependencies) from the production image (with only production dependencies installed).
+
+**How do I set environment variables securely in Cloud Run?**  
+Use Secret Manager for sensitive values like API keys. Reference secrets in Cloud Run as environment variables via the `--set-secrets` flag in gcloud or the Secrets section in the Cloud Run console. Avoid passing secrets as plain env vars in the Dockerfile or deploy commands — they appear in build and deployment logs.
+
+**How long can a Cloud Run request take for AI applications?**  
+Cloud Run supports a maximum request timeout of 3600 seconds (1 hour). For typical LLM calls, set a timeout of 60–120 seconds. For long-running batch operations, use Cloud Tasks or Cloud Run Jobs instead of HTTP requests, which are better suited for fire-and-forget workloads that don't need immediate responses.

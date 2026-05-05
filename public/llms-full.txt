@@ -136,6 +136,48 @@ Published: 2026-04-23
 Description: Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.
 Topics covered: Browser and OS DNS cache layers and TTL strategy, full DNS resolution chain (root → TLD → authoritative nameservers), TCP 3-way handshake and why it matters for TTFB, TLS 1.3 handshake mechanics (certificate validation, Diffie-Hellman key exchange, session resumption), HTTP request structure and headers, Layer 4 vs Layer 7 load balancers and routing algorithms, web server vs application server distinction (nginx + Node.js), database connection pooling, query planning, buffer pool, and the N+1 problem, HTTP response compression and caching headers, SSR vs CSR vs SSG rendering strategies, and how each layer maps to production performance problems.
 
+### LangChain.js Agents: Build Your First AI Agent in Node.js
+URL: https://www.savanpadaliya.com/blogs/langchainjs-agents-nodejs-tutorial/
+Published: 2026-04-27
+Description: A practical guide to building autonomous AI agents with LangChain.js in Node.js — tools, agent executors, memory, and real working code examples.
+Topics covered: What AI agents are and how they differ from standard LLM calls, the ReAct (Reasoning + Acting) pattern and how LangChain implements it, creating and registering DynamicTools for web search, APIs, and custom business logic, the AgentExecutor and how it manages the observe-think-act loop, adding conversation memory with BufferMemory, production best practices including maxIterations limits, tool timeouts, input sanitization, and trace logging with LangSmith.
+
+### Choosing a Vector Database: Chroma vs Pinecone vs pgvector
+URL: https://www.savanpadaliya.com/blogs/vector-database-comparison-chroma-pinecone-pgvector/
+Published: 2026-04-27
+Description: A practical comparison of Chroma, Pinecone, and pgvector for production RAG pipelines — covering setup, query performance, scalability, and cost.
+Topics covered: What vector databases do and why RAG pipelines need them, Chroma setup for local development (in-process and client-server modes), Pinecone managed cloud setup and namespace-based isolation, pgvector installation and HNSW index configuration in PostgreSQL, LangChain.js integration for all three stores, metadata filtering for multi-tenant RAG applications, decision guide for when to use each option, comparison table covering hosting, scale, cost, and vendor lock-in.
+
+### Prompt Engineering for Production LLM Apps
+URL: https://www.savanpadaliya.com/blogs/prompt-engineering-production-llm-apps/
+Published: 2026-04-27
+Description: A practical guide to prompt engineering for production LLM applications — system prompts, temperature, context injection, few-shot examples, and output validation.
+Topics covered: What prompt engineering actually is vs common misconceptions, system prompt design principles for reliable outputs, choosing the right temperature for different task types, context injection strategies for RAG applications with delimiters and XML tags, few-shot prompting and when it outperforms zero-shot, chain-of-thought prompting for complex reasoning tasks, structured output enforcement and validation with Zod, prompt versioning and iteration workflow, prompt injection risks and how to isolate user input safely.
+
+### Deploying AI Apps to Cloud Run: Node.js + Vertex AI
+URL: https://www.savanpadaliya.com/blogs/deploy-nodejs-ai-app-cloud-run/
+Published: 2026-04-27
+Description: Step-by-step guide to deploying a Node.js + Vertex AI application to Google Cloud Run — Dockerfile, authentication, Artifact Registry, and continuous deployment.
+Topics covered: Why Cloud Run is the right serverless target for Node.js AI apps, writing a production Dockerfile with node:20-slim and multi-stage builds, setting up Google Artifact Registry for container images, authentication with Vertex AI using Workload Identity and the default service account (no key files), deploying with gcloud run deploy including memory and timeout configuration, managing secrets securely via Secret Manager, setting up continuous deployment with Cloud Build on GitHub push, handling cold starts and latency with min-instances and startup probes.
+
+### How to Reduce LLM API Costs in Production
+URL: https://www.savanpadaliya.com/blogs/reduce-llm-api-costs-production/
+Published: 2026-04-27
+Description: Practical strategies to cut OpenAI and Gemini API costs in production — model selection, caching, prompt optimization, batching, and RAG tuning.
+Topics covered: Understanding where LLM costs actually come from (prompt vs completion tokens, model choice), routing by task complexity — GPT-4o mini vs GPT-4o, Gemini Flash vs Gemini Pro, implementing exact response caching with Redis for repeated prompts, semantic caching with vector similarity for near-duplicate queries, prompt token optimization techniques (shorter system prompts, tighter RAG chunks), using the OpenAI Batch API for 50% discount on async workloads, tightening RAG chunk sizes to reduce injected context tokens, cost monitoring and alerting setup, prioritized optimization table by impact and effort.
+
+### Password Hashing with Bcrypt in Node.js: Why, How, and What to Avoid
+URL: https://www.savanpadaliya.com/blogs/password-hashing-bcrypt-nodejs/
+Published: 2026-05-02
+Description: Learn why bcrypt is the right choice for password hashing in Node.js, how bcryptjs works under the hood, and the mistakes that leave your users exposed.
+Topics covered: Why fast hash functions like SHA-256 and MD5 are dangerous for passwords (GPU brute-force attack rates), how bcrypt's intentional slowness and automatic salting work at a technical level, the bcrypt hash format and what each component means, installing and using bcryptjs in Node.js, hashing and verifying passwords with the async API, choosing the right cost factor (OWASP recommendations, benchmarking script), a complete Express auth flow with timing-safe login and dummy hash protection, password rehashing on login to keep cost factors current, bcrypt vs scrypt vs Argon2 comparison, and common implementation mistakes including hashSync misuse, 72-byte truncation, and low cost factors.
+
+### TypeScript for AI Applications: Typing LLM Responses in Node.js
+URL: https://www.savanpadaliya.com/blogs/typescript-for-ai-applications-nodejs/
+Published: 2026-05-02
+Description: How to properly type OpenAI and Vertex AI SDK responses in TypeScript — typed prompts, structured outputs, Zod validation, and patterns that prevent runtime surprises in production AI apps.
+Topics covered: Why LLM responses are untyped at the API boundary and why TypeScript alone cannot catch runtime shape mismatches, the two-layer approach (TypeScript interfaces for compile-time + Zod for runtime validation), typing the OpenAI SDK including ChatCompletion, ChatCompletionMessageParam, and the optional chaining requirement for choices and content, typing the Vertex AI SDK including GenerateContentRequest and GenerateContentResult, typed prompt builder pattern with union type inputs, Zod schema validation for structured LLM outputs with ProductReview example, OpenAI JSON mode with response_format and temperature 0, typing streaming responses with Stream<ChatCompletionChunk> and AsyncIterable, typed logger for AI call telemetry, and a comparison of JavaScript vs TypeScript tradeoffs for AI applications.
+
 ---
 
 ## Free Developer Tools

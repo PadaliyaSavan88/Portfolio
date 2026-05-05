@@ -6,6 +6,17 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'A practical guide to building Retrieval Augmented Generation (RAG) pipelines using JavaScript, LangChain.js, and OpenAI — with working Node.js code examples.'
 keyword: 'RAG, Retrieval Augmented Generation, JavaScript, LangChain, OpenAI, Node.js, vector database, embeddings, AI development'
+faq:
+  - question: "What is Retrieval Augmented Generation (RAG)?"
+    answer: "RAG is a pattern where relevant documents are retrieved from a knowledge base and injected into an LLM prompt as context before generating a response. This grounds the LLM in real, up-to-date information rather than relying solely on training data, eliminating hallucinations about private or recent content."
+  - question: "When should I use RAG instead of fine-tuning an LLM?"
+    answer: "Use RAG when your knowledge base changes frequently, when you need source attribution, or when you want to keep costs low. Use fine-tuning when you need the model to adopt a specific style or behavior that context alone cannot achieve. For most product teams, RAG is the right default first approach."
+  - question: "What chunk size should I use for a RAG pipeline?"
+    answer: "Start with chunks of 512–1024 tokens with a 10–15% overlap. Smaller chunks improve retrieval precision for specific facts; larger chunks provide more context per result. The optimal size depends on your document type — PDFs and support tickets often benefit from smaller chunks than technical documentation."
+  - question: "Can I build a RAG pipeline in Node.js without LangChain?"
+    answer: "Yes. You need an embedding model like OpenAI text-embedding-3-small, a vector database like pgvector or Chroma, and an LLM. RAG is just: embed the query, find similar chunks, inject them into the prompt. LangChain.js simplifies the wiring but adds abstraction overhead not all teams want."
+  - question: "What is the difference between RAG and vector search?"
+    answer: "Vector search finds semantically similar documents using embedding similarity — it is one step inside a RAG pipeline. RAG is the full pattern: retrieve relevant chunks via vector search, then pass them to an LLM as context to generate a grounded answer. RAG uses vector search; vector search alone does not imply RAG."
 ---
 
 
@@ -187,3 +198,20 @@ For production, consider combining vector search (semantic similarity) with keyw
 RAG is one of the most practical AI patterns available today. Once you have the pipeline running, you can power internal knowledge bases, customer support bots, document Q&A tools, and much more — all without retraining a single model.
 
 Once your RAG pipeline is live, the next challenge is knowing when it's working well — and when it isn't. Read [How to Monitor AI Pipelines in Production](/blogs/how-to-monitor-ai-pipelines-in-production) to instrument latency, token costs, and hallucination signals from day one.
+
+## Frequently Asked Questions
+
+**What is Retrieval Augmented Generation (RAG)?**  
+RAG is a pattern where relevant documents are retrieved from a knowledge base and injected into an LLM prompt as context before generating a response. This grounds the LLM in real, up-to-date information rather than relying solely on training data, eliminating hallucinations about private or recent content.
+
+**When should I use RAG instead of fine-tuning an LLM?**  
+Use RAG when your knowledge base changes frequently, when you need source attribution, or when you want to keep costs low. Use fine-tuning when you need the model to adopt a specific style or behavior that context alone cannot achieve. For most product teams, RAG is the right default first approach.
+
+**What chunk size should I use for a RAG pipeline in Node.js?**  
+Start with chunks of 512–1024 tokens with a 10–15% overlap. Smaller chunks improve retrieval precision for specific facts; larger chunks provide more context per result. The optimal size depends on your document type — technical docs often handle larger chunks than support tickets or FAQ pages.
+
+**Can I build a RAG pipeline in Node.js without LangChain?**  
+Yes. You need an embedding model (`text-embedding-3-small`), a vector database (pgvector, Chroma, or Pinecone), and an LLM. The RAG pattern is: embed the query, find similar chunks via cosine similarity, inject them into the prompt. LangChain.js simplifies the wiring but adds abstraction overhead not every team wants.
+
+**What is the difference between RAG and vector search?**  
+Vector search finds semantically similar documents using embedding similarity — it is one step inside a RAG pipeline. RAG is the full pattern: retrieve relevant chunks via vector search, then pass them to an LLM as context to generate a grounded answer. RAG uses vector search; vector search alone does not imply RAG.

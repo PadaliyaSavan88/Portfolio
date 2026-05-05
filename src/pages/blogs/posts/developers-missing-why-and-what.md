@@ -6,6 +6,17 @@ imageName: 'developers-why-what-design-sprint.jpg'
 author: 'Savan Padaliya'
 description: 'Most developers are experts at HOW to build — but WHY and WHAT to build are where real product thinking lives. A Design Sprint changed how I see this gap.'
 keyword: 'design sprint, product thinking for developers, why what how framework, developer soft skills, google ventures design sprint, product engineering, developer product mindset'
+faq:
+  - question: "What is a Design Sprint?"
+    answer: "A Design Sprint is a 5-day structured process created by Google Ventures to validate product ideas through rapid prototyping and user testing — before committing engineering resources. It forces alignment on WHY and WHAT before teams write any code."
+  - question: "Why should developers care about WHY and WHAT, not just HOW?"
+    answer: "When developers only solve HOW, they risk building the right solution to the wrong problem. Understanding WHY and WHAT leads to better architectural decisions, faster pivots, and more impactful work. At the senior level, product thinking is a core engineering skill, not a soft skill."
+  - question: "How can a developer learn product thinking?"
+    answer: "Participate in design sprints, shadow product and business team discussions, read Sprint by Jake Knapp, and ask WHY more often when reviewing requirements. The habit of asking 'what problem does this solve and for whom?' before starting any task is the core practice."
+  - question: "Is product thinking a soft skill for developers?"
+    answer: "No. It is a core engineering skill at the senior level. Product thinking directly influences technical architecture decisions, prioritization, and system design. Engineers who understand business goals make better technical tradeoffs than those who optimize for code quality alone."
+  - question: "What is the WHY, WHAT, HOW framework for developers?"
+    answer: "WHY is the business problem or user need. WHAT is the specific solution or feature chosen to address it. HOW is the technical implementation. Most developers are expert at HOW but bypass WHY and WHAT. Strong product engineers operate fluently across all three layers before touching code."
 ---
 ## I Knew How to Build. I Just Didn't Know What — or Why.
 

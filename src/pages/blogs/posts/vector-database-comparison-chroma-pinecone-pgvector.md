@@ -6,6 +6,17 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'A practical comparison of Chroma, Pinecone, and pgvector for production RAG pipelines — covering setup, query performance, scalability, and cost.'
 keyword: 'vector database comparison, Chroma vs Pinecone, pgvector Node.js, RAG vector store, vector database production, embeddings database, LangChain vector store'
+faq:
+  - question: "What is a vector database and why do AI applications need one?"
+    answer: "A vector database stores high-dimensional embeddings — numerical representations of text or images — and efficiently retrieves the most semantically similar entries to a query vector. AI applications, especially RAG pipelines, need vector databases to find relevant documents by meaning rather than keyword match."
+  - question: "When should I use Chroma vs Pinecone vs pgvector?"
+    answer: "Use Chroma for local development and prototypes — it runs in-process with no external service needed. Use Pinecone for managed production with millions of vectors and no ops overhead. Use pgvector when you're already on PostgreSQL and want to keep vector search within your existing database infrastructure."
+  - question: "Is pgvector production-ready for RAG pipelines?"
+    answer: "Yes, with the right configuration. pgvector with HNSW indexing handles millions of vectors at production query latencies under 50ms. It requires PostgreSQL 15+ and proper index tuning. The main advantage over managed vector databases is keeping your data in one place with existing PostgreSQL tooling."
+  - question: "What embedding model should I use with a vector database?"
+    answer: "OpenAI text-embedding-3-small (1536 dimensions) is the most widely used embedding model for production RAG systems. For Vertex AI apps, Google's text-embedding-004 is a strong alternative. Always use the same embedding model during ingestion and retrieval — mixing models breaks semantic search entirely."
+  - question: "How many vectors can Pinecone handle?"
+    answer: "Pinecone's serverless tier handles billions of vectors and scales automatically. The free tier supports roughly 100,000 vectors, which is sufficient for most prototypes and small production systems. Pinecone's managed infrastructure means you don't manage index tuning, hardware scaling, or availability."
 ---
 
 Your [RAG pipeline](/blogs/rag-architecture-for-javascript-developers) needs somewhere to store and query embeddings. The three options most Node.js teams evaluate are Chroma, Pinecone, and pgvector. They solve the same problem at very different points on the complexity vs. control tradeoff.
@@ -232,3 +243,20 @@ LIMIT 4;
 Whatever you choose, benchmark your actual query patterns before committing. Synthetic benchmarks tell you almost nothing about real performance on your data — run similarity searches against a representative sample of your actual embeddings and measure p50/p95 latency at your expected volume.
 
 To see how these stores fit into a complete pipeline, see [RAG Architecture for JavaScript Developers](/blogs/rag-architecture-for-javascript-developers). For monitoring retrieval quality in production — which chunks are being retrieved, how often, and whether they're actually relevant — see [How to Monitor AI Pipelines in Production](/blogs/how-to-monitor-ai-pipelines-in-production).
+
+## Frequently Asked Questions
+
+**What is a vector database and why do AI applications need one?**  
+A vector database stores high-dimensional embeddings — numerical representations of text or images — and efficiently retrieves the most semantically similar entries to a query vector. AI applications, especially RAG pipelines, need vector databases to find relevant documents by meaning rather than keyword match.
+
+**When should I use Chroma vs Pinecone vs pgvector?**  
+Use Chroma for local development and prototypes — it runs in-process with no external service needed. Use Pinecone for managed production with millions of vectors and no ops overhead. Use pgvector when you're already on PostgreSQL and want to keep vector search within your existing database infrastructure.
+
+**Is pgvector production-ready for RAG pipelines?**  
+Yes, with the right configuration. pgvector with HNSW indexing handles millions of vectors at production query latencies under 50ms. It requires PostgreSQL 15+ and proper index tuning. The main advantage over managed vector databases is keeping your data in one place with your existing PostgreSQL tooling.
+
+**What embedding model should I use with a vector database?**  
+OpenAI `text-embedding-3-small` (1536 dimensions) is the most widely used embedding model for production RAG systems. For Vertex AI apps, Google's `text-embedding-004` is a strong alternative. Always use the same embedding model during ingestion and retrieval — mixing models breaks semantic search entirely.
+
+**How many vectors can Pinecone handle?**  
+Pinecone's serverless tier handles billions of vectors and scales automatically. The free tier supports roughly 100,000 vectors, which is sufficient for most prototypes and small production systems. Pinecone's managed infrastructure means you don't manage index tuning, hardware scaling, or availability zones.

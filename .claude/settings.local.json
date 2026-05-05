@@ -3,7 +3,8 @@
     "allow": [
       "Bash(grep:*)",
       "Bash(npm run *)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "PowerShell(Select-String -Path \"S:\\\\Projects\\\\Portfolio\\\\src\\\\pages\\\\blogs\\\\posts\\\\password-hashing-bcrypt-nodejs.md\" -Pattern \"^faq:\" | Select-Object -First 3; Select-String -Path \"S:\\\\Projects\\\\Portfolio\\\\src\\\\pages\\\\blogs\\\\posts\\\\rag-architecture-for-javascript-developers.md\" -Pattern \"^faq:\" | Select-Object -First 3; Write-Host \"llms.txt blog count:\"; \\(Select-String -Path \"S:\\\\Projects\\\\Portfolio\\\\public\\\\llms.txt\" -Pattern \"^\\\\- \\\\[\"\\).Count)"
     ]
   }
 }
