@@ -6,6 +6,17 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'Practical strategies to cut OpenAI and Gemini API costs in production — model selection, caching, prompt optimization, batching, and RAG tuning.'
 keyword: 'reduce OpenAI costs, LLM cost optimization, Gemini Flash vs GPT-4o mini, AI API budget, LLM caching, prompt token optimization, semantic caching, OpenAI Batch API'
+faq:
+  - question: "What are the biggest sources of LLM API cost in production applications?"
+    answer: "Prompt tokens are usually the largest cost — every call includes the system prompt, retrieved context, and conversation history. Using an overpowered model for simple tasks like classification or short summaries is the most common avoidable cost. Completion tokens cost more per unit than prompt tokens on most models."
+  - question: "How much can I save by using a smaller LLM model for simple tasks?"
+    answer: "Significant savings — GPT-4o mini costs roughly 15x less per token than GPT-4o, and Gemini 1.5 Flash costs roughly 10x less than Gemini 1.5 Pro. For classification, extraction, or short summaries, smaller models match larger models on most tasks. Route by task complexity, not by default."
+  - question: "What is semantic caching for LLM APIs and how much does it save?"
+    answer: "Semantic caching stores LLM responses indexed by the embedding of the input query. When a new query is semantically similar to a cached one above a cosine similarity threshold, the cached response is returned instead of calling the API. For high-repetition use cases like FAQ bots, semantic caching can cut API costs by 30–60%."
+  - question: "Should I use the OpenAI Batch API to reduce costs?"
+    answer: "Yes, for asynchronous workloads like bulk document processing, nightly analysis jobs, or background classification tasks. The OpenAI Batch API offers a 50% discount on API costs with up to 24-hour completion time. It is not suitable for real-time user-facing features that need immediate responses."
+  - question: "How do I reduce prompt token costs in a RAG application?"
+    answer: "Shorten your system prompt and remove padding. Reduce retrieved chunks from 5 to 3 if recall allows. Use a tighter similarity threshold to retrieve only the most relevant context. Summarise long retrieved documents before injection. Use prompt caching if your provider supports it for repeated system prompt content."
 ---
 
 Your first month of Vertex AI or OpenAI bills lands and the number is higher than expected. It always is. Here is the systematic approach to cutting it without cutting features.
@@ -244,3 +255,20 @@ Halving chunk size can cut RAG prompt costs by 40–50%. Test retrieval quality 
 Start with the top two rows. Model downgrade plus exact caching together typically cut monthly bills by 40–60% with minimal engineering effort and negligible quality impact.
 
 The key discipline is to instrument first, optimize second. Without token-level cost data per feature, you'll optimize the wrong things. The [monitoring setup](/blogs/how-to-monitor-ai-pipelines-in-production) is the prerequisite — once you have the data, these strategies are straightforward to apply.
+
+## Frequently Asked Questions
+
+**What are the biggest sources of LLM API cost in production applications?**  
+Prompt tokens are usually the largest cost — every call includes the system prompt, retrieved context, and conversation history. Using an overpowered model (GPT-4o) for simple tasks like classification or short summaries is the most common avoidable cost. Completion tokens cost more per unit than prompt tokens on most models.
+
+**How much can I save by using a smaller model for simple tasks?**  
+Significant savings — GPT-4o mini costs roughly 15x less per token than GPT-4o, and Gemini 1.5 Flash costs roughly 10x less than Gemini 1.5 Pro. For classification, extraction, or short summaries, smaller models match larger models on most tasks. Route by task complexity, not by default choice.
+
+**What is semantic caching for LLM APIs and how much does it save?**  
+Semantic caching stores LLM responses indexed by the embedding of the input query. When a new query is semantically similar to a cached one above a cosine similarity threshold, the cached response is returned instead of calling the API. For high-repetition use cases like FAQ bots or search, semantic caching can cut API costs by 30–60%.
+
+**Should I use the OpenAI Batch API to reduce costs?**  
+Yes, for asynchronous workloads like bulk document processing, nightly analysis jobs, or background classification tasks. The OpenAI Batch API offers a 50% discount on API costs with up to 24-hour completion time. It is not suitable for real-time user-facing features that need immediate responses.
+
+**How do I reduce prompt token costs in a RAG application?**  
+Shorten your system prompt and remove filler text. Reduce retrieved chunks from 5 to 3 if recall allows. Use a tighter similarity threshold to retrieve only the most relevant context. Summarise long retrieved documents before injection. Use prompt caching if your provider supports it to avoid re-processing identical system prompts across requests.

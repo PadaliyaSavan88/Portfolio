@@ -6,6 +6,17 @@ imageName: 'what-happens-when-you-type-a-url.png'
 author: 'Savan Padaliya'
 description: 'Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.'
 keyword: 'what happens when you type a URL, how does the internet work, DNS resolution explained, TCP handshake explained, HTTP request lifecycle, system design interview questions, browser to server journey'
+faq:
+  - question: "What is DNS and why does it exist?"
+    answer: "DNS (Domain Name System) maps human-readable domain names like github.com to IP addresses like 140.82.121.3. It exists because humans remember names, not 32-bit numbers, and because IP addresses can change when servers move while domain names stay stable."
+  - question: "What is the difference between HTTP and HTTPS?"
+    answer: "HTTP is unencrypted — anyone on the network path can read the data. HTTPS wraps HTTP in TLS, which encrypts the connection so only the client and server can read the content. HTTPS also verifies that you're talking to the real server via certificate validation."
+  - question: "What is a load balancer in simple terms?"
+    answer: "A load balancer sits in front of multiple servers and distributes incoming requests across them. If one server goes down, the load balancer stops sending traffic to it. The client never knows it happened. Load balancers can operate at Layer 4 (TCP) or Layer 7 (HTTP)."
+  - question: "What is the difference between a web server and an application server?"
+    answer: "A web server like Nginx or Apache serves static files and proxies requests. An application server like Node.js or Django runs your business logic and generates dynamic responses. Most production deployments use both together — Nginx handles SSL and static files, Node.js handles dynamic routes."
+  - question: "What causes a slow website?"
+    answer: "The most common culprits are: slow DNS resolution, no CDN for static assets, slow database queries, no caching layer, unoptimized images, and render-blocking JavaScript. Tools like Chrome DevTools Network tab and Lighthouse will show you exactly which layer is the bottleneck."
 ---
 Your CS professor gave you the 3-step answer: you type a URL, DNS finds the IP, the server sends back HTML. If you said that in a senior engineering interview, they'd politely move on and never call you back.
 

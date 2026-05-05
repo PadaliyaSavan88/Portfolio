@@ -6,6 +6,17 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'A practical guide to building autonomous AI agents with LangChain.js in Node.js — tools, agent executors, memory, and real working code examples.'
 keyword: 'LangChain.js agents, AI agents Node.js, LangChain tools, autonomous AI Node.js, LangChain agent executor, LangChain tutorial, ReAct agent'
+faq:
+  - question: "What is a LangChain.js AI agent and how does it differ from a standard LLM call?"
+    answer: "A standard LLM call sends a prompt and receives a completion. An agent gives the LLM access to tools — APIs, databases, calculators, search — and lets it decide which tools to call and in what order to complete a task. The LLM reasons in a loop (observe, think, act) until it reaches a final answer."
+  - question: "What is the ReAct pattern used in LangChain.js agents?"
+    answer: "ReAct (Reasoning + Acting) is the prompting pattern that makes agents work. The LLM outputs a thought (what it should do), an action (which tool to call with what input), reads the observation (tool result), and repeats until it can produce a final answer. LangChain.js implements this loop in its agent executor."
+  - question: "What tools can I give a LangChain.js agent in Node.js?"
+    answer: "You can give agents any function wrapped as a DynamicTool — web search, database queries, REST API calls, calculators, file readers, and custom business logic. LangChain also provides built-in tools for common tasks. The agent chooses which tool to use based on each tool's description string."
+  - question: "How do I add memory to a LangChain.js agent?"
+    answer: "Use BufferMemory or a custom memory class from LangChain and pass it to the AgentExecutor via the memory option. Memory stores conversation history so the agent can reference earlier tool results and user messages in subsequent turns. For production, persist memory to Redis or a database instead of in-memory."
+  - question: "Can LangChain.js agents run autonomously without human input?"
+    answer: "Yes, for fully automated pipelines. Set the maxIterations limit to prevent infinite loops and add error handling for tool failures. For tasks that affect external systems like sending emails or writing to databases, implement human-in-the-loop checkpoints before executing irreversible actions."
 ---
 
 An LLM that answers questions is useful. An LLM that can *act* — call APIs, search the web, run code, query a database — is a product. That's what agents do, and LangChain.js is the fastest path to building them in Node.js.
@@ -211,3 +222,20 @@ const safeTool = new DynamicTool({
 **Rate limit your executor** — agents can make multiple LLM calls per user request; budget accordingly with your [chosen provider](/blogs/vertex-ai-setup-for-nodejs-apps).
 
 Agents unlock a new category of AI features — not just Q&A but autonomous workflows, multi-step reasoning, and real integration with your existing systems. Start with well-defined tools and low `maxIterations` limits, then expand as you gain confidence in the system's behavior.
+
+## Frequently Asked Questions
+
+**What is a LangChain.js AI agent and how does it differ from a standard LLM call?**  
+A standard LLM call sends a prompt and receives a completion. An agent gives the LLM access to tools — APIs, databases, calculators, search — and lets it decide which tools to call and in what order to complete a task. The LLM reasons in a loop (observe, think, act) until it reaches a final answer.
+
+**What is the ReAct pattern used in LangChain.js agents?**  
+ReAct (Reasoning + Acting) is the prompting pattern that makes agents work. The LLM outputs a thought (what it should do), an action (which tool to call with what input), reads the observation (tool result), and repeats until it can produce a final answer. LangChain.js implements this loop in the AgentExecutor.
+
+**What tools can I give a LangChain.js agent in Node.js?**  
+You can give agents any function wrapped as a `DynamicTool` — web search (via SerpAPI or Tavily), database queries, REST API calls, calculators, file readers, and custom business logic. The agent chooses which tool to use based on each tool's description string, so write clear and specific descriptions.
+
+**How do I add memory to a LangChain.js agent?**  
+Use `BufferMemory` or a custom memory class from LangChain and pass it to the `AgentExecutor` via the `memory` option. Memory stores conversation history so the agent can reference earlier tool results and user messages in subsequent turns. For production, persist memory to Redis or a database rather than keeping it in-process.
+
+**Can LangChain.js agents run autonomously without human input?**  
+Yes, for fully automated pipelines. Set a `maxIterations` limit to prevent infinite loops and add error handling for tool failures. For tasks that affect external systems — sending emails, writing to databases, calling payment APIs — implement human-in-the-loop checkpoints before executing irreversible actions.

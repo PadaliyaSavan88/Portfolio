@@ -6,6 +6,17 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'Learn how to monitor LLM-powered applications in production — tracking latency, token usage, error rates, and hallucinations using practical tools and strategies.'
 keyword: 'AI monitoring, LLM observability, production AI, LangSmith, token tracking, AI pipelines, Node.js, OpenAI monitoring, Gemini monitoring'
+faq:
+  - question: "What is AI pipeline monitoring and how is it different from regular API monitoring?"
+    answer: "AI pipeline monitoring tracks LLM-specific metrics beyond HTTP status codes: token usage, cost per request, Time to First Token (TTFT), and output quality. A traditional API returns success or failure — an LLM API can return HTTP 200 with a confidently wrong answer. Standard monitoring misses this entire failure class."
+  - question: "What metrics should I track for an LLM application in production?"
+    answer: "Track: latency (TTFT and total), token usage (prompt and completion separately), cost per request, error rate by error type, and a sample of inputs/outputs for quality review. Secondary metrics include hallucination rate and user satisfaction signals like retry rate and thumbs down."
+  - question: "How do I detect hallucinations in LLM outputs in production?"
+    answer: "For structured outputs, validate against a schema (Zod) and log validation failures. For factual outputs, run a secondary LLM check prompt that asks whether the answer is consistent with the provided context. For critical applications, human review of sampled outputs remains the most reliable approach."
+  - question: "What is LangSmith and when should I use it for AI monitoring?"
+    answer: "LangSmith is Langchain's observability platform for LLM applications. It captures full traces including every model call, prompt, output, and token count. Use it when your AI pipeline uses LangChain.js. For custom OpenAI/Vertex AI code without LangChain, a lightweight structured logger is usually sufficient."
+  - question: "How do I set up cost alerts for OpenAI or Vertex AI API usage?"
+    answer: "For OpenAI, set usage limits in the API dashboard. For Vertex AI, set budget alerts in Google Cloud Billing. In your application, log prompt_tokens and completion_tokens per request and aggregate in your monitoring system to alert on per-user or per-feature cost spikes before they appear on your bill."
 ---
 
 
@@ -213,3 +224,20 @@ There's no perfect automated hallucination detector, but you can build layers of
 **PII note**: Before logging LLM inputs and outputs, strip or hash any personally identifiable information. Prompt logs contain everything your users type — treat them with the same care as any sensitive data store.
 
 Monitoring AI pipelines is an ongoing practice, not a one-time setup. The teams that catch quality problems early are the ones that ship AI features users actually trust.
+
+## Frequently Asked Questions
+
+**What is AI pipeline monitoring and how is it different from regular API monitoring?**  
+AI pipeline monitoring tracks LLM-specific metrics beyond HTTP status codes: token usage, cost per request, Time to First Token (TTFT), and output quality. A traditional API returns success or failure — an LLM API can return HTTP 200 with a confidently wrong answer. Standard monitoring misses this entire failure class.
+
+**What metrics should I track for an LLM application in production?**  
+Track: latency (TTFT and total response time), token usage (prompt and completion separately), cost per request, error rate by error type, and a sample of inputs/outputs for quality review. Secondary metrics include hallucination rate and user satisfaction signals such as retry rate and explicit feedback.
+
+**How do I detect hallucinations in LLM outputs in production?**  
+For structured outputs, validate against a schema (Zod) and log validation failures. For factual outputs, run a secondary LLM check prompt asking whether the answer is consistent with the provided context. For critical applications, human review of a sampled percentage of production traffic remains the most reliable approach.
+
+**What is LangSmith and when should I use it for monitoring?**  
+LangSmith is Langchain's observability platform for LLM applications. It captures full traces of LangChain runs including every model call, prompt, output, and token count. Use it when your pipeline uses LangChain.js. For custom OpenAI/Vertex AI code without LangChain, a lightweight structured logger per request is usually sufficient.
+
+**How do I set up cost alerts for OpenAI or Vertex AI API usage?**  
+For OpenAI, set usage limits in the API dashboard and monitor the spend endpoint. For Vertex AI, set budget alerts in Google Cloud Billing. In your application, log `prompt_tokens` and `completion_tokens` per request and aggregate by feature or user in your monitoring system to catch cost spikes before they appear on your monthly bill.

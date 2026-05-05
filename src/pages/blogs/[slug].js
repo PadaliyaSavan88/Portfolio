@@ -74,6 +74,7 @@ export default function Post({ post, relatedPosts = [] }) {
                           "@id": `https://savanpadaliya.com/blogs/${post.slug}/#article`,
                           "headline": post.title,
                           "description": post.description,
+                          "inLanguage": "en",
                           "author": {
                             "@type": "Person",
                             "name": "Savan Padaliya",
@@ -87,6 +88,8 @@ export default function Post({ post, relatedPosts = [] }) {
                             "image": "https://savanpadaliya.com/graphics/header_logo.png"
                           },
                           "datePublished": post.date,
+                          "dateModified": post.date,
+                          ...(post.imageName ? { "image": `https://savanpadaliya.com/images/posts/${post.imageName}` } : {}),
                           "url": `https://savanpadaliya.com/blogs/${post.slug}`,
                           "mainEntityOfPage": {
                             "@type": "WebPage",
@@ -94,6 +97,17 @@ export default function Post({ post, relatedPosts = [] }) {
                           },
                           "keywords": post.keyword || post.description
                         },
+                        ...(post.faq && post.faq.length > 0 ? [{
+                          "@type": "FAQPage",
+                          "mainEntity": post.faq.map(item => ({
+                            "@type": "Question",
+                            "name": item.question,
+                            "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": item.answer
+                            }
+                          }))
+                        }] : []),
                         {
                           "@type": "BreadcrumbList",
                           "itemListElement": [

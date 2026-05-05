@@ -6,6 +6,17 @@ imageName: ''
 author: 'Savan Padaliya'
 description: "Companies hiring 10 interns and releasing 8 isn't a market collapse — it's a filter. Here's what junior developers and CS students must do to be in the 2 that stay, get hired, and build careers worth having."
 keyword: 'junior developer job market 2026, how to get hired as a junior developer, developer projects to stand out, youtube tutorial trap developer, build real world projects developer, peter thiel zero to one developer career, how to stand out as a software developer'
+faq:
+  - question: "Is the junior developer job market actually bad in 2025?"
+    answer: "The entry-level market is more competitive than 2020–2022, but it is not closed. Companies have raised the bar — they now expect junior developers to demonstrate real project experience, not just tutorial completion. Developers who can build and ship real things still get hired. The filter is tighter, but it filters for the right things."
+  - question: "What should junior developers build to stand out in the job market?"
+    answer: "Build 2–3 projects that solve real problems and are publicly deployed or documented. Avoid tutorial clone projects like to-do lists and weather apps. Build tools you would actually use, or products that address a niche problem. A deployed project with real users is worth more than 20 certificates."
+  - question: "Do I need to deploy my projects to a server to make them impressive?"
+    answer: "No. A localhost project with a screen recording, a clear explanation, and a public GitHub repo is enough to start. Deployment is a bonus, not a prerequisite. What matters is that the project solves a real problem and that you can explain the decisions you made and the challenges you hit."
+  - question: "Are coding bootcamps and online certificates worth it for getting a developer job?"
+    answer: "Bootcamps can teach fundamentals, but the certificate itself has minimal signaling value to employers who see thousands. What matters is what you built during or after the bootcamp. A strong portfolio with deployed projects matters far more than the credential. The bootcamp is the beginning of the learning, not the end."
+  - question: "Why do companies hire 10 junior developers and keep only 2?"
+    answer: "Many companies use large junior cohorts as a filter because interviews do not reliably predict on-the-job performance. The 2 who stay are those who can learn fast, work independently, and show initiative — not necessarily those with the best interview scores. Understanding this reframes the game: focus on being the 2, not on criticizing the process."
 ---
 ## The Call That Made Me Think
 
