@@ -1,8 +1,8 @@
 ---
 title: 'Password Hashing with Bcrypt in Node.js: Why, How, and What to Avoid'
 date: '2026-05-02'
-image: 'images/bycrypt.png'
-imageName: 'bcrypt-hashing-in-nodejs'
+image: 'bycrypt.png'
+imageName: 'bycrypt.png'
 author: 'Savan Padaliya'
 description: 'Learn why bcrypt is the right choice for password hashing in Node.js, how bcryptjs works under the hood, and the mistakes that leave your users exposed.'
 keyword: 'bcrypt Node.js, password hashing, bcryptjs, hash password JavaScript, bcrypt rounds, bcrypt cost factor, password security Node.js, bcrypt vs argon2'
@@ -21,7 +21,7 @@ faq:
 
 Storing passwords in plaintext got companies sued. Storing them as MD5 hashes got them pwned anyway. The correct answer is bcrypt — and if you're using Node.js, `bcryptjs` is the library to reach for. This post explains why bcrypt works, how to use it correctly, and what most developers get wrong.
 
-![Password Hashing with Bcrypt in Node.js](bcrypt-hashing-in-nodejs)
+![Password Hashing with Bcrypt in Node.js](bycrypt.png)
 
 ## Why Fast Hash Functions Are Dangerous for Passwords
 
