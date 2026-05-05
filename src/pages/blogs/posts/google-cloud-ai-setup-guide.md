@@ -1,11 +1,11 @@
 ---
-title: ‘Setting Up AI Workloads on Google Cloud – Beginner’s Guide’
-date: ‘2025-03-26’
-image: ‘images/SettingupGoogleAI.jpg’
-imageName: ‘SettingupGoogleAI.jpg’
-author: ‘Savan Padaliya’
-description: ‘Learn how to set up AI workloads on Google Cloud with a step-by-step guide. Train and deploy AI models using AutoML, Cloud Functions & Cloud Run.’
-keyword: ‘Google Cloud AI setup, Vertex AI tutorial, AutoML training, Cloud Run AI, Cloud Functions AI, Google AI APIs, Cloud AI deployment, Google Cloud beginner guide’
+title: 'Setting Up AI Workloads on Google Cloud – Beginner’s Guide'
+date: '2025-03-26'
+image: 'images/SettingupGoogleAI.jpg'
+imageName: 'SettingupGoogleAI.jpg'
+author: 'Savan Padaliya'
+description: 'Learn how to set up AI workloads on Google Cloud with a step-by-step guide. Train and deploy AI models using AutoML, Cloud Functions & Cloud Run.'
+keyword: 'Google Cloud AI setup, Vertex AI tutorial, AutoML training, Cloud Run AI, Cloud Functions AI, Google AI APIs, Cloud AI deployment, Google Cloud beginner guide'
 faq:
   - question: "How do I get started with AI workloads on Google Cloud?"
     answer: "Create a Google Cloud account and project with billing enabled. Enable the required APIs: Vertex AI API, Cloud Functions API, and Cloud Run API. Install the gcloud CLI. Authenticate with gcloud auth application-default login. Your first AI call can be a Vertex AI text generation request using the @google-cloud/vertexai Node.js SDK."
