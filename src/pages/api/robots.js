@@ -25,8 +25,8 @@ User-agent: cohere-ai
 Allow: /
 
 # LLM content files
-LLMs: https://savanpadaliya.com/llms.txt
-LLMs-full: https://savanpadaliya.com/llms-full.txt
+# LLMs: https://savanpadaliya.com/llms.txt
+# LLMs-full: https://savanpadaliya.com/llms-full.txt
 
 Sitemap: https://savanpadaliya.com/sitemap.xml`;
 

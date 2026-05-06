@@ -6,6 +6,7 @@ imageName: 'typescript-forai.png'
 author: 'Savan Padaliya'
 description: 'How to properly type OpenAI and Vertex AI SDK responses in TypeScript — typed prompts, structured outputs, Zod validation, and patterns that prevent runtime surprises in production AI apps.'
 keyword: 'TypeScript OpenAI Node.js, type LLM response TypeScript, TypeScript AI app, typed Vertex AI, TypeScript generative AI, OpenAI TypeScript SDK, Zod LLM output, structured output TypeScript'
+topic: 'AI Engineering'
 faq:
   - question: "Do I need TypeScript for OpenAI or Vertex AI development in Node.js?"
     answer: "You don't need it, but TypeScript significantly reduces runtime errors in AI applications. LLM responses are untyped at the API boundary — TypeScript with Zod validation catches shape mismatches before they reach production logic. For any production AI app, TypeScript is the right default."

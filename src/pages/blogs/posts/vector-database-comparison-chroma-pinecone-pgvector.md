@@ -6,6 +6,7 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'A practical comparison of Chroma, Pinecone, and pgvector for production RAG pipelines — covering setup, query performance, scalability, and cost.'
 keyword: 'vector database comparison, Chroma vs Pinecone, pgvector Node.js, RAG vector store, vector database production, embeddings database, LangChain vector store'
+topic: 'AI Engineering'
 faq:
   - question: "What is a vector database and why do AI applications need one?"
     answer: "A vector database stores high-dimensional embeddings — numerical representations of text or images — and efficiently retrieves the most semantically similar entries to a query vector. AI applications, especially RAG pipelines, need vector databases to find relevant documents by meaning rather than keyword match."

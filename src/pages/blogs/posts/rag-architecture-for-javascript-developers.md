@@ -6,6 +6,7 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'A practical guide to building Retrieval Augmented Generation (RAG) pipelines using JavaScript, LangChain.js, and OpenAI — with working Node.js code examples.'
 keyword: 'RAG, Retrieval Augmented Generation, JavaScript, LangChain, OpenAI, Node.js, vector database, embeddings, AI development'
+topic: 'AI Engineering'
 faq:
   - question: "What is Retrieval Augmented Generation (RAG)?"
     answer: "RAG is a pattern where relevant documents are retrieved from a knowledge base and injected into an LLM prompt as context before generating a response. This grounds the LLM in real, up-to-date information rather than relying solely on training data, eliminating hallucinations about private or recent content."
