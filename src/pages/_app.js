@@ -15,6 +15,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="robots" content="all" />
+        <meta name="msvalidate.01" content="65DA1CD4E8E9D5D435294FCF8F3AC164" />
       </Head>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
