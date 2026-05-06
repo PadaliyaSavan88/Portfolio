@@ -37,6 +37,7 @@ export function getStaticPaths() {
 }
 
 export default function Post({ post, relatedPosts = [] }) {
+    const ogImageUrl = `https://savanpadaliya.com/api/og?title=${encodeURIComponent(post.title)}`;
     return (
         <div>
             <Head>
@@ -51,7 +52,7 @@ export default function Post({ post, relatedPosts = [] }) {
                 <meta property="og:type" content="article" />
                 <meta property="og:title" content={`${post.title} | Savan Padaliya`} />
                 <meta property="og:description" content={post.description} />
-                <meta property="og:image" content={`https://savanpadaliya.com/images/posts/${post.imageName}`} />
+                <meta property="og:image" content={ogImageUrl} />
                 <meta property="og:url" content={`https://savanpadaliya.com/blogs/${post.slug}`} />
                 <link rel="canonical" href={`https://savanpadaliya.com/blogs/${post.slug}`} />
                 <meta name="robots" content="index, follow" />
@@ -62,7 +63,7 @@ export default function Post({ post, relatedPosts = [] }) {
                 <meta name="twitter:creator" content="@padaliya_savan" />
                 <meta property="twitter:title" content={`${post.title} | Savan Padaliya`} />
                 <meta property="twitter:description" content={post.description} />
-                <meta property="twitter:image" content={`https://savanpadaliya.com/images/posts/${post.imageName}`}></meta>
+                <meta property="twitter:image" content={ogImageUrl}></meta>
                 <script
                   type="application/ld+json"
                   dangerouslySetInnerHTML={{
@@ -75,6 +76,7 @@ export default function Post({ post, relatedPosts = [] }) {
                           "headline": post.title,
                           "description": post.description,
                           "inLanguage": "en",
+                          "image": ogImageUrl,
                           "author": {
                             "@type": "Person",
                             "name": "Savan Padaliya",
@@ -95,7 +97,8 @@ export default function Post({ post, relatedPosts = [] }) {
                             "@type": "WebPage",
                             "@id": `https://savanpadaliya.com/blogs/${post.slug}`
                           },
-                          "keywords": post.keyword || post.description
+                          "keywords": post.keyword || post.description,
+                          ...(post.topic ? { "articleSection": post.topic } : {})
                         },
                         ...(post.faq && post.faq.length > 0 ? [{
                           "@type": "FAQPage",

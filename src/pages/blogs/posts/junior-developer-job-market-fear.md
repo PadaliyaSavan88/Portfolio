@@ -6,6 +6,7 @@ imageName: ''
 author: 'Savan Padaliya'
 description: "Companies hiring 10 interns and releasing 8 isn't a market collapse — it's a filter. Here's what junior developers and CS students must do to be in the 2 that stay, get hired, and build careers worth having."
 keyword: 'junior developer job market 2026, how to get hired as a junior developer, developer projects to stand out, youtube tutorial trap developer, build real world projects developer, peter thiel zero to one developer career, how to stand out as a software developer'
+topic: 'Engineering Culture'
 faq:
   - question: "Is the junior developer job market actually bad in 2025?"
     answer: "The entry-level market is more competitive than 2020–2022, but it is not closed. Companies have raised the bar — they now expect junior developers to demonstrate real project experience, not just tutorial completion. Developers who can build and ship real things still get hired. The filter is tighter, but it filters for the right things."
@@ -18,6 +19,8 @@ faq:
   - question: "Why do companies hire 10 junior developers and keep only 2?"
     answer: "Many companies use large junior cohorts as a filter because interviews do not reliably predict on-the-job performance. The 2 who stay are those who can learn fast, work independently, and show initiative — not necessarily those with the best interview scores. Understanding this reframes the game: focus on being the 2, not on criticizing the process."
 ---
+The junior developer job market is more competitive in 2026, but the filter is not unfair — it is raising the bar from tutorial-completers to developers who have actually shipped something. Developers who build and deploy real projects, communicate clearly, and take ownership still get hired. The ones who don't are waiting for the market to get easier. It won't — but the path through it is shorter than most people think.
+
 ## The Call That Made Me Think
 
 Someone booked a session with me on Topmate recently. An undergrad student, final year, genuinely scared. The question: *"Companies are hiring 10 interns and only keeping 2. What's the point?"*

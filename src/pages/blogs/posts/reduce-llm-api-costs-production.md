@@ -6,6 +6,7 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'Practical strategies to cut OpenAI and Gemini API costs in production — model selection, caching, prompt optimization, batching, and RAG tuning.'
 keyword: 'reduce OpenAI costs, LLM cost optimization, Gemini Flash vs GPT-4o mini, AI API budget, LLM caching, prompt token optimization, semantic caching, OpenAI Batch API'
+topic: 'AI Engineering'
 faq:
   - question: "What are the biggest sources of LLM API cost in production applications?"
     answer: "Prompt tokens are usually the largest cost — every call includes the system prompt, retrieved context, and conversation history. Using an overpowered model for simple tasks like classification or short summaries is the most common avoidable cost. Completion tokens cost more per unit than prompt tokens on most models."
@@ -19,7 +20,7 @@ faq:
     answer: "Shorten your system prompt and remove padding. Reduce retrieved chunks from 5 to 3 if recall allows. Use a tighter similarity threshold to retrieve only the most relevant context. Summarise long retrieved documents before injection. Use prompt caching if your provider supports it for repeated system prompt content."
 ---
 
-Your first month of Vertex AI or OpenAI bills lands and the number is higher than expected. It always is. Here is the systematic approach to cutting it without cutting features.
+LLM API costs spike when teams use overpowered models for simple tasks, send oversized prompts on every request, and skip caching for repeated queries. The fix is not cutting features — it is routing each task to the right model, trimming prompt tokens, and adding a semantic cache layer. Most production teams can reduce API spend by 40–70% with these strategies, and none of them require changing what users experience.
 
 ## Understand Where Your Costs Come From First
 

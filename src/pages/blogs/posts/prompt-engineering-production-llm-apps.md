@@ -6,6 +6,7 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'A practical guide to prompt engineering for production LLM applications — system prompts, temperature, context injection, few-shot examples, and output validation.'
 keyword: 'prompt engineering, system prompt design, LLM prompt production, temperature LLM, few-shot examples, context injection RAG, structured output LLM, chain of thought, prompt versioning Node.js'
+topic: 'AI Engineering'
 faq:
   - question: "What is prompt engineering for production LLM applications?"
     answer: "Prompt engineering is the practice of designing LLM inputs to reliably produce useful outputs at scale. In production this includes system prompt design, context injection strategies, output format specification, few-shot example selection, temperature tuning, and building version control for prompts the same way you version code."

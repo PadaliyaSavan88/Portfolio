@@ -6,6 +6,7 @@ imageName: 'developers-why-what-design-sprint.jpg'
 author: 'Savan Padaliya'
 description: 'Most developers are experts at HOW to build — but WHY and WHAT to build are where real product thinking lives. A Design Sprint changed how I see this gap.'
 keyword: 'design sprint, product thinking for developers, why what how framework, developer soft skills, google ventures design sprint, product engineering, developer product mindset'
+topic: 'Engineering Culture'
 faq:
   - question: "What is a Design Sprint?"
     answer: "A Design Sprint is a 5-day structured process created by Google Ventures to validate product ideas through rapid prototyping and user testing — before committing engineering resources. It forces alignment on WHY and WHAT before teams write any code."
@@ -133,7 +134,7 @@ The HOW will always matter. But in a world where [AI can generate HOW faster tha
 
 ---
 
-## FAQ
+## Frequently Asked Questions
 
 **What is a Design Sprint?**
 A Design Sprint is a 5-day structured process created by Google Ventures to validate product ideas through rapid prototyping and user testing — before committing engineering resources.

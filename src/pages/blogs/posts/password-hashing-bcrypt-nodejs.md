@@ -6,6 +6,7 @@ imageName: 'bycrypt.png'
 author: 'Savan Padaliya'
 description: 'Learn why bcrypt is the right choice for password hashing in Node.js, how bcryptjs works under the hood, and the mistakes that leave your users exposed.'
 keyword: 'bcrypt Node.js, password hashing, bcryptjs, hash password JavaScript, bcrypt rounds, bcrypt cost factor, password security Node.js, bcrypt vs argon2'
+topic: 'Web Development'
 faq:
   - question: "What is the difference between bcrypt and bcryptjs in Node.js?"
     answer: "bcrypt uses native C++ bindings for better CPU performance, while bcryptjs is a pure JavaScript implementation that works anywhere Node.js runs — including Edge runtimes, Bun, and serverless environments — without native compilation. For most web applications, bcryptjs is the safer, simpler choice with no native compilation required."

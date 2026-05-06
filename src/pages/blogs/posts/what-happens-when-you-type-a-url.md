@@ -6,6 +6,7 @@ imageName: 'what-happens-when-you-type-a-url.png'
 author: 'Savan Padaliya'
 description: 'Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.'
 keyword: 'what happens when you type a URL, how does the internet work, DNS resolution explained, TCP handshake explained, HTTP request lifecycle, system design interview questions, browser to server journey'
+topic: 'Web Development'
 faq:
   - question: "What is DNS and why does it exist?"
     answer: "DNS (Domain Name System) maps human-readable domain names like github.com to IP addresses like 140.82.121.3. It exists because humans remember names, not 32-bit numbers, and because IP addresses can change when servers move while domain names stay stable."

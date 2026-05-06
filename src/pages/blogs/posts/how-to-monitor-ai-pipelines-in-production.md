@@ -6,6 +6,7 @@ imageName: ''
 author: 'Savan Padaliya'
 description: 'Learn how to monitor LLM-powered applications in production — tracking latency, token usage, error rates, and hallucinations using practical tools and strategies.'
 keyword: 'AI monitoring, LLM observability, production AI, LangSmith, token tracking, AI pipelines, Node.js, OpenAI monitoring, Gemini monitoring'
+topic: 'AI Engineering'
 faq:
   - question: "What is AI pipeline monitoring and how is it different from regular API monitoring?"
     answer: "AI pipeline monitoring tracks LLM-specific metrics beyond HTTP status codes: token usage, cost per request, Time to First Token (TTFT), and output quality. A traditional API returns success or failure — an LLM API can return HTTP 200 with a confidently wrong answer. Standard monitoring misses this entire failure class."
