@@ -57,7 +57,7 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
 
                 <meta name="title" content="About Savan Padaliya | Full Stack AI Engineer" />
-                <meta name="description" content="The story of Savan Padaliya — Senior Full Stack Developer who went from building restaurant systems in college to shipping software that serves 69.9 million citizens. Now helping businesses ship faster with AI." />
+                <meta name="description" content="From restaurant systems in college to software serving 69.9M citizens. Savan Padaliya helps businesses ship faster with AI and full-stack engineering." />
                 <meta name="keywords" content="Savan Padaliya, Senior Full Stack Developer, AI Developer, Node.js, React, Product Owner, SaaS, Blockchain, Enterprise Software" />
                 <meta name="language" content="English" />
                 <link rel="canonical" href="https://savanpadaliya.com/about" />

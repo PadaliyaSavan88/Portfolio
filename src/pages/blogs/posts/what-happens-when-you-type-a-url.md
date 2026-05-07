@@ -4,7 +4,7 @@ date: '2026-04-23'
 image: 'images/what-happens-when-you-type-a-url.png'
 imageName: 'what-happens-when-you-type-a-url.png'
 author: 'Savan Padaliya'
-description: 'Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.'
+description: 'Most devs give the 3-step answer. The full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that gets you hired.'
 keyword: 'what happens when you type a URL, how does the internet work, DNS resolution explained, TCP handshake explained, HTTP request lifecycle, system design interview questions, browser to server journey'
 topic: 'Web Development'
 faq:

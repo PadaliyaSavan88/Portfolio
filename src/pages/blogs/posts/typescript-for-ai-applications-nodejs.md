@@ -4,7 +4,7 @@ date: '2026-05-02'
 image: 'typescript-forai.png'
 imageName: 'typescript-forai.png'
 author: 'Savan Padaliya'
-description: 'How to properly type OpenAI and Vertex AI SDK responses in TypeScript — typed prompts, structured outputs, Zod validation, and patterns that prevent runtime surprises in production AI apps.'
+description: 'Type OpenAI and Vertex AI SDK responses in TypeScript — typed prompts, structured outputs, Zod validation, and patterns that prevent runtime surprises.'
 keyword: 'TypeScript OpenAI Node.js, type LLM response TypeScript, TypeScript AI app, typed Vertex AI, TypeScript generative AI, OpenAI TypeScript SDK, Zod LLM output, structured output TypeScript'
 topic: 'AI Engineering'
 faq:

@@ -4,7 +4,7 @@ date: '2026-04-27'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'
-description: 'A practical guide to prompt engineering for production LLM applications — system prompts, temperature, context injection, few-shot examples, and output validation.'
+description: 'Prompt engineering for production LLM apps — system prompts, temperature, context injection, few-shot examples, and structured output validation.'
 keyword: 'prompt engineering, system prompt design, LLM prompt production, temperature LLM, few-shot examples, context injection RAG, structured output LLM, chain of thought, prompt versioning Node.js'
 topic: 'AI Engineering'
 faq:

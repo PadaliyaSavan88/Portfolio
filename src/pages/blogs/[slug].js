@@ -90,7 +90,7 @@ export default function Post({ post, relatedPosts = [] }) {
                             "image": "https://savanpadaliya.com/graphics/header_logo.png"
                           },
                           "datePublished": post.date,
-                          "dateModified": post.date,
+                          "dateModified": post.dateModified || post.date,
                           ...(post.imageName ? { "image": `https://savanpadaliya.com/images/posts/${post.imageName}` } : {}),
                           "url": `https://savanpadaliya.com/blogs/${post.slug}`,
                           "mainEntityOfPage": {

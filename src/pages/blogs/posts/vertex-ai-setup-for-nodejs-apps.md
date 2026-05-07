@@ -4,9 +4,10 @@ date: '2026-03-22'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'
-description: 'Step-by-step guide to integrating Google Vertex AI into your Node.js application — from project setup and authentication to making your first generative AI call.'
+description: 'Step-by-step guide to integrating Vertex AI into your Node.js app — from project setup and authentication to your first generative AI call.'
 keyword: 'Vertex AI, Node.js, Google Cloud, AI integration, generative AI, @google-cloud/vertexai, authentication, production AI'
 topic: 'AI Engineering'
+dateModified: '2026-05-06'
 faq:
   - question: "What is the difference between Vertex AI and the direct Gemini API?"
     answer: "The direct Gemini API is simpler to start — just an API key. Vertex AI is Google Cloud's enterprise platform with formal SLAs, regional data residency, IAM-based access control, and VPC support. For production SaaS on GCP, Vertex AI is the right choice; for prototyping, the direct API is simpler."

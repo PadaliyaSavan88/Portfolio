@@ -10,7 +10,7 @@ function getReadingTime(content) {
 }
 
 function PostHeader({ data }) {
-  const { title, author, date, content } = data;
+  const { title, author, date, dateModified, content } = data;
   const readingTime = getReadingTime(content);
 
   return (
@@ -27,6 +27,12 @@ function PostHeader({ data }) {
         </a>
         <span className="post-meta-dot" aria-hidden="true">·</span>
         <span className="post-header-date">{formatDate(date)}</span>
+        {dateModified && dateModified !== date && (
+          <>
+            <span className="post-meta-dot" aria-hidden="true">·</span>
+            <span className="post-header-updated">Updated {formatDate(dateModified)}</span>
+          </>
+        )}
         <span className="post-meta-dot" aria-hidden="true">·</span>
         <span className="post-header-reading-time">{readingTime} min read</span>
       </div>

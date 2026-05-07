@@ -7,6 +7,7 @@ author: 'Savan Padaliya'
 description: 'A practical guide to building autonomous AI agents with LangChain.js in Node.js — tools, agent executors, memory, and real working code examples.'
 keyword: 'LangChain.js agents, AI agents Node.js, LangChain tools, autonomous AI Node.js, LangChain agent executor, LangChain tutorial, ReAct agent'
 topic: 'AI Engineering'
+dateModified: '2026-05-06'
 faq:
   - question: "What is a LangChain.js AI agent and how does it differ from a standard LLM call?"
     answer: "A standard LLM call sends a prompt and receives a completion. An agent gives the LLM access to tools — APIs, databases, calculators, search — and lets it decide which tools to call and in what order to complete a task. The LLM reasons in a loop (observe, think, act) until it reaches a final answer."
