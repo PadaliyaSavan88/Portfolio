@@ -1,5 +1,5 @@
 ﻿---
-title: 'Choosing a Vector Database: Chroma vs Pinecone vs pgvector'
+title: 'Chroma vs Pinecone vs pgvector for RAG'
 date: '2026-04-27'
 image: ''
 imageName: ''

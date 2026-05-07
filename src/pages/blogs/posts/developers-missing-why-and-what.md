@@ -1,5 +1,5 @@
 ---
-title: 'Developers Are Great at HOW. But What About WHY and WHAT?'
+title: 'Developer Product Thinking: WHY and WHAT'
 date: '2026-04-16'
 image: 'images/developers-why-what-design-sprint.jpg'
 imageName: 'developers-why-what-design-sprint.jpg'

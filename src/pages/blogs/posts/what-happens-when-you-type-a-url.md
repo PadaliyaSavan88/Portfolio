@@ -1,5 +1,5 @@
 ---
-title: 'What Actually Happens When You Hit Enter After Typing a URL'
+title: 'What Happens When You Type a URL?'
 date: '2026-04-23'
 image: 'images/what-happens-when-you-type-a-url.png'
 imageName: 'what-happens-when-you-type-a-url.png'

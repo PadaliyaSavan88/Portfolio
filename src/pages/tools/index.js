@@ -36,7 +36,7 @@ export default function ToolsIndex() {
   return (
     <>
       <Head>
-        <title>Free Developer Tools — JSON, Regex, Base64, Password & More | Savan Padaliya</title>
+        <title>Free Developer Tools | JSON, Regex & More | Savan Padaliya</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"

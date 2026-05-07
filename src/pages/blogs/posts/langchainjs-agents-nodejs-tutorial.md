@@ -1,5 +1,5 @@
 ---
-title: 'LangChain.js Agents: Build Your First AI Agent in Node.js'
+title: 'LangChain.js Agents Tutorial in Node.js'
 date: '2026-04-27'
 image: ''
 imageName: ''

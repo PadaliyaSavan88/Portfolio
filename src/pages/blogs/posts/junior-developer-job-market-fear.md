@@ -1,5 +1,5 @@
 ---
-title: "Junior Developers: The Job Market Isn't Your Enemy — Mediocrity Is"
+title: 'Junior Developer Job Market Reality Check'
 date: '2026-04-19'
 image: ''
 imageName: ''
