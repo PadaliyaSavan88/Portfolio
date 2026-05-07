@@ -4,7 +4,7 @@ date: '2026-04-19'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'
-description: "Companies hiring 10 interns and releasing 8 isn't a market collapse — it's a filter. Here's what junior developers and CS students must do to be in the 2 that stay, get hired, and build careers worth having."
+description: "The junior dev job market isn't broken — it's a filter. What junior developers must do to be in the 2 that stay, get hired, and build real careers."
 keyword: 'junior developer job market 2026, how to get hired as a junior developer, developer projects to stand out, youtube tutorial trap developer, build real world projects developer, peter thiel zero to one developer career, how to stand out as a software developer'
 topic: 'Engineering Culture'
 faq:

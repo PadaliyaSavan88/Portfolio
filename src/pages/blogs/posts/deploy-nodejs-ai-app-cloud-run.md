@@ -4,9 +4,10 @@ date: '2026-04-27'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'
-description: 'Step-by-step guide to deploying a Node.js + Vertex AI application to Google Cloud Run — Dockerfile, authentication, Artifact Registry, and continuous deployment.'
+description: 'Deploy a Node.js + Vertex AI app to Cloud Run — Dockerfile, authentication, Artifact Registry, and continuous deployment step by step.'
 keyword: 'Cloud Run Node.js, deploy AI app Google Cloud, Vertex AI Cloud Run, serverless AI deployment, Cloud Run Dockerfile, GCP Node.js deployment, Artifact Registry'
 topic: 'AI Engineering'
+dateModified: '2026-05-06'
 faq:
   - question: "Why should I use Cloud Run for a Node.js AI application?"
     answer: "Cloud Run is serverless and scales to zero — you pay only for actual requests, which is ideal for AI apps with spiky traffic. It handles load balancing, SSL, and autoscaling automatically. It also integrates natively with Vertex AI authentication via the default service account, eliminating the need to manage key files."

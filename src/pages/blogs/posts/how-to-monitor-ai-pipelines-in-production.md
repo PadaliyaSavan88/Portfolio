@@ -4,7 +4,7 @@ date: '2026-04-01'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'
-description: 'Learn how to monitor LLM-powered applications in production — tracking latency, token usage, error rates, and hallucinations using practical tools and strategies.'
+description: 'Monitor LLM apps in production — track latency, token usage, error rates, and hallucinations with practical tools and observability strategies.'
 keyword: 'AI monitoring, LLM observability, production AI, LangSmith, token tracking, AI pipelines, Node.js, OpenAI monitoring, Gemini monitoring'
 topic: 'AI Engineering'
 faq:

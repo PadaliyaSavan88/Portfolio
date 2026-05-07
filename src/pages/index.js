@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
         <meta name="title" content="Savan Padaliya | Senior Full-Stack AI Engineer" />
-        <meta name="description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
+        <meta name="description" content="Build MVPs, web apps, and AI systems with a senior full-stack AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
         <meta name="keywords" content="Senior Full-Stack Developer, AI Engineer, Node.js, React, OpenAI, Gemini, LangChain, MVP Development, AI Integration, AI Chatbot Development, Workflow Automation, Technical Consulting, SaaS Development, Hire Developer" />
         <meta name="language" content="English" />
         <link rel="canonical" href="https://savanpadaliya.com/" />
