@@ -1,5 +1,5 @@
 ---
-title: 'Type or Not to Type: The JavaScript vs TypeScript Dilemma'
+title: 'JavaScript vs TypeScript: Which to Use?'
 date: '2024-01-03'
 image: 'images/JavaScriptvsTypeScript.jpg'
 imageName: 'JavaScriptvsTypeScript.jpg'

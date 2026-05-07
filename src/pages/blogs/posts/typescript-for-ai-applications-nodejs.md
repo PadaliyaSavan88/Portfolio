@@ -1,5 +1,5 @@
 ---
-title: 'TypeScript for AI Applications: Typing LLM Responses in Node.js'
+title: 'TypeScript for AI: Typing LLM Responses'
 date: '2026-05-02'
 image: 'typescript-forai.png'
 imageName: 'typescript-forai.png'

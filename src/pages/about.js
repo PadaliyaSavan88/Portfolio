@@ -52,11 +52,11 @@ export default function About() {
     return (
         <>
             <Head>
-                <title>About Savan Padaliya | Senior Full Stack Developer | AI-Powered Development</title>
+                <title>About Savan Padaliya | Full Stack AI Engineer</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
 
-                <meta name="title" content="About Savan Padaliya | Senior Full Stack Developer" />
+                <meta name="title" content="About Savan Padaliya | Full Stack AI Engineer" />
                 <meta name="description" content="The story of Savan Padaliya — Senior Full Stack Developer who went from building restaurant systems in college to shipping software that serves 69.9 million citizens. Now helping businesses ship faster with AI." />
                 <meta name="keywords" content="Savan Padaliya, Senior Full Stack Developer, AI Developer, Node.js, React, Product Owner, SaaS, Blockchain, Enterprise Software" />
                 <meta name="language" content="English" />
@@ -64,7 +64,7 @@ export default function About() {
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Savan Padaliya" />
 
-                <meta property="og:title" content="About Savan Padaliya | Senior Full Stack Developer" />
+                <meta property="og:title" content="About Savan Padaliya | Full Stack AI Engineer" />
                 <meta property="og:site_name" content="Savan Padaliya" />
                 <meta property="og:url" content="https://savanpadaliya.com/about" />
                 <meta property="og:description" content="From restaurant management systems in college to software serving 69.9 million citizens. The story of Savan Padaliya." />
@@ -73,7 +73,7 @@ export default function About() {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@padaliya_savan" />
                 <meta name="twitter:creator" content="@padaliya_savan" />
-                <meta name="twitter:title" content="About Savan Padaliya | Senior Full Stack Developer" />
+                <meta name="twitter:title" content="About Savan Padaliya | Full Stack AI Engineer" />
                 <meta name="twitter:description" content="From restaurant management systems in college to software serving 69.9 million citizens." />
                 <meta name="twitter:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
                 <script

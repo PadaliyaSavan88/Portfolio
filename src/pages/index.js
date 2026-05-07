@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Savan Padaliya | Senior Full-Stack &amp; AI Engineer for MVPs, Web Apps, and Automation</title>
+        <title>Savan Padaliya | Senior Full-Stack AI Engineer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
-        <meta name="title" content="Savan Padaliya | Senior Full-Stack & AI Engineer for MVPs, Web Apps, and Automation" />
+        <meta name="title" content="Savan Padaliya | Senior Full-Stack AI Engineer" />
         <meta name="description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
         <meta name="keywords" content="Senior Full-Stack Developer, AI Engineer, Node.js, React, OpenAI, Gemini, LangChain, MVP Development, AI Integration, AI Chatbot Development, Workflow Automation, Technical Consulting, SaaS Development, Hire Developer" />
         <meta name="language" content="English" />
@@ -27,7 +27,7 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Savan Padaliya" />
 
-        <meta property="og:title" content="Savan Padaliya | Senior Full-Stack & AI Engineer for MVPs, Web Apps, and Automation" />
+        <meta property="og:title" content="Savan Padaliya | Senior Full-Stack AI Engineer" />
         <meta property="og:site_name" content="Savan Padaliya" />
         <meta property="og:url" content="https://savanpadaliya.com/" />
         <meta property="og:description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
@@ -36,7 +36,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />
-        <meta name="twitter:title" content="Savan Padaliya | Senior Full-Stack & AI Engineer for MVPs, Web Apps, and Automation" />
+        <meta name="twitter:title" content="Savan Padaliya | Senior Full-Stack AI Engineer" />
         <meta name="twitter:description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer." />
         <meta name="twitter:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <script

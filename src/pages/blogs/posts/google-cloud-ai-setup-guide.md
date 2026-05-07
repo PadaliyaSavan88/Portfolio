@@ -1,5 +1,5 @@
 ---
-title: 'Setting Up AI Workloads on Google Cloud – Beginner’s Guide'
+title: ‘Google Cloud AI Setup: Beginner’’s Guide’
 date: '2025-03-26'
 image: 'images/SettingupGoogleAI.jpg'
 imageName: 'SettingupGoogleAI.jpg'

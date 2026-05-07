@@ -54,11 +54,11 @@ export default function AllBlogs({ allPostsData }) {
   return (
     <>
       <Head>
-        <title>Blog | AI, Full Stack Development & Building in Public — Savan Padaliya</title>
+        <title>Blog | Full Stack & AI Engineering | Savan Padaliya</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
-        <meta name="title" content="Blog | AI, Full Stack Development & Building in Public — Savan Padaliya" />
+        <meta name="title" content="Blog | Full Stack & AI Engineering | Savan Padaliya" />
         <meta name="description" content="Practical writing on AI development, Node.js, React, system design, and shipping software faster. By Savan Padaliya — Senior Full Stack Developer." />
         <meta name="keywords" content="Tech Blogs, JavaScript, NodeJS, AI, LLMs, RAG, OpenAI, Vertex AI, LangChain, DevOps, Production Engineering" />
         <meta name="language" content="English" />
@@ -66,7 +66,7 @@ export default function AllBlogs({ allPostsData }) {
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Savan Padaliya" />
 
-        <meta property="og:title" content="Blog | AI, Full Stack Development & Building in Public — Savan Padaliya" />
+        <meta property="og:title" content="Blog | Full Stack & AI Engineering | Savan Padaliya" />
         <meta property="og:site_name" content="Savan Padaliya" />
         <meta property="og:url" content="https://savanpadaliya.com/blogs" />
         <meta property="og:description" content="Practical writing on AI development, Node.js, React, system design, and shipping software faster." />

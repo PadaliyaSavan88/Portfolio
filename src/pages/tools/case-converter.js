@@ -83,7 +83,7 @@ export default function CaseConverter() {
   return (
     <>
       <Head>
-        <title>Case Converter — camelCase, snake_case, PascalCase & More | Savan Padaliya</title>
+        <title>Case Converter — camelCase, snake_case | Savan Padaliya</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Convert text between camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, Title Case, uppercase, and lowercase. Free online tool." />
         <meta name="keywords" content="case converter, camelCase, snake_case, PascalCase, kebab-case, text converter, online tool" />
@@ -91,7 +91,7 @@ export default function CaseConverter() {
         <link rel="canonical" href="https://savanpadaliya.com/tools/case-converter" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Case Converter — camelCase, snake_case & More | Savan Padaliya" />
+        <meta property="og:title" content="Case Converter — camelCase, snake_case | Savan Padaliya" />
         <meta property="og:description" content="Convert text to camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, and more. Free, instant, no sign-up." />
         <meta property="og:url" content="https://savanpadaliya.com/tools/case-converter" />
         <meta property="og:site_name" content="Savan Padaliya" />

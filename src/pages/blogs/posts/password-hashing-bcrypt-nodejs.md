@@ -1,5 +1,5 @@
 ---
-title: 'Password Hashing with Bcrypt in Node.js: Why, How, and What to Avoid'
+title: 'Password Hashing with Bcrypt in Node.js'
 date: '2026-05-02'
 image: 'bycrypt.png'
 imageName: 'bycrypt.png'
