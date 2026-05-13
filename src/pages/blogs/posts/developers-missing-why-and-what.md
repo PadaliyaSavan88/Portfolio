@@ -1,8 +1,8 @@
 ---
 title: 'Developer Product Thinking: WHY and WHAT'
 date: '2026-04-16'
-image: 'images/developers-why-what-design-sprint.jpg'
-imageName: 'developers-why-what-design-sprint.jpg'
+image: ''
+imageName: ''
 author: 'Savan Padaliya'
 description: 'Most developers are experts at HOW to build — but WHY and WHAT to build are where real product thinking lives. A Design Sprint changed how I see this gap.'
 keyword: 'design sprint, product thinking for developers, why what how framework, developer soft skills, google ventures design sprint, product engineering, developer product mindset'
@@ -149,4 +149,4 @@ Participate in design sprints, shadow product and business team discussions, rea
 No. It's a core engineering skill at the senior level. It directly influences technical architecture, prioritization, and system design decisions.
 
 **Want to see product-level thinking applied to a real technical decision?**
-[OpenAI vs Vertex AI for Production SaaS](/blogs/openai-vs-vertex-ai-for-production-saas) walks through exactly that kind of WHY-first reasoning — not just comparing features, but thinking through what the right choice is for a specific business context. For a hands-on example of [building a RAG pipeline](/blogs/rag-architecture-for-javascript-developers), the architecture decisions there reflect the same upstream thinking this post describes.
+[OpenAI vs Vertex AI for Production SaaS](/blogs/openai-vs-vertex-ai-for-production-saas) walks through exactly that kind of WHY-first reasoning — not just comparing features, but thinking through what the right choice is for a specific business context. For a hands-on example of [building a RAG pipeline](/blogs/rag-architecture-for-javascript-developers), the architecture decisions there reflect the same upstream thinking this post describes. And if you want to go deeper on what happens when the WHY gets skipped in AI projects, [why most AI features fail](/blogs/why-ai-features-fail-product-thinking) is the natural next read.

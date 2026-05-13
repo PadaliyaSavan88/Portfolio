@@ -39,6 +39,9 @@ End-to-end Software as a Service application development with AI capabilities, t
 ### 4. Technical Consulting
 Expert technical guidance on software architecture, AI adoption strategy, technology selection, and business-aligned engineering decisions.
 
+### 5. 1:1 Mentoring & Consulting Sessions
+Book a 1:1 session at savanpadaliya.com/topmate — career guidance (₹88), AWS infrastructure (₹188), or a free quick chat / discovery call. Sessions available via Topmate and Calendly.
+
 ---
 
 ## Key Projects
@@ -177,6 +180,30 @@ URL: https://www.savanpadaliya.com/blogs/typescript-for-ai-applications-nodejs/
 Published: 2026-05-02
 Description: How to properly type OpenAI and Vertex AI SDK responses in TypeScript — typed prompts, structured outputs, Zod validation, and patterns that prevent runtime surprises in production AI apps.
 Topics covered: Why LLM responses are untyped at the API boundary and why TypeScript alone cannot catch runtime shape mismatches, the two-layer approach (TypeScript interfaces for compile-time + Zod for runtime validation), typing the OpenAI SDK including ChatCompletion, ChatCompletionMessageParam, and the optional chaining requirement for choices and content, typing the Vertex AI SDK including GenerateContentRequest and GenerateContentResult, typed prompt builder pattern with union type inputs, Zod schema validation for structured LLM outputs with ProductReview example, OpenAI JSON mode with response_format and temperature 0, typing streaming responses with Stream<ChatCompletionChunk> and AsyncIterable, typed logger for AI call telemetry, and a comparison of JavaScript vs TypeScript tradeoffs for AI applications.
+
+### Password Security Best Practices for Web Developers
+URL: https://www.savanpadaliya.com/blogs/password-security-best-practices-web-developers/
+Published: 2026-05-04
+Description: OWASP-aligned password security practices for web developers — hashing, storage, reset flows, timing attacks, credential stuffing defence, and the implementation mistakes that leave users vulnerable.
+Topics covered: Why plaintext and reversibly encrypted passwords are both dangerous, bcrypt vs scrypt vs Argon2id comparison and OWASP recommendations, timing-safe password comparison with bcrypt.compare() and crypto.timingSafeEqual(), building a secure password reset flow with cryptographically random tokens and hash storage, rate limiting and progressive account lockout patterns in Express, credential stuffing attacks and defence with HaveIBeenPwned API integration, NIST SP 800-63B password policy recommendations (minimum length over complexity rules), and the difference between authentication and authorization.
+
+### Why Most AI Features Fail
+URL: https://www.savanpadaliya.com/blogs/why-ai-features-fail-product-thinking/
+Published: 2026-05-05
+Description: Most AI features fail not because of the model but because of poor problem definition. What product-minded engineers do differently to build AI features that last.
+Topics covered: The technology-first trap and why starting with "let's add AI" produces features that get removed, the three criteria for an AI-suited problem (pattern-based, acceptable failure cost, non-scalable alternative), why output quality problems are the real failure mode, how to scope AI features as time-boxed hypotheses with defined success metrics, the difference between operations metrics and value metrics, what successful AI features have in common, and the difference between an AI product and a product that uses AI.
+
+### System Design for AI-Powered SaaS
+URL: https://www.savanpadaliya.com/blogs/system-design-ai-powered-saas/
+Published: 2026-05-09
+Description: How to architect AI-powered SaaS at scale — async job queues, provider fallback routing, LLM response caching, per-tenant cost control, and four-layer observability.
+Topics covered: The unique production challenges of LLM latency, variable cost, and provider dependency; synchronous vs asynchronous processing decision criteria; BullMQ job queue architecture for AI requests with retry and concurrency control; provider abstraction layer with automatic fallback routing; per-request token metering for multi-tenant cost control; exact caching with Redis and semantic caching with vector similarity; four-layer observability (infrastructure, LLM operations, output quality, business value); RAG chunking strategy and vector store multi-tenancy; and the architectural properties of AI SaaS systems that survive production.
+
+### Cryptographic Randomness in JavaScript
+URL: https://www.savanpadaliya.com/blogs/cryptographic-randomness-javascript/
+Published: 2026-05-10
+Description: Math.random() is predictable from its outputs and not safe for security use. How to use crypto.getRandomValues() in the browser and the Node.js crypto module to generate cryptographically secure tokens, IDs, and passwords.
+Topics covered: Why Math.random() is insecure — PRNG seed reconstruction attacks and how they work in practice, how a CSPRNG uses hardware entropy and forward secrecy, crypto.getRandomValues() in the browser with uniform random integer generation, Node.js crypto.randomBytes() with hex and base64url encoding, crypto.randomUUID() for UUID v4 identifiers, crypto.randomInt() for range-bounded integers, secure patterns for session tokens, password reset tokens, API keys, OTPs, and CSRF tokens, timing-safe comparison with crypto.timingSafeEqual(), and a decision table for when to use Math.random() vs crypto.
 
 ---
 

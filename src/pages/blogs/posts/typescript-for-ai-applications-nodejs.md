@@ -1,6 +1,6 @@
 ---
 title: 'TypeScript for AI: Typing LLM Responses'
-date: '2026-05-02'
+date: '2026-05-06'
 image: 'typescript-forai.png'
 imageName: 'typescript-forai.png'
 author: 'Savan Padaliya'

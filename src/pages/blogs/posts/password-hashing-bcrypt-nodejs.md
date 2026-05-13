@@ -1,10 +1,11 @@
 ---
 title: 'Password Hashing with Bcrypt in Node.js'
-date: '2026-05-02'
+date: '2026-05-03'
 image: 'bycrypt.png'
 imageName: 'bycrypt.png'
 author: 'Savan Padaliya'
-description: 'Learn why bcrypt is the right choice for password hashing in Node.js, how bcryptjs works under the hood, and the mistakes that leave your users exposed.'
+description: 'Bcrypt password hashing in Node.js — pick the right cost factor, test hashes live with the bcrypt generator, avoid OWASP security mistakes, and use bcryptjs correctly.'
+dateModified: '2026-05-12'
 keyword: 'bcrypt Node.js, password hashing, bcryptjs, hash password JavaScript, bcrypt rounds, bcrypt cost factor, password security Node.js, bcrypt vs argon2'
 topic: 'Web Development'
 faq:
@@ -244,7 +245,7 @@ if (password.length > 128) {
 
 ---
 
-bcrypt is the boring, correct answer for password hashing in Node.js. Use `bcryptjs`, set cost 12, always use `bcrypt.compare()` for verification, and handle the timing-safe login path. If you want to test hash output before wiring it into your app, the [bcrypt generator](/tools/bcrypt-generator) runs entirely in the browser — nothing is transmitted. For generating strong passwords to test with, the [password generator](/tools/password-generator) is right next to it.
+bcrypt is the boring, correct answer for password hashing in Node.js. Use `bcryptjs`, set cost 12, always use `bcrypt.compare()` for verification, and handle the timing-safe login path. If you want to test hash output before wiring it into your app, the [bcrypt generator](/tools/bcrypt-generator) runs entirely in the browser — nothing is transmitted. For generating strong passwords to test with, the [password generator](/tools/password-generator) is right next to it. For the broader picture of auth security — reset flows, rate limiting, and credential stuffing defence — see [password security best practices for web developers](/blogs/password-security-best-practices-web-developers). And if you want to understand the cryptographic randomness behind bcrypt's salt generation, [cryptographic randomness in JavaScript](/blogs/cryptographic-randomness-javascript) covers exactly why `Math.random()` is never the right choice there.
 
 ## Frequently Asked Questions
 
