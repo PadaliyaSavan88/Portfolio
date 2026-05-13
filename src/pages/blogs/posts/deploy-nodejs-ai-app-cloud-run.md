@@ -1,6 +1,6 @@
 ﻿---
-title: 'Deploying AI Apps to Cloud Run: Node.js + Vertex AI'
-date: '2026-04-27'
+title: 'Deploy Node.js AI Apps to Cloud Run'
+date: '2026-05-01'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'

@@ -1,6 +1,6 @@
 ﻿---
 title: 'Chroma vs Pinecone vs pgvector for RAG'
-date: '2026-04-27'
+date: '2026-04-26'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'

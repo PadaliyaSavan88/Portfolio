@@ -96,16 +96,16 @@ export default function BcryptGenerator() {
   return (
     <>
       <Head>
-        <title>Bcrypt Hash Generator / Verifier — Free Online Tool | Savan Padaliya</title>
+        <title>Bcrypt Generator Online — Hash & Verify | Savan Padaliya</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Hash passwords with bcrypt or verify a password against a bcrypt hash. Free online tool — everything runs in your browser, nothing is stored." />
+        <meta name="description" content="Free online bcrypt generator — hash any password with custom cost rounds or verify a bcrypt hash instantly. Runs in your browser, nothing stored." />
         <meta name="keywords" content="bcrypt generator, bcrypt hash, bcrypt verifier, password hash, bcrypt online" />
         <meta name="author" content="Savan Padaliya" />
         <link rel="canonical" href="https://savanpadaliya.com/tools/bcrypt-generator" />
         <meta name="robots" content="index, follow" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Bcrypt Hash Generator / Verifier — Savan Padaliya" />
-        <meta property="og:description" content="Hash passwords with bcrypt or verify a password against a bcrypt hash. Runs in your browser — nothing stored. Free, no sign-up." />
+        <meta property="og:title" content="Bcrypt Generator Online — Hash & Verify | Savan Padaliya" />
+        <meta property="og:description" content="Free online bcrypt generator — hash any password with custom cost rounds or verify a bcrypt hash instantly. Runs in your browser, nothing stored." />
         <meta property="og:url" content="https://savanpadaliya.com/tools/bcrypt-generator" />
         <meta property="og:site_name" content="Savan Padaliya" />
         <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
@@ -240,6 +240,16 @@ export default function BcryptGenerator() {
               howItWorks="Select Hash Password or Verify Password mode. In Hash mode, enter a password, set the cost rounds (4–14; OWASP recommends 10–12), and click Hash. The tool calls bcrypt.hash() from the bcryptjs library entirely in your browser — no data is sent to any server. The resulting hash embeds the salt and cost factor so it can be stored directly in a database. In Verify mode, enter the original password and the stored bcrypt hash and click Verify to confirm whether they match."
               faqs={FAQS}
             />
+
+            <div className="tool-more-section" style={{ marginBottom: '1.5rem' }}>
+              <p className="tool-more-title" style={{ marginBottom: '0.5rem' }}>Want the full picture?</p>
+              <p style={{ color: '#6b7280', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+                Learn how bcrypt works under the hood — cost factors, salt generation, timing-safe comparison, and the auth mistakes that leave users exposed.
+              </p>
+              <Link href="/blogs/password-hashing-bcrypt-nodejs" className="btn-outline-custom px-3 py-2" style={{ fontSize: '0.875rem' }}>
+                Read: Password Hashing with Bcrypt in Node.js →
+              </Link>
+            </div>
 
             <div className="tool-more-section">
               <p className="tool-more-title">More free tools</p>

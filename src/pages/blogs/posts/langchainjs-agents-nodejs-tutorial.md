@@ -1,6 +1,6 @@
 ---
 title: 'LangChain.js Agents Tutorial in Node.js'
-date: '2026-04-27'
+date: '2026-04-30'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'

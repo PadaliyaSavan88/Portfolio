@@ -1,6 +1,6 @@
 ﻿---
 title: 'Prompt Engineering for Production LLM Apps'
-date: '2026-04-27'
+date: '2026-04-28'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'

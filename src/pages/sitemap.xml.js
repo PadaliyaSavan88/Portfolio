@@ -23,6 +23,12 @@ function generateSiteMap(posts) {
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://savanpadaliya.com/topmate</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://savanpadaliya.com/tools</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
