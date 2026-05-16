@@ -8,11 +8,11 @@ export default function Hero() {
             <div className="row align-items-center">
                 <div className="col-md-6 d-flex align-items-center">
                     <div className="hero-text">
-                        <p className="hero-greeting">Senior Full-Stack &amp; AI Engineer</p>
+                        <p className="hero-greeting">Trusted by founders &amp; product teams</p>
                         <h1 className="hero-name">Savan Padaliya</h1>
-                        <p className="hero-subtitle">I build AI-powered web products fast.</p>
+                        <p className="hero-subtitle">Your product idea, shipped and working — faster than you expect.</p>
                         <p className="hero-desc">
-                            For founders and product teams who need MVPs, automation, internal tools, and AI features shipped with senior-level execution.
+                            From 5-day MVP prototypes to systems serving tens of millions of users. I help you validate fast, build right, and add AI where it actually moves the needle.
                         </p>
                         <div className="hero-actions mt-4">
                             <a

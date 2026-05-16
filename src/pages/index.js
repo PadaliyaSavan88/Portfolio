@@ -15,29 +15,29 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Savan Padaliya | Senior Full-Stack AI Engineer</title>
+        <title>Savan Padaliya | Ship Your AI Product Faster</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
-        <meta name="title" content="Savan Padaliya | Senior Full-Stack AI Engineer" />
-        <meta name="description" content="Build MVPs, web apps, and AI systems with a senior full-stack AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
-        <meta name="keywords" content="Senior Full-Stack Developer, AI Engineer, Node.js, React, OpenAI, Gemini, LangChain, MVP Development, AI Integration, AI Chatbot Development, Workflow Automation, Technical Consulting, SaaS Development, Hire Developer" />
+        <meta name="title" content="Savan Padaliya | Ship Your AI Product Faster" />
+        <meta name="description" content="Founders and product teams hire Savan to ship MVPs in days, add AI features to existing products, and build software that scales. Node.js · React · OpenAI." />
+        <meta name="keywords" content="hire AI engineer, ship AI product faster, MVP development, AI integration for SaaS, add AI to existing product, AI consulting for founders, full-stack AI developer, Node.js AI engineer, React developer for startups" />
         <meta name="language" content="English" />
         <link rel="canonical" href="https://savanpadaliya.com/" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Savan Padaliya" />
 
-        <meta property="og:title" content="Savan Padaliya | Senior Full-Stack AI Engineer" />
+        <meta property="og:title" content="Savan Padaliya | Ship Your AI Product Faster" />
         <meta property="og:site_name" content="Savan Padaliya" />
         <meta property="og:url" content="https://savanpadaliya.com/" />
-        <meta property="og:description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer using Node.js, React, OpenAI, and scalable backend architecture." />
+        <meta property="og:description" content="From 5-day MVP prototypes to systems serving 69.9M users. Senior Full-Stack & AI Engineer available for projects, consulting, and AI integrations." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />
-        <meta name="twitter:title" content="Savan Padaliya | Senior Full-Stack AI Engineer" />
-        <meta name="twitter:description" content="Build MVPs, web apps, AI chatbots, and automation systems with a senior full-stack and AI engineer." />
+        <meta name="twitter:title" content="Savan Padaliya | Ship Your AI Product Faster" />
+        <meta name="twitter:description" content="Founders and product teams hire Savan to ship MVPs in days, add AI features to existing products, and build software that scales." />
         <meta name="twitter:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <script
           type="application/ld+json"
