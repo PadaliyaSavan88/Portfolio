@@ -1,6 +1,6 @@
 ---
 title: 'How to Add AI to Your Existing Product Without Rebuilding It'
-date: '2026-05-14'
+date: '2026-05-15'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'

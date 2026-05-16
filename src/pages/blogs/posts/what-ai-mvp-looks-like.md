@@ -1,6 +1,6 @@
 ---
 title: 'What a 5-Day AI MVP Actually Looks Like (And What It Costs)'
-date: '2026-05-14'
+date: '2026-05-16'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'
