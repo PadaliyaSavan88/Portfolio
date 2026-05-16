@@ -11,6 +11,11 @@ const faqs = [
     },
     {
         id: "faq3",
+        q: "How fast can you actually move on a project?",
+        a: "Fast. MVPs have shipped in 5 days. Typical new projects kick off within 1–2 weeks of scoping. The free discovery call is where we figure out fit, scope, and timeline — no commitment required."
+    },
+    {
+        id: "faq3b",
         q: "Do you work on existing products and backlogs?",
         a: "Yes. Whether you need a senior engineer to clear a backlog, add features, or improve an existing Node.js or React codebase, that's a standard engagement. I can slot in alongside your team or work independently."
     },

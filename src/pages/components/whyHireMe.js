@@ -1,7 +1,7 @@
 const reasons = [
     {
         num: "01",
-        heading: "Ships fast without cutting corners",
+        heading: "Ship in weeks, not quarters — without the tech debt",
         body: "Speed without shortcuts — production code that's clean, scalable, and won't accumulate debt."
     },
     {
@@ -16,8 +16,8 @@ const reasons = [
     },
     {
         num: "04",
-        heading: "Product thinking + engineering depth",
-        body: "Architecture decisions, roadmap clarity, and build-vs-buy judgment — not just ticket execution."
+        heading: "CTO-level judgment, without the full-time cost",
+        body: "Architecture decisions, build-vs-buy calls, and roadmap clarity — the kind of judgment that usually costs you an equity stake."
     }
 ];
 

@@ -1,11 +1,11 @@
 ---
-title: 'System Design for AI-Powered SaaS'
+title: 'How to Architect an AI Product Before You Start Building'
 date: '2026-05-09'
 image: 'SystemDesignforAISaaS.png'
 imageName: 'SystemDesignforAISaaS.png'
 author: 'Savan Padaliya'
-description: 'How to architect AI-powered SaaS at scale — request routing, async processing, model selection, cost control, and the infrastructure decisions that matter most.'
-keyword: 'system design AI SaaS, AI architecture production, scalable AI system, LLM SaaS architecture, AI backend design, production AI system design, Node.js AI system'
+description: 'Your AI product architecture will make or break scalability. How to design an AI SaaS system that scales without a full rewrite.'
+keyword: 'AI product architecture, build AI SaaS, AI startup technical decisions, scalable AI product design, AI system design for founders, AI SaaS blueprint, AI product planning'
 topic: 'AI Engineering'
 faq:
   - question: "How do you handle concurrent AI requests in a production SaaS?"
