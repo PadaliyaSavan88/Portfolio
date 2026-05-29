@@ -1,12 +1,12 @@
 ---
-title: 'Password Hashing with Bcrypt in Node.js'
+title: 'bcrypt in Node.js: Complete Guide to Password Hashing (2026)'
 date: '2026-05-03'
 image: 'bycrypt.png'
 imageName: 'bycrypt.png'
 author: 'Savan Padaliya'
-description: 'Bcrypt password hashing in Node.js — pick the right cost factor, test hashes live with the bcrypt generator, avoid OWASP security mistakes, and use bcryptjs correctly.'
-dateModified: '2026-05-12'
-keyword: 'bcrypt Node.js, password hashing, bcryptjs, hash password JavaScript, bcrypt rounds, bcrypt cost factor, password security Node.js, bcrypt vs argon2'
+description: 'bcrypt guide for Node.js developers: hash passwords with bcryptjs, pick the right cost factor, prevent timing attacks, and follow OWASP 2026 recommendations.'
+dateModified: '2026-05-25'
+keyword: 'bcrypt Node.js, bcryptjs, password hashing Node.js, bcrypt npm, hash password JavaScript, bcrypt rounds, bcrypt cost factor, bcryptjs compare, bcrypt hashSync, node.js password hashing, password security Node.js, bcrypt vs argon2'
 topic: 'Web Development'
 faq:
   - question: "What is the difference between bcrypt and bcryptjs in Node.js?"
@@ -15,10 +15,16 @@ faq:
     answer: "OWASP recommends a minimum of cost 10 and prefers cost 12 for new systems. The goal is that hashing takes roughly 100–300ms on your production server. Benchmark your specific server: run bcrypt.hash() at costs 10–14 and pick the cost where it hits around 200ms."
   - question: "Why does bcrypt truncate passwords at 72 bytes?"
     answer: "bcrypt was designed with a 72-byte input limit due to its internal Blowfish algorithm. A 73-character password and a 72-character password with the same first 72 bytes produce the same hash. Always enforce a maximum password length of 128 characters to make this limit visible to users."
-  - question: "Is bcrypt still secure for password hashing in 2025?"
+  - question: "Is bcrypt still secure for password hashing in 2026?"
     answer: "Yes. bcrypt has no known practical attacks after 25+ years and remains the industry standard for web application password hashing. Argon2id is the current OWASP top recommendation for new systems, but bcrypt is a perfectly secure and well-supported choice for existing Node.js projects."
   - question: "How do I prevent timing attacks when verifying passwords with bcrypt?"
     answer: "Always use bcrypt.compare() — never string equality operators. bcrypt.compare() performs a constant-time comparison. In login flows, also run a dummy bcrypt.compare() when the user is not found to prevent timing-based user enumeration attacks where attackers detect which emails are registered."
+  - question: "Does bcrypt.hashSync block the Node.js event loop?"
+    answer: "Yes. bcrypt.hashSync() is synchronous and blocks the Node.js event loop for the full duration of the hashing operation — up to 400ms at cost 12. Under any server load, this stalls all other requests. Always use the async bcrypt.hash() in web server and API route code."
+  - question: "What is bcryptjs and how is it different from the bcrypt package?"
+    answer: "bcryptjs is a pure JavaScript implementation of the bcrypt algorithm with no native bindings. Unlike the bcrypt npm package which requires C++ compilation during install, bcryptjs works in any JavaScript runtime — Node.js, Bun, Deno, Cloudflare Workers, and serverless edge environments. It is slightly slower in CPU benchmarks but more portable, and for typical web app load the difference is negligible."
+  - question: "What does the $2b$12$ prefix in a bcrypt hash mean?"
+    answer: "The $2b$ prefix identifies the bcrypt algorithm version (2b is the current standard). The $12$ is the cost factor — meaning the algorithm runs 2^12 = 4,096 rounds internally. The next 22 characters are the base64-encoded salt, and the final 31 characters are the hash. The full string is 60 characters and is self-contained — no separate salt column needed."
 ---
 
 Storing passwords in plaintext got companies sued. Storing them as MD5 hashes got them pwned anyway. The correct answer is bcrypt — and if you're using Node.js, `bcryptjs` is the library to reach for. This post explains why bcrypt works, how to use it correctly, and what most developers get wrong.
@@ -252,14 +258,23 @@ bcrypt is the boring, correct answer for password hashing in Node.js. Use `bcryp
 **What is the difference between bcrypt and bcryptjs in Node.js?**  
 `bcrypt` uses native C++ bindings for better CPU performance, while `bcryptjs` is a pure JavaScript implementation that works anywhere Node.js runs — including Edge runtimes, Bun, and serverless environments — without native compilation. For most web applications, `bcryptjs` is the safer, simpler choice.
 
+**What is bcryptjs and how is it different from the bcrypt package?**  
+`bcryptjs` is a pure JavaScript implementation of the bcrypt algorithm with no native bindings. Unlike the `bcrypt` npm package which requires C++ compilation during install, `bcryptjs` works in any JavaScript runtime — Node.js, Bun, Deno, Cloudflare Workers, and serverless edge environments. It is slightly slower in CPU benchmarks but more portable, and for typical web app load the difference is negligible.
+
 **What cost factor should I use for bcrypt in production?**  
 OWASP recommends a minimum of cost 10 and prefers cost 12 for new systems. The goal is that hashing takes roughly 100–300ms on your production server. Benchmark your specific hardware using the script in this post and pick the cost where it hits around 200ms.
 
 **Why does bcrypt truncate passwords at 72 bytes?**  
 bcrypt was designed with a 72-byte input limit due to its internal Blowfish cipher. A 73-character password and a 72-character password with the same first 72 bytes will produce the same hash. Always enforce a maximum password length of 128 characters so this limitation is visible to users.
 
-**Is bcrypt still secure for password hashing in 2025?**  
+**Is bcrypt still secure for password hashing in 2026?**  
 Yes. bcrypt has no known practical attacks after 25+ years and remains the industry standard for web application password hashing. Argon2id is the current OWASP top recommendation for new systems due to memory-hardness, but bcrypt is a perfectly secure and practical choice for existing Node.js projects.
+
+**Does bcrypt.hashSync block the Node.js event loop?**  
+Yes. `bcrypt.hashSync()` is synchronous and blocks the Node.js event loop for the full duration of the hashing operation — up to 400ms at cost 12. Under any server load, this stalls all other requests. Always use the async `bcrypt.hash()` in web server and API route code.
+
+**What does the $2b$12$ prefix in a bcrypt hash mean?**  
+The `$2b$` prefix identifies the bcrypt algorithm version (`2b` is the current standard). The `$12$` is the cost factor — the algorithm runs `2^12 = 4,096` rounds internally. The next 22 characters are the base64-encoded salt, and the final 31 characters are the hash. The full string is always 60 characters and is self-contained — no separate salt column needed.
 
 **How do I prevent timing attacks when verifying passwords with bcrypt?**  
 Always use `bcrypt.compare()` — never `===` or any other string comparison. `bcrypt.compare()` performs a constant-time comparison. In login flows, also run a dummy compare when the user is not found to prevent timing-based user enumeration attacks where response time reveals which email addresses exist in your database.

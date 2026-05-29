@@ -10,6 +10,12 @@ const nextConfig = {
         destination: "https://savanpadaliya.com/:path*",
         permanent: true,
       },
+      {
+        source: "/:path*",
+        has: [{ type: "header", key: "x-forwarded-proto", value: "http" }],
+        destination: "https://savanpadaliya.com/:path*",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {
