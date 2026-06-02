@@ -205,6 +205,18 @@ Published: 2026-05-10
 Description: Math.random() is predictable from its outputs and not safe for security use. How to use crypto.getRandomValues() in the browser and the Node.js crypto module to generate cryptographically secure tokens, IDs, and passwords.
 Topics covered: Why Math.random() is insecure — PRNG seed reconstruction attacks and how they work in practice, how a CSPRNG uses hardware entropy and forward secrecy, crypto.getRandomValues() in the browser with uniform random integer generation, Node.js crypto.randomBytes() with hex and base64url encoding, crypto.randomUUID() for UUID v4 identifiers, crypto.randomInt() for range-bounded integers, secure patterns for session tokens, password reset tokens, API keys, OTPs, and CSRF tokens, timing-safe comparison with crypto.timingSafeEqual(), and a decision table for when to use Math.random() vs crypto.
 
+### Node.js TypeScript REST API Guide
+URL: https://www.savanpadaliya.com/blogs/nodejs-typescript-rest-api-production/
+Published: 2026-06-01
+Description: Production patterns for building a REST API with Node.js and TypeScript — covering typed route handlers, Zod runtime validation, centralized error handling, auth middleware with declaration merging, and typed environment variables.
+Topics covered: TypeScript tsconfig strict mode setup for Node.js APIs, RequestHandler generics for typed Express routes, Zod safeParse for runtime request body validation with field-level error responses, typed environment variables via Zod schema at startup, AppError class and four-argument Express error middleware, declaration merging to type req.user across all route handlers, UUID v4 and v7 for API entity IDs, connecting TypeScript REST APIs to AI SDKs (OpenAI, Vertex AI), and integration testing philosophy for typed APIs.
+
+### UUID v4 in JavaScript: When to Use One
+URL: https://www.savanpadaliya.com/blogs/uuid-explained-when-to-use-javascript/
+Published: 2026-06-01
+Description: What UUIDs are, how to generate them in Node.js and the browser, the difference between v4 and v7, GUID vs UUID, and when to prefer UUIDs over auto-increment integers for database primary keys and API identifiers.
+Topics covered: UUID format breakdown (version bits, variant bits, 122 random bits in v4), all UUID versions (v1, v3, v4, v5, v7) with use cases, GUID vs UUID terminology, crypto.randomUUID() in Node.js and browsers, the uuid npm package for v7, UUID v4 index fragmentation in B-tree databases and how UUID v7 solves it, UUID vs auto-increment ID tradeoffs (URL exposure, distributed systems, client-side generation), UUID as identifier vs security token distinction, and PostgreSQL/MySQL storage considerations.
+
 ---
 
 ## Free Developer Tools

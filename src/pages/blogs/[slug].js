@@ -5,6 +5,7 @@ import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import Image from 'next/image';
 import Head from 'next/head';
 import PostContent from '../../../components/posts/post-content';
+import BcryptInlineWidget from '../../../components/posts/BcryptInlineWidget';
 import Headers from '../components/header';
 import Footer from '../components/footer';
 import Link from 'next/link';
@@ -153,6 +154,9 @@ export default function Post({ post, relatedPosts = [] }) {
                     </nav>
                     <div className="blog-post-content">
                         <PostContent post={post} />
+                        {post.slug === 'password-hashing-bcrypt-nodejs' && (
+                            <BcryptInlineWidget />
+                        )}
                     </div>
                     {relatedPosts.length > 0 && (
                         <div className="related-posts">

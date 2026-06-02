@@ -1,10 +1,10 @@
 ---
-title: 'bcrypt in Node.js: Complete Guide to Password Hashing (2026)'
+title: 'bcrypt in Node.js: Password Hashing Guide'
 date: '2026-05-03'
-image: 'bycrypt.png'
+image: 'images/bycrypt.png'
 imageName: 'bycrypt.png'
 author: 'Savan Padaliya'
-description: 'bcrypt guide for Node.js developers: hash passwords with bcryptjs, pick the right cost factor, prevent timing attacks, and follow OWASP 2026 recommendations.'
+description: 'Hash passwords in Node.js with bcryptjs: cost factor, timing attack prevention, async patterns, and OWASP 2026 recommendations.'
 dateModified: '2026-05-25'
 keyword: 'bcrypt Node.js, bcryptjs, password hashing Node.js, bcrypt npm, hash password JavaScript, bcrypt rounds, bcrypt cost factor, bcryptjs compare, bcrypt hashSync, node.js password hashing, password security Node.js, bcrypt vs argon2'
 topic: 'Web Development'
@@ -88,7 +88,7 @@ console.log(hashed);
 // $2b$12$... (60-character string — store this in your database)
 ```
 
-`bcrypt.hash()` handles the salt automatically. You never pass a salt manually — that's the point. The function returns a 60-character string you store directly in your `users` table.
+`bcrypt.hash()` handles the salt automatically. You never pass a salt manually — that's the point. The function returns a 60-character string you store directly in your `users` table. You can generate real bcrypt hashes from any password with the [bcrypt generator tool](/tools/bcrypt-generator) — it runs entirely in your browser, nothing is transmitted.
 
 If you need to generate the salt manually for any reason (rare):
 

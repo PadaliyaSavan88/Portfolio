@@ -1,12 +1,13 @@
 ﻿---
-title: 'Chroma vs Pinecone vs pgvector for RAG'
+title: 'Chroma vs Pinecone vs pgvector (2026)'
 date: '2026-04-26'
 image: ''
 imageName: ''
 author: 'Savan Padaliya'
-description: 'A practical comparison of Chroma, Pinecone, and pgvector for production RAG pipelines — covering setup, query performance, scalability, and cost.'
-keyword: 'vector database comparison, Chroma vs Pinecone, pgvector Node.js, RAG vector store, vector database production, embeddings database, LangChain vector store'
+description: 'Chroma vs Pinecone vs pgvector — setup, query speed, scalability, and 2026 pricing for production RAG pipelines. Which vector database should you pick?'
+keyword: 'vector database comparison, chroma vector database, chromadb, Chroma vs Pinecone, pinecone vs chromadb, chromadb vs pgvector, chroma vs pgvector, chroma vs lancedb, pgvector Node.js, RAG vector store, vector database production, embeddings database, LangChain vector store'
 topic: 'AI Engineering'
+dateModified: '2026-06-01'
 faq:
   - question: "What is a vector database and why do AI applications need one?"
     answer: "A vector database stores high-dimensional embeddings — numerical representations of text or images — and efficiently retrieves the most semantically similar entries to a query vector. AI applications, especially RAG pipelines, need vector databases to find relevant documents by meaning rather than keyword match."
@@ -18,6 +19,12 @@ faq:
     answer: "OpenAI text-embedding-3-small (1536 dimensions) is the most widely used embedding model for production RAG systems. For Vertex AI apps, Google's text-embedding-004 is a strong alternative. Always use the same embedding model during ingestion and retrieval — mixing models breaks semantic search entirely."
   - question: "How many vectors can Pinecone handle?"
     answer: "Pinecone's serverless tier handles billions of vectors and scales automatically. The free tier supports roughly 100,000 vectors, which is sufficient for most prototypes and small production systems. Pinecone's managed infrastructure means you don't manage index tuning, hardware scaling, or availability."
+  - question: "How does Chroma compare to LanceDB?"
+    answer: "Chroma is optimized for simplicity and LangChain integration, making it the fastest path from prototype to working RAG. LanceDB is columnar-storage-based and excels at mixed vector + metadata queries on large datasets, with better performance when you need to filter by metadata at scale. For most Node.js RAG prototypes, Chroma is simpler; for high-volume filtered queries, LanceDB is worth evaluating."
+  - question: "What is Chroma's pricing and free tier in 2026?"
+    answer: "Chroma Cloud's free tier includes up to 1 million embeddings and 10GB of storage with no credit card required. Paid plans scale from there based on storage and request volume. The open-source self-hosted version remains completely free with no limits — you manage your own infrastructure."
+  - question: "Chroma vs pgvector: which is better for production?"
+    answer: "pgvector is better for production if you are already running PostgreSQL — it eliminates a separate service, uses familiar tooling, and keeps vector data co-located with relational data. Chroma is better if you need a standalone vector store with a simpler query API and don't want to manage Postgres index tuning. For most RAG systems on existing Postgres infrastructure, pgvector with HNSW indexing is the pragmatic choice."
 ---
 
 Your [RAG pipeline](/blogs/rag-architecture-for-javascript-developers) needs somewhere to store and query embeddings. The three options most Node.js teams evaluate are Chroma, Pinecone, and pgvector. They solve the same problem at very different points on the complexity vs. control tradeoff.

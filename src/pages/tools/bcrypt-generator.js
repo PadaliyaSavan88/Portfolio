@@ -99,7 +99,7 @@ export default function BcryptGenerator() {
         <title>Bcrypt Generator Online — Hash & Verify | Savan Padaliya</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Free online bcrypt generator — hash any password with custom cost rounds or verify a bcrypt hash instantly. Runs in your browser, nothing stored." />
-        <meta name="keywords" content="bcrypt generator, bcrypt hash, bcrypt verifier, password hash, bcrypt online" />
+        <meta name="keywords" content="bcrypt online, bcrypt generator, bcrypt hash online, online bcrypt, bcrypt hash generator, bcrypt verifier, hash password online, bcryptjs online, password hash, online bcrypt generator" />
         <meta name="author" content="Savan Padaliya" />
         <link rel="canonical" href="https://savanpadaliya.com/tools/bcrypt-generator" />
         <meta name="robots" content="index, follow" />
