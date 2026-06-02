@@ -1,11 +1,12 @@
 ---
-title: 'Cryptographic Randomness in JavaScript'
+title: 'crypto vs Math.random in Node.js (2026)'
 date: '2026-05-10'
 image: 'cryptography.png'
 imageName: 'cryptography.png'
 author: 'Savan Padaliya'
-description: 'Math.random() is not secure for tokens or passwords. Learn how to use crypto.getRandomValues() and Node.js crypto for cryptographically secure randomness.'
-keyword: 'crypto.getRandomValues JavaScript, Math.random vs crypto, secure random JavaScript, CSPRNG, cryptographic randomness, secure token generation, Node.js crypto module'
+description: 'Math.random() is predictable — use Node.js crypto.randomBytes, crypto.randomInt, and crypto.randomUUID for safe tokens, IDs, and passwords.'
+dateModified: '2026-06-01'
+keyword: 'Node.js crypto module, crypto.randomBytes Node.js, crypto.randomInt Node.js, crypto.randomUUID Node.js, cryptographic randomness, Math.random vs crypto, secure random JavaScript, CSPRNG, secure token generation, crypto.getRandomValues JavaScript'
 topic: 'Web Development'
 faq:
   - question: "What is the difference between Math.random() and crypto.getRandomValues()?"
@@ -18,6 +19,10 @@ faq:
     answer: "Math.random() is safe for non-security uses: generating random UI animations, shuffling a non-sensitive list, picking a random item from an array for display purposes, or seeding a non-security simulation. It is not safe for anything security-sensitive: tokens, IDs used in authorization, password generation, nonces, salts, or CSRF protection. The rule: if guessing the value would give an attacker an advantage, use crypto."
   - question: "How does a cryptographically secure pseudorandom number generator (CSPRNG) work?"
     answer: "A CSPRNG starts with a seed gathered from unpredictable hardware sources — CPU timing jitter, interrupt timing, mouse movement, disk I/O patterns. It feeds this entropy into a cryptographically strong algorithm (typically ChaCha20 or AES-CTR in counter mode) that produces a stream of output indistinguishable from true randomness. The key property is forward secrecy: even if an attacker captures the internal state at one point in time, they cannot compute past or future values."
+  - question: "What are the min and max bounds for crypto.randomInt() in Node.js?"
+    answer: "crypto.randomInt(min, max) generates a cryptographically secure integer where min is inclusive and max is exclusive. So crypto.randomInt(1, 7) returns a value in [1, 2, 3, 4, 5, 6] — never 7. The single-argument form crypto.randomInt(max) treats 0 as the implicit min. Both min and max must be safe integers (less than 2^48) and max must be greater than min."
+  - question: "How do I generate cryptographically secure random bytes in Node.js?"
+    answer: "Use crypto.randomBytes(n), which returns n random bytes as a Buffer using the operating system CSPRNG. Convert to a string with .toString('hex') for a hex token (2n characters) or .toString('base64url') for a URL-safe base64 token (approximately 4n/3 characters). For a 256-bit token suitable for session IDs or API keys, use crypto.randomBytes(32).toString('hex')."
 ---
 
 `Math.random()` is fine for picking a random color or shuffling a UI element. It is not acceptable for generating session tokens, password reset links, API keys, or any value where predictability creates a security risk. This post explains why, shows you the correct APIs in both browser and Node.js, and covers every common use case where the distinction matters.

@@ -103,7 +103,7 @@ const worker = new Worker('ai-jobs', async (job) => {
 }, { connection: redis, concurrency: 5 });
 ```
 
-The `concurrency: 5` limit is deliberate — it prevents a single worker from overwhelming your LLM API quota. Tune this based on your provider rate limits.
+The `concurrency: 5` limit is deliberate — it prevents a single worker from overwhelming your LLM API quota. Tune this based on your provider rate limits. Job IDs returned to clients should be UUIDs rather than auto-increment integers — they appear in API responses and logs, and sequential IDs reveal internal queue state to callers. [UUID v4 in JavaScript: when to use one](/blogs/uuid-explained-when-to-use-javascript) covers the v4 vs v7 tradeoff for IDs that need to be both unguessable and database-efficient.
 
 ## Provider Abstraction and Fallback Routing
 

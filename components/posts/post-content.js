@@ -39,6 +39,7 @@ function PostImage({ src, alt }) {
         height={600}
         style={{ width: '100%', height: 'auto' }}
         onError={() => setError(true)}
+        unoptimized
       />
       <br />
     </div>

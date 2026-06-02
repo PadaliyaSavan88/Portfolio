@@ -214,6 +214,8 @@ For a hobby project or prototype, the direct Gemini API is faster to set up. For
 
 Once your integration is live, the next step is observability — tracking latency, token costs, and error rates before they become incidents. See [How to Monitor AI Pipelines in Production](/blogs/how-to-monitor-ai-pipelines-in-production) for a Node.js-first guide to instrumenting your Vertex AI calls.
 
+If you're still deciding between Vertex AI and OpenAI for your production app, [OpenAI vs Vertex AI for Production SaaS](/blogs/openai-vs-vertex-ai-for-production-saas) covers the cost, reliability, and model quality tradeoffs side by side.
+
 ## Frequently Asked Questions
 
 **What is the difference between Vertex AI and the direct Gemini API?**  

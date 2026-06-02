@@ -1,11 +1,12 @@
 ---
-title: 'TypeScript for AI: Typing LLM Responses'
+title: 'TypeScript for AI Apps in Node.js (2026)'
 date: '2026-05-06'
 image: 'typescript-forai.png'
 imageName: 'typescript-forai.png'
 author: 'Savan Padaliya'
-description: 'Type OpenAI and Vertex AI SDK responses in TypeScript — typed prompts, structured outputs, Zod validation, and patterns that prevent runtime surprises.'
-keyword: 'TypeScript OpenAI Node.js, type LLM response TypeScript, TypeScript AI app, typed Vertex AI, TypeScript generative AI, OpenAI TypeScript SDK, Zod LLM output, structured output TypeScript'
+description: 'Type OpenAI and Vertex AI responses in Node.js — use TypeScript with Zod to catch shape mismatches and prevent runtime failures in production AI apps.'
+dateModified: '2026-06-01'
+keyword: 'TypeScript for AI, TypeScript OpenAI Node.js, TypeScript AI applications, type LLM response TypeScript, TypeScript AI app, typed Vertex AI, TypeScript generative AI, OpenAI TypeScript SDK, Zod LLM output, structured output TypeScript, typescript rules for AI'
 topic: 'AI Engineering'
 faq:
   - question: "Do I need TypeScript for OpenAI or Vertex AI development in Node.js?"
@@ -370,7 +371,7 @@ The [RAG Architecture post](/blogs/rag-architecture-for-javascript-developers) u
 
 ---
 
-The combination of TypeScript interfaces for compile-time guarantees and Zod schemas for runtime validation covers both failure modes in AI development: the shape you assumed the LLM would return, and the shape it actually returned at 2am on a Tuesday. Any AI engineer building production LLM features in Node.js should have both layers in place before going live.
+The combination of TypeScript interfaces for compile-time guarantees and Zod schemas for runtime validation covers both failure modes in AI development: the shape you assumed the LLM would return, and the shape it actually returned at 2am on a Tuesday. Any AI engineer building production LLM features in Node.js should have both layers in place before going live. These same patterns translate directly to the REST API layer that wraps your AI logic — [Node.js TypeScript REST API Guide](/blogs/nodejs-typescript-rest-api-production) covers typed route handlers, error middleware, and typed env configuration for the API that exposes your AI features.
 
 ## Frequently Asked Questions
 

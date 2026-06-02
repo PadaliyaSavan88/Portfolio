@@ -2151,3 +2151,114 @@ html {
   font-size: 0.85rem;
   color: #9ca3af;
 }
+
+/* Bcrypt inline widget (blog post) */
+.bcrypt-inline-widget {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2.5rem 0;
+  background: #f8fafc;
+}
+
+.bcrypt-widget-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.35rem;
+}
+
+.bcrypt-widget-sub {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 1rem;
+}
+
+.bcrypt-widget-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bcrypt-widget-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: monospace;
+  background: #fff;
+  color: #111;
+}
+
+.bcrypt-widget-input:focus {
+  outline: none;
+  border-color: #3081D0;
+  box-shadow: 0 0 0 3px rgba(48, 129, 208, 0.15);
+}
+
+.bcrypt-widget-btn {
+  padding: 0.55rem 1.25rem;
+  background: #3081D0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.bcrypt-widget-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.bcrypt-widget-error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0;
+}
+
+.bcrypt-widget-result {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+.bcrypt-widget-hash {
+  flex: 1;
+  font-size: 0.8rem;
+  word-break: break-all;
+  color: #374151;
+}
+
+.bcrypt-widget-copy {
+  padding: 0.35rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #374151;
+}
+
+.bcrypt-widget-copy:hover {
+  border-color: #3081D0;
+  color: #3081D0;
+}
+
+.bcrypt-widget-footer {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 1rem 0 0;
+}

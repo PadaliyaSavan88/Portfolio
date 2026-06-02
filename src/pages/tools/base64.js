@@ -68,9 +68,10 @@ export default function Base64Tool() {
   return (
     <>
       <Head>
-        <title>Base64 Encoder / Decoder — Free Online Tool | Savan Padaliya</title>
+        <title>Base64 Encoder Decoder Online — Free Tool | Savan Padaliya</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Free online Base64 encoder and decoder. Paste plain text to encode or Base64 to decode. Supports Unicode. No sign-up required." />
+        <meta name="description" content="Online Base64 encoder and decoder — encode plain text to Base64 or decode Base64 strings instantly. Supports Unicode and special characters. Free, no sign-up." />
+        <meta name="keywords" content="base64 encoder online, base64 online, base64 encode decode online, online base64 encoder, base64 decoder online, base64 online encoder decoder, encode base64 online, base64 encoding online" />
         <meta name="keywords" content="base64 encoder, base64 decoder, base64 online, encode base64, decode base64, btoa atob" />
         <meta name="author" content="Savan Padaliya" />
         <link rel="canonical" href="https://savanpadaliya.com/tools/base64" />

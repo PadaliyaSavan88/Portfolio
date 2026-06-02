@@ -21,7 +21,7 @@ export default function Home() {
 
         <meta name="title" content="Savan Padaliya | Ship Your AI Product Faster" />
         <meta name="description" content="Founders and product teams hire Savan to ship MVPs in days, add AI features to existing products, and build software that scales. Node.js · React · OpenAI." />
-        <meta name="keywords" content="hire AI engineer, ship AI product faster, MVP development, AI integration for SaaS, add AI to existing product, AI consulting for founders, full-stack AI developer, Node.js AI engineer, React developer for startups" />
+        <meta name="keywords" content="Savan AI, Savan AI engineer, hire AI engineer, ship AI product faster, MVP development, AI integration for SaaS, add AI to existing product, AI consulting for founders, full-stack AI developer, Node.js AI engineer, React developer for startups" />
         <meta name="language" content="English" />
         <link rel="canonical" href="https://savanpadaliya.com/" />
         <meta name="robots" content="index, follow" />
@@ -49,6 +49,7 @@ export default function Home() {
                   "@type": "Person",
                   "@id": "https://savanpadaliya.com/#person",
                   "name": "Savan Padaliya",
+                  "alternateName": "Savan AI",
                   "jobTitle": "Senior Full-Stack & AI Engineer",
                   "url": "https://savanpadaliya.com",
                   "image": "https://savanpadaliya.com/graphics/header_logo.png",

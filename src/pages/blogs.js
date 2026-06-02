@@ -21,6 +21,7 @@ function FeaturedCardImage({ src, alt }) {
       fill
       style={{ objectFit: "cover" }}
       onError={() => setError(true)}
+      unoptimized
     />
   );
 }
@@ -36,6 +37,7 @@ function BlogCardImage({ src, alt }) {
         fill
         style={{ objectFit: "cover" }}
         onError={() => setError(true)}
+        unoptimized
       />
     </div>
   );
