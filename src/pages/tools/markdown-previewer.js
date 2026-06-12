@@ -1,11 +1,38 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Headers from '../components/header';
 import Footer from '../components/footer';
 import ToolSeo from '../components/tool-seo';
+
+function MermaidDiagram({ chart }) {
+  const ref = useRef(null);
+  const [svg, setSvg] = useState('');
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    let cancelled = false;
+    async function render() {
+      try {
+        const mermaid = (await import('mermaid')).default;
+        mermaid.initialize({ startOnLoad: false, theme: 'default', securityLevel: 'loose' });
+        const id = 'mermaid-' + Math.random().toString(36).slice(2);
+        const { svg: rendered } = await mermaid.render(id, chart);
+        if (!cancelled) setSvg(rendered);
+      } catch (e) {
+        if (!cancelled) setError(e.message || 'Diagram error');
+      }
+    }
+    render();
+    return () => { cancelled = true; };
+  }, [chart]);
+
+  if (error) return <pre style={{ color: '#ef4444', background: '#fef2f2', padding: '0.75rem', borderRadius: 6, fontSize: '0.8rem' }}>{error}</pre>;
+  if (!svg) return <div style={{ color: '#9ca3af', fontSize: '0.8rem', padding: '0.5rem' }}>Rendering diagram…</div>;
+  return <div ref={ref} dangerouslySetInnerHTML={{ __html: svg }} style={{ overflowX: 'auto', margin: '0.5rem 0' }} />;
+}
 
 const SAMPLE = `# Hello, Markdown!
 
@@ -32,6 +59,17 @@ console.log(greet('World'));
 | Bob   | Designer   | Active |
 
 > Blockquotes work too.
+
+## Diagram
+
+\`\`\`mermaid
+graph LR
+  A[Start] --> B{Decision}
+  B -->|Yes| C[Do it]
+  B -->|No| D[Skip it]
+  C --> E[End]
+  D --> E
+\`\`\`
 `;
 
 const SCHEMA = {
@@ -116,7 +154,7 @@ export default function MarkdownPreviewer() {
               <span>Markdown Previewer</span>
             </nav>
             <h1 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#1a1a1a', marginBottom: '0.35rem' }}>Markdown Previewer</h1>
-            <p style={{ color: '#6b7280', marginBottom: 0 }}>Live side-by-side editor. Supports GFM tables, code blocks, and strikethrough.</p>
+            <p style={{ color: '#6b7280', marginBottom: 0 }}>Live preview editor. Supports GFM tables, images, code blocks, and strikethrough.</p>
 
             <div className="tool-card-ui mt-4">
               <div className="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
@@ -139,30 +177,30 @@ export default function MarkdownPreviewer() {
                 </div>
               </div>
 
-              <div className="row g-3">
-                <div className="col-md-6">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                <div>
                   <label className="tool-label mb-2 d-block">Markdown Input</label>
                   <textarea
                     className="form-control"
-                    rows={22}
+                    rows={8}
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     placeholder="Type or paste your Markdown here..."
                     style={{ fontFamily: "'Courier New', monospace", fontSize: '0.875rem', borderRadius: 8, resize: 'vertical' }}
                   />
                 </div>
-                <div className="col-md-6">
+                <div>
                   <label className="tool-label mb-2 d-block">Preview</label>
                   <div
                     className="md-preview-panel"
                     style={{
                       border: '1px solid #e5e7eb',
                       borderRadius: 8,
-                      padding: '1rem 1.25rem',
-                      minHeight: 460,
+                      padding: '1.5rem 1.75rem',
+                      minHeight: 600,
                       background: '#fff',
-                      fontSize: '0.9rem',
-                      lineHeight: 1.7,
+                      fontSize: '0.95rem',
+                      lineHeight: 1.75,
                       overflowY: 'auto',
                     }}
                   >
@@ -170,7 +208,13 @@ export default function MarkdownPreviewer() {
                       <ReactMarkdown
                         remarkPlugins={[remarkGfm]}
                         components={{
-                          code({ inline, children }) {
+                          img({ src, alt }) {
+                            return <img src={src} alt={alt || ''} style={{ maxWidth: '100%', height: 'auto', borderRadius: 4, display: 'block', margin: '0.5rem 0' }} />;
+                          },
+                          code({ inline, className, children }) {
+                            if (!inline && className === 'language-mermaid') {
+                              return <MermaidDiagram chart={String(children).replace(/\n$/, '')} />;
+                            }
                             return inline
                               ? <code style={{ background: '#f3f4f6', padding: '0.1em 0.35em', borderRadius: 4, fontSize: '0.85em', fontFamily: 'monospace' }}>{children}</code>
                               : <pre style={{ background: '#1e1e1e', color: '#d4d4d4', borderRadius: 8, padding: '1rem', overflowX: 'auto', fontSize: '0.85em' }}><code>{children}</code></pre>;
