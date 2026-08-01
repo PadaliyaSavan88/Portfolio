@@ -15,12 +15,12 @@ export default function Footer() {
                 </div>
                 <nav aria-label="Footer navigation"><ul className="list-inline">
                     <li className="list-inline-item"><Link href="/#home">Home</Link></li>
-                    <li className="list-inline-item"><Link href="/#services">Services</Link></li>
-                    <li className="list-inline-item"><Link href="/#portfolio">Work</Link></li>
-                    <li className="list-inline-item"><Link href="/#skills">Skills</Link></li>
+                    <li className="list-inline-item"><Link href="/#how-i-help">How I Help</Link></li>
+                    <li className="list-inline-item"><Link href="/case-studies">Case Studies</Link></li>
                     <li className="list-inline-item"><Link href="/#contact">Contact</Link></li>
                     <li className="list-inline-item"><Link href="/about">About</Link></li>
-                    <li className="list-inline-item"><Link href="/blogs">Blog</Link></li>
+                    <li className="list-inline-item"><Link href="/blogs">Insights</Link></li>
+                    <li className="list-inline-item"><Link href="/tools">Tools</Link></li>
                 </ul></nav>
                 <p className="copyright">© {new Date().getFullYear()} Savan Padaliya. All rights reserved.</p>
             </div>
