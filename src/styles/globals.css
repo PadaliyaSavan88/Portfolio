@@ -1563,6 +1563,16 @@ html {
   letter-spacing: 0.05em;
 }
 
+/* Homepage Trust section — center the stat tiles */
+#trust .community-stats {
+  justify-content: center;
+  text-align: center;
+}
+
+#trust .community-stat {
+  align-items: center;
+}
+
 .about-personal {
   padding: 4rem 0;
   background: #fff;
@@ -1897,6 +1907,52 @@ html {
 
 .tool-breadcrumb-sep {
   margin: 0 0.4rem;
+}
+
+.gdg-answer {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+.gdg-answer p {
+  margin-bottom: 0.75rem;
+}
+
+.gdg-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.gdg-answer ul,
+.gdg-answer ol {
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.gdg-answer li {
+  margin-bottom: 0.3rem;
+}
+
+.gdg-answer strong {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.gdg-answer code {
+  background: #eef2ff;
+  color: #3730a3;
+  border-radius: 4px;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.85em;
+}
+
+.gdg-answer a {
+  color: #3081D0;
+  text-decoration: underline;
 }
 
 /* Tool SEO — About & FAQ section */
@@ -2255,6 +2311,146 @@ html {
 .bcrypt-widget-copy:hover {
   border-color: #3081D0;
   color: #3081D0;
+}
+
+/* Founder Problem section */
+.founder-question-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.founder-question-list li {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.founder-question-list li:first-child {
+  border-top: 1px solid #e5e7eb;
+}
+
+.founder-problem-closing {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3081D0;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+/* Founder Journey stepper */
+.journey-stepper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0 2.5rem;
+}
+
+.journey-step {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.journey-step-inner {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.journey-step-name {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #3081D0;
+  margin-bottom: 0.4rem;
+}
+
+.journey-step-desc {
+  font-size: 0.825rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.journey-step-connector {
+  color: #9ca3af;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.journey-closing {
+  font-size: 1.05rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+/* Philosophy section */
+.philosophy-heading {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.philosophy-text {
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.philosophy-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Tech stack: category pills + collapsible detail */
+.stack-category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.stack-category-pill {
+  background: #f0f7ff;
+  color: #3081D0;
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.stack-details {
+  text-align: center;
+}
+
+.stack-details-summary {
+  cursor: pointer;
+  color: #3081D0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.stack-details-summary::-webkit-details-marker {
+  display: none;
+}
+
+.stack-details-summary:hover {
+  text-decoration: underline;
 }
 
 .bcrypt-widget-footer {

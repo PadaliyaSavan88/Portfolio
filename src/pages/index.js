@@ -1,43 +1,55 @@
 import Head from 'next/head'
+import { getSortedPostsData } from '../../components/post'
 import Headers from './components/header'
 import Hero from './components/hero'
-import SocialProof from './components/socialproof'
+import Trust from './components/trust'
+import FounderProblem from './components/founderProblem'
 import Services from './components/services'
-import Projects from './components/projects'
+import FounderJourney from './components/founderJourney'
 import WhyHireMe from './components/whyHireMe'
+import Projects from './components/projects'
+import Philosophy from './components/philosophy'
+import InsightsTeaser from './components/insightsTeaser'
 import TechStack from './components/techStack'
 import FAQ from './components/faq'
-import Newsletter from './components/newsletter'
 import Contact from './components/contact'
 import Footer from './components/footer'
 
-export default function Home() {
+export async function getStaticProps() {
+  const posts = getSortedPostsData()
+    .slice(0, 3)
+    .map(({ id, title, date, topic }) => ({ id, title, date, topic }));
+
+  return { props: { posts } };
+}
+
+export default function Home({ posts }) {
   return (
     <>
       <Head>
-        <title>Savan Padaliya | Ship Your AI Product Faster</title>
+        <title>Savan Padaliya | Technical Partner for Startup Founders</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
-        <meta name="title" content="Savan Padaliya | Ship Your AI Product Faster" />
-        <meta name="description" content="Founders and product teams hire Savan to ship MVPs in days, add AI features to existing products, and build software that scales. Node.js · React · OpenAI." />
-        <meta name="keywords" content="Savan AI, Savan AI engineer, hire AI engineer, ship AI product faster, MVP development, AI integration for SaaS, add AI to existing product, AI consulting for founders, full-stack AI developer, Node.js AI engineer, React developer for startups" />
+        <meta name="title" content="Savan Padaliya | Technical Partner for Startup Founders" />
+        <meta name="description" content="I help startup founders build and scale technology products—from MVP to production and beyond. Product thinking, engineering depth, AI expertise, and experience at scale." />
+        <meta name="keywords" content="technical partner for startup founders, fractional CTO, startup CTO consultant, AI product development, AI MVP development, SaaS MVP development, startup technical consultant, technical co-founder" />
         <meta name="language" content="English" />
         <link rel="canonical" href="https://savanpadaliya.com/" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Savan Padaliya" />
 
-        <meta property="og:title" content="Savan Padaliya | Ship Your AI Product Faster" />
+        <meta property="og:title" content="Savan Padaliya | Technical Partner for Startup Founders" />
         <meta property="og:site_name" content="Savan Padaliya" />
         <meta property="og:url" content="https://savanpadaliya.com/" />
-        <meta property="og:description" content="From 5-day MVP prototypes to systems serving 69.9M users. Senior Full-Stack & AI Engineer available for projects, consulting, and AI integrations." />
+        <meta property="og:description" content="I help startup founders build and scale technology products—from MVP to production and beyond. 7+ years building products across AI, SaaS, and cloud." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />
-        <meta name="twitter:title" content="Savan Padaliya | Ship Your AI Product Faster" />
-        <meta name="twitter:description" content="Founders and product teams hire Savan to ship MVPs in days, add AI features to existing products, and build software that scales." />
+        <meta name="twitter:title" content="Savan Padaliya | Technical Partner for Startup Founders" />
+        <meta name="twitter:description" content="I help startup founders build and scale technology products—from MVP to production and beyond." />
         <meta name="twitter:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <script
           type="application/ld+json"
@@ -50,7 +62,7 @@ export default function Home() {
                   "@id": "https://savanpadaliya.com/#person",
                   "name": "Savan Padaliya",
                   "alternateName": "Savan AI",
-                  "jobTitle": "Senior Full-Stack & AI Engineer",
+                  "jobTitle": "Technical Partner for Startup Founders",
                   "url": "https://savanpadaliya.com",
                   "image": "https://savanpadaliya.com/graphics/header_logo.png",
                   "sameAs": [
@@ -61,10 +73,10 @@ export default function Home() {
                     "JavaScript", "Node.js", "React", "Angular", "Next.js",
                     "AI Integration", "OpenAI API", "Gemini API", "Vertex AI",
                     "LangChain", "N8N", "MVP Development", "AI Chatbot Development",
-                    "Workflow Automation", "Technical Consulting",
+                    "Workflow Automation", "Technical Consulting", "Fractional CTO",
                     "Docker", "Kubernetes", "AWS", "Google Cloud"
                   ],
-                  "description": "Senior Full-Stack & AI Engineer with 4+ years of experience. Helps founders, startups, and product teams build MVPs, AI features, automation systems, and scalable web applications.",
+                  "description": "Technical Partner for Startup Founders with 7+ years of experience. Helps founders build MVPs, scale SaaS products, add AI where it creates leverage, and provides fractional CTO-level technical leadership.",
                   "contactPoint": {
                     "@type": "ContactPoint",
                     "contactType": "professional inquiries",
@@ -72,24 +84,24 @@ export default function Home() {
                   },
                   "hasOccupation": {
                     "@type": "Occupation",
-                    "name": "Senior Full-Stack & AI Engineer",
+                    "name": "Technical Partner for Startup Founders",
                     "occupationLocation": { "@type": "Country", "name": "India" },
-                    "skills": "Node.js, React, Next.js, AI Integration, OpenAI, LangChain, TypeScript, MVP Development, Workflow Automation"
+                    "skills": "Node.js, React, Next.js, AI Integration, OpenAI, LangChain, TypeScript, MVP Development, Fractional CTO, Workflow Automation"
                   }
                 },
                 {
                   "@type": "WebSite",
                   "@id": "https://savanpadaliya.com/#website",
                   "url": "https://savanpadaliya.com",
-                  "name": "Savan Padaliya — Senior Full-Stack & AI Engineer",
-                  "description": "Portfolio of Savan Padaliya — Senior Full-Stack & AI Engineer for MVPs, web apps, AI chatbots, and automation systems.",
+                  "name": "Savan Padaliya — Technical Partner for Startup Founders",
+                  "description": "Savan Padaliya helps startup founders build and scale technology products—from MVP to production and beyond.",
                   "publisher": { "@id": "https://savanpadaliya.com/#person" }
                 },
                 {
                   "@type": "ProfilePage",
                   "@id": "https://savanpadaliya.com/#profilepage",
                   "url": "https://savanpadaliya.com",
-                  "name": "Savan Padaliya — Senior Full-Stack & AI Engineer",
+                  "name": "Savan Padaliya — Technical Partner for Startup Founders",
                   "about": { "@id": "https://savanpadaliya.com/#person" },
                   "mainEntity": { "@id": "https://savanpadaliya.com/#person" }
                 },
@@ -135,6 +147,14 @@ export default function Home() {
                         "@type": "Answer",
                         "text": "Yes. Architecture reviews, AI adoption strategy, and stack decisions are available as standalone consulting engagements before any code is written. If you're unsure what to build or how, that's exactly where to start."
                       }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Do you offer fractional CTO services?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. For founders who need technical leadership but aren't ready for a full-time CTO, I offer fractional CTO engagements covering technology strategy, architecture, hiring, and roadmap planning."
+                      }
                     }
                   ]
                 }
@@ -145,14 +165,17 @@ export default function Home() {
       </Head>
       <Headers />
       <Hero />
-      <SocialProof />
+      <Trust />
+      <FounderProblem />
       <Services />
-      <Projects />
+      <FounderJourney />
       <WhyHireMe />
+      <Projects />
+      <Philosophy />
+      <InsightsTeaser posts={posts} />
       <TechStack />
-      <FAQ />
-      <Newsletter />
       <Contact />
+      <FAQ />
       <Footer />
     </>
   )

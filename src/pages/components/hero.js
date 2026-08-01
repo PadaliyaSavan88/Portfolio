@@ -1,34 +1,34 @@
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 export default function Hero() {
-    const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "#";
-
     return (
         <div className="container hero-section" id="home">
             <div className="row align-items-center">
                 <div className="col-md-6 d-flex align-items-center">
                     <div className="hero-text">
-                        <p className="hero-greeting">Trusted by founders &amp; product teams</p>
-                        <h1 className="hero-name">Savan Padaliya</h1>
-                        <p className="hero-subtitle">Your product idea, shipped and working — faster than you expect.</p>
+                        <p className="hero-greeting">Savan Padaliya &middot; Technical Partner for Startup Founders</p>
+                        <h1 className="hero-name">Your startup needs more than a developer.</h1>
+                        <p className="hero-subtitle">
+                            You need someone who can think about the product, the architecture, and what happens when your first 1,000 users become your next million.
+                        </p>
                         <p className="hero-desc">
-                            From 5-day MVP prototypes to systems serving tens of millions of users. I help you validate fast, build right, and add AI where it actually moves the needle.
+                            I help startup founders build and scale technology products—from MVP to production and beyond.
                         </p>
                         <div className="hero-actions mt-4">
-                            <a
-                                href={calendlyUrl}
-                                target="_blank"
-                                rel="noreferrer"
+                            <Link
+                                href="/contact"
+                                onClick={() => trackEvent('cta_talk_product')}
                                 className="btn-primary-custom me-3"
                             >
-                                Book a project call
-                            </a>
-                            <Link href="/#portfolio" className="btn-outline-custom">
-                                View case studies
+                                Talk About Your Product
+                            </Link>
+                            <Link href="/#how-i-help" className="btn-outline-custom">
+                                See How I Can Help
                             </Link>
                         </div>
-                        <p className="hero-trust-cue">NDA available &middot; Your idea stays confidential</p>
-                        <p className="hero-stack-cue">Node.js &middot; React &middot; OpenAI &middot; Gemini &middot; LangChain &middot; N8N</p>
+                        <p className="hero-trust-cue">7+ years building products &middot; AI &middot; SaaS &middot; Cloud &middot; High-scale systems</p>
+                        <p className="hero-stack-cue">NDA available &middot; Your idea stays confidential</p>
                     </div>
                 </div>
                 <div className="col-md-6">

@@ -52,28 +52,28 @@ export default function About() {
     return (
         <>
             <Head>
-                <title>About Savan Padaliya | Full Stack AI Engineer</title>
+                <title>About Savan Padaliya | Technical Partner for Startup Founders</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
 
-                <meta name="title" content="About Savan Padaliya | Full Stack AI Engineer" />
-                <meta name="description" content="From restaurant systems in college to software serving 69.9M citizens. Savan Padaliya helps businesses ship faster with AI and full-stack engineering." />
-                <meta name="keywords" content="Savan Padaliya, Senior Full Stack Developer, AI Developer, Node.js, React, Product Owner, SaaS, Blockchain, Enterprise Software" />
+                <meta name="title" content="About Savan Padaliya | Technical Partner for Startup Founders" />
+                <meta name="description" content="7+ years building products — from restaurant systems in college to software serving 69.9M citizens. Savan Padaliya helps startup founders build and scale technology products." />
+                <meta name="keywords" content="Savan Padaliya, Technical Partner for Startup Founders, Fractional CTO, AI Developer, Node.js, React, Product Owner, SaaS, Blockchain, Enterprise Software" />
                 <meta name="language" content="English" />
                 <link rel="canonical" href="https://savanpadaliya.com/about" />
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Savan Padaliya" />
 
-                <meta property="og:title" content="About Savan Padaliya | Full Stack AI Engineer" />
+                <meta property="og:title" content="About Savan Padaliya | Technical Partner for Startup Founders" />
                 <meta property="og:site_name" content="Savan Padaliya" />
                 <meta property="og:url" content="https://savanpadaliya.com/about" />
-                <meta property="og:description" content="From restaurant management systems in college to software serving 69.9 million citizens. The story of Savan Padaliya." />
+                <meta property="og:description" content="From restaurant management systems in college to software serving 69.9 million citizens. The story of Savan Padaliya, technical partner for startup founders." />
                 <meta property="og:type" content="profile" />
                 <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@padaliya_savan" />
                 <meta name="twitter:creator" content="@padaliya_savan" />
-                <meta name="twitter:title" content="About Savan Padaliya | Full Stack AI Engineer" />
+                <meta name="twitter:title" content="About Savan Padaliya | Technical Partner for Startup Founders" />
                 <meta name="twitter:description" content="From restaurant management systems in college to software serving 69.9 million citizens." />
                 <meta name="twitter:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
                 <script
@@ -86,7 +86,7 @@ export default function About() {
                                     "@type": "Person",
                                     "@id": "https://savanpadaliya.com/#person",
                                     "name": "Savan Padaliya",
-                                    "jobTitle": "Senior Full Stack Developer",
+                                    "jobTitle": "Technical Partner for Startup Founders",
                                     "url": "https://savanpadaliya.com",
                                     "image": "https://savanpadaliya.com/graphics/header_logo.png",
                                     "sameAs": [
@@ -96,9 +96,9 @@ export default function About() {
                                     "knowsAbout": [
                                         "JavaScript", "Node.js", "React", "Angular", "Next.js",
                                         "AI Integration", "OpenAI API", "Gemini API", "Vertex AI",
-                                        "LangChain", "SaaS Development", "Blockchain", "Enterprise Software"
+                                        "LangChain", "SaaS Development", "Blockchain", "Enterprise Software", "Fractional CTO"
                                     ],
-                                    "description": "Senior Full Stack Developer with 4+ years of experience building production systems — from SaaS products to public sector software serving 69.9 million citizens."
+                                    "description": "Technical Partner for Startup Founders with 7+ years of experience building production systems — from SaaS products to public sector software serving 69.9 million citizens."
                                 },
                                 {
                                     "@type": "FAQPage",
@@ -141,13 +141,14 @@ export default function About() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-7 text-center">
-                            <p className="about-hero-label">The story so far</p>
+                            <p className="about-hero-label">Why my experience helps founders</p>
                             <h1 className="about-hero-heading">
-                                I&apos;ve been building real software since before I graduated.
+                                I&apos;m Savan — a product-focused engineer who helps startup founders build and scale
+                                technology products, and steps in as a fractional CTO when they need that kind of leadership.
                             </h1>
                             <p className="about-hero-sub">
-                                4+ years. Multiple industries. Systems used by tens of millions of people.
-                                Here&apos;s how I got here.
+                                7+ years. Multiple industries. Systems used by tens of millions of people.
+                                I think in products, not tickets — here&apos;s how I got here.
                             </p>
                         </div>
                     </div>
@@ -167,6 +168,25 @@ export default function About() {
                                     {i < chapters.length - 1 && <div className="chapter-divider" />}
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Throughline */}
+            <div className="about-chapters">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-7">
+                            <span className="chapter-period">The throughline</span>
+                            <h2 className="chapter-title">What each stage taught me.</h2>
+                            <p className="chapter-body">
+                                Engineering taught me how to build. Product taught me what to build. Scale taught me
+                                what breaks. AI taught me how quickly technology is changing. Today, that combination
+                                is what makes me useful to founders — not just someone who writes code, but a technical
+                                partner who helps you make the decisions that determine whether your product survives
+                                real users, real growth, and real scale.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -275,7 +295,7 @@ export default function About() {
                                 Book a Free Call
                             </Link>
                             <Link
-                                href="/#services"
+                                href="/#how-i-help"
                                 className="btn-outline-custom me-3"
                             >
                                 View Services

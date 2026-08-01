@@ -41,7 +41,7 @@ const caseStudies = [
 
 export default function Projects() {
     return (
-        <div className="light-section" id="portfolio">
+        <div className="light-section" id="case-studies">
             <div className="container">
                 <div className="section-title">
                     <h2>Case Studies</h2>

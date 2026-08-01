@@ -105,10 +105,23 @@ export default function AllBlogs({ allPostsData }) {
 
           {/* Page header */}
           <div className="blog-list-header">
-            <h1 className="blog-list-title">Writing</h1>
+            <h1 className="blog-list-title">Insights</h1>
             <p className="blog-list-subtitle">
-              Practical posts on AI, full stack development, and building things that actually ship.
+              Founder, AI, SaaS, and engineering thinking — practical posts on building things that actually ship.
             </p>
+          </div>
+
+          {/* Category filter pills */}
+          <div className="stack-category-pills mb-5">
+            {['AI Engineering', 'Web Development', 'Engineering Culture', 'Startups'].map((topic) => (
+              <Link
+                key={topic}
+                href={`/blogs/category/${topic.toLowerCase().replace(/\s+/g, '-')}`}
+                className="stack-category-pill text-decoration-none"
+              >
+                {topic}
+              </Link>
+            ))}
           </div>
 
           {/* Featured post */}

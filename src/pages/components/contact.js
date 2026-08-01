@@ -1,9 +1,11 @@
+import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
+
 export default function Contact() {
-    const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || "#";
     const topmateUrl = process.env.NEXT_PUBLIC_TOPMATE_URL || "#";
 
     return (
-        <section className="contact-section" id="contact" aria-label="Book a project call with Savan Padaliya">
+        <section className="contact-section" id="contact" aria-label="Talk about your product with Savan Padaliya">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -25,10 +27,10 @@ export default function Contact() {
                 <div className="row justify-content-center mb-5">
                     <div className="col-lg-7 text-center">
                         <p className="contact-eyebrow">Work with me</p>
-                        <h2 className="contact-heading">Let&apos;s build something useful.</h2>
+                        <h2 className="contact-heading">Let&apos;s talk about your product.</h2>
                         <p className="contact-intro">
-                            If you need a senior engineer for an MVP, AI integration, automation workflow,
-                            or product backlog, start a conversation.
+                            Whether you have an idea, a growing product, or a technical challenge you&apos;re
+                            trying to solve — tell me where you are and where you want to go.
                         </p>
                     </div>
                 </div>
@@ -36,26 +38,25 @@ export default function Contact() {
                 <div className="row justify-content-center">
                     <div className="col-md-7 col-lg-6">
                         <div className="booking-card booking-card-primary">
-                            <div className="booking-card-tag">For professionals &amp; businesses</div>
-                            <h3 className="booking-card-title">Book a project call</h3>
+                            <div className="booking-card-tag">For startup founders &amp; product teams</div>
+                            <h3 className="booking-card-title">Talk About Your Product</h3>
                             <p className="booking-card-desc">
-                                Got a product to build, a team that needs a senior hand, or an AI integration
-                                you want to scope out? Let&apos;s spend 30 minutes on it.
+                                Have an idea to build, a product that&apos;s growing, or a technical decision
+                                you want a second opinion on? Tell me about it and I&apos;ll get back to you.
                             </p>
                             <ul className="booking-card-points">
-                                <li>Project scoping &amp; estimation</li>
-                                <li>Technical architecture review</li>
-                                <li>Freelance &amp; consulting engagements</li>
+                                <li>Product &amp; MVP scoping</li>
+                                <li>Architecture &amp; scaling review</li>
+                                <li>Fractional CTO &amp; technical leadership</li>
                                 <li>NDA available &mdash; your idea stays confidential</li>
                             </ul>
-                            <a
-                                href={calendlyUrl}
-                                target="_blank"
-                                rel="noreferrer"
+                            <Link
+                                href="/contact"
+                                onClick={() => trackEvent('cta_talk_product')}
                                 className="btn-primary-custom booking-card-btn"
                             >
-                                Book on Calendly
-                            </a>
+                                Talk About Your Product
+                            </Link>
                         </div>
                     </div>
                 </div>

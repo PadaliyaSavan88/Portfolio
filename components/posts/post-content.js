@@ -66,31 +66,36 @@ function ShareButtons({ title, slug }) {
   );
 }
 
-function AuthorCTA() {
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL || '#';
+const TOPIC_SERVICE_MAP = {
+  'Startups': { href: '/how-i-help/build-your-product', label: 'Build Your Product →' },
+  'AI Engineering': { href: '/how-i-help/ai-for-your-product', label: 'Explore AI for Your Product →' },
+  'Engineering Culture': { href: '/how-i-help/fractional-cto', label: 'Explore Fractional CTO →' },
+  'Web Development': { href: '/how-i-help/scale-your-saas', label: 'Scale Your SaaS →' },
+};
+
+function AuthorCTA({ topic }) {
+  const service = TOPIC_SERVICE_MAP[topic] || { href: '/#how-i-help', label: 'See How I Can Help →' };
   return (
     <div className="author-cta-card">
       <div className="author-cta-avatar">SP</div>
       <div className="author-cta-body">
         <p className="author-cta-name">Savan Padaliya</p>
         <p className="author-cta-bio">
-          Senior Full Stack Developer who ships faster with AI.
-          Available for freelance, consulting, and project work.
+          Technical Partner for Startup Founders. Helps founders build MVPs, scale SaaS products,
+          add AI where it creates leverage, and provides fractional CTO-level leadership.
         </p>
         <div className="author-cta-actions">
-          <a
-            href={calendlyUrl}
-            target="_blank"
-            rel="noreferrer"
+          <Link
+            href="/contact"
             className="btn-primary-custom author-cta-btn"
           >
-            Book a Free Call
-          </a>
+            Talk About Your Product
+          </Link>
           <Link
-            href="/#services"
+            href={service.href}
             className="author-cta-services-link"
           >
-            View Services →
+            {service.label}
           </Link>
         </div>
       </div>
@@ -149,7 +154,7 @@ function PostContent({ post }) {
           </ReactMarkdown>
         </div>
         <ShareButtons title={post.title} slug={post.slug} />
-        <AuthorCTA />
+        <AuthorCTA topic={post.topic} />
       </article>
     </>
   );
