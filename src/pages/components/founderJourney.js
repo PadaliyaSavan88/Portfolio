@@ -30,7 +30,7 @@ export default function FounderJourney() {
                             You don&apos;t need the same technical strategy at every stage.
                         </p>
                         <p className="journey-closing">
-                            My job is to help you make the right decisions for where you are now—and where you&apos;re going next.
+                            My job is to help you make the right decisions for where you are now, and where you&apos;re going next.
                         </p>
                     </div>
                 </div>

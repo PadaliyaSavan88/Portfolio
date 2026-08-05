@@ -35,7 +35,7 @@ export default function BlogCategory({ topic, posts }) {
             <Head>
                 <title>{topic} Insights | Savan Padaliya</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content={`Articles on ${topic} — founder, AI, SaaS, and engineering thinking from Savan Padaliya.`} />
+                <meta name="description" content={`Articles on ${topic}: founder, AI, SaaS, and engineering thinking from Savan Padaliya.`} />
                 <link rel="canonical" href={`https://savanpadaliya.com/blogs/category/${slugify(topic)}`} />
                 <meta name="robots" content="index, follow" />
             </Head>

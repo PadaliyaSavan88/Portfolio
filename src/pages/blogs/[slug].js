@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import PostContent from '../../../components/posts/post-content';
 import BcryptInlineWidget from '../../../components/posts/BcryptInlineWidget';
+import ResourcesWidget from '../../../components/posts/ResourcesWidget';
 import Headers from '../components/header';
 import Footer from '../components/footer';
 import Link from 'next/link';
@@ -156,6 +157,9 @@ export default function Post({ post, relatedPosts = [] }) {
                         <PostContent post={post} />
                         {post.slug === 'password-hashing-bcrypt-nodejs' && (
                             <BcryptInlineWidget />
+                        )}
+                        {post.slug === 'offline-ai-assistant-gemma-4-webgpu' && (
+                            <ResourcesWidget postUrl={`https://savanpadaliya.com/blogs/${post.slug}`} />
                         )}
                     </div>
                     {relatedPosts.length > 0 && (

@@ -57,7 +57,7 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
 
                 <meta name="title" content="About Savan Padaliya | Technical Partner for Startup Founders" />
-                <meta name="description" content="7+ years building products — from restaurant systems in college to software serving 69.9M citizens. Savan Padaliya helps startup founders build and scale technology products." />
+                <meta name="description" content="7+ years building products, from restaurant systems in college to software serving 69.9M citizens. Savan Padaliya helps startup founders build and scale technology products." />
                 <meta name="keywords" content="Savan Padaliya, Technical Partner for Startup Founders, Fractional CTO, AI Developer, Node.js, React, Product Owner, SaaS, Blockchain, Enterprise Software" />
                 <meta name="language" content="English" />
                 <link rel="canonical" href="https://savanpadaliya.com/about" />
@@ -98,7 +98,7 @@ export default function About() {
                                         "AI Integration", "OpenAI API", "Gemini API", "Vertex AI",
                                         "LangChain", "SaaS Development", "Blockchain", "Enterprise Software", "Fractional CTO"
                                     ],
-                                    "description": "Technical Partner for Startup Founders with 7+ years of experience building production systems — from SaaS products to public sector software serving 69.9 million citizens."
+                                    "description": "Technical Partner for Startup Founders with 7+ years of experience building production systems, from SaaS products to public sector software serving 69.9 million citizens."
                                 },
                                 {
                                     "@type": "FAQPage",
@@ -143,12 +143,12 @@ export default function About() {
                         <div className="col-lg-7 text-center">
                             <p className="about-hero-label">Why my experience helps founders</p>
                             <h1 className="about-hero-heading">
-                                I&apos;m Savan — a product-focused engineer who helps startup founders build and scale
+                                I&apos;m Savan, a product-focused engineer who helps startup founders build and scale
                                 technology products, and steps in as a fractional CTO when they need that kind of leadership.
                             </h1>
                             <p className="about-hero-sub">
                                 7+ years. Multiple industries. Systems used by tens of millions of people.
-                                I think in products, not tickets — here&apos;s how I got here.
+                                I think in products, not tickets. Here&apos;s how I got here.
                             </p>
                         </div>
                     </div>
@@ -183,7 +183,7 @@ export default function About() {
                             <p className="chapter-body">
                                 Engineering taught me how to build. Product taught me what to build. Scale taught me
                                 what breaks. AI taught me how quickly technology is changing. Today, that combination
-                                is what makes me useful to founders — not just someone who writes code, but a technical
+                                is what makes me useful to founders, not just someone who writes code, but a technical
                                 partner who helps you make the decisions that determine whether your product survives
                                 real users, real growth, and real scale.
                             </p>

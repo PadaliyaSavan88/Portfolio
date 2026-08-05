@@ -1,5 +1,5 @@
 // Snapshot scraped from gdg.community.dev/gdg-rajkot and /gdg-cloud-rajkot.
-// No live scraping happens client-side — refresh this file manually when the chapters change.
+// No live scraping happens client-side. Refresh this file manually when the chapters change.
 export const KNOWLEDGE_BASE_UPDATED = '2026-07-20';
 
 const CHUNKS = [

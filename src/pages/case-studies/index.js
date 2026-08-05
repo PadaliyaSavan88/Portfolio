@@ -36,7 +36,7 @@ export default function CaseStudiesIndex() {
             <Head>
                 <title>Case Studies | Savan Padaliya</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Real problems, real technical challenges, and real outcomes — case studies from public sector scale to AI product MVPs." />
+                <meta name="description" content="Real problems, real technical challenges, and real outcomes: case studies from public sector scale to AI product MVPs." />
                 <link rel="canonical" href="https://savanpadaliya.com/case-studies" />
                 <meta name="robots" content="index, follow" />
             </Head>

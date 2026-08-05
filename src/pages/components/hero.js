@@ -13,7 +13,7 @@ export default function Hero() {
                             You need someone who can think about the product, the architecture, and what happens when your first 1,000 users become your next million.
                         </p>
                         <p className="hero-desc">
-                            I help startup founders build and scale technology products—from MVP to production and beyond.
+                            I help startup founders build and scale technology products, from MVP to production and beyond.
                         </p>
                         <div className="hero-actions mt-4">
                             <Link

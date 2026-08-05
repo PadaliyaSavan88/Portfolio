@@ -1,6 +1,6 @@
 const proofPoints = [
     { num: "7+", label: "Years Building Products" },
-    { num: "69.9M", label: "Citizens Served — Public Sector Platform" },
+    { num: "69.9M", label: "Citizens Served: Public Sector Platform" },
     { num: "5.0★", label: "Upwork Rating (5 Reviews)" },
 ];
 

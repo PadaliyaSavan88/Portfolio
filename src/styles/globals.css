@@ -2458,3 +2458,66 @@ html {
   color: #6b7280;
   margin: 1rem 0 0;
 }
+
+/* Resources widget (session companion posts) */
+.resources-widget {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2.5rem 0;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.resources-widget-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.35rem;
+}
+
+.resources-widget-sub {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 1.25rem;
+}
+
+.resources-widget-download {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.resources-widget-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.resources-widget-links a {
+  color: #3081D0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resources-widget-links a:hover {
+  text-decoration: underline;
+}
+
+.resources-widget-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.resources-widget-qr-caption {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin: 0;
+  max-width: 320px;
+}

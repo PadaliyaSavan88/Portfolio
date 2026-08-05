@@ -32,7 +32,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
 
         <meta name="title" content="Savan Padaliya | Technical Partner for Startup Founders" />
-        <meta name="description" content="I help startup founders build and scale technology products—from MVP to production and beyond. Product thinking, engineering depth, AI expertise, and experience at scale." />
+        <meta name="description" content="I help startup founders build and scale technology products, from MVP to production and beyond. Product thinking, engineering depth, AI expertise, and experience at scale." />
         <meta name="keywords" content="technical partner for startup founders, fractional CTO, startup CTO consultant, AI product development, AI MVP development, SaaS MVP development, startup technical consultant, technical co-founder" />
         <meta name="language" content="English" />
         <link rel="canonical" href="https://savanpadaliya.com/" />
@@ -42,14 +42,14 @@ export default function Home({ posts }) {
         <meta property="og:title" content="Savan Padaliya | Technical Partner for Startup Founders" />
         <meta property="og:site_name" content="Savan Padaliya" />
         <meta property="og:url" content="https://savanpadaliya.com/" />
-        <meta property="og:description" content="I help startup founders build and scale technology products—from MVP to production and beyond. 7+ years building products across AI, SaaS, and cloud." />
+        <meta property="og:description" content="I help startup founders build and scale technology products, from MVP to production and beyond. 7+ years building products across AI, SaaS, and cloud." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@padaliya_savan" />
         <meta name="twitter:creator" content="@padaliya_savan" />
         <meta name="twitter:title" content="Savan Padaliya | Technical Partner for Startup Founders" />
-        <meta name="twitter:description" content="I help startup founders build and scale technology products—from MVP to production and beyond." />
+        <meta name="twitter:description" content="I help startup founders build and scale technology products, from MVP to production and beyond." />
         <meta name="twitter:image" content="https://savanpadaliya.com/graphics/header_logo.png" />
         <script
           type="application/ld+json"
@@ -93,15 +93,15 @@ export default function Home({ posts }) {
                   "@type": "WebSite",
                   "@id": "https://savanpadaliya.com/#website",
                   "url": "https://savanpadaliya.com",
-                  "name": "Savan Padaliya — Technical Partner for Startup Founders",
-                  "description": "Savan Padaliya helps startup founders build and scale technology products—from MVP to production and beyond.",
+                  "name": "Savan Padaliya: Technical Partner for Startup Founders",
+                  "description": "Savan Padaliya helps startup founders build and scale technology products, from MVP to production and beyond.",
                   "publisher": { "@id": "https://savanpadaliya.com/#person" }
                 },
                 {
                   "@type": "ProfilePage",
                   "@id": "https://savanpadaliya.com/#profilepage",
                   "url": "https://savanpadaliya.com",
-                  "name": "Savan Padaliya — Technical Partner for Startup Founders",
+                  "name": "Savan Padaliya: Technical Partner for Startup Founders",
                   "about": { "@id": "https://savanpadaliya.com/#person" },
                   "mainEntity": { "@id": "https://savanpadaliya.com/#person" }
                 },
