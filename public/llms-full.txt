@@ -85,6 +85,12 @@ Docker, Kubernetes, Nginx, Apache Kafka
 
 ## Blog Posts (Full Descriptions)
 
+### Build an Offline AI Assistant with Gemma 4
+URL: https://www.savanpadaliya.com/blogs/offline-ai-assistant-gemma-4-webgpu/
+Published: 2026-08-02
+Description: How I used Gemma 4 and WebGPU to run a private, offline AI assistant entirely in the browser: no API keys, no server, no cloud costs.
+Topics covered: Why offline AI matters (data vulnerability, financial overhead, network latency), what Gemma 4 is (Gemini DNA, open weights, commercial flexibility), the Gemma 4 family (E2B/E4B for edge devices, 12B/26B/31B for consumer-GPU workstations), model quantization (FP16 to INT4, 4.0GB to 1.4GB VRAM), chat templates and control tokens, live WebGPU demo, and Next.js/FastAPI starter boilerplates.
+
 ### RAG Architecture for JavaScript Developers
 URL: https://www.savanpadaliya.com/blogs/rag-architecture-for-javascript-developers/
 Published: 2026-03-15

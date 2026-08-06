@@ -10,7 +10,7 @@ export default function TechStack() {
                 <div className="section-title">
                     <h2>The technology behind the work</h2>
                     <p className="section-subtitle">
-                        I work across modern web, cloud, and AI infrastructure. The stack depends on the product—not the other way around.
+                        I work across modern web, cloud, and AI infrastructure. The stack depends on the product, not the other way around.
                     </p>
                 </div>
 

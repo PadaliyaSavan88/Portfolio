@@ -30,7 +30,7 @@ export default function Contact() {
                         <h2 className="contact-heading">Let&apos;s talk about your product.</h2>
                         <p className="contact-intro">
                             Whether you have an idea, a growing product, or a technical challenge you&apos;re
-                            trying to solve — tell me where you are and where you want to go.
+                            trying to solve, tell me where you are and where you want to go.
                         </p>
                     </div>
                 </div>

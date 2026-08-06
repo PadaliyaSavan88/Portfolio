@@ -11,7 +11,7 @@ export default function Philosophy() {
                         </p>
                         <p className="philosophy-text">
                             An architecture isn&apos;t good because it&apos;s complex.
-                            It&apos;s good because it&apos;s appropriate for where the business is today—and where it needs to go tomorrow.
+                            It&apos;s good because it&apos;s appropriate for where the business is today, and where it needs to go tomorrow.
                         </p>
                         <p className="philosophy-text">
                             And AI isn&apos;t valuable because it&apos;s AI.

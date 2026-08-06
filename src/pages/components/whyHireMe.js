@@ -17,7 +17,7 @@ const reasons = [
     {
         num: "04",
         heading: "AI-Native Mindset",
-        body: "I understand where AI creates genuine product leverage—and where it's just a buzzword."
+        body: "I understand where AI creates genuine product leverage, and where it's just a buzzword."
     },
     {
         num: "05",

@@ -9,12 +9,12 @@ export default function ScaleYourSaaS() {
             <Head>
                 <title>Scale Your SaaS | Architecture & Growth | Savan Padaliya</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Your product is growing — is your technology ready? Architecture reviews, performance, infrastructure, and technical debt for growing SaaS businesses." />
+                <meta name="description" content="Your product is growing. Is your technology ready? Architecture reviews, performance, infrastructure, and technical debt for growing SaaS businesses." />
                 <meta name="keywords" content="SaaS architecture consulting, startup technical consultant, SaaS scaling, technical debt, cloud architecture" />
                 <link rel="canonical" href="https://savanpadaliya.com/how-i-help/scale-your-saas" />
                 <meta name="robots" content="index, follow" />
                 <meta property="og:title" content="Scale Your SaaS | Savan Padaliya" />
-                <meta property="og:description" content="Identify what's actually holding your product back — and fix it without rebuilding everything." />
+                <meta property="og:description" content="Identify what's actually holding your product back, and fix it without rebuilding everything." />
                 <meta property="og:url" content="https://savanpadaliya.com/how-i-help/scale-your-saas" />
                 <meta property="og:type" content="website" />
             </Head>
@@ -25,7 +25,7 @@ export default function ScaleYourSaaS() {
                 bodyCopy={[
                     "Growth exposes problems that weren't visible at the beginning.",
                     'Slow APIs. Database bottlenecks. Rising cloud costs. Fragile deployments. Technical debt.',
-                    "I help founders identify what's actually holding their product back—and fix it without rebuilding everything.",
+                    "I help founders identify what's actually holding their product back, and fix it without rebuilding everything.",
                 ]}
                 sections={[
                     {

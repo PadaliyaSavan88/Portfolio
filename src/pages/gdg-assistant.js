@@ -10,7 +10,7 @@ export default function GdgAssistantPage() {
   return (
     <>
       <Head>
-        <title>GDG Rajkot AI Assistant — Savan Padaliya</title>
+        <title>GDG Rajkot AI Assistant: Savan Padaliya</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Ask an on-device Gemma 2 model (running via WebGPU) questions about GDG Rajkot and GDG Cloud Rajkot." />
         <meta name="robots" content="noindex, follow" />
@@ -25,7 +25,7 @@ export default function GdgAssistantPage() {
             </nav>
             <h1 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#1a1a1a', marginBottom: '0.35rem' }}>GDG Rajkot AI Assistant</h1>
             <p style={{ color: '#6b7280', marginBottom: 0 }}>
-              A local, on-device Gemma 2 assistant that answers questions about GDG Rajkot and GDG Cloud Rajkot — runs entirely in your browser via WebGPU.
+              A local, on-device Gemma 2 assistant that answers questions about GDG Rajkot and GDG Cloud Rajkot, running entirely in your browser via WebGPU.
             </p>
 
             <GdgAssistant />

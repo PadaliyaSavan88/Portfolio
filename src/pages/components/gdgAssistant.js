@@ -104,7 +104,7 @@ export default function GdgAssistant() {
       )}
 
       <p className="mt-4 mb-0" style={{ fontSize: '0.8rem', color: '#9ca3af' }}>
-        Runs entirely on your device via WebGPU — nothing is sent to a server. First load downloads ~1.5GB of model weights (cached after). Community data as of {snapshotLabel}.
+        Runs entirely on your device via WebGPU: nothing is sent to a server. First load downloads ~1.5GB of model weights (cached after). Community data as of {snapshotLabel}.
       </p>
     </div>
   );

@@ -9,7 +9,7 @@ export default function Headers() {
             <nav className="navbar navbar-expand-md" aria-label="Main navigation">
                 <div className="container">
                     <Link href="/" className="navbar-brand">
-                        <Image src={Logo} alt="Savan Padaliya — Technical Partner for Startup Founders" width={50} height={50} />
+                        <Image src={Logo} alt="Savan Padaliya: Technical Partner for Startup Founders" width={50} height={50} />
                     </Link>
                     <button
                         className="navbar-toggler border-0"

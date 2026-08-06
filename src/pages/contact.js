@@ -63,7 +63,7 @@ export default function Contact() {
                 <link rel="canonical" href="https://savanpadaliya.com/contact" />
                 <meta name="robots" content="index, follow" />
                 <meta property="og:title" content="Contact | Savan Padaliya" />
-                <meta property="og:description" content="Tell me what you're building — where you are, where you want to go, and what's getting in the way." />
+                <meta property="og:description" content="Tell me what you're building: where you are, where you want to go, and what's getting in the way." />
                 <meta property="og:url" content="https://savanpadaliya.com/contact" />
                 <meta property="og:type" content="website" />
             </Head>

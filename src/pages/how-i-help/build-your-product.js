@@ -14,7 +14,7 @@ export default function BuildYourProduct() {
                 <link rel="canonical" href="https://savanpadaliya.com/how-i-help/build-your-product" />
                 <meta name="robots" content="index, follow" />
                 <meta property="og:title" content="Build Your Product | Savan Padaliya" />
-                <meta property="og:description" content="Turn your startup idea into a launchable product — from MVP scope to development and launch." />
+                <meta property="og:description" content="Turn your startup idea into a launchable product, from MVP scope to development and launch." />
                 <meta property="og:url" content="https://savanpadaliya.com/how-i-help/build-your-product" />
                 <meta property="og:type" content="website" />
             </Head>

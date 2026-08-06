@@ -35,6 +35,7 @@ Savan Padaliya is a Full Stack AI Engineer with 4+ years of experience building 
 
 ## Blog Posts
 
+- [Build an Offline AI Assistant with Gemma 4](https://www.savanpadaliya.com/blogs/offline-ai-assistant-gemma-4-webgpu/): How to run Gemma 4 fully offline in the browser using WebGPU and quantization, with no API keys, no server, no cloud costs.
 - [RAG Architecture for JavaScript Developers](https://www.savanpadaliya.com/blogs/rag-architecture-for-javascript-developers/): A practical guide to building Retrieval Augmented Generation pipelines using JavaScript, LangChain.js, and OpenAI — with working Node.js code examples.
 - [Vertex AI Setup for Node.js Apps](https://www.savanpadaliya.com/blogs/vertex-ai-setup-for-nodejs-apps/): Step-by-step guide to integrating Google Vertex AI into Node.js — from project setup and authentication to making your first generative AI call.
 - [OpenAI vs Vertex AI for Production SaaS](https://www.savanpadaliya.com/blogs/openai-vs-vertex-ai-for-production-saas/): Practical comparison of OpenAI and Vertex AI for teams building production SaaS — covering cost, reliability, model quality, latency, and vendor lock-in.

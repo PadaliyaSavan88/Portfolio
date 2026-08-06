@@ -107,7 +107,7 @@ export default function AllBlogs({ allPostsData }) {
           <div className="blog-list-header">
             <h1 className="blog-list-title">Insights</h1>
             <p className="blog-list-subtitle">
-              Founder, AI, SaaS, and engineering thinking — practical posts on building things that actually ship.
+              Founder, AI, SaaS, and engineering thinking: practical posts on building things that actually ship.
             </p>
           </div>
 

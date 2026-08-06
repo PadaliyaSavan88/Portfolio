@@ -9,12 +9,12 @@ export default function FractionalCto() {
             <Head>
                 <title>Fractional CTO | Technical Leadership for Startups | Savan Padaliya</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Your startup needs technical leadership, not necessarily a full-time CTO. Fractional CTO support for founders — strategy, architecture, hiring, and roadmap." />
+                <meta name="description" content="Your startup needs technical leadership, not necessarily a full-time CTO. Fractional CTO support for founders: strategy, architecture, hiring, and roadmap." />
                 <meta name="keywords" content="fractional CTO for startups, fractional CTO India, startup CTO consultant, technical co-founder" />
                 <link rel="canonical" href="https://savanpadaliya.com/how-i-help/fractional-cto" />
                 <meta name="robots" content="index, follow" />
                 <meta property="og:title" content="Fractional CTO | Savan Padaliya" />
-                <meta property="og:description" content="Technology strategy, architecture, hiring, and engineering processes — for founders who need technical leadership without a full-time hire." />
+                <meta property="og:description" content="Technology strategy, architecture, hiring, and engineering processes, for founders who need technical leadership without a full-time hire." />
                 <meta property="og:url" content="https://savanpadaliya.com/how-i-help/fractional-cto" />
                 <meta property="og:type" content="website" />
             </Head>
@@ -23,7 +23,7 @@ export default function FractionalCto() {
                 breadcrumbLabel="Fractional CTO"
                 heading="Your startup needs technical leadership. Not necessarily a full-time CTO."
                 bodyCopy={[
-                    'I work with founders who need someone to own the technical direction of the business—from architecture and technology strategy to hiring engineers and building engineering processes.',
+                    'I work with founders who need someone to own the technical direction of the business, from architecture and technology strategy to hiring engineers and building engineering processes.',
                 ]}
                 sections={[
                     {
