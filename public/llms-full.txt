@@ -225,6 +225,12 @@ Topics covered: UUID format breakdown (version bits, variant bits, 122 random bi
 
 ---
 
+### How I Shipped an LMS MVP in 5 Days (What Actually Worked)
+URL: https://www.savanpadaliya.com/blogs/how-i-shipped-mvp-in-5-days/
+Published: 2026-09-19
+Description: How I built a working LMS platform MVP in 5 days with AI-driven development: the day-by-day plan, the stack, what I cut, and what the startup learned.
+Topics covered: The validation question behind a startup MVP, what an LMS MVP with institute and teacher registration, course and video upload, streaming and a course recommendation bot needs to include, what was deliberately left out (payment gateway, subscription module, full administration rules) and why, a day-by-day plan from scoping and scaffolding to video upload, auth, front-end branding, testing and handover, the stack (Next.js, Node.js with TypeScript, PostgreSQL, FFmpeg, AWS with S3 video chunks, Gemma 4 recommendation bot), how AI-driven development speeds up a build while a senior engineer owns scope and review, and what happened after validation.
+
 ## Free Developer Tools
 
 14 free, client-side developer utilities hosted at https://www.savanpadaliya.com/tools/. All tools run entirely in the browser — no data is sent to any server, no sign-up required.
@@ -346,9 +352,3 @@ A: Yes — 14 free developer tools are available at https://www.savanpadaliya.co
 - Twitter: https://twitter.com/padaliya_savan
 - Sitemap: https://www.savanpadaliya.com/sitemap.xml
 - Concise version: https://www.savanpadaliya.com/llms.txt
-
-### How I Shipped an LMS MVP in 5 Days (What Actually Worked)
-URL: https://www.savanpadaliya.com/blogs/how-i-shipped-mvp-in-5-days/
-Published: 2026-09-19
-Description: How I built a working LMS platform MVP in 5 days with AI-driven development: the day-by-day plan, the stack, what I cut, and what the startup learned.
-Topics covered: The validation question behind a startup MVP, what an LMS MVP with institute and teacher registration, course and video upload, streaming and a course recommendation bot needs to include, what was deliberately left out (payment gateway, subscription module, full administration rules) and why, a day-by-day plan from scoping and scaffolding to video upload, auth, front-end branding, testing and handover, the stack (Next.js, Node.js with TypeScript, PostgreSQL, FFmpeg, AWS with S3 video chunks, Gemma 4 recommendation bot), how AI-driven development speeds up a build while a senior engineer owns scope and review, and what happened after validation.
