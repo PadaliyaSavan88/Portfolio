@@ -117,7 +117,7 @@ The sprint taught me three things I'm now applying to every project:
 Before writing code, write down the problem in one sentence. If you can't, you don't understand it yet.
 
 **2. Separate discovery from delivery.**
-Design Sprint thinking belongs before the sprint planning board. Mixing them creates the illusion of progress while solving the wrong problem.
+Design Sprint thinking belongs before the sprint planning board. Mixing them creates the illusion of progress while solving the wrong problem. I applied this on a real project: see [How I Shipped an LMS MVP in 5 Days](/blogs/how-i-shipped-mvp-in-5-days).
 
 **3. Engineers belong in the room earlier.**
 When developers understand WHY and WHAT, they make better HOW decisions. Architectural choices, database schemas, API contracts — these all improve when the engineer understands the problem at the product level.
