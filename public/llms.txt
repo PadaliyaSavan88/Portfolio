@@ -10,20 +10,20 @@ Savan Padaliya is a Full Stack AI Engineer with 4+ years of experience building 
 - Role: Full Stack AI Engineer
 - Experience: 4+ years in JavaScript, Node.js, and AI integrations
 - Community: GDG (Google Developer Group) Organiser
-- Website: https://www.savanpadaliya.com
+- Website: https://savanpadaliya.com
 - LinkedIn: https://www.linkedin.com/in/savanpadaliya/
 - Twitter: https://twitter.com/padaliya_savan
 
 ## Services
 
-- [Web & Backend Development](https://www.savanpadaliya.com/): Scalable Node.js APIs, microservices, and full-stack web applications built for production
-- [AI Integrations](https://www.savanpadaliya.com/): Chatbots, automation pipelines, and LLM-powered features using OpenAI, Gemini, and LangChain
-- [SaaS Development](https://www.savanpadaliya.com/): End-to-end SaaS product development with AI capabilities baked in
-- [Technical Consulting](https://www.savanpadaliya.com/about/): Expert guidance on software architecture, AI adoption, and technology strategy
+- [Web & Backend Development](https://savanpadaliya.com/): Scalable Node.js APIs, microservices, and full-stack web applications built for production
+- [AI Integrations](https://savanpadaliya.com/): Chatbots, automation pipelines, and LLM-powered features using OpenAI, Gemini, and LangChain
+- [SaaS Development](https://savanpadaliya.com/): End-to-end SaaS product development with AI capabilities baked in
+- [Technical Consulting](https://savanpadaliya.com/about): Expert guidance on software architecture, AI adoption, and technology strategy
 
 ## Book a Session
 
-- [1:1 Mentoring & Consulting](https://www.savanpadaliya.com/topmate): Book a 1:1 session — career guidance, AWS infrastructure, or project scoping. Free sessions available.
+- [1:1 Mentoring & Consulting](https://savanpadaliya.com/topmate): Book a 1:1 session — career guidance, AWS infrastructure, or project scoping. Free sessions available.
 
 ## Tech Stack
 
@@ -35,59 +35,59 @@ Savan Padaliya is a Full Stack AI Engineer with 4+ years of experience building 
 
 ## Blog Posts
 
-- [Build an Offline AI Assistant with Gemma 4](https://www.savanpadaliya.com/blogs/offline-ai-assistant-gemma-4-webgpu/): How to run Gemma 4 fully offline in the browser using WebGPU and quantization, with no API keys, no server, no cloud costs.
-- [RAG Architecture for JavaScript Developers](https://www.savanpadaliya.com/blogs/rag-architecture-for-javascript-developers/): A practical guide to building Retrieval Augmented Generation pipelines using JavaScript, LangChain.js, and OpenAI — with working Node.js code examples.
-- [Vertex AI Setup for Node.js Apps](https://www.savanpadaliya.com/blogs/vertex-ai-setup-for-nodejs-apps/): Step-by-step guide to integrating Google Vertex AI into Node.js — from project setup and authentication to making your first generative AI call.
-- [OpenAI vs Vertex AI for Production SaaS](https://www.savanpadaliya.com/blogs/openai-vs-vertex-ai-for-production-saas/): Practical comparison of OpenAI and Vertex AI for teams building production SaaS — covering cost, reliability, model quality, latency, and vendor lock-in.
-- [How to Monitor AI Pipelines in Production](https://www.savanpadaliya.com/blogs/how-to-monitor-ai-pipelines-in-production/): How to monitor LLM-powered applications — tracking latency, token usage, error rates, and hallucinations using practical tools and strategies.
-- [Setting Up AI Workloads on Google Cloud](https://www.savanpadaliya.com/blogs/google-cloud-ai-setup-guide/): Beginner's guide to setting up AI workloads on Google Cloud — AutoML, Cloud Functions, Cloud Run, and Vertex AI.
-- [JavaScript vs TypeScript: The Dilemma](https://www.savanpadaliya.com/blogs/type-or-not-to-type-the-javascript-vs-typescript-dilemma/): Comprehensive comparison of JavaScript and TypeScript — advantages, disadvantages, and when to use each.
-- [LangChain.js Agents: Build Your First AI Agent in Node.js](https://www.savanpadaliya.com/blogs/langchainjs-agents-nodejs-tutorial/): A practical guide to building autonomous AI agents with LangChain.js in Node.js — tools, agent executors, memory, and real working code examples.
-- [Choosing a Vector Database: Chroma vs Pinecone vs pgvector](https://www.savanpadaliya.com/blogs/vector-database-comparison-chroma-pinecone-pgvector/): A practical comparison of Chroma, Pinecone, and pgvector for production RAG pipelines — covering setup, query performance, scalability, and cost.
-- [Prompt Engineering for Production LLM Apps](https://www.savanpadaliya.com/blogs/prompt-engineering-production-llm-apps/): A practical guide to prompt engineering for production LLM applications — system prompts, temperature, context injection, few-shot examples, and output validation.
-- [Deploying AI Apps to Cloud Run: Node.js + Vertex AI](https://www.savanpadaliya.com/blogs/deploy-nodejs-ai-app-cloud-run/): Step-by-step guide to deploying a Node.js + Vertex AI application to Google Cloud Run — Dockerfile, authentication, Artifact Registry, and continuous deployment.
-- [How to Reduce LLM API Costs in Production](https://www.savanpadaliya.com/blogs/reduce-llm-api-costs-production/): Practical strategies to cut OpenAI and Gemini API costs in production — model selection, caching, prompt optimization, batching, and RAG tuning.
-- [Password Hashing with Bcrypt in Node.js](https://www.savanpadaliya.com/blogs/password-hashing-bcrypt-nodejs/): Learn why bcrypt is the right choice for password hashing in Node.js, how bcryptjs works under the hood, and the mistakes that leave your users exposed.
-- [TypeScript for AI Applications: Typing LLM Responses in Node.js](https://www.savanpadaliya.com/blogs/typescript-for-ai-applications-nodejs/): How to properly type OpenAI and Vertex AI SDK responses in TypeScript — typed prompts, structured outputs, Zod validation, and patterns that prevent runtime surprises.
-- [Password Security Best Practices for Web Developers](https://www.savanpadaliya.com/blogs/password-security-best-practices-web-developers/): OWASP-aligned password security — hashing, storage, reset flows, timing attacks, credential stuffing defence, and the mistakes that leave users vulnerable.
-- [Why Most AI Features Fail](https://www.savanpadaliya.com/blogs/why-ai-features-fail-product-thinking/): Most AI features fail not because of the model but because of poor problem definition. What product-minded engineers do differently.
-- [System Design for AI-Powered SaaS](https://www.savanpadaliya.com/blogs/system-design-ai-powered-saas/): How to architect AI-powered SaaS at scale — async queues, provider fallbacks, caching, cost control, and observability for LLM-backed systems.
-- [Cryptographic Randomness in JavaScript](https://www.savanpadaliya.com/blogs/cryptographic-randomness-javascript/): Math.random() is not secure for tokens or passwords. How to use crypto.getRandomValues() and Node.js crypto for cryptographically secure randomness.
-- [Node.js TypeScript REST API Guide](https://www.savanpadaliya.com/blogs/nodejs-typescript-rest-api-production/): Production REST API patterns with TypeScript and Express — typed routes, Zod validation, error middleware, auth middleware, and typed environment variables.
-- [UUID v4 in JavaScript: When to Use One](https://www.savanpadaliya.com/blogs/uuid-explained-when-to-use-javascript/): UUID v4 vs v7, GUID vs UUID, crypto.randomUUID(), and when to use UUIDs over auto-increment IDs for database primary keys and API entity identifiers.
-- [How to Add AI to Your Existing Product Without Rebuilding It](https://www.savanpadaliya.com/blogs/how-to-add-ai-to-existing-product/): Add AI to your existing product without a rewrite — integration points, build vs. buy decisions, and the three patterns that cover most use cases.
-- [What a 5-Day AI MVP Actually Looks Like](https://www.savanpadaliya.com/blogs/what-ai-mvp-looks-like/): Exactly what gets built in a 5-day AI MVP sprint — features, scope, stack, and realistic cost expectations for founders validating a product idea.
-- [AI Engineer vs. Agency vs. In-House: Which Fits Your Stage?](https://www.savanpadaliya.com/blogs/hire-ai-engineer-vs-agency-vs-build-in-house/): When to hire a freelance AI engineer, use an agency, or build in-house — with cost comparison and the common mistakes at each stage.
-- [How I Shipped an LMS MVP in 5 Days (What Actually Worked)](https://www.savanpadaliya.com/blogs/how-i-shipped-mvp-in-5-days/): Day-by-day account of building an LMS platform MVP in 5 days with AI-driven development: scope, stack, what was cut and what the startup learned.
-- [Developers Are Great at HOW. But What About WHY and WHAT?](https://www.savanpadaliya.com/blogs/developers-missing-why-and-what/): Most developers are experts at HOW to build — but WHY and WHAT to build are where real product thinking lives. A Design Sprint changed how I see this gap.
-- [Junior Developers: The Job Market Isn't Your Enemy — Mediocrity Is](https://www.savanpadaliya.com/blogs/junior-developer-job-market-fear/): Companies hiring 10 interns and keeping 2 isn't a market collapse — it's a filter. Here's what junior developers must do to be in the 2 that stay and build careers worth having.
-- [What Actually Happens When You Hit Enter After Typing a URL](https://www.savanpadaliya.com/blogs/what-happens-when-you-type-a-url/): Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.
-- [Fractional CTO for Non-Technical Founders](https://www.savanpadaliya.com/blogs/technical-partner-for-non-technical-founders/): What a fractional CTO actually does, what it costs, and how to know if your startup needs one instead of a full-time hire or an agency.
-- [MVP Development Cost: A Founder Guide](https://www.savanpadaliya.com/blogs/mvp-development-cost-startup-founders/): What an MVP actually costs to build in 2026 by build path — freelancer, agency, or in-house — plus the hidden costs founders consistently miss.
-- [MCP Explained: AI Agents Meet Your Tools](https://www.savanpadaliya.com/blogs/mcp-explained-ai-agents-nodejs/): What the Model Context Protocol (MCP) is, how it works, and how to build a minimal MCP server in Node.js to connect AI agents to your tools.
-- [WhatsApp AI Chatbot with n8n + OpenAI](https://www.savanpadaliya.com/blogs/whatsapp-ai-chatbot-lead-qualification-n8n/): How I built a 24/7 WhatsApp AI chatbot for lead qualification using n8n and OpenAI — the workflow, the prompting, and what it actually replaced.
-- [How to Choose a Tech Stack for Your MVP](https://www.savanpadaliya.com/blogs/choose-tech-stack-startup-mvp/): A practical framework for choosing a tech stack for your startup MVP — frontend, backend, database, and when AI features change the decision.
+- [Build an Offline AI Assistant with Gemma 4](https://savanpadaliya.com/blogs/offline-ai-assistant-gemma-4-webgpu): How to run Gemma 4 fully offline in the browser using WebGPU and quantization, with no API keys, no server, no cloud costs.
+- [RAG Architecture for JavaScript Developers](https://savanpadaliya.com/blogs/rag-architecture-for-javascript-developers): A practical guide to building Retrieval Augmented Generation pipelines using JavaScript, LangChain.js, and OpenAI — with working Node.js code examples.
+- [Vertex AI Setup for Node.js Apps](https://savanpadaliya.com/blogs/vertex-ai-setup-for-nodejs-apps): Step-by-step guide to integrating Google Vertex AI into Node.js — from project setup and authentication to making your first generative AI call.
+- [OpenAI vs Vertex AI for Production SaaS](https://savanpadaliya.com/blogs/openai-vs-vertex-ai-for-production-saas): Practical comparison of OpenAI and Vertex AI for teams building production SaaS — covering cost, reliability, model quality, latency, and vendor lock-in.
+- [How to Monitor AI Pipelines in Production](https://savanpadaliya.com/blogs/how-to-monitor-ai-pipelines-in-production): How to monitor LLM-powered applications — tracking latency, token usage, error rates, and hallucinations using practical tools and strategies.
+- [Setting Up AI Workloads on Google Cloud](https://savanpadaliya.com/blogs/google-cloud-ai-setup-guide): Beginner's guide to setting up AI workloads on Google Cloud — AutoML, Cloud Functions, Cloud Run, and Vertex AI.
+- [JavaScript vs TypeScript: The Dilemma](https://savanpadaliya.com/blogs/type-or-not-to-type-the-javascript-vs-typescript-dilemma): Comprehensive comparison of JavaScript and TypeScript — advantages, disadvantages, and when to use each.
+- [LangChain.js Agents: Build Your First AI Agent in Node.js](https://savanpadaliya.com/blogs/langchainjs-agents-nodejs-tutorial): A practical guide to building autonomous AI agents with LangChain.js in Node.js — tools, agent executors, memory, and real working code examples.
+- [Choosing a Vector Database: Chroma vs Pinecone vs pgvector](https://savanpadaliya.com/blogs/vector-database-comparison-chroma-pinecone-pgvector): A practical comparison of Chroma, Pinecone, and pgvector for production RAG pipelines — covering setup, query performance, scalability, and cost.
+- [Prompt Engineering for Production LLM Apps](https://savanpadaliya.com/blogs/prompt-engineering-production-llm-apps): A practical guide to prompt engineering for production LLM applications — system prompts, temperature, context injection, few-shot examples, and output validation.
+- [Deploying AI Apps to Cloud Run: Node.js + Vertex AI](https://savanpadaliya.com/blogs/deploy-nodejs-ai-app-cloud-run): Step-by-step guide to deploying a Node.js + Vertex AI application to Google Cloud Run — Dockerfile, authentication, Artifact Registry, and continuous deployment.
+- [How to Reduce LLM API Costs in Production](https://savanpadaliya.com/blogs/reduce-llm-api-costs-production): Practical strategies to cut OpenAI and Gemini API costs in production — model selection, caching, prompt optimization, batching, and RAG tuning.
+- [Password Hashing with Bcrypt in Node.js](https://savanpadaliya.com/blogs/password-hashing-bcrypt-nodejs): Learn why bcrypt is the right choice for password hashing in Node.js, how bcryptjs works under the hood, and the mistakes that leave your users exposed.
+- [TypeScript for AI Applications: Typing LLM Responses in Node.js](https://savanpadaliya.com/blogs/typescript-for-ai-applications-nodejs): How to properly type OpenAI and Vertex AI SDK responses in TypeScript — typed prompts, structured outputs, Zod validation, and patterns that prevent runtime surprises.
+- [Password Security Best Practices for Web Developers](https://savanpadaliya.com/blogs/password-security-best-practices-web-developers): OWASP-aligned password security — hashing, storage, reset flows, timing attacks, credential stuffing defence, and the mistakes that leave users vulnerable.
+- [Why Most AI Features Fail](https://savanpadaliya.com/blogs/why-ai-features-fail-product-thinking): Most AI features fail not because of the model but because of poor problem definition. What product-minded engineers do differently.
+- [System Design for AI-Powered SaaS](https://savanpadaliya.com/blogs/system-design-ai-powered-saas): How to architect AI-powered SaaS at scale — async queues, provider fallbacks, caching, cost control, and observability for LLM-backed systems.
+- [Cryptographic Randomness in JavaScript](https://savanpadaliya.com/blogs/cryptographic-randomness-javascript): Math.random() is not secure for tokens or passwords. How to use crypto.getRandomValues() and Node.js crypto for cryptographically secure randomness.
+- [Node.js TypeScript REST API Guide](https://savanpadaliya.com/blogs/nodejs-typescript-rest-api-production): Production REST API patterns with TypeScript and Express — typed routes, Zod validation, error middleware, auth middleware, and typed environment variables.
+- [UUID v4 in JavaScript: When to Use One](https://savanpadaliya.com/blogs/uuid-explained-when-to-use-javascript): UUID v4 vs v7, GUID vs UUID, crypto.randomUUID(), and when to use UUIDs over auto-increment IDs for database primary keys and API entity identifiers.
+- [How to Add AI to Your Existing Product Without Rebuilding It](https://savanpadaliya.com/blogs/how-to-add-ai-to-existing-product): Add AI to your existing product without a rewrite — integration points, build vs. buy decisions, and the three patterns that cover most use cases.
+- [What a 5-Day AI MVP Actually Looks Like](https://savanpadaliya.com/blogs/what-ai-mvp-looks-like): Exactly what gets built in a 5-day AI MVP sprint — features, scope, stack, and realistic cost expectations for founders validating a product idea.
+- [AI Engineer vs. Agency vs. In-House: Which Fits Your Stage?](https://savanpadaliya.com/blogs/hire-ai-engineer-vs-agency-vs-build-in-house): When to hire a freelance AI engineer, use an agency, or build in-house — with cost comparison and the common mistakes at each stage.
+- [How I Shipped an LMS MVP in 5 Days (What Actually Worked)](https://savanpadaliya.com/blogs/how-i-shipped-mvp-in-5-days): Day-by-day account of building an LMS platform MVP in 5 days with AI-driven development: scope, stack, what was cut and what the startup learned.
+- [Developers Are Great at HOW. But What About WHY and WHAT?](https://savanpadaliya.com/blogs/developers-missing-why-and-what): Most developers are experts at HOW to build — but WHY and WHAT to build are where real product thinking lives. A Design Sprint changed how I see this gap.
+- [Junior Developers: The Job Market Isn't Your Enemy — Mediocrity Is](https://savanpadaliya.com/blogs/junior-developer-job-market-fear): Companies hiring 10 interns and keeping 2 isn't a market collapse — it's a filter. Here's what junior developers must do to be in the 2 that stay and build careers worth having.
+- [What Actually Happens When You Hit Enter After Typing a URL](https://savanpadaliya.com/blogs/what-happens-when-you-type-a-url): Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.
+- [Fractional CTO for Non-Technical Founders](https://savanpadaliya.com/blogs/technical-partner-for-non-technical-founders): What a fractional CTO actually does, what it costs, and how to know if your startup needs one instead of a full-time hire or an agency.
+- [MVP Development Cost: A Founder Guide](https://savanpadaliya.com/blogs/mvp-development-cost-startup-founders): What an MVP actually costs to build in 2026 by build path — freelancer, agency, or in-house — plus the hidden costs founders consistently miss.
+- [MCP Explained: AI Agents Meet Your Tools](https://savanpadaliya.com/blogs/mcp-explained-ai-agents-nodejs): What the Model Context Protocol (MCP) is, how it works, and how to build a minimal MCP server in Node.js to connect AI agents to your tools.
+- [WhatsApp AI Chatbot with n8n + OpenAI](https://savanpadaliya.com/blogs/whatsapp-ai-chatbot-lead-qualification-n8n): How I built a 24/7 WhatsApp AI chatbot for lead qualification using n8n and OpenAI — the workflow, the prompting, and what it actually replaced.
+- [How to Choose a Tech Stack for Your MVP](https://savanpadaliya.com/blogs/choose-tech-stack-startup-mvp): A practical framework for choosing a tech stack for your startup MVP — frontend, backend, database, and when AI features change the decision.
 
 ## Free Developer Tools
 
 14 free, client-side developer tools — no sign-up required, everything runs in the browser.
 
-- [JSON Formatter & Validator](https://www.savanpadaliya.com/tools/json-formatter): Format, validate, or minify JSON with syntax highlighting.
-- [JSON ↔ CSV Converter](https://www.savanpadaliya.com/tools/json-csv-converter): Convert between JSON arrays and CSV format instantly.
-- [Markdown Previewer](https://www.savanpadaliya.com/tools/markdown-previewer): Live side-by-side editor and rendered preview for GitHub Flavored Markdown.
-- [Diff Checker](https://www.savanpadaliya.com/tools/diff-checker): Paste two texts and see added, removed, and unchanged lines highlighted.
-- [Case Converter](https://www.savanpadaliya.com/tools/case-converter): Convert text to camelCase, snake_case, PascalCase, kebab-case, and more.
-- [Base64 Encoder / Decoder](https://www.savanpadaliya.com/tools/base64): Encode plain text to Base64 or decode Base64 back to text. Unicode supported.
-- [Regex Tester](https://www.savanpadaliya.com/tools/regex-tester): Test regular expressions with live match highlighting and a built-in cheat sheet.
-- [QR Code Generator](https://www.savanpadaliya.com/tools/qr-generator): Generate a QR code from any URL or text. Download as PNG.
-- [Random String Generator](https://www.savanpadaliya.com/tools/random-string): Cryptographically random strings for tokens, API keys, and secrets.
-- [Password Generator](https://www.savanpadaliya.com/tools/password-generator): Generate strong passwords with a built-in strength meter.
-- [UUID / GUID Generator](https://www.savanpadaliya.com/tools/uuid-generator): Generate one or many UUID v4 identifiers. Copy all in one click.
-- [Lorem Ipsum Generator](https://www.savanpadaliya.com/tools/lorem-ipsum): Generate placeholder paragraphs, sentences, or word lists.
-- [Bcrypt Hash Generator](https://www.savanpadaliya.com/tools/bcrypt-generator): Hash passwords with bcrypt or verify a password against a hash.
-- [Cron Job Builder](https://www.savanpadaliya.com/tools/cron-builder): Build cron expressions visually with a human-readable description.
+- [JSON Formatter & Validator](https://savanpadaliya.com/tools/json-formatter): Format, validate, or minify JSON with syntax highlighting.
+- [JSON ↔ CSV Converter](https://savanpadaliya.com/tools/json-csv-converter): Convert between JSON arrays and CSV format instantly.
+- [Markdown Previewer](https://savanpadaliya.com/tools/markdown-previewer): Live side-by-side editor and rendered preview for GitHub Flavored Markdown.
+- [Diff Checker](https://savanpadaliya.com/tools/diff-checker): Paste two texts and see added, removed, and unchanged lines highlighted.
+- [Case Converter](https://savanpadaliya.com/tools/case-converter): Convert text to camelCase, snake_case, PascalCase, kebab-case, and more.
+- [Base64 Encoder / Decoder](https://savanpadaliya.com/tools/base64): Encode plain text to Base64 or decode Base64 back to text. Unicode supported.
+- [Regex Tester](https://savanpadaliya.com/tools/regex-tester): Test regular expressions with live match highlighting and a built-in cheat sheet.
+- [QR Code Generator](https://savanpadaliya.com/tools/qr-generator): Generate a QR code from any URL or text. Download as PNG.
+- [Random String Generator](https://savanpadaliya.com/tools/random-string): Cryptographically random strings for tokens, API keys, and secrets.
+- [Password Generator](https://savanpadaliya.com/tools/password-generator): Generate strong passwords with a built-in strength meter.
+- [UUID / GUID Generator](https://savanpadaliya.com/tools/uuid-generator): Generate one or many UUID v4 identifiers. Copy all in one click.
+- [Lorem Ipsum Generator](https://savanpadaliya.com/tools/lorem-ipsum): Generate placeholder paragraphs, sentences, or word lists.
+- [Bcrypt Hash Generator](https://savanpadaliya.com/tools/bcrypt-generator): Hash passwords with bcrypt or verify a password against a hash.
+- [Cron Job Builder](https://savanpadaliya.com/tools/cron-builder): Build cron expressions visually with a human-readable description.
 
 ## Optional
 
-- [Full content version](https://www.savanpadaliya.com/llms-full.txt)
-- [Sitemap](https://www.savanpadaliya.com/sitemap.xml)
+- [Full content version](https://savanpadaliya.com/llms-full.txt)
+- [Sitemap](https://savanpadaliya.com/sitemap.xml)

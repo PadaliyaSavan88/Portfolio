@@ -47,7 +47,7 @@ function PostImage({ src, alt }) {
 }
 
 function ShareButtons({ title, slug }) {
-  const url = `https://www.savanpadaliya.com/blogs/${slug}/`;
+  const url = `https://savanpadaliya.com/blogs/${slug}`;
   const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}&via=padaliya_savan`;
   const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
 
