@@ -126,7 +126,7 @@ export default function Post({ post, relatedPosts = [] }) {
                               "@type": "ListItem",
                               "position": 2,
                               "name": "Blog",
-                              "item": "https://savanpadaliya.com/blogs/"
+                              "item": "https://savanpadaliya.com/blogs"
                             },
                             {
                               "@type": "ListItem",
