@@ -105,6 +105,8 @@ const userLookupTool = new DynamicTool({
 
 The `description` field is critical — it is what the LLM reads to decide when to use the tool. Write it like you are explaining the tool to a smart colleague, not a computer.
 
+Every tool here is wired up manually, inside this codebase. If the same tool needs to be usable by more than one AI application — Claude Desktop, an internal agent, a teammate's CLI — [MCP](/blogs/mcp-explained-ai-agents-nodejs) standardizes that instead of re-writing the integration each time.
+
 ## Building the Agent Executor
 
 ```js

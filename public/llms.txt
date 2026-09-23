@@ -62,6 +62,11 @@ Savan Padaliya is a Full Stack AI Engineer with 4+ years of experience building 
 - [Developers Are Great at HOW. But What About WHY and WHAT?](https://www.savanpadaliya.com/blogs/developers-missing-why-and-what/): Most developers are experts at HOW to build — but WHY and WHAT to build are where real product thinking lives. A Design Sprint changed how I see this gap.
 - [Junior Developers: The Job Market Isn't Your Enemy — Mediocrity Is](https://www.savanpadaliya.com/blogs/junior-developer-job-market-fear/): Companies hiring 10 interns and keeping 2 isn't a market collapse — it's a filter. Here's what junior developers must do to be in the 2 that stay and build careers worth having.
 - [What Actually Happens When You Hit Enter After Typing a URL](https://www.savanpadaliya.com/blogs/what-happens-when-you-type-a-url/): Most devs give the 3-step answer. Here is the full version — DNS, TCP, TLS, load balancers, app servers, databases — with the depth that actually gets you hired.
+- [Fractional CTO for Non-Technical Founders](https://www.savanpadaliya.com/blogs/technical-partner-for-non-technical-founders/): What a fractional CTO actually does, what it costs, and how to know if your startup needs one instead of a full-time hire or an agency.
+- [MVP Development Cost: A Founder Guide](https://www.savanpadaliya.com/blogs/mvp-development-cost-startup-founders/): What an MVP actually costs to build in 2026 by build path — freelancer, agency, or in-house — plus the hidden costs founders consistently miss.
+- [MCP Explained: AI Agents Meet Your Tools](https://www.savanpadaliya.com/blogs/mcp-explained-ai-agents-nodejs/): What the Model Context Protocol (MCP) is, how it works, and how to build a minimal MCP server in Node.js to connect AI agents to your tools.
+- [WhatsApp AI Chatbot with n8n + OpenAI](https://www.savanpadaliya.com/blogs/whatsapp-ai-chatbot-lead-qualification-n8n/): How I built a 24/7 WhatsApp AI chatbot for lead qualification using n8n and OpenAI — the workflow, the prompting, and what it actually replaced.
+- [How to Choose a Tech Stack for Your MVP](https://www.savanpadaliya.com/blogs/choose-tech-stack-startup-mvp/): A practical framework for choosing a tech stack for your startup MVP — frontend, backend, database, and when AI features change the decision.
 
 ## Free Developer Tools
 

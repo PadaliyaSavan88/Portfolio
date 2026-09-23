@@ -200,6 +200,8 @@ That's it. LangChain automatically sends traces to LangSmith. In the LangSmith d
 
 For [RAG pipelines](/blogs/rag-architecture-for-javascript-developers) specifically, LangSmith's trace view shows you exactly which chunks were retrieved and why — invaluable for debugging poor answers.
 
+The same discipline applies to tool-calling architectures beyond LangChain. If your agents connect to external tools via [MCP](/blogs/mcp-explained-ai-agents-nodejs), log every tool invocation the same way you'd log a model call — which tool was called, with what input, how long it took, and whether it errored. A silent MCP tool failure is just as invisible to standard monitoring as a hallucinated answer.
+
 ## Setting Up Alerts
 
 Three alerts every AI-powered service should have:
