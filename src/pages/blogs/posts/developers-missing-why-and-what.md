@@ -120,7 +120,7 @@ Before writing code, write down the problem in one sentence. If you can't, you d
 Design Sprint thinking belongs before the sprint planning board. Mixing them creates the illusion of progress while solving the wrong problem. I applied this on a real project: see [How I Shipped an LMS MVP in 5 Days](/blogs/how-i-shipped-mvp-in-5-days).
 
 **3. Engineers belong in the room earlier.**
-When developers understand WHY and WHAT, they make better HOW decisions. Architectural choices, database schemas, API contracts — these all improve when the engineer understands the problem at the product level.
+When developers understand WHY and WHAT, they make better HOW decisions. Architectural choices, database schemas, API contracts — these all improve when the engineer understands the problem at the product level. [System Design for AI-Powered SaaS](/blogs/system-design-ai-powered-saas) is what that looks like applied to a real production architecture.
 
 ---
 
@@ -128,9 +128,9 @@ When developers understand WHY and WHAT, they make better HOW decisions. Archite
 
 The best engineers I've worked with don't just know their stack. They understand the product deeply enough to push back on requirements, ask the right upstream questions, and flag technical decisions that would create business problems six months later.
 
-That's not a "soft skill." That's senior engineering.
+That's not a "soft skill." That's senior engineering — and it's exactly what separates junior developers who stay employed from [the ones the market filters out](/blogs/junior-developer-job-market-fear).
 
-The HOW will always matter. But in a world where [AI can generate HOW faster than ever](/blogs/openai-vs-vertex-ai-for-production-saas), the engineers who understand WHY and WHAT will be the ones who matter most.
+The HOW will always matter — [knowing what actually happens when you hit enter on a URL](/blogs/what-happens-when-you-type-a-url) is HOW knowledge that still matters. But in a world where [AI can generate HOW faster than ever](/blogs/openai-vs-vertex-ai-for-production-saas), the engineers who understand WHY and WHAT will be the ones who matter most.
 
 ---
 

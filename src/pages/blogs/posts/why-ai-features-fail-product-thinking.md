@@ -57,7 +57,7 @@ The technical team built exactly what was specced. The spec was just pointed at 
 
 ## The Right Questions Before Building
 
-Before writing a single line of AI-related code, get clear answers to these:
+Before writing a single line of AI-related code, get clear answers to these. If you're retrofitting AI into a product that already exists rather than building greenfield, [how to add AI to your existing product](/blogs/how-to-add-ai-to-existing-product) covers the integration-point decision specifically.
 
 **What is the user's actual workflow step we are improving?** Not "the experience" — the specific task in the specific moment.
 
@@ -107,7 +107,7 @@ The AI features with the highest retention share a pattern: they reduce friction
 
 The platform choices — which model, which provider, which architecture — matter much less than the problem definition. A well-defined problem can usually be solved adequately with most capable models. A poorly defined problem produces a bad feature regardless of which model you use. The comparison of [OpenAI vs Vertex AI for production SaaS](/blogs/openai-vs-vertex-ai-for-production-saas) is worth reading once you have the problem defined — but it is the wrong place to start.
 
-The developers who build AI features that last are the ones who internalized the [WHY before the HOW](/blogs/developers-missing-why-and-what). They define the user problem first, then the success metric, then the minimum experiment, and only then the implementation. That sequence feels slower at the start and is dramatically faster at the end.
+The developers who build AI features that last are the ones who internalized the [WHY before the HOW](/blogs/developers-missing-why-and-what). They define the user problem first, then the success metric, then the minimum experiment, and only then the implementation. That sequence feels slower at the start and is dramatically faster at the end — and it's the same instinct that keeps a developer relevant [when the job market gets tighter](/blogs/junior-developer-job-market-fear).
 
 ## Frequently Asked Questions
 

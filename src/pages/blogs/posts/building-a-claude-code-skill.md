@@ -25,7 +25,7 @@ I have been writing Express APIs for long enough that I can scaffold one from me
 
 The problem is not that scaffolding is hard. The problem is that I kept doing it slightly differently each time, and those inconsistencies compounded over the life of a project. Validation in the controller here, in the service there. Named error classes in one project, status codes scattered everywhere in another. I decided to encode what I actually know into a Claude Code skill so I would stop re-making the same small decisions under deadline pressure.
 
-That skill is [api-forge](https://github.com/PadaliyaSavan88/api-forge). This post is about how I built it — what Claude Code skills are, how the prompt is structured, and what I would do differently if I were starting again.
+That skill is [api-forge](https://github.com/PadaliyaSavan88/api-forge) — see [what it actually generates](/blogs/api-forge-claude-code-backend-skill) if you want the user-facing side first. This post is about how I built it — what Claude Code skills are, how the prompt is structured, and what I would do differently if I were starting again.
 
 ## What a Claude Code Skill Actually Is
 

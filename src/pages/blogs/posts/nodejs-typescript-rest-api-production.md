@@ -25,7 +25,7 @@ A TypeScript REST API without runtime validation is half-typed. TypeScript catch
 
 ## Project Setup
 
-Start with strict TypeScript configuration and Express type definitions:
+Start with strict TypeScript configuration and Express type definitions. (If you'd rather not wire this up by hand every time, [api-forge](/blogs/api-forge-claude-code-backend-skill) is a Claude Code skill that scaffolds this exact 3-layer setup — controller, service, and validation — from a single prompt; see [the full walkthrough](/blogs/build-express-api-with-api-forge) for what the generated project looks like.)
 
 ```bash
 npm init -y

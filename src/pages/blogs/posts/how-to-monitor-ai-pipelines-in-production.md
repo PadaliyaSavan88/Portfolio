@@ -226,7 +226,7 @@ There's no perfect automated hallucination detector, but you can build layers of
 
 **PII note**: Before logging LLM inputs and outputs, strip or hash any personally identifiable information. Prompt logs contain everything your users type — treat them with the same care as any sensitive data store.
 
-Monitoring AI pipelines is an ongoing practice, not a one-time setup. The teams that catch quality problems early are the ones that ship AI features users actually trust.
+Monitoring AI pipelines is an ongoing practice, not a one-time setup. The teams that catch quality problems early are the ones that ship AI features users actually trust — see [System Design for AI-Powered SaaS](/blogs/system-design-ai-powered-saas) for how observability fits into the broader architecture.
 
 ## Frequently Asked Questions
 

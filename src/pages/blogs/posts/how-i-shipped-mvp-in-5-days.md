@@ -108,7 +108,7 @@ None of these are exotic. That is deliberate. A boring stack means I spend the w
 
 ## How Did AI-Driven Development Change the Week?
 
-The whole MVP was built with AI-driven development. AI tools wrote first drafts of scaffolding, services, screens and tests far faster than I could type them. That is the reason a platform this size fit into 5 days.
+The whole MVP was built with AI-driven development. AI tools wrote first drafts of scaffolding, services, screens and tests far faster than I could type them — the backend scaffolding specifically came from [a custom Claude Code skill I built for exactly this](/blogs/building-a-claude-code-skill), not a generic prompt. That is the reason a platform this size fit into 5 days.
 
 But AI did not decide what to build. I set the scope, chose the architecture, wrote clear requirements for each piece and reviewed the output. **AI shortens the time it takes to build. It does not shorten the time it takes to think.** A fast build of the wrong product is still the wrong product.
 
