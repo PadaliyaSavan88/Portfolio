@@ -131,7 +131,7 @@ class VertexAIClient extends LLMClient {
 
 If you're building on AWS or Azure, or you're a small team that needs to move fast, OpenAI wins on developer experience and ecosystem. If you're on GCP, building for enterprise clients, or need compliance controls (SOC 2, HIPAA, data residency), Vertex AI is the better production platform.
 
-Many mature SaaS products end up using both: OpenAI for features where o1's reasoning is worth the premium, and Gemini Flash for high-volume, cost-sensitive tasks. The abstraction layer is worth building early.
+Many mature SaaS products end up using both: OpenAI for features where o1's reasoning is worth the premium, and Gemini Flash for high-volume, cost-sensitive tasks. The abstraction layer is worth building early — see [System Design for AI-Powered SaaS](/blogs/system-design-ai-powered-saas) for how that provider-fallback layer fits into the wider architecture.
 
 Whichever provider you choose, you'll need observability from day one — token costs, latency spikes, and hallucination rates all look fine until they don't. [How to Monitor AI Pipelines in Production](/blogs/how-to-monitor-ai-pipelines-in-production) covers exactly that, with Node.js examples for both OpenAI and Gemini.
 
