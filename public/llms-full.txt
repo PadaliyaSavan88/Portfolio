@@ -271,6 +271,36 @@ Published: 2026-09-11
 Description: A practical framework for choosing a tech stack for your startup MVP — frontend, backend, database, and when AI features change the decision.
 Topics covered: The core framework for an MVP stack decision, why Next.js is the frontend default, Node.js versus Python versus Go for a backend, PostgreSQL versus MongoDB for a first version, how adding an AI feature changes the backend decision, a real stack that shipped, and stack mistakes to avoid at MVP stage (microservices, Kubernetes, multi-cloud).
 
+### n8n vs Zapier: Workflow Automation Guide
+URL: https://savanpadaliya.com/blogs/n8n-workflow-automation-for-startups
+Published: 2026-09-24
+Description: A comparison of n8n and Zapier for startups covering pricing models, flexibility and AI support, plus five n8n workflows worth automating first.
+Topics covered: Differences between n8n and Zapier, per-task versus per-execution pricing with a worked cost example, n8n Cloud versus self-hosted n8n, when to choose each tool, five starter workflows (lead routing, onboarding, ticket triage, weekly reporting, document processing), controlling LLM costs inside workflows, and when to move logic into a backend with LangChain.js or MCP.
+
+### AI Chatbot for Business: Build vs Buy
+URL: https://savanpadaliya.com/blogs/ai-chatbot-for-business-build-vs-buy
+Published: 2026-09-29
+Description: A decision guide for business owners choosing between an off-the-shelf AI chatbot, a custom build, or a low-code middle path.
+Topics covered: When to buy a hosted chatbot platform, when to build a custom AI chatbot, the n8n plus model API middle path, cost and time-to-launch comparison table, hidden costs of buying and building, a five-question decision checklist, preventing wrong answers with retrieval and confidence thresholds, and starting with one narrow chatbot job.
+
+### Startup Architecture Review: What to Expect
+URL: https://savanpadaliya.com/blogs/startup-architecture-review-what-to-expect
+Published: 2026-10-04
+Description: What a startup architecture review covers, how the process runs, what deliverables to expect and when a growing product needs one.
+Topics covered: Definition of a software architecture review, review areas (code structure, database, infrastructure and cloud cost, security, CI/CD, observability, AI components, team process), the five-step review process, deliverables and prioritized roadmap, warning signs that trigger a review, choosing an independent reviewer, technical due diligence before fundraising, and next steps after the review.
+
+### Lessons from Building for 69.9M Users
+URL: https://savanpadaliya.com/blogs/building-public-sector-platform-at-scale
+Published: 2026-10-09
+Description: Reliability and scalability lessons from working on a national public sector fuel pricing platform that serves 69.9 million citizens.
+Topics covered: Why rare failures become daily at national scale, designing failure paths first, handling predictable traffic spikes with caching and horizontal scaling, data validation and audit trails for user-submitted data, monitoring with percentile latency and alerts, choosing boring technology, accessibility and security constraints in public sector software, and habits startups can adopt early.
+
+### MVP Scope: What to Cut and What to Keep
+URL: https://savanpadaliya.com/blogs/mvp-feature-scope-what-to-cut
+Published: 2026-10-14
+Description: A practical framework for founders deciding MVP scope, with a feature test, a cut list, a never-cut list and a real example.
+Topics covered: Identifying the riskiest assumption, a four-question feature test, features to cut from an MVP (admin dashboards, payments, roles, settings, native apps, analytics, integrations), what never to cut (core action, security, data protection, learning loop, polish), concierge and Wizard of Oz MVPs, scoping AI features, and common MVP scope mistakes.
+
 ## Free Developer Tools
 
 14 free, client-side developer utilities hosted at https://savanpadaliya.com/tools. All tools run entirely in the browser — no data is sent to any server, no sign-up required.

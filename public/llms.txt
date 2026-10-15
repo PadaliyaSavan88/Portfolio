@@ -67,6 +67,11 @@ Savan Padaliya is a Full Stack AI Engineer with 4+ years of experience building 
 - [MCP Explained: AI Agents Meet Your Tools](https://savanpadaliya.com/blogs/mcp-explained-ai-agents-nodejs): What the Model Context Protocol (MCP) is, how it works, and how to build a minimal MCP server in Node.js to connect AI agents to your tools.
 - [WhatsApp AI Chatbot with n8n + OpenAI](https://savanpadaliya.com/blogs/whatsapp-ai-chatbot-lead-qualification-n8n): How I built a 24/7 WhatsApp AI chatbot for lead qualification using n8n and OpenAI — the workflow, the prompting, and what it actually replaced.
 - [How to Choose a Tech Stack for Your MVP](https://savanpadaliya.com/blogs/choose-tech-stack-startup-mvp): A practical framework for choosing a tech stack for your startup MVP — frontend, backend, database, and when AI features change the decision.
+- [n8n vs Zapier: Workflow Automation Guide](https://savanpadaliya.com/blogs/n8n-workflow-automation-for-startups): How n8n and Zapier pricing really works, when each tool wins for startups, and 5 n8n workflows worth building first, including AI steps.
+- [AI Chatbot for Business: Build vs Buy](https://savanpadaliya.com/blogs/ai-chatbot-for-business-build-vs-buy): When to buy an off-the-shelf AI chatbot, when to build a custom one, typical costs, hidden costs, and the n8n + model API middle path.
+- [Startup Architecture Review: What to Expect](https://savanpadaliya.com/blogs/startup-architecture-review-what-to-expect): What a startup architecture review covers, how the process works, what you get at the end, and the signs your product needs one.
+- [Lessons from Building for 69.9M Users](https://savanpadaliya.com/blogs/building-public-sector-platform-at-scale): Reliability lessons from a national public sector fuel pricing platform serving 69.9 million citizens: failure paths, traffic spikes, data trust and boring tech.
+- [MVP Scope: What to Cut and What to Keep](https://savanpadaliya.com/blogs/mvp-feature-scope-what-to-cut): A simple test for deciding MVP scope, what founders should cut, what never to cut, and a worked example from a 5-day LMS MVP.
 
 ## Free Developer Tools
 
