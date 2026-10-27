@@ -301,6 +301,24 @@ Published: 2026-10-14
 Description: A practical framework for founders deciding MVP scope, with a feature test, a cut list, a never-cut list and a real example.
 Topics covered: Identifying the riskiest assumption, a four-question feature test, features to cut from an MVP (admin dashboards, payments, roles, settings, native apps, analytics, integrations), what never to cut (core action, security, data protection, learning loop, polish), concierge and Wizard of Oz MVPs, scoping AI features, and common MVP scope mistakes.
 
+### How to Write Requirements for Developers
+URL: https://savanpadaliya.com/blogs/write-product-requirements-for-developers
+Published: 2026-06-21
+Description: A guide for non-technical founders to writing product requirements a developer can build from, with a copyable template.
+Topics covered: Why developers build the wrong thing, the six parts of a requirements document, writing a problem statement, measurable success criteria, user stories, acceptance criteria and Given/When/Then, out-of-scope lists, which constraints to share, a requirements template, and using the document with a freelancer, agency or first hire.
+
+### When to Rewrite Your MVP (and When Not To)
+URL: https://savanpadaliya.com/blogs/when-to-rewrite-your-mvp
+Published: 2026-07-05
+Description: A decision guide for founders on whether to rewrite or refactor an MVP, and how to move from MVP to production safely.
+Topics covered: Why rewrites are tempting, the real cost of a rewrite (feature freeze, hidden behavior, migration risk), five signs a rewrite is justified, four signs it is not, a refactor-versus-rewrite decision table, the strangler fig pattern for incremental replacement, de-risking a necessary rewrite, and who should make the call.
+
+### Do You Need Kafka? A Guide for Startups
+URL: https://savanpadaliya.com/blogs/event-driven-architecture-kafka-startups
+Published: 2026-07-19
+Description: An architecture decision guide on when startups need Apache Kafka and what to use instead.
+Topics covered: What event-driven architecture is, Kafka versus message queues (RabbitMQ, SQS, BullMQ), alternatives for background jobs and fan-out (BullMQ, Amazon SQS, Redis Pub/Sub, Redis Streams, SNS), the transactional outbox pattern, five signs Kafka is the right choice, the operational cost of Kafka including KRaft mode, managed options (Confluent Cloud, Amazon MSK, Redpanda), and how to keep the option open.
+
 ## Free Developer Tools
 
 14 free, client-side developer utilities hosted at https://savanpadaliya.com/tools. All tools run entirely in the browser — no data is sent to any server, no sign-up required.

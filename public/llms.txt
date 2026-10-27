@@ -72,6 +72,9 @@ Savan Padaliya is a Full Stack AI Engineer with 4+ years of experience building 
 - [Startup Architecture Review: What to Expect](https://savanpadaliya.com/blogs/startup-architecture-review-what-to-expect): What a startup architecture review covers, how the process works, what you get at the end, and the signs your product needs one.
 - [Lessons from Building for 69.9M Users](https://savanpadaliya.com/blogs/building-public-sector-platform-at-scale): Reliability lessons from a national public sector fuel pricing platform serving 69.9 million citizens: failure paths, traffic spikes, data trust and boring tech.
 - [MVP Scope: What to Cut and What to Keep](https://savanpadaliya.com/blogs/mvp-feature-scope-what-to-cut): A simple test for deciding MVP scope, what founders should cut, what never to cut, and a worked example from a 5-day LMS MVP.
+- [How to Write Requirements for Developers](https://savanpadaliya.com/blogs/write-product-requirements-for-developers): How non-technical founders write requirements a developer can build from: problem statement, success criteria, user stories, acceptance criteria, out-of-scope list and a copyable template.
+- [When to Rewrite Your MVP (and When Not To)](https://savanpadaliya.com/blogs/when-to-rewrite-your-mvp): Five signs a full rewrite is justified, four signs it is not, a decision table, and how to move from MVP to production incrementally with the strangler fig pattern.
+- [Do You Need Kafka? A Guide for Startups](https://savanpadaliya.com/blogs/event-driven-architecture-kafka-startups): Why most startups do not need Kafka, what to use instead (BullMQ, SQS, Redis Streams, the transactional outbox on Postgres) and the signs Kafka has become the right call.
 
 ## Free Developer Tools
 
