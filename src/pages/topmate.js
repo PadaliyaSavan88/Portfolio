@@ -84,7 +84,7 @@ export default function Topmate() {
                 />
                 <meta name="language" content="English" />
                 <link rel="canonical" href="https://savanpadaliya.com/topmate" />
-                <meta name="robots" content="index, follow" />
+                <meta name="robots" content="noindex, follow" />
                 <meta name="author" content="Savan Padaliya" />
 
                 <meta property="og:title" content="Work with Savan Padaliya | 1:1 Mentoring & Consulting" />

@@ -217,6 +217,13 @@ Published: 2026-06-01
 Description: Production patterns for building a REST API with Node.js and TypeScript — covering typed route handlers, Zod runtime validation, centralized error handling, auth middleware with declaration merging, and typed environment variables.
 Topics covered: TypeScript tsconfig strict mode setup for Node.js APIs, RequestHandler generics for typed Express routes, Zod safeParse for runtime request body validation with field-level error responses, typed environment variables via Zod schema at startup, AppError class and four-argument Express error middleware, declaration merging to type req.user across all route handlers, UUID v4 and v7 for API entity IDs, connecting TypeScript REST APIs to AI SDKs (OpenAI, Vertex AI), and integration testing philosophy for typed APIs.
 
+### api-forge: Claude Code Express API Skill
+URL: https://savanpadaliya.com/blogs/api-forge-claude-code-backend-skill
+Published: 2026-06-03
+Updated: 2026-10-27
+Description: api-forge is a free, open source Claude Code skill that scaffolds production-ready Express + TypeScript APIs; this post covers what it is, how to install it and a full walkthrough.
+Topics covered: What api-forge is, why a Claude Code skill beats copy-paste boilerplate and static generators, installing with npx skills add, the three /backend modes (new, align, extend), the 13 setup questions, the generated project structure, startup config validation with Zod, named error classes and central error middleware, the Controller-Service-Model pattern, adding a resource in extend mode, and running the API.
+
 ### UUID v4 in JavaScript: When to Use One
 URL: https://savanpadaliya.com/blogs/uuid-explained-when-to-use-javascript
 Published: 2026-06-01
