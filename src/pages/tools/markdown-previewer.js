@@ -209,6 +209,8 @@ export default function MarkdownPreviewer() {
                         remarkPlugins={[remarkGfm]}
                         components={{
                           img({ src, alt }) {
+                            // User-typed URLs from any host, which next/image can't optimize.
+                            // eslint-disable-next-line @next/next/no-img-element
                             return <img src={src} alt={alt || ''} style={{ maxWidth: '100%', height: 'auto', borderRadius: 4, display: 'block', margin: '0.5rem 0' }} />;
                           },
                           code({ inline, className, children }) {
