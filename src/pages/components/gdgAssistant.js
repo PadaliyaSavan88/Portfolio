@@ -1,13 +1,17 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useSyncExternalStore } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { getContextForQuery, KNOWLEDGE_BASE_UPDATED } from '@/lib/gdgKnowledgeBase';
+
+const noopSubscribe = () => () => {};
+const UNSUPPORTED_STATUS = 'This AI assistant runs fully in your browser via WebGPU. Please open this page in a recent desktop version of Chrome or Edge with hardware acceleration enabled.';
 
 const snapshotLabel = new Date(`${KNOWLEDGE_BASE_UPDATED}T00:00:00`).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
 export default function GdgAssistant() {
   const [engine, setEngine] = useState(null);
-  const [gpuSupported, setGpuSupported] = useState(null);
+  // null during SSR, then true/false once we can read navigator on the client.
+  const gpuSupported = useSyncExternalStore(noopSubscribe, () => !!navigator.gpu, () => null);
   const [status, setStatus] = useState('Checking WebGPU support...');
   const [input, setInput] = useState('');
   const [reply, setReply] = useState('');
@@ -15,15 +19,8 @@ export default function GdgAssistant() {
   const isInitializing = useRef(false);
 
   useEffect(() => {
-    if (isInitializing.current) return;
+    if (!gpuSupported || isInitializing.current) return;
     isInitializing.current = true;
-
-    if (typeof navigator === 'undefined' || !navigator.gpu) {
-      setGpuSupported(false);
-      setStatus('This AI assistant runs fully in your browser via WebGPU. Please open this page in a recent desktop version of Chrome or Edge with hardware acceleration enabled.');
-      return;
-    }
-    setGpuSupported(true);
 
     async function initModel() {
       try {
@@ -39,7 +36,7 @@ export default function GdgAssistant() {
       }
     }
     initModel();
-  }, []);
+  }, [gpuSupported]);
 
   const askGemma = async () => {
     if (!engine || !input || loading) return;
@@ -70,7 +67,7 @@ export default function GdgAssistant() {
   return (
     <div className="tool-card-ui mt-4">
       <div className="mb-3" style={{ fontSize: '0.85rem', color: '#374151', background: '#f3f4f6', border: '1px solid #e5e7eb', borderRadius: 8, padding: '0.75rem 1rem' }}>
-        <strong>Status:</strong> {status}
+        <strong>Status:</strong> {gpuSupported === false ? UNSUPPORTED_STATUS : status}
       </div>
 
       {gpuSupported && (

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Headers from '../components/header';
 import Footer from '../components/footer';
 import ToolSeo from '../components/tool-seo';
@@ -78,16 +78,21 @@ export default function PasswordGenerator() {
   const [opts, setOpts] = useState({ upper: true, lower: true, numbers: true, symbols: false, noAmbiguous: false });
   const [password, setPassword] = useState('');
   const [copied, setCopied] = useState(false);
-  const [charsetError, setCharsetError] = useState(false);
+  const charsetError = !(opts.upper || opts.lower || opts.numbers || opts.symbols);
 
-  const generate = useCallback(() => {
-    const anySelected = opts.upper || opts.lower || opts.numbers || opts.symbols;
-    if (!anySelected) { setCharsetError(true); return; }
-    setCharsetError(false);
-    setPassword(generatePassword(length, opts));
-  }, [length, opts]);
+  function regenerate(nextLength = length, nextOpts = opts) {
+    if (!(nextOpts.upper || nextOpts.lower || nextOpts.numbers || nextOpts.symbols)) return;
+    setPassword(generatePassword(nextLength, nextOpts));
+  }
+  function handleLengthChange(val) { setLength(val); regenerate(val, opts); }
+  function handleOptChange(key, checked) {
+    const next = { ...opts, [key]: checked };
+    setOpts(next);
+    regenerate(length, next);
+  }
 
-  useEffect(() => { generate(); }, [generate]);
+  // Random output must be created on the client after hydration, so the first one is generated on mount.
+  useEffect(() => { regenerate(); }, []); // eslint-disable-line react-hooks/set-state-in-effect, react-hooks/exhaustive-deps
 
   function handleCopy() {
     navigator.clipboard.writeText(password).then(() => { setCopied(true); setTimeout(() => setCopied(false), 2000); });
@@ -140,7 +145,7 @@ export default function PasswordGenerator() {
                   min={8}
                   max={64}
                   value={length}
-                  onChange={(e) => setLength(Number(e.target.value))}
+                  onChange={(e) => handleLengthChange(Number(e.target.value))}
                   style={{ width: '100%', accentColor: '#3081D0' }}
                 />
                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: '#9ca3af', marginTop: 2 }}>
@@ -163,7 +168,7 @@ export default function PasswordGenerator() {
                         <input
                           type="checkbox"
                           checked={opts[key]}
-                          onChange={(e) => setOpts((prev) => ({ ...prev, [key]: e.target.checked }))}
+                          onChange={(e) => handleOptChange(key, e.target.checked)}
                           style={{ accentColor: '#3081D0', width: 16, height: 16 }}
                         />
                         {label}
@@ -203,7 +208,7 @@ export default function PasswordGenerator() {
               )}
 
               <div className="d-flex gap-2">
-                <button className="btn-primary-custom px-4" onClick={generate}>Generate</button>
+                <button className="btn-primary-custom px-4" onClick={() => regenerate()}>Generate</button>
                 <button className="btn-outline-custom px-4" onClick={handleCopy} disabled={!password}>
                   {copied ? 'Copied!' : 'Copy'}
                 </button>

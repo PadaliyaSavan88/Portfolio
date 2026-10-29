@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@mlc-ai/web-llm": "^0.2.84",
@@ -14,20 +14,20 @@
     "bootstrap": "^5.3.2",
     "diff": "^9.0.0",
     "gray-matter": "^4.0.3",
-    "mermaid": "^11.15.0",
-    "next": "14.0.3",
+    "mermaid": "^12.2.0",
+    "next": "^16.4.3",
     "qrcode.react": "^4.2.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-markdown": "^9.0.1",
-    "react-syntax-highlighter": "^15.5.0",
+    "react-syntax-highlighter": "^16.1.2",
     "remark": "^15.0.1",
     "remark-gfm": "^4.0.1",
     "remark-html": "^16.0.1",
-    "sharp": "^0.33.0"
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3"
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.3"
   }
 }

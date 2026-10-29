@@ -69,7 +69,8 @@ export default function RandomString() {
     setResult(generateString(length, charset));
   }
 
-  useEffect(() => { generate(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  // Random output must be created on the client after hydration, so the first one is generated on mount.
+  useEffect(() => { generate(); }, []); // eslint-disable-line react-hooks/set-state-in-effect, react-hooks/exhaustive-deps
 
   function handleLengthChange(val) { setLength(Math.min(128, Math.max(8, Number(val)))); }
   function toggleOption(key) { setOptions((prev) => ({ ...prev, [key]: !prev[key] })); setCharsetError(''); }
