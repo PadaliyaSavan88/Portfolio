@@ -92,7 +92,7 @@ export default function PasswordGenerator() {
   }
 
   // Random output must be created on the client after hydration, so the first one is generated on mount.
-  useEffect(() => { regenerate(); }, []); // eslint-disable-line react-hooks/set-state-in-effect, react-hooks/exhaustive-deps
+  useEffect(() => { regenerate(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   function handleCopy() {
     navigator.clipboard.writeText(password).then(() => { setCopied(true); setTimeout(() => setCopied(false), 2000); });
